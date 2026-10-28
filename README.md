@@ -42,9 +42,9 @@ Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elekt
 | 05 | [Technika cyfrowa](modules/05-technika-cyfrowa/) | Technika cyfrowa, Układy cyfrowe | ✅ pełny |
 | 06 | [Sygnały i systemy](modules/06-sygnaly-i-systemy/) | Teoria sygnałów, Teoria systemów | ✅ pełny |
 | 07 | [Cyfrowe przetwarzanie sygnałów](modules/07-cps-dsp/) | CPS / DSP | ✅ pełny |
-| 08 | [Miernictwo](modules/08-miernictwo/) | Metrologia, Miernictwo elektroniczne | 🟡 szkielet |
-| 09 | [Mikrokontrolery i systemy wbudowane](modules/09-mikrokontrolery-embedded/) | Technika mikroprocesorowa | 🟡 szkielet |
-| 10 | [Podstawy automatyki](modules/10-automatyka/) | Podstawy automatyki i sterowania | 🟡 szkielet |
+| 08 | [Miernictwo](modules/08-miernictwo/) | Metrologia, Miernictwo elektroniczne | ✅ pełny |
+| 09 | [Mikrokontrolery i systemy wbudowane](modules/09-mikrokontrolery-embedded/) | Technika mikroprocesorowa | ✅ pełny |
+| 10 | [Podstawy automatyki](modules/10-automatyka/) | Podstawy automatyki i sterowania | ✅ pełny |
 | 11 | [Pole EM, linie, anteny](modules/11-pole-em-linie-anteny/) | Pole elektromagnetyczne, Anteny i propagacja | 🟡 szkielet |
 | 12 | [Technika w.cz. (RF)](modules/12-technika-wcz-rf/) | Technika mikrofalowa, Układy w.cz. | 🟡 szkielet |
 | 13 | [Telekomunikacja](modules/13-telekomunikacja/) | Podstawy telekomunikacji, Teoria informacji | 🟡 szkielet |
