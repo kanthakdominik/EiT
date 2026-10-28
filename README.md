@@ -45,7 +45,7 @@ Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elekt
 | 08 | [Miernictwo](modules/08-miernictwo/) | Metrologia, Miernictwo elektroniczne | ✅ pełny |
 | 09 | [Mikrokontrolery i systemy wbudowane](modules/09-mikrokontrolery-embedded/) | Technika mikroprocesorowa | ✅ pełny |
 | 10 | [Podstawy automatyki](modules/10-automatyka/) | Podstawy automatyki i sterowania | ✅ pełny |
-| 11 | [Pole EM, linie, anteny](modules/11-pole-em-linie-anteny/) | Pole elektromagnetyczne, Anteny i propagacja | 🟡 szkielet |
+| 11 | [Pole EM, linie, anteny](modules/11-pole-em-linie-anteny/) | Pole elektromagnetyczne, Anteny i propagacja | ✅ pełny |
 | 12 | [Technika w.cz. (RF)](modules/12-technika-wcz-rf/) | Technika mikrofalowa, Układy w.cz. | 🟡 szkielet |
 | 13 | [Telekomunikacja](modules/13-telekomunikacja/) | Podstawy telekomunikacji, Teoria informacji | 🟡 szkielet |
 | 14 | [Sieci telekomunikacyjne](modules/14-sieci-telekomunikacyjne/) | Sieci i systemy telekomunikacyjne | 🟡 szkielet |
