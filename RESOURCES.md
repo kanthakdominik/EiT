@@ -16,6 +16,7 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [Fundamentals of Electrical Engineering I](https://open.umn.edu/opentextbooks/textbooks/fundamentals-of-electrical-engineering-1) — D. Johnson (Rice) | Sygnały, analiza w dziedzinie czasu i częstotliwości, próbkowanie, teoria informacji, kody korekcyjne | 06, 13 |
 | [Electromagnetics, Vol. 1](https://doi.org/10.21061/electromagnetics-vol-1) i [Vol. 2](https://doi.org/10.21061/electromagnetics-vol-2) — S. W. Ellingson (Virginia Tech) | Pole EM, linie transmisyjne, fale płaskie, anteny; z zadaniami i rozwiązaniami | 11, 12 |
 | [The Scientist and Engineer's Guide to Digital Signal Processing](http://www.dspguide.com/) — S. W. Smith | Praktyczne DSP z małą ilością matematyki: splot, DFT/FFT, filtry, ADC/DAC | 07 |
+| [Think DSP — A. Downey](https://greenteapress.com/wp/think-dsp/) | Darmowa książka o DSP z kodem w Pythonie: widma, splot, filtry, szum | 06, 07 |
 
 ## Kursy uniwersyteckie (MIT OpenCourseWare i inne)
 
@@ -30,6 +31,8 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [MIT 18.06SC Linear Algebra (Strang)](https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/) | Wykłady, wideo z rozwiązywania zadań, zestawy z rozwiązaniami | 00 |
 | [MIT RES.18-009 Learn Differential Equations (Strang, Moler)](https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/) | Krótkie wykłady o równaniach różniczkowych | 00 |
 | [MIT RES.18-001 Calculus (Strang)](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/) | Rachunek różniczkowy i całkowy | 00 |
+| [MIT 6.004 Computation Structures (2017)](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/) | Abstrakcja cyfrowa, CMOS, logika kombinacyjna i sekwencyjna, automaty, czasy, pamięci | 05 |
+| [MIT 6.111 Introductory Digital Systems Laboratory](https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-spring-2006/) | Projektowanie systemów cyfrowych, synchronizacja, wstęp do FPGA | 05, 17 |
 | [Analog Devices — Engineering University Program](https://wiki.analog.com/university) | Materiały i ćwiczenia laboratoryjne: Circuits, Electronics I i II | 01, 03, 04 |
 | [Analog Devices — Electronics I and II (spis treści)](https://wiki.analog.com/university/courses/electronics/text/electronics-toc) | Podręcznik: od elementów po zarządzanie zasilaniem i przetworniki A/C, C/A | 03, 04, 15 |
 | [nand2tetris](https://www.nand2tetris.org/) | Budowa komputera od bramki NAND w górę; darmowe narzędzia i projekty | 05, 17 |

@@ -39,9 +39,9 @@ Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elekt
 | 02 | [Fizyka i materiałoznawstwo](modules/02-fizyka-i-materialy/) | Fizyka, Materiały elektroniczne | ✅ pełny |
 | 03 | [Przyrządy półprzewodnikowe](modules/03-przyrzady-polprzewodnikowe/) | Elementy elektroniczne | ✅ pełny |
 | 04 | [Układy analogowe](modules/04-uklady-analogowe/) | Układy elektroniczne, Elektronika analogowa | ✅ pełny |
-| 05 | [Technika cyfrowa](modules/05-technika-cyfrowa/) | Technika cyfrowa, Układy cyfrowe | 🟡 szkielet |
-| 06 | [Sygnały i systemy](modules/06-sygnaly-i-systemy/) | Teoria sygnałów, Teoria systemów | 🟡 szkielet |
-| 07 | [Cyfrowe przetwarzanie sygnałów](modules/07-cps-dsp/) | CPS / DSP | 🟡 szkielet |
+| 05 | [Technika cyfrowa](modules/05-technika-cyfrowa/) | Technika cyfrowa, Układy cyfrowe | ✅ pełny |
+| 06 | [Sygnały i systemy](modules/06-sygnaly-i-systemy/) | Teoria sygnałów, Teoria systemów | ✅ pełny |
+| 07 | [Cyfrowe przetwarzanie sygnałów](modules/07-cps-dsp/) | CPS / DSP | ✅ pełny |
 | 08 | [Miernictwo](modules/08-miernictwo/) | Metrologia, Miernictwo elektroniczne | 🟡 szkielet |
 | 09 | [Mikrokontrolery i systemy wbudowane](modules/09-mikrokontrolery-embedded/) | Technika mikroprocesorowa | 🟡 szkielet |
 | 10 | [Podstawy automatyki](modules/10-automatyka/) | Podstawy automatyki i sterowania | 🟡 szkielet |
