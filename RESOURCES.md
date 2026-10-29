@@ -29,6 +29,13 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [PySDR — M. Lichtman](https://pysdr.org) | Radio programowalne i DSP w Pythonie: I/Q, modulacje, synchronizacja, OFDM, budżet łącza | 11, 12, 13 |
 | [Keysight AN 154 — S-Parameter Design](https://www.keysight.com/be/en/assets/7018-06743/application-notes/5952-1087.pdf) | Klasyczna nota o parametrach S i projektowaniu wzmacniaczy | 12 |
 | [Analog Devices MT-080 — Mixers and Modulators](https://www.analog.com/media/en/training-seminars/tutorials/MT-080.pdf) | Mieszacze i modulatory I/Q | 12, 13 |
+| [Computer Networks: A Systems Approach — L. Peterson, B. Davie (wersja otwarta)](https://github.com/SystemsApproach/book) | Sieci komputerowe od łącza po aplikacje | 14 |
+| [The Fiber Optic Association — Guide to Fiber Optics](https://www.thefoa.org/tech/ref/) | Światłowody w praktyce: tłumienie, złącza, budżet łącza, PON | 14 |
+| [Teletraffic Engineering Handbook — V. B. Iversen](https://orbit.dtu.dk/en/publications/teletraffic-engineering-handbook/) | Teoria ruchu: Erlang B i C, kolejki | 14 |
+| [A Graduate Course in Applied Cryptography — D. Boneh, V. Shoup](https://crypto.stanford.edu/~dabo/cryptobook/) | Kryptografia stosowana (darmowa książka) | 14 |
+| [TI SLVA477 — Basic Calculation of a Buck Converter's Power Stage](https://www.ti.com/lit/pdf/SLVA477) | Dobór elementów przetwornicy buck | 15 |
+| [TI SLVA372 — Basic Calculation of a Boost Converter's Power Stage](https://www.ti.com/document-viewer/lit/html/SLVA372) | Dobór elementów przetwornicy boost | 15 |
+| [Battery University](https://batteryuniversity.com/) | Akumulatory, ładowanie, bezpieczeństwo | 15 |
 
 ## Kursy uniwersyteckie (MIT OpenCourseWare i inne)
 
@@ -47,6 +54,8 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [MIT 6.013 Electromagnetics and Applications (2005)](https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/) | Maxwell, fale, linie transmisyjne, promieniowanie | 11 |
 | [MIT 6.02 Digital Communication Systems (2012)](https://ocw.mit.edu/courses/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/) | Kodowanie źródłowe, kody korekcyjne, Viterbi, modulacja, sieci | 13, 14 |
 | [MIT 6.450 Principles of Digital Communications I (2006)](https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/) | Teoria informacji, detekcja, kanały bezprzewodowe — poziom magisterski | 13 |
+| [MIT 6.622 Power Electronics (2023)](https://ocw.mit.edu/courses/6-622-power-electronics-spring-2023/) | Przetwornice, magnetyki, sterowanie, falowniki | 15 |
+| [Introduction to Power Electronics — R. Erickson, CU Boulder (Coursera)](https://www.coursera.org/learn/power-electronics) | Podstawy energoelektroniki (bezpłatny audyt) | 15 |
 | [MIT 6.302 Feedback Systems (2007)](https://ocw.mit.edu/courses/6-302-feedback-systems-spring-2007/) | Sprzężenie zwrotne z perspektywy elektroniki: stabilność, kompensacja, oscylatory | 04, 10 |
 | [MIT 6.111 Introductory Digital Systems Laboratory](https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-spring-2006/) | Projektowanie systemów cyfrowych, synchronizacja, wstęp do FPGA | 05, 17 |
 | [Analog Devices — Engineering University Program](https://wiki.analog.com/university) | Materiały i ćwiczenia laboratoryjne: Circuits, Electronics I i II | 01, 03, 04 |
@@ -87,3 +96,5 @@ Podane z tytułem i autorem — to klasyka, do której odwołuje się większoś
 - G. Franklin, J. D. Powell, A. Emami-Naeini — *Feedback Control of Dynamic Systems* (automatyka)
 - K. Ogata — *Modern Control Engineering* (automatyka)
 - E. White — *Making Embedded Systems* (systemy wbudowane)
+- J. Kurose, K. Ross — *Computer Networking: A Top-Down Approach* (sieci)
+- R. Erickson, D. Maksimović — *Fundamentals of Power Electronics* (energoelektronika)
