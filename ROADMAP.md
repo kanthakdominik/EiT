@@ -40,6 +40,12 @@ graph TD
     M06 --> M21
     M21 --> M13
     M21 --> M12
+    M03 --> M22[22 Optoelektronika i fotonika]
+    M04 --> M22
+    M22 --> M14
+    M03 --> M23[23 Technologia mikroelektroniczna]
+    M04 --> M24[24 Elektroakustyka]
+    M07 --> M24
 ```
 
 ## Proponowany układ „semestralny”
@@ -51,10 +57,10 @@ Odpowiada typowemu 7-semestralnemu programowi inżynierskiemu EiT. Kolejność w
 | 1 | 00 Matematyka (część 1), 02 Fizyka (mechanika, elektrostatyka), 01 Teoria obwodów (prąd stały), 19 Programowanie (Python, podstawy C) | Fundament — nie skracaj |
 | 2 | 00 Matematyka (część 2), 01 Teoria obwodów (AC, stany nieustalone), 05 Technika cyfrowa (kombinacyjna), 19 Programowanie (C, struktury danych, git) | Liczby zespolone muszą być „w palcach” |
 | 3 | 03 Przyrządy półprzewodnikowe, 05 Technika cyfrowa (sekwencyjna), 06 Sygnały i systemy (czas ciągły), 20 Metody numeryczne | |
-| 4 | 04 Układy analogowe, 06 Sygnały i systemy (czas dyskretny), 11 Pole EM | Najtrudniejszy semestr |
+| 4 | 04 Układy analogowe, 06 Sygnały i systemy (czas dyskretny), 11 Pole EM, 23 Technologia mikroelektroniczna | Najtrudniejszy semestr |
 | 5 | 07 CPS/DSP, 08 Miernictwo, 09 Mikrokontrolery, 10 Automatyka, 21 Procesy losowe i szum | Dużo praktyki |
-| 6 | 12 Technika w.cz., 13 Telekomunikacja, 15 Energoelektronika, 17 FPGA | Wybór specjalizacji |
-| 7 | 14 Sieci, 16 PCB i EMC, 18 Projekt końcowy | |
+| 6 | 12 Technika w.cz., 13 Telekomunikacja, 15 Energoelektronika, 17 FPGA, 22 Optoelektronika i fotonika | Wybór specjalizacji |
+| 7 | 14 Sieci, 16 PCB i EMC, 18 Projekt końcowy, 24 Elektroakustyka (obieralny) | |
 
 ## Szacowany nakład pracy
 
@@ -84,7 +90,10 @@ Szacunki dla osoby uczącej się od zera. Przy odświeżaniu wiedzy po studiach 
 | 19 Programowanie | 80–120 |
 | 20 Metody numeryczne | 50–80 |
 | 21 Procesy losowe i szum | 50–80 |
-| **Razem** | **~1400–2200** |
+| 22 Optoelektronika i fotonika | 40–60 |
+| 23 Technologia mikroelektroniczna | 40–60 |
+| 24 Elektroakustyka | 40–60 |
+| **Razem** | **~1500–2400** |
 
 ## Przykładowy rytm tygodnia (16–20 h, 5 sesji)
 
@@ -112,4 +121,7 @@ Dla 8–10 h tygodniowo: połącz sesje 1+2 oraz 3+4, a test zrób co dwa tygodn
 - [ ] Piszę i testuję programy w Pythonie i C, pracuję w git (19).
 - [ ] Rozumiem, jak symulator liczy obwód, i oceniam wiarygodność wyniku numerycznego (20).
 - [ ] Liczę budżet szumów toru i mierzę widmo szumu (21).
+- [ ] Projektuję tor optyczny: źródło, fotodetektor z TIA, łącze światłowodowe (22).
+- [ ] Rozumiem, jak powstaje układ scalony i skąd biorą się jego ograniczenia, koszt i niezawodność (23).
+- [ ] Projektuję i mierzę tor audio od mikrofonu do głośnika w pomieszczeniu (24).
 - [ ] Realizuję projekt od wymagań do weryfikacji pomiarowej (18).

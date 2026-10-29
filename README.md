@@ -56,10 +56,13 @@ Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elekt
 | 19 | [Programowanie dla elektronika](modules/19-programowanie/) | Podstawy programowania, Języki programowania (C, Python) | ✅ pełny |
 | 20 | [Metody numeryczne](modules/20-metody-numeryczne/) | Metody numeryczne, Komputerowe wspomaganie projektowania | ✅ pełny |
 | 21 | [Procesy losowe i szum](modules/21-procesy-losowe-szum/) | Sygnały losowe, Szumy w układach elektronicznych | ✅ pełny |
+| 22 | [Optoelektronika i fotonika](modules/22-optoelektronika-fotonika/) | Optoelektronika, Technika światłowodowa | ✅ pełny |
+| 23 | [Technologia mikroelektroniczna](modules/23-technologia-mikroelektroniczna/) | Technologia elektronowa, Technologia układów scalonych | ✅ pełny |
+| 24 | [Elektroakustyka](modules/24-elektroakustyka/) | Elektroakustyka, Technika audio | ✅ pełny |
 
 ✅ pełny — notatki, przykłady, zadania z odpowiedziami, symulacje, źródła
 
-Moduły 19–21 dodano jako uzupełnienie programu; numeracja nie oznacza kolejności nauki — **programowanie (19) warto zacząć razem z matematyką**, a miejsce pozostałych pokazuje [ROADMAP.md](ROADMAP.md).
+Moduły 19–24 dodano jako uzupełnienie programu; numeracja nie oznacza kolejności nauki — **programowanie (19) warto zacząć razem z matematyką**, a miejsce pozostałych pokazuje [ROADMAP.md](ROADMAP.md).
 
 ---
 

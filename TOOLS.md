@@ -46,6 +46,12 @@
 | **Visual Studio Code** | Edytor z obsługą C, Pythona, git i debugera | [code.visualstudio.com](https://code.visualstudio.com/) |
 | **pytest** | Testy jednostkowe w Pythonie | [docs.pytest.org](https://docs.pytest.org/en/stable/) |
 
+## Audio i akustyka (moduł 24)
+
+| Narzędzie | Do czego | Gdzie |
+|---|---|---|
+| **REW (Room EQ Wizard)** | Pomiar charakterystyk głośników i pomieszczeń, odpowiedź impulsowa, czas pogłosu | [roomeqwizard.com](https://roomeqwizard.com) |
+
 ## Obliczenia i analiza danych
 
 | Narzędzie | Do czego |

@@ -48,6 +48,11 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [Numerical Recipes](https://numerical.recipes/) | Praktyczne algorytmy numeryczne (starsze wydania dostępne online) | 20 |
 | [D. Goldberg — What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/816-2464/ncg_goldberg.html) | Arytmetyka IEEE 754 | 20 |
 | [NIST/SEMATECH e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/) | Rozkłady, dopasowanie modeli, analiza reszt | 20, 21 |
+| [RP Photonics Encyclopedia](https://www.rp-photonics.com/encyclopedia.html) | Encyklopedia fotoniki: lasery, detektory, światłowody | 22 |
+| [The FOA Reference Guide to Fiber Optics](https://www.thefoa.org/tech/ref/contents.html) | Światłowody, złącza, budżet łącza | 14, 22 |
+| [Stanford CCRMA — książki online J. O. Smitha](https://ccrma.stanford.edu/~jos/EE201/Related_Online_Books_CCRMA.html) | Akustyka fizyczna, DSP audio | 07, 24 |
+| [Elliott Sound Products](https://sound-au.com/site-map.htm) | Artykuły o wzmacniaczach, zwrotnicach i zasilaczach audio | 24 |
+| [Linkwitz Lab](https://linkwitzlab.com/crossovers.htm) | Zwrotnice i projektowanie zestawów głośnikowych | 24 |
 
 ## Kursy uniwersyteckie (MIT OpenCourseWare i inne)
 
@@ -78,6 +83,11 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [MIT 18.330 Introduction to Numerical Analysis (2012)](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/) | Interpolacja, kwadratury, równania nieliniowe i różniczkowe | 20 |
 | [MIT 18.335J Introduction to Numerical Methods (2019)](https://ocw.mit.edu/courses/18-335j-introduction-to-numerical-methods-spring-2019/) | Numeryczna algebra liniowa, stabilność, uwarunkowanie | 20 |
 | [MIT 6.041 Probabilistic Systems Analysis and Applied Probability (2010)](https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/) | Prawdopodobieństwo, procesy Bernoulliego, Poissona, Markowa | 21 |
+| [MIT 6.161 Modern Optics Project Laboratory (2005)](https://ocw.mit.edu/courses/6-161-modern-optics-project-laboratory-fall-2005/) | Optyka, lasery, detekcja | 22 |
+| [MIT 6.152J Micro/Nano Processing Technology (2005)](https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/) | Technologia: utlenianie, dyfuzja, implantacja, litografia, trawienie | 23 |
+| [MIT 6.774 Physics of Microfabrication: Front End Processing (2004)](https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/) | Fizyka procesów technologicznych | 23 |
+| [Purdue — Semiconductor Fabrication 101](https://engineering.purdue.edu/online/semiconductors/semiconductor-fabrication-101) | Bezpłatny przegląd produkcji półprzewodników | 23 |
+| [MIT 21M.380 Music and Technology: Sound Design (2016)](https://ocw.mit.edu/courses/21m-380-music-and-technology-sound-design-spring-2016/) | Dźwięk, nagrywanie, przetwarzanie | 24 |
 | [MIT 6.011 Signals, Systems and Inference (2018)](https://ocw.mit.edu/courses/6-011-signals-systems-and-inference-spring-2018/) | Procesy losowe w układach LTI, widmo mocy, estymacja | 21 |
 | [nand2tetris](https://www.nand2tetris.org/) | Budowa komputera od bramki NAND w górę; darmowe narzędzia i projekty | 05, 17 |
 
@@ -101,7 +111,11 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [python-control — dokumentacja](https://python-control.readthedocs.io/en/latest/intro.html) | Biblioteka do analizy i projektowania układów regulacji | 10 |
 | [Harvard CS50 (YouTube)](https://www.youtube.com/results?search_query=CS50+Harvard+lecture) | Programowanie w C, pamięć, struktury danych | 19 |
 | [Analog Devices — MT-048 Op Amp Noise Relationships](https://www.analog.com/media/en/training-seminars/tutorials/MT-048.pdf) | Szum wzmacniaczy operacyjnych: $1/f$, biały, sumowanie | 21 |
-| [Texas Instruments — Precision Labs: Op Amps](https://www.ti.com/video/series/precision-labs/ti-precision-labs-op-amps.html) | Wykłady wideo o wzmacniaczach, w tym o szumie | 04, 21 |
+| [Texas Instruments — Precision Labs: Op Amps](https://www.ti.com/video/series/precision-labs/ti-precision-labs-op-amps.html) | Wykłady wideo o wzmacniaczach, w tym o szumie | 04, 21, 22 |
+| [Hamamatsu — Si photodiodes: technical information (PDF)](https://www.hamamatsu.com/resources/pdf/ssd/si_pd_kspd0001e.pdf) | Fotodiody: parametry i układy pracy | 22 |
+| [Texas Instruments — Transimpedance Considerations for High-Speed Amplifiers (SBOA122)](https://www.ti.com/lit/sboa122) | Wzmacniacze transimpedancyjne | 22 |
+| [ASML — Lithography principles: Rayleigh criterion](https://www.asml.com/technology/lithography-principles/rayleigh-criterion) | Rozdzielczość litografii | 23 |
+| [TDK InvenSense — AN-1112: Microphone Specifications Explained](https://invensense.tdk.com/?p=6991) | Parametry mikrofonów | 24 |
 
 ## Książki płatne (warto znać, do biblioteki)
 
@@ -131,3 +145,8 @@ Podane z tytułem i autorem — to klasyka, do której odwołuje się większoś
 - L. O. Chua, P.-M. Lin — *Computer-Aided Analysis of Electronic Circuits* (symulatory obwodów)
 - A. Papoulis, S. U. Pillai — *Probability, Random Variables and Stochastic Processes* (procesy losowe)
 - C. D. Motchenbacher, J. A. Connelly — *Low-Noise Electronic System Design* (szumy)
+- B. E. A. Saleh, M. C. Teich — *Fundamentals of Photonics* (fotonika)
+- G. Keiser — *Optical Fiber Communications* (światłowody)
+- J. D. Plummer, M. D. Deal, P. B. Griffin — *Silicon VLSI Technology* (technologia)
+- D. Self — *Audio Power Amplifier Design* (wzmacniacze audio)
+- V. Dickason — *The Loudspeaker Design Cookbook* (zestawy głośnikowe)
