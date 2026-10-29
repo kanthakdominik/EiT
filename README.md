@@ -4,7 +4,7 @@ Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elekt
 
 - **Notatki, przykłady i zadania** są napisane po polsku (treść własna repozytorium).
 - **Źródła zewnętrzne** (kursy, książki, wykłady wideo, narzędzia) są **wyłącznie anglojęzyczne i darmowe**. Książki płatne są wymienione z tytułem, bez treści.
-- Każdy link był sprawdzany przy dodawaniu. Jeśli któryś przestanie działać, zgłoś to w Issues.
+- Linki były sprawdzane przy dodawaniu (kanały YouTube podane są jako linki do wyszukiwania). Jeśli któryś przestanie działać, zgłoś to w Issues.
 
 ---
 
@@ -52,10 +52,19 @@ Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elekt
 | 15 | [Energoelektronika i zasilanie](modules/15-energoelektronika-zasilanie/) | Układy zasilające, Energoelektronika | ✅ pełny |
 | 16 | [PCB, EMC i konstrukcja](modules/16-pcb-emc-konstrukcja/) | Konstrukcja urządzeń, Kompatybilność EM | ✅ pełny |
 | 17 | [FPGA i HDL](modules/17-fpga-hdl/) | Układy programowalne | ✅ pełny |
-| 18 | [Projekt końcowy](modules/18-projekt-dyplomowy/) | Projekt inżynierski | 🟡 szkielet |
+| 18 | [Projekt końcowy](modules/18-projekt-dyplomowy/) | Projekt inżynierski | ✅ pełny |
 
 ✅ pełny — notatki, przykłady, zadania z odpowiedziami, symulacje, źródła
-🟡 szkielet — zakres tematów, cele i główne źródła; treść w kolejnych etapach
+
+---
+
+## Sprawdzanie materiałów
+
+- **Kod w Pythonie** z wszystkich plików `.md` uruchamia skrypt [tools/check_snippets.py](tools/check_snippets.py) (pomija tylko bloki wymagające przyrządów lub SymPy).
+- **Testbenche Verilog** z [modułu 17](modules/17-fpga-hdl/hdl/) uruchamia [run_tests.sh](modules/17-fpga-hdl/hdl/run_tests.sh) w Icarus Verilog; każdy wypisuje `PASS` lub `FAIL`.
+- Oba sprawdzenia wykonuje automatycznie GitHub Actions przy każdym pushu ([konfiguracja](.github/workflows/checks.yml)) — wynik w zakładce *Actions*.
+- Netlisty LTspice nie są uruchamiane automatycznie — przy rozbieżności wyniku symulacji z tekstem zgłoś to w Issues.
+- Wzory są pisane pod renderer GitHuba (MathJax): przecinek dziesiętny jako `\text{,}`, w tabelach `\lvert … \rvert` zamiast `|`.
 
 ---
 

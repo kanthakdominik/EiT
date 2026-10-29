@@ -16,12 +16,24 @@
 | **Logisim-evolution** | Projektowanie i symulacja układów logicznych, eksport do VHDL | [github.com/logisim-evolution](https://github.com/logisim-evolution/logisim-evolution) |
 | **Digital** (H. Neemann) | Nowocześniejsza alternatywa dla Logisim, z eksportem do HDL | [github.com/hneemann/Digital](https://github.com/hneemann/Digital) |
 | **nand2tetris Hardware Simulator** | Symulator HDL do kursu nand2tetris | [nand2tetris.org](https://www.nand2tetris.org/) |
+| **Icarus Verilog** | Symulator Verilog do testbenchy z modułu 17 (`bash modules/17-fpga-hdl/hdl/run_tests.sh`) | [steveicarus.github.io/iverilog](https://steveicarus.github.io/iverilog/) |
+| **EDA Playground** | Symulatory HDL w przeglądarce, bez instalacji | [edaplayground.com](https://edaplayground.com) |
+| **OSS CAD Suite** | Otwarty zestaw FPGA: Yosys (synteza), nextpnr (implementacja), symulatory, GTKWave | [github.com/YosysHQ/oss-cad-suite-build](https://github.com/YosysHQ/oss-cad-suite-build) |
 
 ## Projektowanie PCB
 
 | Narzędzie | Do czego | Link |
 |---|---|---|
 | **KiCad** | Schematy, PCB, symulacja przez ngspice | [kicad.org](https://www.kicad.org/) |
+| **Dokumentacja KiCad** | Edytor schematów i PCB, kalkulator ścieżek, eksport produkcyjny | [docs.kicad.org](https://docs.kicad.org/) |
+
+## Radio i pomiary w.cz. (moduły 11–13)
+
+| Narzędzie | Do czego | Link |
+|---|---|---|
+| **scikit-rf** | Parametry S, pliki Touchstone, wykres Smitha w Pythonie | [scikit-rf.readthedocs.io](https://scikit-rf.readthedocs.io) |
+| **PySDR** (podręcznik z kodem) | Przetwarzanie próbek I/Q z odbiorników SDR w Pythonie | [pysdr.org](https://pysdr.org) |
+| **PyVISA** | Sterowanie przyrządami pomiarowymi (moduł 08) | [pyvisa.readthedocs.io](https://pyvisa.readthedocs.io/) |
 
 ## Obliczenia i analiza danych
 
@@ -47,3 +59,5 @@ Na początek wystarczy:
 - zasilacz laboratoryjny lub zasilanie niskonapięciowe,
 - generator funkcyjny (może być tani moduł DDS),
 - oscyloskop — nie jest niezbędny na starcie, ale bardzo przyspiesza naukę od modułu 04.
+
+Dalej, zależnie od modułów: płytka z mikrokontrolerem i debuger (09), analizator stanów logicznych (09, 17), tani odbiornik SDR i analizator obwodów typu NanoVNA (11–13), płytka FPGA (17), stacja lutownicza na gorące powietrze (16).

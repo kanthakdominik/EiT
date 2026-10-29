@@ -36,6 +36,11 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [TI SLVA477 — Basic Calculation of a Buck Converter's Power Stage](https://www.ti.com/lit/pdf/SLVA477) | Dobór elementów przetwornicy buck | 15 |
 | [TI SLVA372 — Basic Calculation of a Boost Converter's Power Stage](https://www.ti.com/document-viewer/lit/html/SLVA372) | Dobór elementów przetwornicy boost | 15 |
 | [Battery University](https://batteryuniversity.com/) | Akumulatory, ładowanie, bezpieczeństwo | 15 |
+| [Analog Devices MT-101 — Decoupling Techniques](https://www.analog.com/media/en/training-seminars/tutorials/MT-101.pdf) | Odsprzęganie zasilania | 16 |
+| [LearnEMC (T. Hubing)](https://learnemc.com/) | EMC dla projektantów płytek | 16 |
+| [nandland](https://nandland.com/) | Samouczki FPGA, Verilog i VHDL | 17 |
+| [Project F — FPGA tutorials](https://github.com/projf/projf-explore) | Projekty FPGA krok po kroku (grafika, arytmetyka) | 17 |
+| [ZipCPU — blog D. Gisselquista](https://zipcpu.com/) | Projektowanie i weryfikacja dla FPGA | 17 |
 
 ## Kursy uniwersyteckie (MIT OpenCourseWare i inne)
 
@@ -73,6 +78,8 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [Ben Eater — 8-bit breadboard computer](https://eater.net/8bit/) | Komputer 8-bitowy budowany na płytkach stykowych, z filmami | 05, 09 |
 | [Steve Brunton — Control Bootcamp](https://www.youtube.com/results?search_query=Steve+Brunton+Control+Bootcamp) | Przestrzeń stanów, sterowalność, LQR, filtr Kalmana | 10 |
 | [Brian Douglas — Control System Lectures](https://www.youtube.com/results?search_query=Brian+Douglas+Control+System+Lectures) | Intuicyjne wykłady z automatyki klasycznej: Bode, Nyquist, root locus, PID | 10 |
+| [Rick Hartley — masa i ścieżki powrotne](https://www.youtube.com/results?search_query=Rick+Hartley+grounding+PCB) | Wykłady o projektowaniu płytek: masa, stos warstw, ścieżki powrotne | 16 |
+| [Phil's Lab — KiCad](https://www.youtube.com/results?search_query=Phil%27s+Lab+KiCad+PCB+design) | Praktyczne projekty płytek | 16 |
 | [Interrupt — blog Memfault](https://interrupt.memfault.com/) | Praktyka firmware: debugowanie, budowanie, testy, niezawodność | 09 |
 | [PyVISA — dokumentacja](https://pyvisa.readthedocs.io/) | Sterowanie przyrządami pomiarowymi z Pythona (SCPI) | 08 |
 | [scikit-rf — dokumentacja](https://scikit-rf.readthedocs.io) | Parametry S, pliki Touchstone, wykres Smitha, kalibracja VNA w Pythonie | 11, 12 |
@@ -98,3 +105,6 @@ Podane z tytułem i autorem — to klasyka, do której odwołuje się większoś
 - E. White — *Making Embedded Systems* (systemy wbudowane)
 - J. Kurose, K. Ross — *Computer Networking: A Top-Down Approach* (sieci)
 - R. Erickson, D. Maksimović — *Fundamentals of Power Electronics* (energoelektronika)
+- H. Ott — *Electromagnetic Compatibility Engineering* (EMC)
+- E. Bogatin — *Signal and Power Integrity — Simplified* (integralność sygnałów)
+- H. Scott — *Designing Electronics That Work* (proces rozwoju sprzętu)
