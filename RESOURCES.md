@@ -53,6 +53,12 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [Stanford CCRMA — książki online J. O. Smitha](https://ccrma.stanford.edu/~jos/EE201/Related_Online_Books_CCRMA.html) | Akustyka fizyczna, DSP audio | 07, 24 |
 | [Elliott Sound Products](https://sound-au.com/site-map.htm) | Artykuły o wzmacniaczach, zwrotnicach i zasilaczach audio | 24 |
 | [Linkwitz Lab](https://linkwitzlab.com/crossovers.htm) | Zwrotnice i projektowanie zestawów głośnikowych | 24 |
+| [R. Labbe — Kalman and Bayesian Filters in Python](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python) | Darmowa książka w notatnikach: Kalman, EKF, UKF, filtr cząsteczkowy | M01 |
+| [G. Welch, G. Bishop — An Introduction to the Kalman Filter](https://www.cs.unc.edu/~welch/kalman/kalmanIntro.html) | Zwięzłe wprowadzenie do filtru Kalmana | M01 |
+| [D. Tse, P. Viswanath — Fundamentals of Wireless Communication](https://web.stanford.edu/~dntse/wireless_book.html) | Kanał radiowy, zróżnicowanie, MIMO | M02 |
+| [E. Björnson i in. — Massive MIMO Networks](https://nowpublishers.com/article/Details/SIG-093) | Massive MIMO | M02 |
+| [Tiny Tapeout](https://tinytapeout.com/) | Produkcja własnych układów scalonych, samouczki | M03 |
+| [Dokumentacja otwartych PDK (SKY130, GF180)](https://open-source-pdks.readthedocs.io) i [IHP Open PDK](https://github.com/IHP-GmbH/IHP-Open-PDK) | Otwarte procesy produkcyjne | M03 |
 
 ## Kursy uniwersyteckie (MIT OpenCourseWare i inne)
 
@@ -88,6 +94,10 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [MIT 6.774 Physics of Microfabrication: Front End Processing (2004)](https://ocw.mit.edu/courses/6-774-physics-of-microfabrication-front-end-processing-fall-2004/) | Fizyka procesów technologicznych | 23 |
 | [Purdue — Semiconductor Fabrication 101](https://engineering.purdue.edu/online/semiconductors/semiconductor-fabrication-101) | Bezpłatny przegląd produkcji półprzewodników | 23 |
 | [MIT 21M.380 Music and Technology: Sound Design (2016)](https://ocw.mit.edu/courses/21m-380-music-and-technology-sound-design-spring-2016/) | Dźwięk, nagrywanie, przetwarzanie | 24 |
+| [MIT 6.432 Stochastic Processes, Detection, and Estimation (2004)](https://ocw.mit.edu/courses/6-432-stochastic-processes-detection-and-estimation-spring-2004/) | Detekcja, estymacja, filtracja Wienera i Kalmana — poziom magisterski | M01 |
+| [MIT 2.160 Identification, Estimation, and Learning (2006)](https://ocw.mit.edu/courses/2-160-identification-estimation-and-learning-spring-2006/) | Kalman, RLS, identyfikacja systemów | M01 |
+| [MIT 6.451 Principles of Digital Communication II (2005)](https://ocw.mit.edu/courses/6-451-principles-of-digital-communication-ii-spring-2005/) | Kodowanie, LDPC, dekodowanie iteracyjne | M02 |
+| [MIT 6.374 Analysis and Design of Digital Integrated Circuits (2003)](https://ocw.mit.edu/courses/6-374-analysis-and-design-of-digital-integrated-circuits-fall-2003/) | Cyfrowe układy scalone | M03 |
 | [MIT 6.011 Signals, Systems and Inference (2018)](https://ocw.mit.edu/courses/6-011-signals-systems-and-inference-spring-2018/) | Procesy losowe w układach LTI, widmo mocy, estymacja | 21 |
 | [nand2tetris](https://www.nand2tetris.org/) | Budowa komputera od bramki NAND w górę; darmowe narzędzia i projekty | 05, 17 |
 
@@ -150,3 +160,8 @@ Podane z tytułem i autorem — to klasyka, do której odwołuje się większoś
 - J. D. Plummer, M. D. Deal, P. B. Griffin — *Silicon VLSI Technology* (technologia)
 - D. Self — *Audio Power Amplifier Design* (wzmacniacze audio)
 - V. Dickason — *The Loudspeaker Design Cookbook* (zestawy głośnikowe)
+- S. M. Kay — *Fundamentals of Statistical Signal Processing*, t. I–II (estymacja i detekcja)
+- S. Haykin — *Adaptive Filter Theory* (filtry adaptacyjne)
+- T. Richardson, R. Urbanke — *Modern Coding Theory* (LDPC)
+- B. Razavi — *Design of Analog CMOS Integrated Circuits* (analogowe układy scalone)
+- N. Weste, D. Harris — *CMOS VLSI Design* (cyfrowe układy scalone)

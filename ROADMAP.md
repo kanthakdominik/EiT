@@ -125,3 +125,16 @@ Dla 8–10 h tygodniowo: połącz sesje 1+2 oraz 3+4, a test zrób co dwa tygodn
 - [ ] Rozumiem, jak powstaje układ scalony i skąd biorą się jego ograniczenia, koszt i niezawodność (23).
 - [ ] Projektuję i mierzę tor audio od mikrofonu do głośnika w pomieszczeniu (24).
 - [ ] Realizuję projekt od wymagań do weryfikacji pomiarowej (18).
+
+## Ścieżka magisterska (II stopień)
+
+Po module 18 (lub równolegle z ostatnimi modułami) można przejść do modułów z katalogu [masters/](masters/). Szacunki dla osoby po pełnej ścieżce inżynierskiej:
+
+| Moduł | Wymaga | Godziny |
+|---|---|---|
+| M01 Detekcja, estymacja i filtracja optymalna | 21, 10, 13.05 | 70–100 |
+| M02 MIMO i nowoczesne kodowanie | 13, M01 | 60–90 |
+| M03 Projektowanie układów scalonych | 04, 05, 17, 23 | 70–100 |
+
+Dla rytmu 16–20 h tygodniowo każdy moduł to ok. 4–6 tygodni; najlepiej zakończyć go projektem modułowym (np. tracker z fuzją czujników, symulator łącza MIMO z LDPC, układ zgłoszony do Tiny Tapeout).
+

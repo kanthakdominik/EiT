@@ -46,6 +46,21 @@
 | **Visual Studio Code** | Edytor z obsługą C, Pythona, git i debugera | [code.visualstudio.com](https://code.visualstudio.com/) |
 | **pytest** | Testy jednostkowe w Pythonie | [docs.pytest.org](https://docs.pytest.org/en/stable/) |
 
+## Projektowanie układów scalonych (ścieżka magisterska, M03)
+
+| Narzędzie | Do czego | Gdzie |
+|---|---|---|
+| **IIC-OSIC-TOOLS** | Kontener z kompletem otwartych narzędzi i PDK (xschem, ngspice, Magic, KLayout, Netgen, LibreLane, OpenROAD) | [github.com/iic-jku/IIC-OSIC-TOOLS](https://github.com/iic-jku/IIC-OSIC-TOOLS) |
+| **xschem** | Schematy i testbenche do ngspice | [sourceforge.net/projects/xschem](https://sourceforge.net/projects/xschem/) |
+| **LibreLane** | Przepływ RTL → GDSII (następca OpenLane) | [github.com/librelane/librelane](https://github.com/librelane/librelane) |
+| **OpenROAD** | Implementacja fizyczna i analiza czasowa | [openroad.readthedocs.io](https://openroad.readthedocs.io/) |
+
+## Łączność (ścieżka magisterska, M02)
+
+| Narzędzie | Do czego | Gdzie |
+|---|---|---|
+| **NVIDIA Sionna** | Symulacja warstwy fizycznej: MIMO, OFDM, LDPC i kody polarne 5G | [github.com/NVlabs/sionna](https://github.com/NVlabs/sionna) |
+
 ## Audio i akustyka (moduł 24)
 
 | Narzędzie | Do czego | Gdzie |

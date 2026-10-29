@@ -64,11 +64,23 @@ Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elekt
 
 Moduły 19–24 dodano jako uzupełnienie programu; numeracja nie oznacza kolejności nauki — **programowanie (19) warto zacząć razem z matematyką**, a miejsce pozostałych pokazuje [ROADMAP.md](ROADMAP.md).
 
+
+### Ścieżka magisterska (II stopień)
+
+Osobny katalog [masters/](masters/) zawiera moduły na poziomie studiów drugiego stopnia:
+
+| # | Moduł | Status |
+|---|---|---|
+| M01 | [Detekcja, estymacja i filtracja optymalna](masters/M01-estymacja-detekcja-filtracja/) (Kalman, LMS/RLS, Wiener, CRLB) | ✅ pełny |
+| M02 | [MIMO, kształtowanie wiązki i nowoczesne kodowanie](masters/M02-mimo-i-kodowanie/) (Massive MIMO, LDPC, kody polarne) | ✅ pełny |
+| M03 | [Projektowanie układów scalonych](masters/M03-projektowanie-ukladow-scalonych/) (gm/ID, wzmacniacz CMOS, RTL → GDS, otwarte PDK) | ✅ pełny |
+| M04–M06 | Technika mikrofalowa i metody pola, SDR, sterowanie zaawansowane i uczenie maszynowe | 🔜 planowane |
+
 ---
 
 ## Sprawdzanie materiałów
 
-- **Kod w Pythonie** z wszystkich plików `.md` uruchamia skrypt [tools/check_snippets.py](tools/check_snippets.py) (pomija tylko bloki wymagające przyrządów lub SymPy).
+- **Kod w Pythonie** z wszystkich plików `.md` (moduły i ścieżka magisterska) uruchamia skrypt [tools/check_snippets.py](tools/check_snippets.py) (pomija tylko bloki wymagające przyrządów lub SymPy).
 - **Testbenche Verilog** z [modułu 17](modules/17-fpga-hdl/hdl/) uruchamia [run_tests.sh](modules/17-fpga-hdl/hdl/run_tests.sh) w Icarus Verilog; każdy wypisuje `PASS` lub `FAIL`.
 - Oba sprawdzenia wykonuje automatycznie GitHub Actions przy każdym pushu ([konfiguracja](.github/workflows/checks.yml)) — wynik w zakładce *Actions*.
 - Netlisty LTspice nie są uruchamiane automatycznie — przy rozbieżności wyniku symulacji z tekstem zgłoś to w Issues.

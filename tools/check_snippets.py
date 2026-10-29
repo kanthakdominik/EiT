@@ -13,7 +13,8 @@ import sys
 
 SKIP = ("pyvisa", "sympy")
 root = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..")
-files = sorted(glob.glob(os.path.join(root, "modules", "**", "*.md"), recursive=True))
+files = sorted(glob.glob(os.path.join(root, "modules", "**", "*.md"), recursive=True)
+               + glob.glob(os.path.join(root, "masters", "**", "*.md"), recursive=True))
 ok = fail = skipped = 0
 for path in files:
     blocks = re.findall(r"```python\n(.*?)```", open(path, encoding="utf-8").read(), re.S)
