@@ -35,6 +35,17 @@
 | **PySDR** (podręcznik z kodem) | Przetwarzanie próbek I/Q z odbiorników SDR w Pythonie | [pysdr.org](https://pysdr.org) |
 | **PyVISA** | Sterowanie przyrządami pomiarowymi (moduł 08) | [pyvisa.readthedocs.io](https://pyvisa.readthedocs.io/) |
 
+## Programowanie (moduł 19)
+
+| Narzędzie | Do czego | Gdzie |
+|---|---|---|
+| **GCC / Clang** | Kompilacja C na komputerze, sanitizery (`-fsanitize=address,undefined`) | W systemie (Linux, macOS), na Windows przez WSL lub [MSYS2](https://www.msys2.org/) |
+| **GNU make** | Budowanie projektów | [gnu.org/software/make](https://www.gnu.org/software/make/) |
+| **GDB** | Debuger (także dla mikrokontrolerów przez OpenOCD) | [sourceware.org/gdb](https://sourceware.org/gdb/) |
+| **Git** | Kontrola wersji | [git-scm.com](https://git-scm.com/) |
+| **Visual Studio Code** | Edytor z obsługą C, Pythona, git i debugera | [code.visualstudio.com](https://code.visualstudio.com/) |
+| **pytest** | Testy jednostkowe w Pythonie | [docs.pytest.org](https://docs.pytest.org/en/stable/) |
+
 ## Obliczenia i analiza danych
 
 | Narzędzie | Do czego |

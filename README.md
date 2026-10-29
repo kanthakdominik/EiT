@@ -53,8 +53,13 @@ Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elekt
 | 16 | [PCB, EMC i konstrukcja](modules/16-pcb-emc-konstrukcja/) | Konstrukcja urządzeń, Kompatybilność EM | ✅ pełny |
 | 17 | [FPGA i HDL](modules/17-fpga-hdl/) | Układy programowalne | ✅ pełny |
 | 18 | [Projekt końcowy](modules/18-projekt-dyplomowy/) | Projekt inżynierski | ✅ pełny |
+| 19 | [Programowanie dla elektronika](modules/19-programowanie/) | Podstawy programowania, Języki programowania (C, Python) | ✅ pełny |
+| 20 | [Metody numeryczne](modules/20-metody-numeryczne/) | Metody numeryczne, Komputerowe wspomaganie projektowania | ✅ pełny |
+| 21 | [Procesy losowe i szum](modules/21-procesy-losowe-szum/) | Sygnały losowe, Szumy w układach elektronicznych | ✅ pełny |
 
 ✅ pełny — notatki, przykłady, zadania z odpowiedziami, symulacje, źródła
+
+Moduły 19–21 dodano jako uzupełnienie programu; numeracja nie oznacza kolejności nauki — **programowanie (19) warto zacząć razem z matematyką**, a miejsce pozostałych pokazuje [ROADMAP.md](ROADMAP.md).
 
 ---
 

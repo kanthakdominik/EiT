@@ -41,6 +41,13 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [nandland](https://nandland.com/) | Samouczki FPGA, Verilog i VHDL | 17 |
 | [Project F — FPGA tutorials](https://github.com/projf/projf-explore) | Projekty FPGA krok po kroku (grafika, arytmetyka) | 17 |
 | [ZipCPU — blog D. Gisselquista](https://zipcpu.com/) | Projektowanie i weryfikacja dla FPGA | 17 |
+| [Beej's Guide to C Programming](https://beej.us/guide/bgc/) | Przystępny podręcznik języka C | 19 |
+| [Pro Git — S. Chacon, B. Straub](https://git-scm.com/book/en/v2) | Pełny podręcznik git | 19 |
+| [The Python Tutorial](https://docs.python.org/3/tutorial/) | Oficjalny kurs Pythona | 19 |
+| [Scientific Python Lectures](https://lectures.scientific-python.org/) | NumPy, SciPy, Matplotlib od podstaw | 19, 20 |
+| [Numerical Recipes](https://numerical.recipes/) | Praktyczne algorytmy numeryczne (starsze wydania dostępne online) | 20 |
+| [D. Goldberg — What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://docs.oracle.com/cd/E19957-01/816-2464/ncg_goldberg.html) | Arytmetyka IEEE 754 | 20 |
+| [NIST/SEMATECH e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/) | Rozkłady, dopasowanie modeli, analiza reszt | 20, 21 |
 
 ## Kursy uniwersyteckie (MIT OpenCourseWare i inne)
 
@@ -65,6 +72,13 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [MIT 6.111 Introductory Digital Systems Laboratory](https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-spring-2006/) | Projektowanie systemów cyfrowych, synchronizacja, wstęp do FPGA | 05, 17 |
 | [Analog Devices — Engineering University Program](https://wiki.analog.com/university) | Materiały i ćwiczenia laboratoryjne: Circuits, Electronics I i II | 01, 03, 04 |
 | [Analog Devices — Electronics I and II (spis treści)](https://wiki.analog.com/university/courses/electronics/text/electronics-toc) | Podręcznik: od elementów po zarządzanie zasilaniem i przetworniki A/C, C/A | 03, 04, 15 |
+| [MIT 6.0001 Introduction to CS and Programming in Python (2016)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) | Programowanie od zera w Pythonie | 19 |
+| [MIT 6.006 Introduction to Algorithms (2020)](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) | Złożoność, struktury danych, sortowanie, grafy | 19 |
+| [MIT — The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) | Powłoka, git, debugowanie, automatyzacja | 19 |
+| [MIT 18.330 Introduction to Numerical Analysis (2012)](https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/) | Interpolacja, kwadratury, równania nieliniowe i różniczkowe | 20 |
+| [MIT 18.335J Introduction to Numerical Methods (2019)](https://ocw.mit.edu/courses/18-335j-introduction-to-numerical-methods-spring-2019/) | Numeryczna algebra liniowa, stabilność, uwarunkowanie | 20 |
+| [MIT 6.041 Probabilistic Systems Analysis and Applied Probability (2010)](https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/) | Prawdopodobieństwo, procesy Bernoulliego, Poissona, Markowa | 21 |
+| [MIT 6.011 Signals, Systems and Inference (2018)](https://ocw.mit.edu/courses/6-011-signals-systems-and-inference-spring-2018/) | Procesy losowe w układach LTI, widmo mocy, estymacja | 21 |
 | [nand2tetris](https://www.nand2tetris.org/) | Budowa komputera od bramki NAND w górę; darmowe narzędzia i projekty | 05, 17 |
 
 ## Wykłady wideo i kanały
@@ -85,6 +99,9 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [scikit-rf — dokumentacja](https://scikit-rf.readthedocs.io) | Parametry S, pliki Touchstone, wykres Smitha, kalibracja VNA w Pythonie | 11, 12 |
 | [antenna-theory.com](https://antenna-theory.com/) | Przystępny przewodnik po antenach | 11 |
 | [python-control — dokumentacja](https://python-control.readthedocs.io/en/latest/intro.html) | Biblioteka do analizy i projektowania układów regulacji | 10 |
+| [Harvard CS50 (YouTube)](https://www.youtube.com/results?search_query=CS50+Harvard+lecture) | Programowanie w C, pamięć, struktury danych | 19 |
+| [Analog Devices — MT-048 Op Amp Noise Relationships](https://www.analog.com/media/en/training-seminars/tutorials/MT-048.pdf) | Szum wzmacniaczy operacyjnych: $1/f$, biały, sumowanie | 21 |
+| [Texas Instruments — Precision Labs: Op Amps](https://www.ti.com/video/series/precision-labs/ti-precision-labs-op-amps.html) | Wykłady wideo o wzmacniaczach, w tym o szumie | 04, 21 |
 
 ## Książki płatne (warto znać, do biblioteki)
 
@@ -108,3 +125,9 @@ Podane z tytułem i autorem — to klasyka, do której odwołuje się większoś
 - H. Ott — *Electromagnetic Compatibility Engineering* (EMC)
 - E. Bogatin — *Signal and Power Integrity — Simplified* (integralność sygnałów)
 - H. Scott — *Designing Electronics That Work* (proces rozwoju sprzętu)
+- B. W. Kernighan, D. M. Ritchie — *The C Programming Language* (język C)
+- J. Gustedt — *Modern C* (język C, poziom zaawansowany)
+- T. H. Cormen i in. — *Introduction to Algorithms* (algorytmy)
+- L. O. Chua, P.-M. Lin — *Computer-Aided Analysis of Electronic Circuits* (symulatory obwodów)
+- A. Papoulis, S. U. Pillai — *Probability, Random Variables and Stochastic Processes* (procesy losowe)
+- C. D. Motchenbacher, J. A. Connelly — *Low-Noise Electronic System Design* (szumy)

@@ -32,6 +32,14 @@ graph TD
     M16 --> M18[18 Projekt końcowy]
     M17 --> M18
     M12 --> M18
+    M19[19 Programowanie] --> M09
+    M19 --> M20[20 Metody numeryczne]
+    M00 --> M20
+    M20 --> M07
+    M00 --> M21[21 Procesy losowe i szum]
+    M06 --> M21
+    M21 --> M13
+    M21 --> M12
 ```
 
 ## Proponowany układ „semestralny”
@@ -40,11 +48,11 @@ Odpowiada typowemu 7-semestralnemu programowi inżynierskiemu EiT. Kolejność w
 
 | Semestr | Moduły | Uwagi |
 |---|---|---|
-| 1 | 00 Matematyka (część 1), 02 Fizyka (mechanika, elektrostatyka), 01 Teoria obwodów (prąd stały) | Fundament — nie skracaj |
-| 2 | 00 Matematyka (część 2), 01 Teoria obwodów (AC, stany nieustalone), 05 Technika cyfrowa (kombinacyjna) | Liczby zespolone muszą być „w palcach” |
-| 3 | 03 Przyrządy półprzewodnikowe, 05 Technika cyfrowa (sekwencyjna), 06 Sygnały i systemy (czas ciągły) | |
+| 1 | 00 Matematyka (część 1), 02 Fizyka (mechanika, elektrostatyka), 01 Teoria obwodów (prąd stały), 19 Programowanie (Python, podstawy C) | Fundament — nie skracaj |
+| 2 | 00 Matematyka (część 2), 01 Teoria obwodów (AC, stany nieustalone), 05 Technika cyfrowa (kombinacyjna), 19 Programowanie (C, struktury danych, git) | Liczby zespolone muszą być „w palcach” |
+| 3 | 03 Przyrządy półprzewodnikowe, 05 Technika cyfrowa (sekwencyjna), 06 Sygnały i systemy (czas ciągły), 20 Metody numeryczne | |
 | 4 | 04 Układy analogowe, 06 Sygnały i systemy (czas dyskretny), 11 Pole EM | Najtrudniejszy semestr |
-| 5 | 07 CPS/DSP, 08 Miernictwo, 09 Mikrokontrolery, 10 Automatyka | Dużo praktyki |
+| 5 | 07 CPS/DSP, 08 Miernictwo, 09 Mikrokontrolery, 10 Automatyka, 21 Procesy losowe i szum | Dużo praktyki |
 | 6 | 12 Technika w.cz., 13 Telekomunikacja, 15 Energoelektronika, 17 FPGA | Wybór specjalizacji |
 | 7 | 14 Sieci, 16 PCB i EMC, 18 Projekt końcowy | |
 
@@ -73,7 +81,10 @@ Szacunki dla osoby uczącej się od zera. Przy odświeżaniu wiedzy po studiach 
 | 16 PCB i EMC | 40–60 |
 | 17 FPGA i HDL | 50–80 |
 | 18 Projekt końcowy | 80–150 |
-| **Razem** | **~1200–1900** |
+| 19 Programowanie | 80–120 |
+| 20 Metody numeryczne | 50–80 |
+| 21 Procesy losowe i szum | 50–80 |
+| **Razem** | **~1400–2200** |
 
 ## Przykładowy rytm tygodnia (16–20 h, 5 sesji)
 
@@ -98,4 +109,7 @@ Dla 8–10 h tygodniowo: połącz sesje 1+2 oraz 3+4, a test zrób co dwa tygodn
 - [ ] Rozumiem propagację fal, linie transmisyjne, dopasowanie i podstawy anten (11–12).
 - [ ] Opisuję tor telekomunikacyjny: modulacja, szum, pojemność kanału, budżet łącza (13–14).
 - [ ] Projektuję PCB z zasilaniem i uwzględnieniem EMC (15–16).
+- [ ] Piszę i testuję programy w Pythonie i C, pracuję w git (19).
+- [ ] Rozumiem, jak symulator liczy obwód, i oceniam wiarygodność wyniku numerycznego (20).
+- [ ] Liczę budżet szumów toru i mierzę widmo szumu (21).
 - [ ] Realizuję projekt od wymagań do weryfikacji pomiarowej (18).
