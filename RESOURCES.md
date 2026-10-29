@@ -24,6 +24,11 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [JCGM 100:2008 — Guide to the Expression of Uncertainty in Measurement (GUM)](https://www.bipm.org/en/doi/10.59161/jcgm100-2008e) | Norma wyrażania niepewności pomiaru (BIPM) | 08 |
 | [Tektronix — XYZs of Oscilloscopes](https://www.electronicdesign.com/resources/white-papers/whitepaper/21807643/xyzs-of-oscilloscopes-primer) | Podstawy oscyloskopów: pasmo, próbkowanie, sondy, wyzwalanie | 08 |
 | [NXP UM10204 — I²C-bus specification](https://www.nxp.com/docs/en/user-guide/UM10204.pdf) | Specyfikacja magistrali I²C | 09 |
+| [Fundamentals of Microwave and RF Design — M. Steer](https://open.umn.edu/opentextbooks/textbooks/fundamentals-of-microwave-and-rf-design) | Otwarty podręcznik w.cz.: linie, parametry S, dopasowanie, wzmacniacze, szumy | 11, 12 |
+| [Microwave and RF Design: Radio Systems — M. Steer](https://open.umn.edu/opentextbooks/textbooks/microwave-and-rf-design-radio-systems) | Architektury nadajników i odbiorników, nieliniowość, budżety | 12, 13 |
+| [PySDR — M. Lichtman](https://pysdr.org) | Radio programowalne i DSP w Pythonie: I/Q, modulacje, synchronizacja, OFDM, budżet łącza | 11, 12, 13 |
+| [Keysight AN 154 — S-Parameter Design](https://www.keysight.com/be/en/assets/7018-06743/application-notes/5952-1087.pdf) | Klasyczna nota o parametrach S i projektowaniu wzmacniaczy | 12 |
+| [Analog Devices MT-080 — Mixers and Modulators](https://www.analog.com/media/en/training-seminars/tutorials/MT-080.pdf) | Mieszacze i modulatory I/Q | 12, 13 |
 
 ## Kursy uniwersyteckie (MIT OpenCourseWare i inne)
 
@@ -39,6 +44,9 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [MIT RES.18-009 Learn Differential Equations (Strang, Moler)](https://ocw.mit.edu/courses/res-18-009-learn-differential-equations-up-close-with-gilbert-strang-and-cleve-moler-fall-2015/) | Krótkie wykłady o równaniach różniczkowych | 00 |
 | [MIT RES.18-001 Calculus (Strang)](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/) | Rachunek różniczkowy i całkowy | 00 |
 | [MIT 6.004 Computation Structures (2017)](https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/) | Abstrakcja cyfrowa, CMOS, logika kombinacyjna i sekwencyjna, automaty, czasy, pamięci | 05 |
+| [MIT 6.013 Electromagnetics and Applications (2005)](https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/) | Maxwell, fale, linie transmisyjne, promieniowanie | 11 |
+| [MIT 6.02 Digital Communication Systems (2012)](https://ocw.mit.edu/courses/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/) | Kodowanie źródłowe, kody korekcyjne, Viterbi, modulacja, sieci | 13, 14 |
+| [MIT 6.450 Principles of Digital Communications I (2006)](https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/) | Teoria informacji, detekcja, kanały bezprzewodowe — poziom magisterski | 13 |
 | [MIT 6.302 Feedback Systems (2007)](https://ocw.mit.edu/courses/6-302-feedback-systems-spring-2007/) | Sprzężenie zwrotne z perspektywy elektroniki: stabilność, kompensacja, oscylatory | 04, 10 |
 | [MIT 6.111 Introductory Digital Systems Laboratory](https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-spring-2006/) | Projektowanie systemów cyfrowych, synchronizacja, wstęp do FPGA | 05, 17 |
 | [Analog Devices — Engineering University Program](https://wiki.analog.com/university) | Materiały i ćwiczenia laboratoryjne: Circuits, Electronics I i II | 01, 03, 04 |
@@ -58,6 +66,8 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [Brian Douglas — Control System Lectures](https://www.youtube.com/results?search_query=Brian+Douglas+Control+System+Lectures) | Intuicyjne wykłady z automatyki klasycznej: Bode, Nyquist, root locus, PID | 10 |
 | [Interrupt — blog Memfault](https://interrupt.memfault.com/) | Praktyka firmware: debugowanie, budowanie, testy, niezawodność | 09 |
 | [PyVISA — dokumentacja](https://pyvisa.readthedocs.io/) | Sterowanie przyrządami pomiarowymi z Pythona (SCPI) | 08 |
+| [scikit-rf — dokumentacja](https://scikit-rf.readthedocs.io) | Parametry S, pliki Touchstone, wykres Smitha, kalibracja VNA w Pythonie | 11, 12 |
+| [antenna-theory.com](https://antenna-theory.com/) | Przystępny przewodnik po antenach | 11 |
 | [python-control — dokumentacja](https://python-control.readthedocs.io/en/latest/intro.html) | Biblioteka do analizy i projektowania układów regulacji | 10 |
 
 ## Książki płatne (warto znać, do biblioteki)
