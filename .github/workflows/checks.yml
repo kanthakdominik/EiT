@@ -1,0 +1,31 @@
+name: Testy materiałów
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  hdl:
+    name: Testbenche Verilog (Icarus)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalacja Icarus Verilog
+        run: sudo apt-get update && sudo apt-get install -y iverilog
+      - name: Uruchomienie testbenchy
+        run: bash modules/17-fpga-hdl/hdl/run_tests.sh
+
+  python:
+    name: Przykłady w Pythonie
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalacja bibliotek
+        run: pip install numpy scipy matplotlib
+      - name: Uruchomienie bloków kodu z plików .md
+        run: python tools/check_snippets.py .
