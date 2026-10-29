@@ -55,6 +55,29 @@
 | **LibreLane** | Przepływ RTL → GDSII (następca OpenLane) | [github.com/librelane/librelane](https://github.com/librelane/librelane) |
 | **OpenROAD** | Implementacja fizyczna i analiza czasowa | [openroad.readthedocs.io](https://openroad.readthedocs.io/) |
 
+## Mikrofale i metody pola (ścieżka magisterska, M04)
+
+| Narzędzie | Do czego | Gdzie |
+|---|---|---|
+| **openEMS** | Symulator FDTD 3D (Python/Matlab): anteny, filtry, struktury na PCB | [openems.de](https://openems.de) |
+| **scikit-rf** | Parametry S, kalibracja analizatora wektorowego, de-embedding | [scikit-rf.readthedocs.io](https://scikit-rf.readthedocs.io) |
+| **NanoVNA** (sprzęt) | Tani analizator wektorowy do pomiarów filtrów i anten | — |
+
+## Radio programowalne (ścieżka magisterska, M05)
+
+| Narzędzie | Do czego | Gdzie |
+|---|---|---|
+| **GNU Radio** (z GNU Radio Companion) | Grafy przepływu, gotowe bloki DSP, własne bloki w Pythonie | [wiki.gnuradio.org](https://wiki.gnuradio.org/index.php/Your_First_Flowgraph) |
+| **pyadi-iio** | Sterowanie ADALM-Pluto z Pythona | [wiki.analog.com/plutosdr](https://wiki.analog.com/plutosdr) |
+| **pyrtlsdr** i sterowniki RTL-SDR | Odbiór próbek z RTL-SDR w Pythonie | [rtl-sdr.com — Quick Start Guide](https://www.rtl-sdr.com/rtl-sdr-quick-start-guide/) |
+
+## Sterowanie i uczenie maszynowe (ścieżka magisterska, M06)
+
+| Narzędzie | Do czego | Gdzie |
+|---|---|---|
+| **python-control** | Transmitancje, przestrzeń stanów, LQR, zapasy stabilności | [python-control.readthedocs.io](https://python-control.readthedocs.io) |
+| **CMSIS-NN** | Wydajne jądra sieci neuronowych int8 dla Cortex-M | [github.com/ARM-software/CMSIS-NN](https://github.com/ARM-software/CMSIS-NN) |
+
 ## Łączność (ścieżka magisterska, M02)
 
 | Narzędzie | Do czego | Gdzie |

@@ -59,6 +59,14 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [E. Björnson i in. — Massive MIMO Networks](https://nowpublishers.com/article/Details/SIG-093) | Massive MIMO | M02 |
 | [Tiny Tapeout](https://tinytapeout.com/) | Produkcja własnych układów scalonych, samouczki | M03 |
 | [Dokumentacja otwartych PDK (SKY130, GF180)](https://open-source-pdks.readthedocs.io) i [IHP Open PDK](https://github.com/IHP-GmbH/IHP-Open-PDK) | Otwarte procesy produkcyjne | M03 |
+| [S. J. Orfanidis — Electromagnetic Waves and Antennas](https://www.ece.rutgers.edu/~orfanidi/ewa) | Linie, sprzęgacze, anteny, szyki, synteza charakterystyk, metody numeryczne | 11, M04 |
+| [T. Collins i in. — Software-Defined Radio for Engineers (Analog Devices)](https://www.analog.com/sdrforengineers) | Tor radiowy SDR, niedoskonałości, synchronizacja, projekty z ADALM-Pluto | M05 |
+| [J. Sun — The 1090 Megahertz Riddle (TU Delft OPEN)](https://books.open.tudelft.nl/home/catalog/book/11) | Dekodowanie Mode S i ADS-B | M05 |
+| [J. B. Rawlings, D. Q. Mayne, M. M. Diehl — Model Predictive Control (PDF)](https://engineering.ucsb.edu/~jbraw/mpc/MPC-book-2nd-edition-1st-printing.pdf) | Sterowanie predykcyjne: teoria i obliczenia | M06 |
+| [R. Tedrake — Underactuated Robotics](https://underactuated.mit.edu/) | LQR, Lapunow, optymalizacja trajektorii, MPC — z kodem | M06 |
+| [R. S. Sutton, A. G. Barto — Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book.html) | Uczenie ze wzmocnieniem | M06 |
+| [I. Goodfellow, Y. Bengio, A. Courville — Deep Learning](https://www.deeplearningbook.org) | Sieci neuronowe — podstawy teoretyczne | M06 |
+| [Dive into Deep Learning](https://d2l.ai) | Interaktywna książka z kodem: od regresji do sieci głębokich | M06 |
 
 ## Kursy uniwersyteckie (MIT OpenCourseWare i inne)
 
@@ -98,6 +106,12 @@ Moduły odwołują się do konkretnych rozdziałów poniższych materiałów. Tu
 | [MIT 2.160 Identification, Estimation, and Learning (2006)](https://ocw.mit.edu/courses/2-160-identification-estimation-and-learning-spring-2006/) | Kalman, RLS, identyfikacja systemów | M01 |
 | [MIT 6.451 Principles of Digital Communication II (2005)](https://ocw.mit.edu/courses/6-451-principles-of-digital-communication-ii-spring-2005/) | Kodowanie, LDPC, dekodowanie iteracyjne | M02 |
 | [MIT 6.374 Analysis and Design of Digital Integrated Circuits (2003)](https://ocw.mit.edu/courses/6-374-analysis-and-design-of-digital-integrated-circuits-fall-2003/) | Cyfrowe układy scalone | M03 |
+| [MIT 6.632 Electromagnetic Wave Theory (2003)](https://ocw.mit.edu/courses/6-632-electromagnetic-wave-theory-spring-2003/) | Teoria fal elektromagnetycznych, falowody — poziom magisterski | M04 |
+| [MIT 6.635 Advanced Electromagnetism (2003)](https://ocw.mit.edu/courses/6-635-advanced-electromagnetism-spring-2003/) | Elektromagnetyzm zaawansowany, metody analityczne i numeryczne | M04 |
+| [GNU Radio — Guided Tutorial GRC](https://wiki.gnuradio.org/index.php?title=GRC) | Oficjalne samouczki GNU Radio | M05 |
+| [MIT 16.323 Principles of Optimal Control (2008)](https://ocw.mit.edu/courses/16-323-principles-of-optimal-control-spring-2008/) | LQR, LQG, programowanie dynamiczne | M06 |
+| [MIT 6.241J Dynamic Systems and Control (2011)](https://ocw.mit.edu/courses/6-241j-dynamic-systems-and-control-spring-2011/) | Normy, odporność, stabilność w sensie Lapunowa | M06 |
+| [MIT 6.036 Introduction to Machine Learning (2020)](https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/) | Podstawy uczenia maszynowego | M06 |
 | [MIT 6.011 Signals, Systems and Inference (2018)](https://ocw.mit.edu/courses/6-011-signals-systems-and-inference-spring-2018/) | Procesy losowe w układach LTI, widmo mocy, estymacja | 21 |
 | [nand2tetris](https://www.nand2tetris.org/) | Budowa komputera od bramki NAND w górę; darmowe narzędzia i projekty | 05, 17 |
 
@@ -165,3 +179,12 @@ Podane z tytułem i autorem — to klasyka, do której odwołuje się większoś
 - T. Richardson, R. Urbanke — *Modern Coding Theory* (LDPC)
 - B. Razavi — *Design of Analog CMOS Integrated Circuits* (analogowe układy scalone)
 - N. Weste, D. Harris — *CMOS VLSI Design* (cyfrowe układy scalone)
+- C. A. Balanis — *Antenna Theory: Analysis and Design* (anteny i szyki)
+- A. Taflove, S. Hagness — *Computational Electrodynamics: The FDTD Method* (FDTD)
+- R. F. Harrington — *Field Computation by Moment Methods* (metoda momentów)
+- M. Rice — *Digital Communications: A Discrete-Time Approach* (synchronizacja, odbiorniki SDR)
+- S. Skogestad, I. Postlethwaite — *Multivariable Feedback Control* (sterowanie odporne)
+- F. Borrelli, A. Bemporad, M. Morari — *Predictive Control for Linear and Hybrid Systems* (MPC)
+- H. K. Khalil — *Nonlinear Systems*; J.-J. Slotine, W. Li — *Applied Nonlinear Control* (sterowanie nieliniowe)
+- L. Ljung — *System Identification: Theory for the User* (identyfikacja)
+- S. L. Brunton, J. N. Kutz — *Data-Driven Science and Engineering* (uczenie maszynowe w inżynierii)

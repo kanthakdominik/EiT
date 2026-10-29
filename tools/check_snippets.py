@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Uruchamia wszystkie bloki ```python z plików .md w repozytorium.
 
-Bloki wymagające sprzętu lub bibliotek spoza numpy/scipy/matplotlib (pyvisa, sympy)
-są pomijane. Wykresy są tworzone bez wyświetlania (backend Agg).
+Bloki wymagające sprzętu lub bibliotek spoza numpy/scipy/matplotlib (pyvisa, sympy,
+gnuradio, pyadi-iio, pyrtlsdr) są pomijane. Wykresy są tworzone bez wyświetlania (backend Agg).
 Użycie: python3 tools/check_snippets.py [katalog]
 """
 import glob
@@ -11,7 +11,7 @@ import re
 import subprocess
 import sys
 
-SKIP = ("pyvisa", "sympy")
+SKIP = ("pyvisa", "sympy", "gnuradio", "import adi", "rtlsdr")
 root = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..")
 files = sorted(glob.glob(os.path.join(root, "modules", "**", "*.md"), recursive=True)
                + glob.glob(os.path.join(root, "masters", "**", "*.md"), recursive=True))

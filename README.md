@@ -74,7 +74,9 @@ Osobny katalog [masters/](masters/) zawiera moduły na poziomie studiów drugieg
 | M01 | [Detekcja, estymacja i filtracja optymalna](masters/M01-estymacja-detekcja-filtracja/) (Kalman, LMS/RLS, Wiener, CRLB) | ✅ pełny |
 | M02 | [MIMO, kształtowanie wiązki i nowoczesne kodowanie](masters/M02-mimo-i-kodowanie/) (Massive MIMO, LDPC, kody polarne) | ✅ pełny |
 | M03 | [Projektowanie układów scalonych](masters/M03-projektowanie-ukladow-scalonych/) (gm/ID, wzmacniacz CMOS, RTL → GDS, otwarte PDK) | ✅ pełny |
-| M04–M06 | Technika mikrofalowa i metody pola, SDR, sterowanie zaawansowane i uczenie maszynowe | 🔜 planowane |
+| M04 | [Technika mikrofalowa, szyki antenowe i numeryczne metody pola](masters/M04-mikrofale-anteny-metody-pola/) (filtry, wzmacniacz, szyki, FDTD, MoM) | ✅ pełny |
+| M05 | [Radio programowalne (SDR) w praktyce](masters/M05-sdr-w-praktyce/) (I/Q, GNU Radio, synchronizacja, odbiornik QPSK i OFDM, ADS-B) | ✅ pełny |
+| M06 | [Sterowanie zaawansowane i uczenie maszynowe](masters/M06-sterowanie-zaawansowane-i-uczenie-maszynowe/) (LQR/LQG, MPC, H∞, nieliniowe, identyfikacja, sieci neuronowe, RL, int8) | ✅ pełny |
 
 ---
 

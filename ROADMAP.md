@@ -135,6 +135,9 @@ Po module 18 (lub równolegle z ostatnimi modułami) można przejść do moduł�
 | M01 Detekcja, estymacja i filtracja optymalna | 21, 10, 13.05 | 70–100 |
 | M02 MIMO i nowoczesne kodowanie | 13, M01 | 60–90 |
 | M03 Projektowanie układów scalonych | 04, 05, 17, 23 | 70–100 |
+| M04 Technika mikrofalowa, szyki antenowe i metody pola | 11, 12, 20, M02.04 | 60–90 |
+| M05 Radio programowalne (SDR) w praktyce | 07, 12, 13, M01.01 | 60–90 |
+| M06 Sterowanie zaawansowane i uczenie maszynowe | 10, 20, M01 | 70–100 |
 
-Dla rytmu 16–20 h tygodniowo każdy moduł to ok. 4–6 tygodni; najlepiej zakończyć go projektem modułowym (np. tracker z fuzją czujników, symulator łącza MIMO z LDPC, układ zgłoszony do Tiny Tapeout).
+Dla rytmu 16–20 h tygodniowo każdy moduł to ok. 4–6 tygodni; najlepiej zakończyć go projektem modułowym (np. tracker z fuzją czujników, symulator łącza MIMO z LDPC, układ zgłoszony do Tiny Tapeout, front-end 2,4 GHz zmierzony analizatorem wektorowym, własny modem na ADALM-Pluto, regulator i klasyfikator usterek na mikrokontrolerze).
 
