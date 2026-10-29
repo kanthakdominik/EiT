@@ -28,7 +28,7 @@ Obiekt wolny, z opóźnieniem transportowym, sterowanie jednostronne (grzanie be
 
 ## Przykład rozwiązany
 
-**Filtr LC przetwornicy buck:** $L = 10$ µH, $C = 100$ µF → $f_0 = \dfrac{1}{2\pi\sqrt{10^{-5}\cdot 10^{-4}}} \approx 5{,}03$ kHz. Przy częstotliwości przełączania 500 kHz pulsacja odcięcia pętli może sięgać ok. 50 kHz — dziesięć razy powyżej $f_0$, czyli w obszarze, gdzie filtr ma już fazę bliską −180° (przy pominięciu ESR). Regulator musi tam dostarczyć ok. +45…+60° fazy: dwa zera w okolicy $f_0$ (regulator typu III).
+**Filtr LC przetwornicy buck:** $L = 10$ µH, $C = 100$ µF → $f_0 = \dfrac{1}{2\pi\sqrt{10^{-5}\cdot 10^{-4}}} \approx 5\text{,}03$ kHz. Przy częstotliwości przełączania 500 kHz pulsacja odcięcia pętli może sięgać ok. 50 kHz — dziesięć razy powyżej $f_0$, czyli w obszarze, gdzie filtr ma już fazę bliską −180° (przy pominięciu ESR). Regulator musi tam dostarczyć ok. +45…+60° fazy: dwa zera w okolicy $f_0$ (regulator typu III).
 
 **Kaskada silnika:** pętla prądu z pasmem 1 kHz, pętla prędkości 100 Hz, pętla położenia 10 Hz — każda 10 razy wolniejsza.
 

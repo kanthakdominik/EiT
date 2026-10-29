@@ -47,7 +47,7 @@ $S + T = 1$ — nie da się mieć jednocześnie dobrego śledzenia i tłumienia 
 
 1. Skok sterowania $\Delta u$ w punkcie pracy, zapis wyjścia.
 2. $K = \Delta y_{ust}/\Delta u$.
-3. Opóźnienie $L$ i stała czasowa $\tau$: np. metoda dwóch punktów — czasy osiągnięcia 28,3% i 63,2% zmiany: $\tau = 1{,}5(t_{63} - t_{28})$, $L = t_{63} - \tau$.
+3. Opóźnienie $L$ i stała czasowa $\tau$: np. metoda dwóch punktów — czasy osiągnięcia 28,3% i 63,2% zmiany: $\tau = 1\text{,}5(t_{63} - t_{28})$, $L = t_{63} - \tau$.
 
 ## Przykład rozwiązany
 
@@ -103,7 +103,7 @@ plt.xlabel('t [s]'); plt.ylabel('ΔT [K]'); plt.legend(); plt.grid(); plt.show()
 
 1. $\dfrac{1}{RCs + 1}$ — człon inercyjny z $K = 1$, $\tau = RC$
 2. $T = \dfrac{K_p}{s^2 + 2s + K_p}$
-3. $K = 3$ K/W; $\tau = 1{,}5\cdot 70 = 105$ s; $L = 110 - 105 = 5$ s
+3. $K = 3$ K/W; $\tau = 1\text{,}5\cdot 70 = 105$ s; $L = 110 - 105 = 5$ s
 4. $S + T = \dfrac{1}{1+L} + \dfrac{L}{1+L} = 1$
 5. $\partial P/\partial U = 2U_0/R = 3$ W/V (moc w punkcie 9 W); wzmocnienie zależy od punktu pracy. Średnia moc przy PWM wynosi $D\cdot U^2/R$ — jest liniowa względem wypełnienia
 </details>

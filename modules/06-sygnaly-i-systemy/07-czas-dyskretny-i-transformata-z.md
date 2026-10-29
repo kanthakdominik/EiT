@@ -50,12 +50,12 @@ $z = e^{sT_s}$: lewa półpłaszczyzna $s$ → wnętrze okręgu. Metody dyskrety
 
 ## Przykład rozwiązany
 
-$y[n] = 0{,}5y[n - 1] + x[n]$.
+$y[n] = 0\text{,}5y[n - 1] + x[n]$.
 
-1. $Y(z) = 0{,}5z^{-1}Y(z) + X(z)$ → $H(z) = \dfrac{1}{1 - 0{,}5z^{-1}}$.
-2. Biegun $z = 0{,}5$ — wewnątrz okręgu, układ stabilny.
-3. Odpowiedź impulsowa: $h[n] = 0{,}5^nu[n] = 1;\ 0{,}5;\ 0{,}25;\ \dots$
-4. Wzmocnienie DC: $H(1) = 2$; przy Nyquiście: $H(-1) = 1/1{,}5 \approx 0{,}67$ — filtr dolnoprzepustowy (uśrednianie wykładnicze).
+1. $Y(z) = 0\text{,}5z^{-1}Y(z) + X(z)$ → $H(z) = \dfrac{1}{1 - 0\text{,}5z^{-1}}$.
+2. Biegun $z = 0\text{,}5$ — wewnątrz okręgu, układ stabilny.
+3. Odpowiedź impulsowa: $h[n] = 0\text{,}5^nu[n] = 1;\ 0\text{,}5;\ 0\text{,}25;\ \dots$
+4. Wzmocnienie DC: $H(1) = 2$; przy Nyquiście: $H(-1) = 1/1\text{,}5 \approx 0\text{,}67$ — filtr dolnoprzepustowy (uśrednianie wykładnicze).
 
 **Średnia ruchoma z 3 próbek:** $y[n] = \tfrac13(x[n] + x[n-1] + x[n-2])$, $H(e^{j\omega}) = \tfrac13(1 + 2\cos\omega)e^{-j\omega}$ — zero przy $\omega = 2\pi/3$, czyli $f = f_s/3$.
 
@@ -80,21 +80,21 @@ plt.plot(w/np.pi, 20*np.log10(abs(H))); plt.xlabel("ω/π"); plt.ylabel("dB"); p
 
 ## Zadania
 
-1. $y[n] = 0{,}5y[n - 1] + x[n]$: $H(z)$, biegun, $h[n]$, wzmocnienie DC.
-2. Wyznacz transformatę Z sygnału $x[n] = 0{,}8^nu[n]$ i jej obszar zbieżności.
+1. $y[n] = 0\text{,}5y[n - 1] + x[n]$: $H(z)$, biegun, $h[n]$, wzmocnienie DC.
+2. Wyznacz transformatę Z sygnału $x[n] = 0\text{,}8^nu[n]$ i jej obszar zbieżności.
 3. Średnia ruchoma 3-punktowa: przy jakiej częstotliwości (dla $f_s = 300$ Hz) całkowicie tłumi sygnał?
-4. Układ ma bieguny $0{,}9e^{\pm j\pi/4}$. Czy jest stabilny? Przy jakiej częstotliwości ma rezonans dla $f_s = 8$ kHz?
+4. Układ ma bieguny $0\text{,}9e^{\pm j\pi/4}$. Czy jest stabilny? Przy jakiej częstotliwości ma rezonans dla $f_s = 8$ kHz?
 5. Zaprojektuj (podaj zera) prosty filtr FIR 2. rzędu usuwający 50 Hz przy $f_s = 1$ kHz.
 6. $y[n] = y[n - 1] + x[n]$. Jaki to układ? Czy jest stabilny w sensie BIBO?
 
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $\dfrac{1}{1 - 0{,}5z^{-1}}$, $z = 0{,}5$, $0{,}5^nu[n]$, 2
-2. $\dfrac{1}{1 - 0{,}8z^{-1}}$, $\lvert z\rvert > 0{,}8$
+1. $\dfrac{1}{1 - 0\text{,}5z^{-1}}$, $z = 0\text{,}5$, $0\text{,}5^nu[n]$, 2
+2. $\dfrac{1}{1 - 0\text{,}8z^{-1}}$, $\lvert z\rvert > 0\text{,}8$
 3. $f = f_s/3 = 100$ Hz
-4. Tak ($\lvert p\rvert = 0{,}9 < 1$); $\omega = \pi/4$ → $f = f_s/8 = 1$ kHz
-5. Zera $z = e^{\pm j2\pi\cdot 50/1000} = e^{\pm j0{,}1\pi}$: $H(z) = 1 - 2\cos(0{,}1\pi)z^{-1} + z^{-2} \approx 1 - 1{,}902z^{-1} + z^{-2}$ (z normalizacją wzmocnienia DC)
+4. Tak ($\lvert p\rvert = 0\text{,}9 < 1$); $\omega = \pi/4$ → $f = f_s/8 = 1$ kHz
+5. Zera $z = e^{\pm j2\pi\cdot 50/1000} = e^{\pm j0\text{,}1\pi}$: $H(z) = 1 - 2\cos(0\text{,}1\pi)z^{-1} + z^{-2} \approx 1 - 1\text{,}902z^{-1} + z^{-2}$ (z normalizacją wzmocnienia DC)
 6. Akumulator (całkowanie dyskretne); biegun $z = 1$ na okręgu — niestabilny w sensie BIBO (skok na wejściu daje rosnącą rampę)
 </details>
 

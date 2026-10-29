@@ -40,7 +40,7 @@ Filtr Hilberta (przesunięcie o 90°), różniczkator, filtr półpasmowy (co dr
 Filtr dolnoprzepustowy: $f_s = 8$ kHz, pasmo przepustowe do 1 kHz, zaporowe od 1,4 kHz, tłumienie 60 dB.
 
 1. $\Delta f = 400$ Hz, $N \approx \dfrac{60}{22}\cdot\dfrac{8000}{400} \approx 55$ współczynników.
-2. Okno Hamming nie zapewni 60 dB (daje ok. 53 dB). Okno Kaisera ($\beta \approx 5{,}65$, dobrane funkcją `kaiserord`) spełnia wymagania dopiero przy $N = 77$ — metoda okien marnuje współczynniki.
+2. Okno Hamming nie zapewni 60 dB (daje ok. 53 dB). Okno Kaisera ($\beta \approx 5\text{,}65$, dobrane funkcją `kaiserord`) spełnia wymagania dopiero przy $N = 77$ — metoda okien marnuje współczynniki.
 3. Parks–McClellan z wagą 10 w paśmie zaporowym spełnia wymagania przy $N = 55$ (zafalowania w paśmie przepustowym ok. 0,07 dB) — zgodnie z oszacowaniem. Bez wagi potrzeba $N = 69$.
 4. Dla $N = 55$: opóźnienie 27 próbek ≈ 3,4 ms; koszt 55 mnożeń na próbkę = 440 tys. mnożeń/s (z wykorzystaniem symetrii — ok. połowa).
 

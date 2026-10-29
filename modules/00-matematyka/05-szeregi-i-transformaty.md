@@ -99,11 +99,11 @@ print(sp.inverse_laplace_transform((s + 3)/((s + 1)*(s + 2)), s, t))
 <summary>Odpowiedzi</summary>
 
 1. $\dfrac{3}{s + 4}$
-2. $\dfrac{0{,}5}{s} - \dfrac{0{,}5}{s + 2} \Rightarrow 0{,}5\left(1 - e^{-2t}\right)$
+2. $\dfrac{0\text{,}5}{s} - \dfrac{0\text{,}5}{s + 2} \Rightarrow 0\text{,}5\left(1 - e^{-2t}\right)$
 3. $sY - 3 + 2Y = 0 \Rightarrow Y = \dfrac{3}{s + 2} \Rightarrow y = 3e^{-2t}$
 4. $\lim_{s\to 0} sF(s) = 10/5 = 2$
 5. $s^2 + 2s + 5 = (s + 1)^2 + 4 \Rightarrow f(t) = \tfrac{1}{2}e^{-t}\sin 2t$
-6. $4/\pi \approx 1{,}273$ V oraz $4/(3\pi) \approx 0{,}424$ V
+6. $4/\pi \approx 1\text{,}273$ V oraz $4/(3\pi) \approx 0\text{,}424$ V
 </details>
 
 ## Źródła

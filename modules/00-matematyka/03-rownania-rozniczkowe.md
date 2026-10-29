@@ -40,10 +40,10 @@ Rozwiąż $\ddot{x} + 2\dot{x} + 5x = 0$, $x(0) = 1$, $\dot{x}(0) = 0$.
 1. Równanie charakterystyczne: $s^2 + 2s + 5 = 0 \Rightarrow s = -1 \pm j2$.
 2. Rozwiązanie ogólne: $x(t) = e^{-t}(A\cos 2t + B\sin 2t)$.
 3. $x(0) = A = 1$.
-4. $\dot{x}(t) = e^{-t}\left[(-A + 2B)\cos 2t + (-B - 2A)\sin 2t\right]$, więc $\dot{x}(0) = -A + 2B = 0 \Rightarrow B = 0{,}5$.
-5. Wynik: $x(t) = e^{-t}\left(\cos 2t + 0{,}5\sin 2t\right)$.
+4. $\dot{x}(t) = e^{-t}\left[(-A + 2B)\cos 2t + (-B - 2A)\sin 2t\right]$, więc $\dot{x}(0) = -A + 2B = 0 \Rightarrow B = 0\text{,}5$.
+5. Wynik: $x(t) = e^{-t}\left(\cos 2t + 0\text{,}5\sin 2t\right)$.
 
-Interpretacja: $\omega_0 = \sqrt{5} \approx 2{,}24$ rad/s, $\zeta = 1/\sqrt{5} \approx 0{,}45$ — tłumione oscylacje.
+Interpretacja: $\omega_0 = \sqrt{5} \approx 2\text{,}24$ rad/s, $\zeta = 1/\sqrt{5} \approx 0\text{,}45$ — tłumione oscylacje.
 
 ## Typowe pułapki
 
@@ -83,12 +83,12 @@ Zobacz, jak zmienia się charakter odpowiedzi przy przejściu przez $\zeta = 1$.
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $y(t) = 2\left(1 - e^{-5t}\right)$, $\tau = 0{,}2$ s
+1. $y(t) = 2\left(1 - e^{-5t}\right)$, $\tau = 0\text{,}2$ s
 2. Pierwiastek podwójny $s = -2$: $y(t) = (1 + 2t)e^{-2t}$
 3. Pierwiastki $-1$, $-2$: $y(t) = e^{-t} - e^{-2t}$
-4. $\omega_0 = 100$ rad/s, $\zeta = 0{,}25$ (niedotłumiony), $\omega_d = 100\sqrt{1 - 0{,}0625} \approx 96{,}8$ rad/s
+4. $\omega_0 = 100$ rad/s, $\zeta = 0\text{,}25$ (niedotłumiony), $\omega_d = 100\sqrt{1 - 0\text{,}0625} \approx 96\text{,}8$ rad/s
 5. $y(t) = t - 1 + e^{-t}$
-6. $t = \tau\ln 10 \approx 2{,}3\tau$
+6. $t = \tau\ln 10 \approx 2\text{,}3\tau$
 </details>
 
 ## Źródła

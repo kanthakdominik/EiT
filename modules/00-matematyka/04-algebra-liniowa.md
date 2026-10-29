@@ -22,9 +22,9 @@ $$\begin{bmatrix} a & b \\ c & d \end{bmatrix}^{-1} = \frac{1}{ad - bc}\begin{bm
 Rozwiąż: $3x_1 - x_2 = 4$, $-x_1 + 2x_2 = 3$.
 
 1. $\det\mathbf{A} = 3\cdot 2 - (-1)(-1) = 5$.
-2. $x_1 = \dfrac{\begin{vmatrix} 4 & -1 \\ 3 & 2 \end{vmatrix}}{5} = \dfrac{8 + 3}{5} = 2{,}2$.
-3. $x_2 = \dfrac{\begin{vmatrix} 3 & 4 \\ -1 & 3 \end{vmatrix}}{5} = \dfrac{9 + 4}{5} = 2{,}6$.
-4. Sprawdzenie: $3\cdot 2{,}2 - 2{,}6 = 4$ ✓, $-2{,}2 + 5{,}2 = 3$ ✓.
+2. $x_1 = \dfrac{\begin{vmatrix} 4 & -1 \\ 3 & 2 \end{vmatrix}}{5} = \dfrac{8 + 3}{5} = 2\text{,}2$.
+3. $x_2 = \dfrac{\begin{vmatrix} 3 & 4 \\ -1 & 3 \end{vmatrix}}{5} = \dfrac{9 + 4}{5} = 2\text{,}6$.
+4. Sprawdzenie: $3\cdot 2\text{,}2 - 2\text{,}6 = 4$ ✓, $-2\text{,}2 + 5\text{,}2 = 3$ ✓.
 
 ## Typowe pułapki
 
@@ -60,8 +60,8 @@ print(np.linalg.eigvals(A))       # wartości własne
 <summary>Odpowiedzi</summary>
 
 1. $2(6 - 1) - 1(2 - 0) + 0 = 8$
-2. $\mathbf{x} = [0{,}75;\ 0{,}5;\ 0{,}75]^T$
-3. $\begin{bmatrix} -2 & 1 \\ 1{,}5 & -0{,}5 \end{bmatrix}$
+2. $\mathbf{x} = [0\text{,}75;\ 0\text{,}5;\ 0\text{,}75]^T$
+3. $\begin{bmatrix} -2 & 1 \\ 1\text{,}5 & -0\text{,}5 \end{bmatrix}$
 4. $\lambda^2 + 3\lambda + 2 = 0 \Rightarrow \lambda = -1, -2$ — te same liczby co pierwiastki równania charakterystycznego
 5. $\mathbf{A} = \begin{bmatrix} 0 & 1 \\ -2 & -3 \end{bmatrix}$ — to macierz z zadania 4
 </details>

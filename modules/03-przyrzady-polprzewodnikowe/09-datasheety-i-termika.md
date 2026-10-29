@@ -39,13 +39,13 @@ Dla elementów SMD $R_{\theta JA}$ silnie zależy od powierzchni miedzi na płyt
 
 ## Przykład rozwiązany
 
-Tranzystor rozprasza 10 W. $T_{j,max} = 150$ °C, $R_{\theta JC} = 1{,}5$ K/W, podkładka $R_{\theta CS} = 0{,}5$ K/W, temperatura w obudowie urządzenia 40 °C.
+Tranzystor rozprasza 10 W. $T_{j,max} = 150$ °C, $R_{\theta JC} = 1\text{,}5$ K/W, podkładka $R_{\theta CS} = 0\text{,}5$ K/W, temperatura w obudowie urządzenia 40 °C.
 
 1. Dopuszczalna łączna rezystancja: $\dfrac{150 - 40}{10} = 11$ K/W.
-2. Radiator: $R_{\theta SA} \leq 11 - 1{,}5 - 0{,}5 = 9$ K/W.
+2. Radiator: $R_{\theta SA} \leq 11 - 1\text{,}5 - 0\text{,}5 = 9$ K/W.
 3. Z zapasem (projekt na $T_j = 120$ °C): $R_{\theta SA} \leq 8 - 2 = 6$ K/W.
 
-Bez radiatora (obudowa TO-220, $R_{\theta JA} \approx 62$ K/W) element rozproszy w tych warunkach tylko ok. $110/62 \approx 1{,}8$ W.
+Bez radiatora (obudowa TO-220, $R_{\theta JA} \approx 62$ K/W) element rozproszy w tych warunkach tylko ok. $110/62 \approx 1\text{,}8$ W.
 
 ## Typowe pułapki
 
@@ -66,8 +66,8 @@ Pobierz dokumentację trzech elementów: diody 1N4148, tranzystora 2N3904 i MOSF
 
 ## Zadania
 
-1. Tranzystor bez radiatora: $P = 0{,}5$ W, $R_{\theta JA} = 62$ K/W, $T_a = 25$ °C. Jaka jest temperatura złącza?
-2. $P = 10$ W, $T_{j,max} = 150$ °C, $T_a = 40$ °C, $R_{\theta JC} = 1{,}5$ K/W, $R_{\theta CS} = 0{,}5$ K/W. Jaki radiator?
+1. Tranzystor bez radiatora: $P = 0\text{,}5$ W, $R_{\theta JA} = 62$ K/W, $T_a = 25$ °C. Jaka jest temperatura złącza?
+2. $P = 10$ W, $T_{j,max} = 150$ °C, $T_a = 40$ °C, $R_{\theta JC} = 1\text{,}5$ K/W, $R_{\theta CS} = 0\text{,}5$ K/W. Jaki radiator?
 3. Stabilizator liniowy w obudowie TO-220 ($R_{\theta JA} = 50$ K/W) rozprasza 3,5 W. Czy wystarczy bez radiatora przy $T_a = 40$ °C?
 4. Dokumentacja podaje $\beta$ = 100–300 przy $I_C = 10$ mA. Jaką wartość przyjmiesz do projektu klucza, a jaką do oszacowania maksymalnego prądu bazy pobieranego ze źródła?
 5. MOSFET ma podane: $R_{DS(on)} = 25$ mΩ (max) przy $U_{GS} = 10$ V i 40 mΩ (max) przy 4,5 V, oba w 25 °C, oraz wykres: w 100 °C $R_{DS(on)}$ rośnie 1,6 razy. Ile przyjmiesz do obliczeń strat przy sterowaniu 5 V i pracy w 100 °C?
@@ -75,11 +75,11 @@ Pobierz dokumentację trzech elementów: diody 1N4148, tranzystora 2N3904 i MOSF
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $25 + 0{,}5\cdot 62 = 56$ °C
+1. $25 + 0\text{,}5\cdot 62 = 56$ °C
 2. $R_{\theta SA} \leq 9$ K/W
-3. Nie: $T_j = 40 + 3{,}5\cdot 50 = 215$ °C. Potrzebny radiator — patrz [04.11](../04-uklady-analogowe/11-stabilizatory.md)
+3. Nie: $T_j = 40 + 3\text{,}5\cdot 50 = 215$ °C. Potrzebny radiator — patrz [04.11](../04-uklady-analogowe/11-stabilizatory.md)
 4. Do klucza — minimum (100), żeby zapewnić nasycenie; do oszacowania prądu bazy przy zadanym prądzie kolektora też minimum (największy prąd bazy). Maksimum przydaje się np. do oszacowania prądu kolektora przy zadanym prądzie bazy w układzie bez ujemnego sprzężenia
-5. $40\cdot 1{,}6 = 64$ mΩ (wartość przy 4,5 V jest najbliższa sterowaniu 5 V; nie interpoluj w stronę lepszej wartości)
+5. $40\cdot 1\text{,}6 = 64$ mΩ (wartość przy 4,5 V jest najbliższa sterowaniu 5 V; nie interpoluj w stronę lepszej wartości)
 </details>
 
 ## Źródła

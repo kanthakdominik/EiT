@@ -43,13 +43,13 @@ Sygnał pasmowy (np. 70 MHz ± 5 MHz) można próbkować z $f_s$ mniejszą niż 
 
 ## Przykład rozwiązany
 
-**Aliasing:** $f_s = 44{,}1$ kHz, w sygnale jest składowa 30 kHz → $f_{alias} = 44{,}1 - 30 = 14{,}1$ kHz — słyszalny ton, którego nie było.
+**Aliasing:** $f_s = 44\text{,}1$ kHz, w sygnale jest składowa 30 kHz → $f_{alias} = 44\text{,}1 - 30 = 14\text{,}1$ kHz — słyszalny ton, którego nie było.
 
 **Dobór $f_s$:** pasmo użyteczne do $f_{max}$, filtr Butterwortha 4. rzędu z granicą $f_{max}$, wymagane tłumienie 60 dB przy $f_s - f_{max}$.
 
-1. $10\log[1 + x^8] = 60$ → $x = 10^{6/8} \approx 5{,}62$.
-2. $f_s - f_{max} \geq 5{,}62f_{max}$ → $f_s \geq 6{,}62f_{max}$.
-3. Dla $f_{max} = 1$ kHz: $f_s \approx 6{,}7$ kHz, a nie 2 kHz z twierdzenia — prawie 3,5-krotne nadpróbkowanie wynika z realnego filtra.
+1. $10\log[1 + x^8] = 60$ → $x = 10^{6/8} \approx 5\text{,}62$.
+2. $f_s - f_{max} \geq 5\text{,}62f_{max}$ → $f_s \geq 6\text{,}62f_{max}$.
+3. Dla $f_{max} = 1$ kHz: $f_s \approx 6\text{,}7$ kHz, a nie 2 kHz z twierdzenia — prawie 3,5-krotne nadpróbkowanie wynika z realnego filtra.
 
 ## Typowe pułapki
 
@@ -72,7 +72,7 @@ plt.legend(); plt.xlabel("t [ms]"); plt.show()   # próbki 200, 800 i 1200 Hz po
 ## Zadania
 
 1. Sygnał audio do 20 kHz. Jaka minimalna częstotliwość próbkowania? Dlaczego w praktyce stosuje się 44,1 lub 48 kHz?
-2. $f_s = 44{,}1$ kHz, składowa 30 kHz. Jaka częstotliwość pojawi się w próbkach?
+2. $f_s = 44\text{,}1$ kHz, składowa 30 kHz. Jaka częstotliwość pojawi się w próbkach?
 3. $f_s = 1$ kHz. Jakie częstotliwości pozorne dadzą sygnały 1,2 kHz, 600 Hz i 2,05 kHz?
 4. Filtr Butterwortha 4. rzędu z granicą $f_{max}$; wymagane tłumienie 60 dB przy $f_s - f_{max}$. Jakie $f_s$ dla $f_{max} = 1$ kHz?
 5. Przetwornik C/A typu zero-order hold pracuje z $f_s = 48$ kHz. O ile dB stłumi składową 20 kHz?
@@ -84,8 +84,8 @@ plt.legend(); plt.xlabel("t [ms]"); plt.show()   # próbki 200, 800 i 1200 Hz po
 1. 40 kHz; zapas na realny filtr antyaliasingowy (pasmo przejściowe 20–22,05 kHz lub 20–24 kHz)
 2. 14,1 kHz
 3. 200 Hz, 400 Hz, 50 Hz
-4. $f_s \approx 6{,}7$ kHz
-5. $\text{sinc}(20/48) = \dfrac{\sin(0{,}4167\pi)}{0{,}4167\pi} \approx 0{,}738$ → ok. −2,6 dB
+4. $f_s \approx 6\text{,}7$ kHz
+5. $\text{sinc}(20/48) = \dfrac{\sin(0\text{,}4167\pi)}{0\text{,}4167\pi} \approx 0\text{,}738$ → ok. −2,6 dB
 6. Tak: pasmo 65–75 MHz leży w całości w strefie 60–80 MHz (czwarta strefa, $3f_s/2$–$2f_s$); po spróbkowaniu pojawi się w paśmie 5–15 MHz, odwrócone w częstotliwości ($80 - f$)
 </details>
 

@@ -29,10 +29,10 @@ Analizować i projektować podstawowe bloki analogowe: układy z diodami, wzmacn
 
 ## Test wejściowy (diagnoza)
 
-Około 90 minut, bez notatek. $U_T = 25{,}85$ mV, $U_{BE} = 0{,}7$ V.
+Około 90 minut, bez notatek. $U_T = 25\text{,}85$ mV, $U_{BE} = 0\text{,}7$ V.
 
 1. Transformator 12 V (skuteczne), mostek Graetza, kondensator 2200 µF, obciążenie 0,5 A, sieć 50 Hz. Ile wynosi napięcie szczytowe i tętnienia?
-2. Wzmacniacz WE: $V_{CC} = 12$ V, $R_1 = 47$ kΩ, $R_2 = 10$ kΩ, $R_C = 4{,}7$ kΩ, $R_E = 1$ kΩ (zablokowany kondensatorem), $\beta = 100$. Wyznacz punkt pracy i wzmocnienie napięciowe.
+2. Wzmacniacz WE: $V_{CC} = 12$ V, $R_1 = 47$ kΩ, $R_2 = 10$ kΩ, $R_C = 4\text{,}7$ kΩ, $R_E = 1$ kΩ (zablokowany kondensatorem), $\beta = 100$. Wyznacz punkt pracy i wzmocnienie napięciowe.
 3. Wzmacniacz odwracający na wzmacniaczu operacyjnym: $R_1 = 10$ kΩ, $R_2 = 100$ kΩ. Wzmocnienie i rezystancja wejściowa?
 4. Wzmacniacz operacyjny ma GBW = 1 MHz. Jakie pasmo ma wzmacniacz nieodwracający o wzmocnieniu 10?
 5. Slew rate wynosi 0,5 V/µs. Do jakiej częstotliwości wzmacniacz odda sinusoidę o amplitudzie 10 V bez zniekształceń?
@@ -42,12 +42,12 @@ Około 90 minut, bez notatek. $U_T = 25{,}85$ mV, $U_{BE} = 0{,}7$ V.
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $U_{pk} \approx 12\sqrt2 - 1{,}4 \approx 15{,}6$ V; tętnienia $\Delta U \approx \dfrac{I}{2fC} \approx 2{,}3$ V
-2. $I_C \approx 1{,}29$ mA, $U_{CE} \approx 4{,}66$ V; $K_u = -g_mR_C \approx -234$
+1. $U_{pk} \approx 12\sqrt2 - 1\text{,}4 \approx 15\text{,}6$ V; tętnienia $\Delta U \approx \dfrac{I}{2fC} \approx 2\text{,}3$ V
+2. $I_C \approx 1\text{,}29$ mA, $U_{CE} \approx 4\text{,}66$ V; $K_u = -g_mR_C \approx -234$
 3. −10, 10 kΩ
 4. 100 kHz
 5. $f = \dfrac{SR}{2\pi U_{pk}} \approx 8$ kHz
-6. $C_2 \approx 11{,}3$ nF (do masy), $C_1 = 2C_2 \approx 22{,}5$ nF (do wyjścia)
+6. $C_2 \approx 11\text{,}3$ nF (do masy), $C_1 = 2C_2 \approx 22\text{,}5$ nF (do wyjścia)
 7. 3,5 W, ok. 42%
 
 **Ocena:** zadanie 1 — temat 01; 2 — tematy 02–03; 3 — temat 07; 4–5 — temat 08; 6 — temat 09; 7 — temat 11.

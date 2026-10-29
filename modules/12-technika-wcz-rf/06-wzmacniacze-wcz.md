@@ -13,7 +13,7 @@ Wzmacniacz małoszumowy (LNA) ustala czułość odbiornika, wzmacniacz mocy (PA)
 | Przetwornikowe $G_T$ | Moc w obciążeniu / moc dostępna ze źródła — „rzeczywiste” w układzie |
 | Dostępne $G_A$ | Moc dostępna z wyjścia / moc dostępna ze źródła — używane przy projektowaniu szumowym |
 | Robocze $G_P$ | Moc w obciążeniu / moc wpływająca do wejścia — używane przy projektowaniu mocy |
-| $|S_{21}|^2$ | Przetwornikowe przy zakończeniach 50 Ω |
+| $\lvert S_{21}\rvert ^2$ | Przetwornikowe przy zakończeniach 50 Ω |
 
 ### Stabilność
 
@@ -45,13 +45,13 @@ Współczynnik szumów zależy od impedancji źródła: minimum $NF_{min}$ przy 
 
 ## Przykład rozwiązany
 
-Tranzystor przy 4 GHz: $S_{11} = 0{,}61\angle 165°$, $S_{21} = 3{,}72\angle 59°$, $S_{12} = 0{,}05\angle 42°$, $S_{22} = 0{,}45\angle -48°$.
+Tranzystor przy 4 GHz: $S_{11} = 0\text{,}61\angle 165°$, $S_{21} = 3\text{,}72\angle 59°$, $S_{12} = 0\text{,}05\angle 42°$, $S_{22} = 0\text{,}45\angle -48°$.
 
-1. $|\Delta| \approx 0{,}109 < 1$.
-2. $K = \dfrac{1 - 0{,}372 - 0{,}203 + 0{,}012}{2\cdot 0{,}05\cdot 3{,}72} \approx 1{,}18 > 1$ — **bezwarunkowo stabilny** (przy tej częstotliwości).
-3. $|S_{21}|^2 = 11{,}4$ dB (przy 50 Ω); $MAG \approx 16{,}2$ dB — dopasowanie obu wrót daje prawie 5 dB więcej.
+1. $|\Delta| \approx 0\text{,}109 < 1$.
+2. $K = \dfrac{1 - 0\text{,}372 - 0\text{,}203 + 0\text{,}012}{2\cdot 0\text{,}05\cdot 3\text{,}72} \approx 1\text{,}18 > 1$ — **bezwarunkowo stabilny** (przy tej częstotliwości).
+3. $|S_{21}|^2 = 11\text{,}4$ dB (przy 50 Ω); $MAG \approx 16\text{,}2$ dB — dopasowanie obu wrót daje prawie 5 dB więcej.
 
-**PA:** $P_{wy} = 1$ W, $P_{we} = 10$ mW, $P_{DC} = 2{,}5$ W → PAE ≈ 39,6%; z zasilania 3,6 V w przybliżeniu $R_{opt} \approx (3{,}6 - 0{,}3)^2/2 \approx 5{,}4\ \Omega$ — potrzebna transformacja do 50 Ω z $Q \approx 2{,}9$.
+**PA:** $P_{wy} = 1$ W, $P_{we} = 10$ mW, $P_{DC} = 2\text{,}5$ W → PAE ≈ 39,6%; z zasilania 3,6 V w przybliżeniu $R_{opt} \approx (3\text{,}6 - 0\text{,}3)^2/2 \approx 5\text{,}4\ \Omega$ — potrzebna transformacja do 50 Ω z $Q \approx 2\text{,}9$.
 
 ## Typowe pułapki
 
@@ -96,9 +96,9 @@ for f, (S11, S21, S12, S22) in data.items():
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $K \approx 1{,}18$, $|\Delta| \approx 0{,}11$ — tak (przy 4 GHz)
+1. $K \approx 1\text{,}18$, $|\Delta| \approx 0\text{,}11$ — tak (przy 4 GHz)
 2. Na niskich częstotliwościach $|S_{21}|$ jest duże, a sprzężenie zwrotne przez $S_{12}$ i pojemności — wystarczające do niestabilności przy pewnych obciążeniach; na wysokich wzmocnienie spada, więc pętla sprzężenia ma za mały zysk
-3. $P_{we} = 2/15{,}85 = 0{,}126$ W; PAE = $(2 - 0{,}126)/6 \approx 31\%$; sprawność drenu $2/6 \approx 33\%$
+3. $P_{we} = 2/15\text{,}85 = 0\text{,}126$ W; PAE = $(2 - 0\text{,}126)/6 \approx 31\%$; sprawność drenu $2/6 \approx 33\%$
 4. $(28 - 2)^2/(2\cdot 5) \approx 68\ \Omega$
 5. Szczyty sygnału są 10 dB powyżej średniej i nie mogą wchodzić w kompresję (zniekształcenia, widmo w sąsiednich kanałach, EVM) — średnia moc jest dużo poniżej nasycenia, gdzie sprawność klasy AB jest mała (np. 10–20%); stąd DPD, Doherty i śledzenie obwiedni
 </details>

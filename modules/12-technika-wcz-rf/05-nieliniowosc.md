@@ -107,7 +107,7 @@ plt.xlabel('wejście [dB]'); plt.ylabel('wyjście [dB]'); plt.legend(); plt.grid
 
 1. $P_{wy} = -15$ dBm, $IM3 = -45 - 50 = -95$ dBm
 2. $-15 + 50/2 = +10$ dBm
-3. $1/IIP3 = 1/0{,}316 + 31{,}6/10 = 3{,}16 + 3{,}16 = 6{,}32$ mW⁻¹ → $IIP3 \approx 0{,}158$ mW ≈ −8 dBm
+3. $1/IIP3 = 1/0\text{,}316 + 31\text{,}6/10 = 3\text{,}16 + 3\text{,}16 = 6\text{,}32$ mW⁻¹ → $IIP3 \approx 0\text{,}158$ mW ≈ −8 dBm
 4. $P_{szum} = -174 + 53 + 3 = -118$ dBm; $SFDR = \tfrac23(108) = 72$ dB
 5. Produkty drugiego rzędu $f_1 - f_2$ (i prostowanie silnych sygnałów AM) trafiają w okolice zera — dokładnie w pasmo sygnału po przemianie bezpośredniej; w superheterodynie trafiają na niską częstotliwość, daleko od p.cz., i są odfiltrowane
 </details>

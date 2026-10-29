@@ -14,7 +14,7 @@ Przetwornik A/C → algorytm → przetwornik C/A z **ekstrapolatorem zerowego rz
 
 ### Dobór okresu próbkowania
 
-- Reguła praktyczna: $\omega_cT \approx 0{,}05$–$0{,}3$, czyli 20–120 próbek na okres pulsacji odcięcia; lub 4–10 próbek na czas narastania.
+- Reguła praktyczna: $\omega_cT \approx 0\text{,}05$–$0\text{,}3$, czyli 20–120 próbek na okres pulsacji odcięcia; lub 4–10 próbek na czas narastania.
 - Filtr antyaliasingowy przed przetwornikiem A/C, ale jego faza też wchodzi do pętli.
 - Za szybkie próbkowanie: problemy numeryczne (bieguny dyskretne blisko 1, kwantyzacja różnicy w członie D).
 
@@ -44,9 +44,9 @@ $$I_k = I_{k-1} + \frac{K_pT}{T_i}e_k,\qquad D_k = \frac{T_f}{T_f + T}D_{k-1} - 
 
 ## Przykład rozwiązany
 
-**Strata fazy:** pętla z $\omega_c = 10$ rad/s, $T = 10$ ms: ZOH daje $\omega_cT/2 = 0{,}05$ rad ≈ **2,9°**. Jeśli obliczenia zajmują jeszcze cały okres: łącznie $1{,}5\omega_cT = 0{,}15$ rad ≈ 8,6°. Przy $T = 100$ ms strata wyniosłaby 29° (lub 86°) — pętla, która miała PM = 50°, staje się prawie niestabilna.
+**Strata fazy:** pętla z $\omega_c = 10$ rad/s, $T = 10$ ms: ZOH daje $\omega_cT/2 = 0\text{,}05$ rad ≈ **2,9°**. Jeśli obliczenia zajmują jeszcze cały okres: łącznie $1\text{,}5\omega_cT = 0\text{,}15$ rad ≈ 8,6°. Przy $T = 100$ ms strata wyniosłaby 29° (lub 86°) — pętla, która miała PM = 50°, staje się prawie niestabilna.
 
-**Regulator temperatury** z [10.05](05-regulatory-pid.md): $\tau = 100$ s, $L = 10$ s, $\lambda = 10$ s; $\omega_c \approx 1/\lambda = 0{,}1$ rad/s. $T = 1$ s daje stratę 0,05 rad ≈ 3° — w zupełności wystarcza.
+**Regulator temperatury** z [10.05](05-regulatory-pid.md): $\tau = 100$ s, $L = 10$ s, $\lambda = 10$ s; $\omega_c \approx 1/\lambda = 0\text{,}1$ rad/s. $T = 1$ s daje stratę 0,05 rad ≈ 3° — w zupełności wystarcza.
 
 ## Typowe pułapki
 
@@ -124,10 +124,10 @@ int main(void) {                                 /* model: 2/(100s+1), bez opó�
 <summary>Odpowiedzi</summary>
 
 1. 2,9° i 29°
-2. $1{,}5\cdot\omega_cT = 1{,}5\cdot 2\pi\cdot 10^4\cdot 5\ \mu\text{s} = 0{,}47$ rad ≈ 27° — znacząca część zapasu fazy, stąd w cyfrowych zasilaczach dąży się do minimalnego opóźnienia obliczeń
+2. $1\text{,}5\cdot\omega_cT = 1\text{,}5\cdot 2\pi\cdot 10^4\cdot 5\ \mu\text{s} = 0\text{,}47$ rad ≈ 27° — znacząca część zapasu fazy, stąd w cyfrowych zasilaczach dąży się do minimalnego opóźnienia obliczeń
 3. Euler wstecz: $y_k = y_{k-1} + Tx_k$; Tustin: $y_k = y_{k-1} + \dfrac T2(x_k + x_{k-1})$
 4. Odwzorowuje lewą półpłaszczyznę s na półpłaszczyznę $\text{Re}(z) < 1$, nie na wnętrze koła jednostkowego — szybkie bieguny ($|sT| > 2$) trafiają poza koło
-5. Np. $T = 0{,}5$–1 s: $\omega_c \approx 0{,}1$ rad/s, strata fazy ≤ 3°; szybciej nie ma sensu (szum, kwantyzacja), wolniej niż ok. 2–3 s zaczyna zjadać zapas fazy
+5. Np. $T = 0\text{,}5$–1 s: $\omega_c \approx 0\text{,}1$ rad/s, strata fazy ≤ 3°; szybciej nie ma sensu (szum, kwantyzacja), wolniej niż ok. 2–3 s zaczyna zjadać zapas fazy
 </details>
 
 ## Źródła

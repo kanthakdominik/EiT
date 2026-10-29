@@ -42,7 +42,7 @@ Tor składa się z: wzmacniacza +20 dB, kabla −6 dB i drugiego wzmacniacza +10
 
 1. Wzmocnienie całkowite: $20 - 6 + 10 = 24$ dB.
 2. Poziom wyjściowy: $-40 + 24 = -16$ dBm.
-3. Wzmocnienie napięciowe (przy stałej impedancji): $10^{24/20} \approx 15{,}85$ V/V.
+3. Wzmocnienie napięciowe (przy stałej impedancji): $10^{24/20} \approx 15\text{,}85$ V/V.
 
 ## Typowe pułapki
 
@@ -76,7 +76,7 @@ print(dbm(p))                            # ≈ -6.99 dBm, a nie -20 ani 0
 
 1. 30 dBm; −30 dBm
 2. 40 dB
-3. $P = 1$ mW, $U = \sqrt{PR} = \sqrt{0{,}05} \approx 0{,}224$ V RMS
+3. $P = 1$ mW, $U = \sqrt{PR} = \sqrt{0\text{,}05} \approx 0\text{,}224$ V RMS
 4. −3,01 dB
 5. 24 dB → ok. 15,85 V/V
 6. Około 40 dB

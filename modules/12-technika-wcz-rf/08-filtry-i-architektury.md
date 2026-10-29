@@ -43,10 +43,10 @@ Projekt toru: wybór p.cz. (lustro, produkty mieszania, dostępne filtry), rozk�
 
 **Filtr dolnoprzepustowy Butterwortha 3. rzędu**, 50 Ω, $f_c = 100$ MHz, struktura π (C–L–C):
 
-- $C_1 = C_3 = \dfrac{1}{2\pi\cdot 10^8\cdot 50} \approx 31{,}8$ pF,
+- $C_1 = C_3 = \dfrac{1}{2\pi\cdot 10^8\cdot 50} \approx 31\text{,}8$ pF,
 - $L_2 = \dfrac{2\cdot 50}{2\pi\cdot 10^8} \approx 159$ nH.
 
-Tłumienie przy 200 MHz (Butterworth 3. rzędu): $10\log(1 + 2^6) \approx 18{,}1$ dB. W praktyce: elementy z szeregu (33 pF, 160 nH lub 150 nH), dobroć cewki i jej SRF.
+Tłumienie przy 200 MHz (Butterworth 3. rzędu): $10\log(1 + 2^6) \approx 18\text{,}1$ dB. W praktyce: elementy z szeregu (33 pF, 160 nH lub 150 nH), dobroć cewki i jej SRF.
 
 **Odbiornik SDR na 868 MHz:** RTL-SDR próbkuje I/Q z 2,4 MS/s po bezpośredniej przemianie (lub niskiej p.cz.) — w Pythonie: przesunięcie częstotliwości (mnożenie przez $e^{-j2\pi f t}$), filtr FIR i decymacja ([07.07](../07-cps-dsp/07-zmiana-czestotliwosci-probkowania.md)), demodulacja.
 
@@ -121,7 +121,7 @@ print(f"moc w kanale po filtracji: {10*np.log10(np.mean(abs(z[20:])**2)):.2f} dB
 <summary>Odpowiedzi</summary>
 
 1. $C_1 = C_3 = 106$ pF, $L_2 = 531$ nH
-2. $10\log(1 + 2^{10}) \approx 30{,}1$ dB
+2. $10\log(1 + 2^{10}) \approx 30\text{,}1$ dB
 3. Np. superheterodyna lub low-IF z dobrym filtrem kanałowym (kwarcowym/ceramicznym na p.cz. albo cyfrowym przy wystarczającym zakresie dynamiki A/C) i filtrem SAW na wejściu; kluczowy jest szum fazowy LO przy 200 kHz (mieszanie odwrotne) i IIP3
 4. Składowa stała z przecieku LO i niezrównoważenia mieszacza w architekturze zero-IF; rozwiązania: przestrojenie odbioru tak, by sygnał był obok środka (offset tuning), cyfrowe usuwanie DC, kalibracja
 5. NF rośnie o ok. 2,5 dB; filtr chroni LNA i mieszacz przed silnymi sygnałami spoza pasma (kompresja, intermodulacja, lustro) — bez niego czułość w rzeczywistym środowisku byłaby gorsza

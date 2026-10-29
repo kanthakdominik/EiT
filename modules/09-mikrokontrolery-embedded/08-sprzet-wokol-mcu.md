@@ -44,7 +44,7 @@ Rezystor szeregowy (ograniczenie prądu przez diody ESD), diody TVS na złączac
 
 **Kwarc 8 MHz, $C_L = 12$ pF**, pojemność pasożytnicza 3 pF → $C_1 = C_2 = 2(12 - 3) = 18$ pF. Złe kondensatory przesuwają częstotliwość o kilkadziesiąt ppm lub uniemożliwiają start oscylatora w niskiej temperaturze.
 
-**Przekaźnik 5 V / 70 mA z pinu 3,3 V:** tranzystor npn, $\beta_{min} = 100$, przesterowanie 3× → $I_B \approx 2{,}1$ mA, $R_B = (3{,}3 - 0{,}8)/2{,}1\ \text{mA} \approx 1{,}2$ kΩ; dioda 1N4148 równolegle do cewki. Alternatywa: MOSFET logic level z rezystorem 100 kΩ bramka–źródło ([03.07](../03-przyrzady-polprzewodnikowe/07-mosfet-model-i-klucz.md)).
+**Przekaźnik 5 V / 70 mA z pinu 3,3 V:** tranzystor npn, $\beta_{min} = 100$, przesterowanie 3× → $I_B \approx 2\text{,}1$ mA, $R_B = (3\text{,}3 - 0\text{,}8)/2\text{,}1\ \text{mA} \approx 1\text{,}2$ kΩ; dioda 1N4148 równolegle do cewki. Alternatywa: MOSFET logic level z rezystorem 100 kΩ bramka–źródło ([03.07](../03-przyrzady-polprzewodnikowe/07-mosfet-model-i-klucz.md)).
 
 ## Typowe pułapki
 
@@ -72,7 +72,7 @@ Rezystor szeregowy (ograniczenie prądu przez diody ESD), diody TVS na złączac
 
 1. 18 pF
 2. 4 × 100 nF przy każdej parze pinów + jeden 4,7–10 µF na szynie zasilania; osobny filtr dla VDDA
-3. Np. BC547/2N3904 (β ≥ 100, $I_C$ max ≥ 100 mA), $R_B \approx 1{,}2$ kΩ, dioda gasząca; albo MOSFET logic level
+3. Np. BC547/2N3904 (β ≥ 100, $I_C$ max ≥ 100 mA), $R_B \approx 1\text{,}2$ kΩ, dioda gasząca; albo MOSFET logic level
 4. Szum od przełączania części cyfrowej (prąd impulsowy) przenosi się na odniesienie i wejście przetwornika, obniżając efektywną rozdzielczość
 5. Dzielnik napięcia (np. 47 kΩ / 6,8 kΩ) z ograniczeniem prądu, kondensator filtrujący, dioda ochronna do 3,3 V lub Zener; najlepiej transoptor zapewniający izolację galwaniczną
 </details>

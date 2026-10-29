@@ -50,8 +50,8 @@ Warunek stabilności (w przybliżeniu): $0 < \mu < \dfrac{2}{L\cdot P_x}$ ($L$ �
 
 **Wykrywanie tonu DTMF 697 Hz**, $f_s = 8$ kHz, $N = 205$.
 
-1. $k = \text{round}(205\cdot 697/8000) = \text{round}(17{,}86) = 18$.
-2. $c = 2\cos(2\pi\cdot 18/205) \approx 1{,}703$.
+1. $k = \text{round}(205\cdot 697/8000) = \text{round}(17\text{,}86) = 18$.
+2. $c = 2\cos(2\pi\cdot 18/205) \approx 1\text{,}703$.
 3. Rozdzielczość $8000/205 \approx 39$ Hz — wystarcza do rozróżnienia częstotliwości DTMF (najbliższe różnią się o ok. 73 Hz).
 4. Koszt dla 8 częstotliwości: ok. $8\cdot 205$ mnożeń na blok 25,6 ms — niewielki ułamek możliwości nawet prostego mikrokontrolera.
 
@@ -102,10 +102,10 @@ print("resztkowe zakłócenie:", np.std(e[-fs:] - s[-fs:]))
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $k = 18$, $c \approx 1{,}703$
+1. $k = 18$, $c \approx 1\text{,}703$
 2. Goertzel: ok. $8\cdot 205 = 1640$ mnożeń; FFT 256: ok. $128\cdot 8 = 1024$ mnożeń zespolonych (ok. 4000 rzeczywistych) — Goertzel jest tańszy przy kilku częstotliwościach i nie wymaga $N$ będącego potęgą 2
-3. $\mu < \dfrac{2}{32\cdot 0{,}5} = 0{,}125$ (w praktyce wielokrotnie mniej)
-4. 1500 cykli; FIR 128 współczynników to ok. $128\cdot 1{,}3 \approx 170$ cykli — mieści się z dużym zapasem
+3. $\mu < \dfrac{2}{32\cdot 0\text{,}5} = 0\text{,}125$ (w praktyce wielokrotnie mniej)
+4. 1500 cykli; FIR 128 współczynników to ok. $128\cdot 1\text{,}3 \approx 170$ cykli — mieści się z dużym zapasem
 5. Filtr medianowy (np. 3- lub 5-punktowy) — usuwa wartości odstające, nie rozmywając zboczy jak filtr liniowy
 </details>
 

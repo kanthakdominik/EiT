@@ -27,7 +27,7 @@ Znać budowę, zasadę działania, charakterystyki i modele elementów półprze
 
 ## Test wejściowy (diagnoza)
 
-Około 60 minut, bez notatek. $U_T = 25{,}85$ mV.
+Około 60 minut, bez notatek. $U_T = 25\text{,}85$ mV.
 
 1. Dioda ma $I_S = 10^{-14}$ A. Jakie napięcie odkłada się na niej przy prądzie 1 mA? O ile wzrośnie przy 10 mA?
 2. Źródło 5 V przez rezystor 1 kΩ zasila diodę z zadania 1. Wyznacz punkt pracy.
@@ -35,16 +35,16 @@ Około 60 minut, bez notatek. $U_T = 25{,}85$ mV.
 4. Tranzystor npn: $\beta = 100$, baza zasilana z 5 V przez 43 kΩ, kolektor przez 1 kΩ z 5 V. W jakim stanie pracuje? Jaki płynie prąd kolektora?
 5. Wyznacz $g_m$ i $r_\pi$ tranzystora bipolarnego przy $I_C = 1$ mA, $\beta = 100$.
 6. MOSFET z kanałem n: $k = 2$ mA/V², $V_t = 1$ V, $U_{GS} = 2$ V, $U_{DS} = 5$ V. W jakim zakresie pracuje i jaki płynie prąd drenu?
-7. Tranzystor rozprasza 10 W, $R_{\theta JC} = 1{,}5$ K/W, $R_{\theta CS} = 0{,}5$ K/W, temperatura otoczenia 40 °C, $T_{j,max} = 150$ °C. Jaki radiator jest potrzebny?
+7. Tranzystor rozprasza 10 W, $R_{\theta JC} = 1\text{,}5$ K/W, $R_{\theta CS} = 0\text{,}5$ K/W, temperatura otoczenia 40 °C, $T_{j,max} = 150$ °C. Jaki radiator jest potrzebny?
 
 <details>
 <summary>Odpowiedzi</summary>
 
 1. ≈ 0,655 V; o ok. 59,5 mV (do ≈ 0,714 V)
 2. ≈ 0,692 V, ≈ 4,31 mA
-3. $r_d = U_T/I_D \approx 12{,}9\ \Omega$
-4. Z założenia aktywnego: $I_B = 0{,}1$ mA, $I_C = 10$ mA → $U_{CE} = -5$ V, co jest niemożliwe. Tranzystor jest nasycony: $I_C \approx (5 - 0{,}2)/1\ \text{k} = 4{,}8$ mA
-5. $g_m \approx 38{,}7$ mS, $r_\pi \approx 2{,}59$ kΩ
+3. $r_d = U_T/I_D \approx 12\text{,}9\ \Omega$
+4. Z założenia aktywnego: $I_B = 0\text{,}1$ mA, $I_C = 10$ mA → $U_{CE} = -5$ V, co jest niemożliwe. Tranzystor jest nasycony: $I_C \approx (5 - 0\text{,}2)/1\ \text{k} = 4\text{,}8$ mA
+5. $g_m \approx 38\text{,}7$ mS, $r_\pi \approx 2\text{,}59$ kΩ
 6. Nasycenie (zakres pentodowy), bo $U_{DS} > U_{GS} - V_t$; $I_D = \tfrac{k}{2}(U_{GS} - V_t)^2 = 1$ mA
 7. $R_{\theta SA} \leq \dfrac{150 - 40}{10} - 2 = 9$ K/W
 

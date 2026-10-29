@@ -11,12 +11,12 @@ Oscyloskop pokazuje, co naprawdę dzieje się w układzie w czasie: zbocza, dzwo
 | Parametr | Znaczenie | Reguła |
 |---|---|---|
 | **Pasmo (BW)** | Częstotliwość −3 dB toru wejściowego | 3–5 × najwyższa istotna częstotliwość sygnału |
-| **Czas narastania** | $t_r \approx 0{,}35/\text{BW}$ (dla odpowiedzi gaussowskiej) | Mierzony $t_{zm} \approx \sqrt{t_{sygn}^2 + t_{osc}^2 + t_{sondy}^2}$ |
+| **Czas narastania** | $t_r \approx 0\text{,}35/\text{BW}$ (dla odpowiedzi gaussowskiej) | Mierzony $t_{zm} \approx \sqrt{t_{sygn}^2 + t_{osc}^2 + t_{sondy}^2}$ |
 | **Częstotliwość próbkowania** | Próbki na sekundę | ≥ 2,5–5 × pasmo (z interpolacją sinx/x) |
 | **Długość rekordu (pamięć)** | Liczba próbek | Czas rejestracji = długość / częstotliwość próbkowania |
 | Rozdzielczość pionowa | Zwykle 8 bitów (nowsze 10–12) | Tryb wysokiej rozdzielczości (uśrednianie) zwiększa ją kosztem pasma |
 
-Dla sygnałów cyfrowych pasmo dobiera się do zbocza, a nie do zegara: $f_{knee} \approx 0{,}5/t_r$.
+Dla sygnałów cyfrowych pasmo dobiera się do zbocza, a nie do zegara: $f_{knee} \approx 0\text{,}5/t_r$.
 
 **Przy dłuższej podstawie czasu oscyloskop obniża częstotliwość próbkowania** (pamięć się kończy) — może pojawić się aliasing. Tryb detekcji szczytów (peak detect) wychwytuje krótkie impulsy.
 
@@ -44,8 +44,8 @@ Zboczem (poziom, kierunek), szerokością impulsu, oknem, magistralą (I²C, SPI
 
 Zbocze sygnału cyfrowego ma 5 ns, oscyloskop 100 MHz, sonda pasywna 10:1 o paśmie 500 MHz.
 
-1. $t_{osc} = 3{,}5$ ns, $t_{sondy} = 0{,}7$ ns.
-2. $t_{zm} = \sqrt{25 + 12{,}25 + 0{,}49} \approx 6{,}1$ ns — błąd ok. 23%.
+1. $t_{osc} = 3\text{,}5$ ns, $t_{sondy} = 0\text{,}7$ ns.
+2. $t_{zm} = \sqrt{25 + 12\text{,}25 + 0\text{,}49} \approx 6\text{,}1$ ns — błąd ok. 23%.
 3. Pomiar z błędem ok. 2% wymaga oscyloskopu o czasie narastania ok. 1 ns, czyli pasma ok. 350–500 MHz.
 
 **Pamięć:** 1 GS/s i 10 ms rejestracji → potrzeba 10 Mpkt. Przy pamięci 1 Mpkt oscyloskop obniży próbkowanie do 100 MS/s.
@@ -77,8 +77,8 @@ Zbocze sygnału cyfrowego ma 5 ns, oscyloskop 100 MHz, sonda pasywna 10:1 o paś
 <summary>Odpowiedzi</summary>
 
 1. 3,5 ns; ≈ 6,1 ns
-2. Oscyloskop powinien mieć $t_r \approx 0{,}5$ ns ($\sqrt{2^2 + 0{,}5^2} \approx 2{,}06$) → pasmo ok. 700 MHz
-3. $10^7/0{,}1 = 100$ MS/s
+2. Oscyloskop powinien mieć $t_r \approx 0\text{,}5$ ns ($\sqrt{2^2 + 0\text{,}5^2} \approx 2\text{,}06$) → pasmo ok. 700 MHz
+3. $10^7/0\text{,}1 = 100$ MS/s
 4. $\dfrac{1}{2\pi\sqrt{150\cdot 10^{-9}\cdot 12\cdot 10^{-12}}} \approx 119$ MHz — dlatego dzwonienie widać już przy zboczach rzędu kilku ns
 5. Emiter/źródło tranzystora górnego „pływa” względem masy sieci (przełącza się między 0 a 400 V); przewód masy sondy połączony z uziemieniem oscyloskopu zwarłby ten węzeł do ziemi. Potrzebna sonda różnicowa wysokonapięciowa (lub izolowany oscyloskop)
 </details>

@@ -42,7 +42,7 @@ Zakłócenie wspólne (common mode) pojawia się tak samo na obu przewodach sygn
 
 **Wspólna impedancja masy.** Wzmacniacz mocy pobiera 1 A, a jego prąd wraca tym samym przewodem masy (0,1 Ω), co masa czujnika. Spadek 100 mV dodaje się do sygnału czujnika — dla tensometru dającego 2,5 mV to zakłócenie 40 razy większe od sygnału. Rozwiązanie: osobny przewód powrotny dla prądu mocy, połączenie mas w jednym punkcie przy zasilaczu, pomiar różnicowy czujnika.
 
-**Pętla indukcyjna.** Pętla o powierzchni 100 cm² w polu 50 Hz o indukcji 1 µT: $e = \omega BA = 2\pi\cdot 50\cdot 10^{-6}\cdot 10^{-2} \approx 3{,}1\ \mu$V. Skrętka zmniejsza efektywną powierzchnię pętli o rzędy wielkości.
+**Pętla indukcyjna.** Pętla o powierzchni 100 cm² w polu 50 Hz o indukcji 1 µT: $e = \omega BA = 2\pi\cdot 50\cdot 10^{-6}\cdot 10^{-2} \approx 3\text{,}1\ \mu$V. Skrętka zmniejsza efektywną powierzchnię pętli o rzędy wielkości.
 
 ## Typowe pułapki
 

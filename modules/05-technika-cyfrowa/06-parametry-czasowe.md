@@ -47,10 +47,10 @@ Przyciski mechaniczne dodatkowo **drgają** (kilka–kilkadziesiąt ms) — po s
 
 ## Przykład rozwiązany
 
-**Częstotliwość maksymalna:** $t_{clk\to q} = 0{,}5$ ns, logika 6 ns, $t_{setup} = 0{,}3$ ns, bez skew → $T_{min} = 6{,}8$ ns, $f_{max} \approx 147$ MHz. Podzielenie logiki na dwa etapy po 3 ns (potokowanie, dodatkowy rejestr) daje $T_{min} = 3{,}8$ ns, $f_{max} \approx 263$ MHz — kosztem jednego cyklu opóźnienia.
+**Częstotliwość maksymalna:** $t_{clk\to q} = 0\text{,}5$ ns, logika 6 ns, $t_{setup} = 0\text{,}3$ ns, bez skew → $T_{min} = 6\text{,}8$ ns, $f_{max} \approx 147$ MHz. Podzielenie logiki na dwa etapy po 3 ns (potokowanie, dodatkowy rejestr) daje $T_{min} = 3\text{,}8$ ns, $f_{max} \approx 263$ MHz — kosztem jednego cyklu opóźnienia.
 
-**Metastabilność:** $\tau = 0{,}1$ ns, $T_0 = 1$ ns, $f_{clk} = 100$ MHz, $f_{dane} = 1$ MHz.
-- Jeden przerzutnik, ok. 1 ns zapasu do następnego przerzutnika: $\text{MTBF} = \dfrac{e^{10}}{10^{-9}\cdot 10^8\cdot 10^6} \approx 0{,}22$ s — błąd kilka razy na sekundę!
+**Metastabilność:** $\tau = 0\text{,}1$ ns, $T_0 = 1$ ns, $f_{clk} = 100$ MHz, $f_{dane} = 1$ MHz.
+- Jeden przerzutnik, ok. 1 ns zapasu do następnego przerzutnika: $\text{MTBF} = \dfrac{e^{10}}{10^{-9}\cdot 10^8\cdot 10^6} \approx 0\text{,}22$ s — błąd kilka razy na sekundę!
 - Dwa przerzutniki, ok. 5 ns na rozstrzygnięcie: $\text{MTBF} \approx \dfrac{e^{50}}{10^5} \approx 5\cdot 10^{16}$ s — ponad miliard lat.
 
 ## Typowe pułapki
@@ -68,9 +68,9 @@ W Digital lub Logisim-evolution (z opóźnieniami bramek):
 
 ## Zadania
 
-1. $t_{clk\to q} = 0{,}5$ ns, logika 6 ns, $t_{setup} = 0{,}3$ ns. Wyznacz $f_{max}$.
+1. $t_{clk\to q} = 0\text{,}5$ ns, logika 6 ns, $t_{setup} = 0\text{,}3$ ns. Wyznacz $f_{max}$.
 2. Jak zmieni się $f_{max}$ z zadania 1, jeśli zegar przerzutnika docelowego dociera 0,4 ns **później** niż źródłowego? Jak to wpłynie na warunek hold?
-3. $t_{clk\to q,min} = 0{,}3$ ns, najkrótsza ścieżka logiki 0,1 ns, $t_{hold} = 0{,}2$ ns, skew 0,3 ns. Czy warunek hold jest spełniony? Jak go naprawić?
+3. $t_{clk\to q,min} = 0\text{,}3$ ns, najkrótsza ścieżka logiki 0,1 ns, $t_{hold} = 0\text{,}2$ ns, skew 0,3 ns. Czy warunek hold jest spełniony? Jak go naprawić?
 4. Oblicz MTBF dla danych z przykładu, jeśli czas na rozstrzygnięcie wynosi 3 ns.
 5. Dlaczego wskaźniki zapisu i odczytu w asynchronicznym FIFO przekazuje się między domenami w kodzie Graya?
 
@@ -78,9 +78,9 @@ W Digital lub Logisim-evolution (z opóźnieniami bramek):
 <summary>Odpowiedzi</summary>
 
 1. ≈ 147 MHz
-2. Skew na korzyść setup: $T_{min} = 6{,}8 - 0{,}4 = 6{,}4$ ns, $f_{max} \approx 156$ MHz; warunek hold pogarsza się o 0,4 ns
-3. $0{,}3 + 0{,}1 = 0{,}4 < 0{,}2 + 0{,}3 = 0{,}5$ — naruszony; dodać opóźnienie (bufory) w krótkiej ścieżce albo zmniejszyć skew
-4. $e^{30}/10^5 \approx 1{,}07\cdot 10^8$ s ≈ 3,4 roku
+2. Skew na korzyść setup: $T_{min} = 6\text{,}8 - 0\text{,}4 = 6\text{,}4$ ns, $f_{max} \approx 156$ MHz; warunek hold pogarsza się o 0,4 ns
+3. $0\text{,}3 + 0\text{,}1 = 0\text{,}4 < 0\text{,}2 + 0\text{,}3 = 0\text{,}5$ — naruszony; dodać opóźnienie (bufory) w krótkiej ścieżce albo zmniejszyć skew
+4. $e^{30}/10^5 \approx 1\text{,}07\cdot 10^8$ s ≈ 3,4 roku
 5. W kodzie Graya kolejne wartości różnią się jednym bitem, więc nawet jeśli zostanie złapany „w trakcie zmiany”, odczytamy albo starą, albo nową wartość — nigdy przypadkowej
 </details>
 

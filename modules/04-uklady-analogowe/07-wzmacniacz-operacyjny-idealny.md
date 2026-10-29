@@ -73,7 +73,7 @@ E2 out2 0 0 n2 1e5
 
 1. Wzmacniacz odwracający: $R_1 = 10$ kΩ, $R_2 = 100$ kΩ. Wzmocnienie i rezystancja wejściowa?
 2. Wzmacniacz nieodwracający o wzmocnieniu 11 — dobierz rezystory.
-3. Sumator: $R_1 = R_2 = 10$ kΩ, $R_f = 20$ kΩ, $u_1 = 0{,}5$ V, $u_2 = -0{,}2$ V. Ile wynosi $u_{wy}$?
+3. Sumator: $R_1 = R_2 = 10$ kΩ, $R_f = 20$ kΩ, $u_1 = 0\text{,}5$ V, $u_2 = -0\text{,}2$ V. Ile wynosi $u_{wy}$?
 4. Wzmacniacz pomiarowy: $R = 25$ kΩ, $R_G = 500\ \Omega$, stopień różnicowy o wzmocnieniu 1. Jakie jest wzmocnienie?
 5. Fotodioda daje 0,5 µA. Jaki rezystor TIA da 1 V na wyjściu?
 6. Integrator $R = 10$ kΩ, $C = 10$ nF, wejście +1 V. Z jaką szybkością zmienia się wyjście i w którą stronę?
@@ -83,7 +83,7 @@ E2 out2 0 0 n2 1e5
 
 1. −10, 10 kΩ
 2. Np. $R_1 = 10$ kΩ, $R_2 = 100$ kΩ
-3. $-20\left(\dfrac{0{,}5}{10} - \dfrac{0{,}2}{10}\right) = -0{,}6$ V
+3. $-20\left(\dfrac{0\text{,}5}{10} - \dfrac{0\text{,}2}{10}\right) = -0\text{,}6$ V
 4. $1 + 50\ \text{k}/500 = 101$
 5. 2 MΩ (napięcie ujemne przy kierunku prądu wpływającego do wejścia „−”)
 6. −10 V/ms (narasta w kierunku ujemnym)

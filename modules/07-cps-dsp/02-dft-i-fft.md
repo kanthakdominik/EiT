@@ -44,7 +44,7 @@ Splot liniowy przez FFT: dopełnij oba sygnały zerami do długości $\geq N + M
 Sygnał 50 Hz, $f_s = 1$ kHz.
 
 1. $N = 1000$: $\Delta f = 1$ Hz, 50 Hz wypada dokładnie w prążku 50 — czyste widmo.
-2. $N = 256$: $\Delta f \approx 3{,}91$ Hz, 50 Hz to „prążek 12,8” — energia rozlewa się na sąsiednie prążki, a odczytana amplituda w prążku 13 jest zaniżona (tzw. scalloping loss, do ok. 3,9 dB dla okna prostokątnego).
+2. $N = 256$: $\Delta f \approx 3\text{,}91$ Hz, 50 Hz to „prążek 12,8” — energia rozlewa się na sąsiednie prążki, a odczytana amplituda w prążku 13 jest zaniżona (tzw. scalloping loss, do ok. 3,9 dB dla okna prostokątnego).
 3. Rozróżnienie dwóch tonów 50 i 52 Hz wymaga $\Delta f < 2$ Hz → co najmniej ok. 0,5–1 s obserwacji (z oknem — więcej).
 
 ## Typowe pułapki
@@ -81,11 +81,11 @@ Zaimplementuj własną FFT radix-2 rekurencyjnie (ok. 10 linii) i porównaj wyni
 <summary>Odpowiedzi</summary>
 
 1. 1 Hz, prążek 50; ≈ 3,91 Hz, między 12 a 13
-2. $1024^2 \approx 1{,}05\cdot 10^6$ i $512\cdot 10 = 5120$ (ok. 205 razy mniej)
+2. $1024^2 \approx 1\text{,}05\cdot 10^6$ i $512\cdot 10 = 5120$ (ok. 205 razy mniej)
 3. Co najmniej ok. 1 s (w praktyce więcej, z oknem 2–4 s)
 4. $X[0] = 4$ (suma próbek)
 5. $1000 + 100 - 1 = 1099$ → 2048
-6. Prążek 3000 > 2048 → częstotliwość ujemna: $3000\cdot 48000/4096 - 48000 \approx -12{,}84$ kHz
+6. Prążek 3000 > 2048 → częstotliwość ujemna: $3000\cdot 48000/4096 - 48000 \approx -12\text{,}84$ kHz
 </details>
 
 ## Źródła

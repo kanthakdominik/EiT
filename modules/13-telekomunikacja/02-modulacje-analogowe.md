@@ -27,7 +27,7 @@ $$s(t) = A_c\cos\left(\omega_ct + 2\pi k_f\int m\,dt\right)\ \text{(FM)},\qquad 
 
 - **Dewiacja częstotliwości** $\Delta f = k_f\max|m|$, **wskaźnik modulacji** $\beta = \Delta f/W$.
 - Stała obwiednia — odporność na nieliniowość wzmacniaczy (wzmacniacze klasy C).
-- Widmo FM z tonem: prążki $f_c \pm nf_m$ o amplitudach $J_n(\beta)$ (funkcje Bessela); dla $\beta \approx 2{,}405$ nośna znika.
+- Widmo FM z tonem: prążki $f_c \pm nf_m$ o amplitudach $J_n(\beta)$ (funkcje Bessela); dla $\beta \approx 2\text{,}405$ nośna znika.
 - **Reguła Carsona** (pasmo zawierające ok. 98% mocy): $B \approx 2(\Delta f + W) = 2W(\beta + 1)$.
 - FM wąskopasmowa ($\beta \ll 1$): pasmo ≈ $2W$ jak AM; szerokopasmowa: pasmo większe, ale lepszy SNR po demodulacji (wzrost ok. $3\beta^2$ powyżej progu) — wymiana pasma na jakość.
 - **Efekt progowy:** poniżej pewnego SNR na wejściu jakość FM gwałtownie się załamuje.
@@ -47,9 +47,9 @@ Demodulacja FM: dyskryminator (różniczkowanie + detektor obwiedni), pętla PLL
 
 ## Przykład rozwiązany
 
-**AM:** nośna 100 W, ton, $\mu = 0{,}5$. Moc całkowita $100(1 + 0{,}125) = 112{,}5$ W, w wstęgach 12,5 W (11%). Przy $\mu = 1$: 150 W, w wstęgach 50 W (33%). SSB z tymi samymi 50 W „informacji” zajmuje połowę pasma i nie marnuje mocy na nośną.
+**AM:** nośna 100 W, ton, $\mu = 0\text{,}5$. Moc całkowita $100(1 + 0\text{,}125) = 112\text{,}5$ W, w wstęgach 12,5 W (11%). Przy $\mu = 1$: 150 W, w wstęgach 50 W (33%). SSB z tymi samymi 50 W „informacji” zajmuje połowę pasma i nie marnuje mocy na nośną.
 
-**FM radiofonia:** $\Delta f = 75$ kHz, $W = 15$ kHz → $\beta = 5$, $B \approx 2(75 + 15) = 180$ kHz (kanały co 200 kHz, z wypełnionym sygnałem stereo pasmo jest większe). **NBFM:** $\Delta f = 2{,}5$ kHz, $W = 3$ kHz → 11 kHz — mieści się w kanale 12,5 kHz.
+**FM radiofonia:** $\Delta f = 75$ kHz, $W = 15$ kHz → $\beta = 5$, $B \approx 2(75 + 15) = 180$ kHz (kanały co 200 kHz, z wypełnionym sygnałem stereo pasmo jest większe). **NBFM:** $\Delta f = 2\text{,}5$ kHz, $W = 3$ kHz → 11 kHz — mieści się w kanale 12,5 kHz.
 
 ## Typowe pułapki
 
@@ -91,7 +91,7 @@ plt.semilogy(f/1e3, P); plt.xlim(70, 130); plt.ylim(1e-12, 1); plt.xlabel('f [kH
 
 ## Zadania
 
-1. Nadajnik AM 1 kW (nośna), $\mu = 0{,}8$. Moc całkowita i moc w wstęgach bocznych.
+1. Nadajnik AM 1 kW (nośna), $\mu = 0\text{,}8$. Moc całkowita i moc w wstęgach bocznych.
 2. Jakie pasmo zajmuje AM, DSB-SC i SSB dla sygnału mowy 300–3400 Hz?
 3. FM: $\Delta f = 5$ kHz, $W = 3$ kHz. Wskaźnik modulacji i pasmo z reguły Carsona.
 4. Przy jakim wskaźniku modulacji FM z tonem nośna znika? Jak wykorzystuje się to do kalibracji dewiacji?
@@ -100,10 +100,10 @@ plt.semilogy(f/1e3, P); plt.xlim(70, 130); plt.ylim(1e-12, 1); plt.xlabel('f [kH
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $1000(1 + 0{,}32) = 1320$ W; wstęgi 320 W
+1. $1000(1 + 0\text{,}32) = 1320$ W; wstęgi 320 W
 2. AM i DSB-SC: 6,8 kHz; SSB: 3,1 kHz
-3. $\beta \approx 1{,}67$; $B \approx 16$ kHz
-4. $\beta \approx 2{,}405$ (pierwsze zero $J_0$); zmieniając dewiację przy znanym $f_m$ szuka się zaniku nośnej na analizatorze widma
+3. $\beta \approx 1\text{,}67$; $B \approx 16$ kHz
+4. $\beta \approx 2\text{,}405$ (pierwsze zero $J_0$); zmieniając dewiację przy znanym $f_m$ szuka się zaniku nośnej na analizatorze widma
 5. FM szerokopasmowa wymienia pasmo na SNR po demodulacji (wzrost proporcjonalny do $\beta^2$), jest odporna na zakłócenia amplitudowe (ogranicznik), a wyższa częstotliwość nośnej i preemfaza dodatkowo poprawiają jakość
 </details>
 

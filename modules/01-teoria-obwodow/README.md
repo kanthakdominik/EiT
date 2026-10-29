@@ -35,19 +35,19 @@ Rozwiąż bez notatek, około 2 godzin. Przy każdym zadaniu zaznacz: **umiem / 
 3. **Dopasowanie mocy.** Źródło 5 V o rezystancji wewnętrznej 50 Ω. Przy jakim $R_L$ moc w obciążeniu jest maksymalna i ile wynosi? Jaka jest wtedy sprawność?
 4. **Stan nieustalony RC.** $C = 10\ \mu$F naładowany do 2 V w chwili $t = 0$ zostaje dołączony przez $R = 10$ kΩ do źródła 12 V. Wyznacz $u_C(t)$. Po jakim czasie $u_C = 9$ V?
 5. **To samo przez Laplace'a.** Wyprowadź $u_C(t)$ z zadania 4 metodą operatorową.
-6. **Filtr RC.** Dolnoprzepustowy RC: $R = 1{,}6$ kΩ, $C = 100$ nF. Policz częstotliwość graniczną oraz $\lvert H\rvert$ (dB) i fazę przy 1 kHz i 10 kHz.
+6. **Filtr RC.** Dolnoprzepustowy RC: $R = 1\text{,}6$ kΩ, $C = 100$ nF. Policz częstotliwość graniczną oraz $\lvert H\rvert$ (dB) i fazę przy 1 kHz i 10 kHz.
 7. **Rezonans szeregowy.** $R = 100\ \Omega$, $L = 10$ mH, $C = 100$ nF, wymuszenie 1 V. Policz $f_0$, $Q$, pasmo 3 dB i napięcie na kondensatorze w rezonansie.
 
 <details>
 <summary>Odpowiedzi</summary>
 
 1. $R_2 \parallel R_L = 5$ kΩ, $U = 12\cdot\dfrac{5}{15} = 4$ V. Thévenin: $E_{th} = 6$ V, $R_{th} = 5$ kΩ; $6\cdot\dfrac{10}{15} = 4$ V ✓
-2. $V = \dfrac{10/2 + 5/1}{1/2 + 1 + 1/2} = 5$ V; $I_1 = 2{,}5$ mA (do węzła), $I_2 = 0$, $I_3 = 2{,}5$ mA
-3. $R_L = 50\ \Omega$, $P = \dfrac{2{,}5^2}{50} = 0{,}125$ W, sprawność 50%
-4. $u_C(t) = 12 - 10e^{-t/0{,}1\,\text{s}}$ V; $t = 0{,}1\ln\dfrac{10}{3} \approx 0{,}120$ s
-5. $U_C(s) = \dfrac{2}{s} + \dfrac{10}{s(1 + 0{,}1s)}$ → ten sam wynik
+2. $V = \dfrac{10/2 + 5/1}{1/2 + 1 + 1/2} = 5$ V; $I_1 = 2\text{,}5$ mA (do węzła), $I_2 = 0$, $I_3 = 2\text{,}5$ mA
+3. $R_L = 50\ \Omega$, $P = \dfrac{2\text{,}5^2}{50} = 0\text{,}125$ W, sprawność 50%
+4. $u_C(t) = 12 - 10e^{-t/0\text{,}1\,\text{s}}$ V; $t = 0\text{,}1\ln\dfrac{10}{3} \approx 0\text{,}120$ s
+5. $U_C(s) = \dfrac{2}{s} + \dfrac{10}{s(1 + 0\text{,}1s)}$ → ten sam wynik
 6. $f_c \approx 995$ Hz; przy 1 kHz: −3,03 dB, −45,2°; przy 10 kHz: −20,1 dB, −84,3°
-7. $f_0 \approx 5033$ Hz, $Q \approx 3{,}16$, $B \approx 1592$ Hz, $U_C = Q\cdot 1\ \text{V} \approx 3{,}16$ V
+7. $f_0 \approx 5033$ Hz, $Q \approx 3\text{,}16$, $B \approx 1592$ Hz, $U_C = Q\cdot 1\ \text{V} \approx 3\text{,}16$ V
 
 **Ocena:** wszystkie „umiem” — przejrzyj tylko pułapki i zadania. Zadania 1–3 sprawiają trudność — zacznij od tematów 01–03. Zadania 4–5 — tematy 04 i 08. Zadania 6–7 — tematy 06–07.
 </details>

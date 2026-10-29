@@ -38,16 +38,16 @@ Ta pojemność z rezystancją źródła sygnału tworzy biegun, który zwykle og
 
 ## Przykład rozwiązany
 
-Wzmacniacz WE z [04.02](02-polaryzacja-tranzystorow.md): $I_C = 1{,}29$ mA, $\beta = 100$, $R_C = 4{,}7$ kΩ, $R_E$ zablokowany 100 µF, kondensator wejściowy 10 µF, źródło sygnału $R_s = 1$ kΩ, $C_\pi = 20$ pF, $C_\mu = 2$ pF.
+Wzmacniacz WE z [04.02](02-polaryzacja-tranzystorow.md): $I_C = 1\text{,}29$ mA, $\beta = 100$, $R_C = 4\text{,}7$ kΩ, $R_E$ zablokowany 100 µF, kondensator wejściowy 10 µF, źródło sygnału $R_s = 1$ kΩ, $C_\pi = 20$ pF, $C_\mu = 2$ pF.
 
-1. $g_m \approx 49{,}8$ mS, $r_\pi \approx 2{,}01$ kΩ, $r_e \approx 19{,}9\ \Omega$.
+1. $g_m \approx 49\text{,}8$ mS, $r_\pi \approx 2\text{,}01$ kΩ, $r_e \approx 19\text{,}9\ \Omega$.
 2. $K_u = -g_mR_C \approx -234$.
-3. $R_{we} = R_{th}\parallel r_\pi = 8{,}25\ \text{k}\parallel 2{,}01\ \text{k} \approx 1{,}62$ kΩ; $R_{wy} = 4{,}7$ kΩ.
-4. Kondensator wejściowy: $f_1 = \dfrac{1}{2\pi(1\ \text{k} + 1{,}62\ \text{k})\cdot 10\ \mu\text{F}} \approx 6$ Hz.
-5. Kondensator emiterowy „widzi” $R_E\parallel\left(r_e + \dfrac{R_s\parallel R_{th}}{\beta + 1}\right) \approx 27{,}9\ \Omega$ → $f_2 \approx 57$ Hz. **To on wyznacza dolną granicę pasma.**
+3. $R_{we} = R_{th}\parallel r_\pi = 8\text{,}25\ \text{k}\parallel 2\text{,}01\ \text{k} \approx 1\text{,}62$ kΩ; $R_{wy} = 4\text{,}7$ kΩ.
+4. Kondensator wejściowy: $f_1 = \dfrac{1}{2\pi(1\ \text{k} + 1\text{,}62\ \text{k})\cdot 10\ \mu\text{F}} \approx 6$ Hz.
+5. Kondensator emiterowy „widzi” $R_E\parallel\left(r_e + \dfrac{R_s\parallel R_{th}}{\beta + 1}\right) \approx 27\text{,}9\ \Omega$ → $f_2 \approx 57$ Hz. **To on wyznacza dolną granicę pasma.**
 6. Górna granica: $C_M = 2\ \text{pF}\cdot 235 \approx 470$ pF; z $C_\pi$ razem ok. 490 pF; rezystancja widziana $R_s\parallel R_{we} \approx 618\ \Omega$ → $f_H \approx 526$ kHz.
 
-Bez zablokowania $R_E$: $K_u \approx -\dfrac{4{,}7\ \text{k}}{19{,}9 + 1000} \approx -4{,}6$ — wzmocnienie 50 razy mniejsze, ale niezależne od $\beta$ i temperatury, mniejsze zniekształcenia, a efekt Millera prawie znika.
+Bez zablokowania $R_E$: $K_u \approx -\dfrac{4\text{,}7\ \text{k}}{19\text{,}9 + 1000} \approx -4\text{,}6$ — wzmocnienie 50 razy mniejsze, ale niezależne od $\beta$ i temperatury, mniejsze zniekształcenia, a efekt Millera prawie znika.
 
 ## Typowe pułapki
 
@@ -90,9 +90,9 @@ Odczytaj wzmocnienie w paśmie i obie częstotliwości graniczne. Zmień `.ac` n
 <summary>Odpowiedzi</summary>
 
 1. ≈ −234; ≈ 1,62 kΩ; 4,7 kΩ
-2. ≈ −4,6; $R_{th}\parallel(r_\pi + 101\ \text{k}) \approx 7{,}6$ kΩ
-3. $K_u \approx 1000/(19{,}9 + 1000) \approx 0{,}98$; $R_{we} \approx 7{,}6$ kΩ; $R_{wy} \approx 19{,}9 + 892/101 \approx 29\ \Omega$ (równolegle z $R_E$: ≈ 28 Ω)
-4. −10 i $-\dfrac{10}{1 + 2} \approx -3{,}3$
+2. ≈ −4,6; $R_{th}\parallel(r_\pi + 101\ \text{k}) \approx 7\text{,}6$ kΩ
+3. $K_u \approx 1000/(19\text{,}9 + 1000) \approx 0\text{,}98$; $R_{we} \approx 7\text{,}6$ kΩ; $R_{wy} \approx 19\text{,}9 + 892/101 \approx 29\ \Omega$ (równolegle z $R_E$: ≈ 28 Ω)
+4. −10 i $-\dfrac{10}{1 + 2} \approx -3\text{,}3$
 5. $C_M = 3\cdot 101 = 303$ pF; $f_H = \dfrac{1}{2\pi\cdot 10^4\cdot 303\cdot 10^{-12}} \approx 52$ kHz
 6. W kaskodzie stopień WE jest obciążony małą rezystancją wejściową stopnia WB ($\approx r_e$), więc jego wzmocnienie napięciowe wynosi ok. −1 i efekt Millera praktycznie znika, a całe wzmocnienie daje stopień WB, który nie ma sprzężenia pojemnościowego wyjście–wejście
 </details>

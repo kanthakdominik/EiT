@@ -27,7 +27,7 @@ Z niego wynika, że $\cos\varphi = \dfrac{e^{j\varphi} + e^{-j\varphi}}{2}$ oraz
 | Działanie | Wzór |
 |---|---|
 | Moduł | $\lvert z\rvert = \sqrt{a^2 + b^2}$ |
-| Argument | $\varphi = \operatorname{atan2}(b, a)$ — **uwaga na ćwiartkę!** |
+| Argument | $\varphi = \mathrm{atan2}(b, a)$ — **uwaga na ćwiartkę!** |
 | Postać algebraiczna z biegunowej | $a = \lvert z\rvert\cos\varphi$, $b = \lvert z\rvert\sin\varphi$ |
 | Sprzężenie | $z^* = a - jb = \lvert z\rvert e^{-j\varphi}$, $z \cdot z^* = \lvert z\rvert^2$ |
 | Mnożenie | $\lvert z_1 z_2\rvert = \lvert z_1\rvert\lvert z_2\rvert$, $\arg(z_1 z_2) = \varphi_1 + \varphi_2$ |
@@ -42,15 +42,15 @@ Oblicz $Z = \dfrac{(3 + j4)(1 - j)}{2 + j}$ i podaj wynik w obu postaciach.
 1. Licznik: $(3 + j4)(1 - j) = 3 - 3j + 4j - 4j^2 = 3 + j + 4 = 7 + j$.
 2. Dzielenie przez $2 + j$ — mnożymy przez sprzężenie mianownika:
    $\dfrac{(7 + j)(2 - j)}{(2 + j)(2 - j)} = \dfrac{14 - 7j + 2j - j^2}{5} = \dfrac{15 - 5j}{5} = 3 - j$.
-3. Postać biegunowa: $\lvert Z\rvert = \sqrt{10} \approx 3{,}162$, $\varphi = \operatorname{atan2}(-1, 3) \approx -18{,}43^\circ$.
+3. Postać biegunowa: $\lvert Z\rvert = \sqrt{10} \approx 3\text{,}162$, $\varphi = \mathrm{atan2}(-1, 3) \approx -18\text{,}43^\circ$.
 
-Wynik: $Z = 3 - j = 3{,}162\angle -18{,}43^\circ$.
+Wynik: $Z = 3 - j = 3\text{,}162\angle -18\text{,}43^\circ$.
 
 ## Typowe pułapki
 
 - **Argument z samego $\arctan(b/a)$.** Dla $z = -1 - j$ daje 45°, a poprawny wynik to −135°. Zawsze sprawdź ćwiartkę albo używaj `atan2`.
 - **Mieszanie stopni i radianów.** W wykładniku $e^{j\varphi}$ kąt jest w radianach. Kalkulator i Python (`np.angle`) zwracają radiany.
-- **Dodawanie w postaci biegunowej.** $5\angle 0^\circ + 5\angle 90^\circ \neq 10\angle 45^\circ$. Poprawnie: $5 + j5 = 7{,}07\angle 45^\circ$.
+- **Dodawanie w postaci biegunowej.** $5\angle 0^\circ + 5\angle 90^\circ \neq 10\angle 45^\circ$. Poprawnie: $5 + j5 = 7\text{,}07\angle 45^\circ$.
 - **Zapominanie, że $j^2 = -1$** przy wymnażaniu nawiasów.
 - **$1/j = -j$**, a nie $j$.
 
@@ -69,7 +69,7 @@ print(f"{abs(w):.3f} ∠ {np.degrees(np.angle(w)):.2f}°")   # 5.000 ∠ 90.00°
 
 ## Zadania
 
-1. Zamień $5\angle 53{,}13^\circ$ na postać algebraiczną.
+1. Zamień $5\angle 53\text{,}13^\circ$ na postać algebraiczną.
 2. Oblicz $(1 + j)^8$.
 3. Wyznacz wszystkie rozwiązania równania $z^3 = 8j$.
 4. Oblicz impedancję $Z = R + j\left(\omega L - \dfrac{1}{\omega C}\right)$ dla $R = 10\ \Omega$, $L = 20$ mH, $C = 100\ \mu$F, $\omega = 1000$ rad/s. Podaj obie postacie.
@@ -82,8 +82,8 @@ print(f"{abs(w):.3f} ∠ {np.degrees(np.angle(w)):.2f}°")   # 5.000 ∠ 90.00°
 1. $3 + j4$
 2. $(\sqrt{2}e^{j\pi/4})^8 = 16e^{j2\pi} = 16$
 3. $8j = 8e^{j\pi/2}$, więc $z_k = 2e^{j(\pi/6 + 2k\pi/3)}$: $2\angle 30^\circ = \sqrt{3} + j$, $2\angle 150^\circ = -\sqrt{3} + j$, $2\angle 270^\circ = -2j$
-4. $\omega L = 20\ \Omega$, $\dfrac{1}{\omega C} = 10\ \Omega$, $Z = 10 + j10 = 14{,}14\angle 45^\circ\ \Omega$
-5. Fazory: $10\angle 0^\circ + 10\angle -90^\circ = 10 - j10 = 14{,}14\angle -45^\circ$, czyli $14{,}14\cos(\omega t - 45^\circ)$
+4. $\omega L = 20\ \Omega$, $\dfrac{1}{\omega C} = 10\ \Omega$, $Z = 10 + j10 = 14\text{,}14\angle 45^\circ\ \Omega$
+5. Fazory: $10\angle 0^\circ + 10\angle -90^\circ = 10 - j10 = 14\text{,}14\angle -45^\circ$, czyli $14\text{,}14\cos(\omega t - 45^\circ)$
 6. Ze wzoru Eulera: $(\cos\theta + j\sin\theta) + (\cos\theta - j\sin\theta) = 2\cos\theta$
 </details>
 

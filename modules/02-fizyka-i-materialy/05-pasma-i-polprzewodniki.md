@@ -41,11 +41,11 @@ Dla typu n przy $N_D \gg n_i$: $n \approx N_D$, $p \approx n_i^2/N_D$.
 
 **Poziom Fermiego** $E_F$ — poziom energii, którego prawdopodobieństwo obsadzenia wynosi 1/2. W typie n leży bliżej pasma przewodnictwa, w typie p — bliżej walencyjnego. W złączu p-n poziomy Fermiego wyrównują się, co tworzy barierę potencjału ([03.01](../03-przyrzady-polprzewodnikowe/01-zlacze-pn.md)).
 
-**Napięcie termiczne:** $U_T = \dfrac{kT}{q} \approx 25{,}85$ mV w 300 K. Pojawia się w każdym wzorze dla diody i tranzystora bipolarnego.
+**Napięcie termiczne:** $U_T = \dfrac{kT}{q} \approx 25\text{,}85$ mV w 300 K. Pojawia się w każdym wzorze dla diody i tranzystora bipolarnego.
 
 ### Półprzewodniki a światło
 
-Foton o energii $h\nu > E_g$ może wygenerować parę elektron–dziura (fotodioda, ogniwo słoneczne). Rekombinacja w półprzewodniku z prostą przerwą (GaAs, GaN) emituje foton o energii ≈ $E_g$ (LED). Długość fali: $\lambda[\mu\text{m}] \approx 1{,}24/E_g[\text{eV}]$.
+Foton o energii $h\nu > E_g$ może wygenerować parę elektron–dziura (fotodioda, ogniwo słoneczne). Rekombinacja w półprzewodniku z prostą przerwą (GaAs, GaN) emituje foton o energii ≈ $E_g$ (LED). Długość fali: $\lambda[\mu\text{m}] \approx 1\text{,}24/E_g[\text{eV}]$.
 
 ## Przykład rozwiązany
 
@@ -53,7 +53,7 @@ Krzem typu n, $N_D = 10^{16}$ cm⁻³, 300 K, $n_i = 10^{10}$ cm⁻³.
 
 1. $n \approx N_D = 10^{16}$ cm⁻³.
 2. $p = n_i^2/n = 10^{20}/10^{16} = 10^4$ cm⁻³ — dwanaście rzędów wielkości mniej.
-3. Rezystywność (ruchliwość elektronów ≈ 1350 cm²/V·s): $\rho = \dfrac{1}{qn\mu_n} \approx \dfrac{1}{1{,}6\cdot 10^{-19}\cdot 10^{16}\cdot 1350} \approx 0{,}46$ Ω·cm.
+3. Rezystywność (ruchliwość elektronów ≈ 1350 cm²/V·s): $\rho = \dfrac{1}{qn\mu_n} \approx \dfrac{1}{1\text{,}6\cdot 10^{-19}\cdot 10^{16}\cdot 1350} \approx 0\text{,}46$ Ω·cm.
 
 ## Typowe pułapki
 
@@ -78,7 +78,7 @@ for name, Eg in [("GaAs", 1.42), ("GaN", 3.4)]:
 1. Krzem typu n z $N_D = 10^{16}$ cm⁻³. Wyznacz koncentrację dziur w 300 K.
 2. Krzem typu p z $N_A = 10^{17}$ cm⁻³. Wyznacz $p$ i $n$.
 3. Ile wynosi $U_T$ w temperaturze 85 °C?
-4. Jaką długość fali emituje LED z GaN ($E_g = 3{,}4$ eV)? Jaki jest maksymalny zakres długości fal, które wykryje fotodioda krzemowa?
+4. Jaką długość fali emituje LED z GaN ($E_g = 3\text{,}4$ eV)? Jaki jest maksymalny zakres długości fal, które wykryje fotodioda krzemowa?
 5. Dlaczego elementy krzemowe pracują do ok. 150–175 °C, a elementy z SiC i GaN mogą pracować w wyższej temperaturze?
 
 <details>
@@ -87,7 +87,7 @@ for name, Eg in [("GaAs", 1.42), ("GaN", 3.4)]:
 1. $p = 10^4$ cm⁻³
 2. $p \approx 10^{17}$ cm⁻³, $n = 10^{20}/10^{17} = 10^3$ cm⁻³
 3. $U_T = kT/q$ przy 358 K ≈ 30,9 mV
-4. ≈ 365 nm (ultrafiolet; białe LED-y to niebieskie/UV z luminoforem); krzem wykrywa do $1{,}24/1{,}12 \approx 1{,}1\ \mu$m
+4. ≈ 365 nm (ultrafiolet; białe LED-y to niebieskie/UV z luminoforem); krzem wykrywa do $1\text{,}24/1\text{,}12 \approx 1\text{,}1\ \mu$m
 5. W wysokiej temperaturze $n_i$ rośnie tak bardzo, że przestaje być pomijalne wobec koncentracji domieszek i przyrząd traci właściwości. Szersza przerwa energetyczna SiC i GaN daje wielokrotnie mniejsze $n_i$ w tej samej temperaturze.
 </details>
 

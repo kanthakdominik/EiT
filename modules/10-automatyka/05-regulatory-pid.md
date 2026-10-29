@@ -33,9 +33,9 @@ Postać równoległa: $K_p + K_i/s + K_ds$, gdzie $K_i = K_p/T_i$, $K_d = K_pT_d
 
 | Regulator | $K_p$ | $T_i$ | $T_d$ |
 |---|---|---|---|
-| P | $0{,}5K_u$ | — | — |
-| PI | $0{,}45K_u$ | $T_u/1{,}2$ | — |
-| PID | $0{,}6K_u$ | $T_u/2$ | $T_u/8$ |
+| P | $0\text{,}5K_u$ | — | — |
+| PI | $0\text{,}45K_u$ | $T_u/1\text{,}2$ | — |
+| PID | $0\text{,}6K_u$ | $T_u/2$ | $T_u/8$ |
 
 Daje odpowiedź szybką, ale słabo tłumioną (przeregulowanie rzędu 40–60%) — punkt startowy, nie wynik końcowy.
 
@@ -47,12 +47,12 @@ Daje PI z umiarkowanym przeregulowaniem i dobrym zapasem stabilności. Inne pode
 
 ## Przykład rozwiązany
 
-**1. Ziegler–Nichols dla $P(s) = 1/(s+1)^3$.** Z [10.03](03-stabilnosc.md): $K_u = 8$, $\omega_u = \sqrt 3$ → $T_u = 2\pi/\sqrt 3 = 3{,}63$ s.
-PID: $K_p = 4{,}8$, $T_i = 1{,}81$ s, $T_d = 0{,}45$ s. Symulacja (z $N = 10$): przeregulowanie ≈ 43%.
+**1. Ziegler–Nichols dla $P(s) = 1/(s+1)^3$.** Z [10.03](03-stabilnosc.md): $K_u = 8$, $\omega_u = \sqrt 3$ → $T_u = 2\pi/\sqrt 3 = 3\text{,}63$ s.
+PID: $K_p = 4\text{,}8$, $T_i = 1\text{,}81$ s, $T_d = 0\text{,}45$ s. Symulacja (z $N = 10$): przeregulowanie ≈ 43%.
 Łagodniejszy PI $K_p = 1$, $T_i = 2$ s: przeregulowanie ≈ 13,5%, czas ustalania (2%) ≈ 11 s.
 
 **2. SIMC dla modelu cieplnego** $\dfrac{2e^{-10s}}{100s + 1}$ K/W z [10.01](01-modele-obiektow.md), $\lambda = L = 10$ s:
-$K_p = \dfrac{100}{2\cdot 20} = 2{,}5$ W/K, $T_i = \min(100,\ 80) = 80$ s.
+$K_p = \dfrac{100}{2\cdot 20} = 2\text{,}5$ W/K, $T_i = \min(100,\ 80) = 80$ s.
 
 **3. Nasycenie.** Grzałka ma moc 0–20 W, wartość zadana +30 K (wymaga 15 W w stanie ustalonym). Na początku regulator żąda 75 W, element wykonawczy daje 20 W. Bez anti-windup całka narasta przez cały czas nagrzewania → przeregulowanie ok. 26%; z całkowaniem warunkowym → praktycznie zero (symulacja poniżej).
 
@@ -105,11 +105,11 @@ plt.subplot(2, 1, 1); plt.axhline(r, color='k', lw=0.5); plt.ylabel('ΔT [K]'); 
 plt.subplot(2, 1, 2); plt.ylabel('P [W]'); plt.xlabel('t [s]'); plt.grid(); plt.show()
 ```
 
-Sprawdź też: $\lambda = 2L$ (wolniej, odporniej) i $\lambda = 0{,}5L$; nastawy ZN z metody odpowiedzi skokowej; wpływ szumu pomiaru na człon D.
+Sprawdź też: $\lambda = 2L$ (wolniej, odporniej) i $\lambda = 0\text{,}5L$; nastawy ZN z metody odpowiedzi skokowej; wpływ szumu pomiaru na człon D.
 
 ## Zadania
 
-1. $K_u = 8$, $T_u = 3{,}63$ s. Nastawy P, PI i PID wg Zieglera–Nicholsa.
+1. $K_u = 8$, $T_u = 3\text{,}63$ s. Nastawy P, PI i PID wg Zieglera–Nicholsa.
 2. Model $\dfrac{3e^{-5s}}{105s + 1}$. Nastawy PI metodą SIMC dla $\lambda = L$ i $\lambda = 3L$.
 3. Dlaczego regulator P nie usuwa uchybu ustalonego przy stałym zakłóceniu, a PI usuwa?
 4. Regulator ma $K_p = 2$, $T_d = 1$ s, $N = 10$. Jakie jest wzmocnienie dla bardzo wysokich częstotliwości? Co by było bez filtra?
@@ -118,8 +118,8 @@ Sprawdź też: $\lambda = 2L$ (wolniej, odporniej) i $\lambda = 0{,}5L$; nastawy
 <details>
 <summary>Odpowiedzi</summary>
 
-1. P: $K_p = 4$; PI: $K_p = 3{,}6$, $T_i = 3{,}03$ s; PID: $K_p = 4{,}8$, $T_i = 1{,}81$ s, $T_d = 0{,}45$ s
-2. $\lambda = 5$: $K_p = 105/(3\cdot 10) = 3{,}5$, $T_i = \min(105, 40) = 40$ s; $\lambda = 15$: $K_p = 105/60 = 1{,}75$, $T_i = \min(105, 80) = 80$ s
+1. P: $K_p = 4$; PI: $K_p = 3\text{,}6$, $T_i = 3\text{,}03$ s; PID: $K_p = 4\text{,}8$, $T_i = 1\text{,}81$ s, $T_d = 0\text{,}45$ s
+2. $\lambda = 5$: $K_p = 105/(3\cdot 10) = 3\text{,}5$, $T_i = \min(105, 40) = 40$ s; $\lambda = 15$: $K_p = 105/60 = 1\text{,}75$, $T_i = \min(105, 80) = 80$ s
 3. Do skompensowania stałego zakłócenia potrzebne jest stałe dodatkowe sterowanie; regulator P wytworzy je tylko przy niezerowym uchybie. Całka może utrzymywać stałe sterowanie przy zerowym uchybie
 4. $K_p(1 + N) = 22$ (człon D dąży do $K_pN$); bez filtra wzmocnienie rośnie bez ograniczenia z częstotliwością (+20 dB/dek) — szum pomiaru przechodzi na sterowanie
 5. Przez 10 minut uchyb jest duży i dodatni, całka rośnie, choć moc i tak jest maksymalna. Gdy temperatura osiąga zadaną, całka jest ogromna — grzałka dalej grzeje pełną mocą, aż ujemny uchyb ją „rozładuje”; skutkiem jest duże przeregulowanie i długie ustalanie

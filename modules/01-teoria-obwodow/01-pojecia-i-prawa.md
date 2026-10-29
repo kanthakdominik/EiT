@@ -100,10 +100,10 @@ Po uruchomieniu `.op` sprawdź napięcie węzła 2 i prądy rezystorów. W [Fals
 1. $R_2\parallel R_L = 5$ kΩ → 4 V; bez obciążenia 6 V
 2. $I_1 = 6\cdot\dfrac{2}{3} = 4$ mA, $I_2 = 2$ mA
 3. $(2 + 10) = 12\ \Omega$; $6\parallel 12 = 4\ \Omega$; $R_z = 4 + 4 = 8\ \Omega$
-4. $U = \sqrt{PR} = \sqrt{250} \approx 15{,}8$ V
+4. $U = \sqrt{PR} = \sqrt{250} \approx 15\text{,}8$ V
 5. $I = 1$ A, $U = 8$ V, $P = 8$ W, $\eta = 8/9 \approx 89\%$
 6. 6 V; przy odwróconej strzałce wynik −6 V — to ta sama fizyczna sytuacja
-7. 40 h; $W = 3{,}7\ \text{V}\cdot 2\ \text{Ah} = 7{,}4$ Wh ≈ 26,6 kJ
+7. 40 h; $W = 3\text{,}7\ \text{V}\cdot 2\ \text{Ah} = 7\text{,}4$ Wh ≈ 26,6 kJ
 </details>
 
 ## Źródła

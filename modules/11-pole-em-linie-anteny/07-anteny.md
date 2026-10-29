@@ -53,9 +53,9 @@ $N$ elementów o regulowanej fazie i amplitudzie: **czynnik szyku** mnoży chara
 
 **Dipol półfalowy na 868 MHz.**
 
-1. $\lambda = c/f = 0{,}345$ m; $\lambda/2 = 17{,}3$ cm; skrócenie ok. 5% → ok. **16,4 cm** (dokładnie — po pomiarze S11).
+1. $\lambda = c/f = 0\text{,}345$ m; $\lambda/2 = 17\text{,}3$ cm; skrócenie ok. 5% → ok. **16,4 cm** (dokładnie — po pomiarze S11).
 2. Impedancja ok. 73 Ω w wolnej przestrzeni → WFS ok. 1,5 w torze 50 Ω; do tego dipol jest symetryczny, a kabel niesymetryczny — potrzebny symetryzator (balun), inaczej prąd płynie po oplocie i zniekształca charakterystykę.
-3. Powierzchnia skuteczna: $A_e = 1{,}64\cdot 0{,}345^2/(4\pi) \approx 155$ cm².
+3. Powierzchnia skuteczna: $A_e = 1\text{,}64\cdot 0\text{,}345^2/(4\pi) \approx 155$ cm².
 
 **Szyk 4 elementów** rozstawionych co λ/2, wiązka odchylona o 30° od normalnej: przesunięcie fazy między elementami $\Delta\varphi = kd\sin\theta = \pi\sin 30° = 90°$.
 
@@ -102,11 +102,11 @@ plt.ylim(-30, 1); plt.xlabel('kąt [°]'); plt.ylabel('czynnik szyku [dB]'); plt
 <details>
 <summary>Odpowiedzi</summary>
 
-1. 433 MHz: $\lambda/2 = 34{,}6$ cm → ok. 32,9 cm; 2,44 GHz: $\lambda/4 = 30{,}7$ mm → ok. 29,2 mm
-2. $10\log(0{,}7\cdot 6{,}31) = 6{,}45$ dBi = 4,3 dBd
-3. 2,4 GHz: $1{,}64\cdot 0{,}125^2/(4\pi) \approx 20$ cm²; 433 MHz: ≈ 625 cm². Przy tym samym zysku antena na niższą częstotliwość zbiera więcej mocy — stąd mniejsze tłumienie „wolnej przestrzeni” na niższych częstotliwościach dla anten o stałym zysku ([11.08](08-propagacja-i-budzet-lacza.md))
+1. 433 MHz: $\lambda/2 = 34\text{,}6$ cm → ok. 32,9 cm; 2,44 GHz: $\lambda/4 = 30\text{,}7$ mm → ok. 29,2 mm
+2. $10\log(0\text{,}7\cdot 6\text{,}31) = 6\text{,}45$ dBi = 4,3 dBd
+3. 2,4 GHz: $1\text{,}64\cdot 0\text{,}125^2/(4\pi) \approx 20$ cm²; 433 MHz: ≈ 625 cm². Przy tym samym zysku antena na niższą częstotliwość zbiera więcej mocy — stąd mniejsze tłumienie „wolnej przestrzeni” na niższych częstotliwościach dla anten o stałym zysku ([11.08](08-propagacja-i-budzet-lacza.md))
 4. $14 - 2 + 6 = 18$ dBm (≈ 63 mW)
-5. $180°\cdot\sin 20° \approx 61{,}6°$
+5. $180°\cdot\sin 20° \approx 61\text{,}6°$
 </details>
 
 ## Źródła

@@ -16,7 +16,7 @@ Budżet błędów obejmuje każdy element: czujnik (nieliniowość, histereza, d
 
 | Czujnik | Zasada | Zakres / cechy | Kondycjonowanie |
 |---|---|---|---|
-| **RTD (Pt100, Pt1000)** | $R(T) \approx R_0(1 + \alpha T)$, $\alpha = 0{,}00385$ 1/K | Dokładny, liniowy, −200…+600 °C | Źródło prądowe, pomiar 3- lub 4-przewodowy |
+| **RTD (Pt100, Pt1000)** | $R(T) \approx R_0(1 + \alpha T)$, $\alpha = 0\text{,}00385$ 1/K | Dokładny, liniowy, −200…+600 °C | Źródło prądowe, pomiar 3- lub 4-przewodowy |
 | **Termistor NTC** | $R = R_0e^{B(1/T - 1/T_0)}$ | Bardzo czuły, nieliniowy, tani | Dzielnik + linearyzacja programowa |
 | **Termopara** | Napięcie Seebecka (typ K ≈ 41 µV/K) | Szeroki zakres, mały sygnał | Kompensacja zimnych końców, wzmocnienie ×100–1000 |
 | Złącze półprzewodnikowe / scalone | −2 mV/K lub wyjście cyfrowe | Proste, ±0,5–2 °C | Bezpośrednio do A/C lub magistrali |
@@ -45,8 +45,8 @@ Dwupunktowa (offset + wzmocnienie), wielopunktowa (tablica, wielomian), zapis ws
 
 **NTC 10 kΩ, B = 3950 K w dzielniku z rezystorem 10 kΩ, zasilanie 3,3 V (ratiometrycznie z A/C 12-bitowym).**
 
-1. W 50 °C: $R = 10\ \text{k}\cdot e^{3950(1/323{,}15 - 1/298{,}15)} \approx 3{,}59$ kΩ.
-2. Napięcie (NTC do masy): $3{,}3\cdot\dfrac{3{,}59}{13{,}59} \approx 0{,}87$ V → kod ok. 1081.
+1. W 50 °C: $R = 10\ \text{k}\cdot e^{3950(1/323\text{,}15 - 1/298\text{,}15)} \approx 3\text{,}59$ kΩ.
+2. Napięcie (NTC do masy): $3\text{,}3\cdot\dfrac{3\text{,}59}{13\text{,}59} \approx 0\text{,}87$ V → kod ok. 1081.
 3. W 25 °C: 1,65 V → kod 2048. Odwrotne przeliczenie kodu na temperaturę: wyznacz $R$ z dzielnika, potem $T = \left[\dfrac{1}{T_0} + \dfrac{1}{B}\ln\dfrac{R}{R_0}\right]^{-1}$.
 4. Czułość przy 25 °C ok. 45 kodów/K — rozdzielczość ok. 0,02 K, dokładność ograniczona przez tolerancję NTC (np. ±1%) i parametr B.
 
@@ -78,7 +78,7 @@ for Tc in [0, 25, 50, 85]:
 ## Zadania
 
 1. Rezystancja NTC 10 kΩ (B = 3950 K) w 50 °C?
-2. Pt100 w 100 °C ($\alpha = 0{,}00385$). Jaki błąd temperatury wprowadzi 1 Ω rezystancji przewodów przy pomiarze dwuprzewodowym?
+2. Pt100 w 100 °C ($\alpha = 0\text{,}00385$). Jaki błąd temperatury wprowadzi 1 Ω rezystancji przewodów przy pomiarze dwuprzewodowym?
 3. Termopara K, 100 K różnicy. Jakie napięcie? Ile kodów da przetwornik 12-bitowy 3,3 V bez wzmocnienia?
 4. Pt100 zasilany prądem 1 mA, rezystancja cieplna czujnika do otoczenia 0,2 K/mW. Jaki błąd samopodgrzewania?
 5. Wyjaśnij, dlaczego pomiar mostka tensometrycznego zasilanego z tego samego napięcia co odniesienie przetwornika A/C jest odporny na zmiany tego napięcia.
@@ -87,9 +87,9 @@ for Tc in [0, 25, 50, 85]:
 <summary>Odpowiedzi</summary>
 
 1. ≈ 3,59 kΩ
-2. $1/(100\cdot 0{,}00385) \approx 2{,}6$ K
+2. $1/(100\cdot 0\text{,}00385) \approx 2\text{,}6$ K
 3. ≈ 4,1 mV; ok. 5 kodów
-4. $P = 10^{-6}\cdot 100 = 0{,}1$ mW (przy ok. 100 Ω) → 0,02 K
+4. $P = 10^{-6}\cdot 100 = 0\text{,}1$ mW (przy ok. 100 Ω) → 0,02 K
 5. Napięcie mostka jest proporcjonalne do napięcia zasilania, a wynik przetwornika to stosunek napięcia wejściowego do odniesienia — zmiana zasilania zmienia obie wielkości w tej samej proporcji i znosi się w ilorazie
 </details>
 

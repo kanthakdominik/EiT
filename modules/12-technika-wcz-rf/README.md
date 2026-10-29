@@ -40,13 +40,13 @@ Około 60 minut, bez notatek.
 <details>
 <summary>Odpowiedzi</summary>
 
-1. Częstotliwość rezonansu własnego $1/(2\pi\sqrt{LC}) \approx 15{,}9$ MHz — powyżej zachowuje się jak indukcyjność
-2. Wzmocnienie mocy (przy dopasowanych zakończeniach 50 Ω) 15 dB; odbija się 6,3% mocy wejściowej; $|\Gamma| = 0{,}25$, WFS ≈ 1,67
-3. $Q = \sqrt{200/50 - 1} = 1{,}73$; równoległy C przy 200 Ω: $X = 115{,}5\ \Omega$ → 13,8 pF; szeregowa L: $X = 86{,}6\ \Omega$ → 138 nH
+1. Częstotliwość rezonansu własnego $1/(2\pi\sqrt{LC}) \approx 15\text{,}9$ MHz — powyżej zachowuje się jak indukcyjność
+2. Wzmocnienie mocy (przy dopasowanych zakończeniach 50 Ω) 15 dB; odbija się 6,3% mocy wejściowej; $|\Gamma| = 0\text{,}25$, WFS ≈ 1,67
+3. $Q = \sqrt{200/50 - 1} = 1\text{,}73$; równoległy C przy 200 Ω: $X = 115\text{,}5\ \Omega$ → 13,8 pF; szeregowa L: $X = 86\text{,}6\ \Omega$ → 138 nH
 4. ≈ 2,1 dB
 5. $P_{out} = 0$ dBm, $IM3 = 3\cdot 0 - 2\cdot 30 = -60$ dBm
-6. $100 + 2\cdot 10{,}7 = 121{,}4$ MHz
-7. $20\log N = 20\log 2440 \approx 67{,}7$ dB
+6. $100 + 2\cdot 10\text{,}7 = 121\text{,}4$ MHz
+7. $20\log N = 20\log 2440 \approx 67\text{,}7$ dB
 
 **Ocena:** 1 — temat 01; 2 — 02; 3 — 03; 4 — 04; 5 — 05; 6 — 07–08; 7 — 07.
 </details>

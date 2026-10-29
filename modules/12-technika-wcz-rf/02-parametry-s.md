@@ -43,12 +43,12 @@ Przy dopasowanych zakończeniach $|S_{21}|^2$ to wzmocnienie mocy przetwornikowe
 
 Wzmacniacz: $S_{11} = -12$ dB, $S_{21} = 15$ dB, $S_{12} = -25$ dB, $S_{22} = -10$ dB.
 
-1. Wejście: $|\Gamma| = 10^{-12/20} = 0{,}251$ → WFS 1,67, odbija się 6,3% mocy.
+1. Wejście: $|\Gamma| = 10^{-12/20} = 0\text{,}251$ → WFS 1,67, odbija się 6,3% mocy.
 2. Wzmocnienie mocy przy 50 Ω: ×31,6.
 3. Izolacja wsteczna 25 dB — sygnał z wyjścia (np. przeciek generatora lokalnego z mieszacza) przenika na wejście tłumiony o 25 dB.
-4. Wyjście: $|\Gamma| = 0{,}316$, WFS 1,92.
+4. Wyjście: $|\Gamma| = 0\text{,}316$, WFS 1,92.
 
-**Impedancja z S11:** $S_{11} = 0{,}2 + j0{,}4$ → $Z = 50\dfrac{1{,}2 + j0{,}4}{0{,}8 - j0{,}4} = 50 + j50\ \Omega$.
+**Impedancja z S11:** $S_{11} = 0\text{,}2 + j0\text{,}4$ → $Z = 50\dfrac{1\text{,}2 + j0\text{,}4}{0\text{,}8 - j0\text{,}4} = 50 + j50\ \Omega$.
 
 ## Typowe pułapki
 
@@ -89,7 +89,7 @@ for s11_db in [-6, -10, -12, -20]:
 
 1. Przelicz $S_{11} = -10$ dB na |Γ|, WFS i procent mocy odbitej.
 2. Tłumik 6 dB dopasowany do 50 Ω — podaj jego macierz S (moduły).
-3. $S_{11} = -0{,}5$ (rzeczywiste). Jaka impedancja wejściowa?
+3. $S_{11} = -0\text{,}5$ (rzeczywiste). Jaka impedancja wejściowa?
 4. Filtr bezstratny ma przy pewnej częstotliwości $|S_{21}| = -1$ dB. Ile wynosi $|S_{11}|$ w dB?
 5. Dlaczego do kaskady dwóch czwórników używa się macierzy ABCD, a nie S?
 
@@ -97,9 +97,9 @@ for s11_db in [-6, -10, -12, -20]:
 <summary>Odpowiedzi</summary>
 
 1. 0,316; 1,92; 10%
-2. $|S_{11}| = |S_{22}| = 0$, $|S_{21}| = |S_{12}| = 0{,}5$ (−6 dB)
-3. $50\cdot 0{,}5/1{,}5 \approx 16{,}7\ \Omega$
-4. $|S_{21}|^2 = 0{,}794$ → $|S_{11}|^2 = 0{,}206$ → $-6{,}9$ dB
+2. $|S_{11}| = |S_{22}| = 0$, $|S_{21}| = |S_{12}| = 0\text{,}5$ (−6 dB)
+3. $50\cdot 0\text{,}5/1\text{,}5 \approx 16\text{,}7\ \Omega$
+4. $|S_{21}|^2 = 0\text{,}794$ → $|S_{11}|^2 = 0\text{,}206$ → $-6\text{,}9$ dB
 5. Macierz ABCD wiąże wielkości na wejściu z wielkościami na wyjściu, więc kaskada to iloczyn macierzy; macierz S wiąże fale wychodzące z padającymi na obu wrotach jednocześnie — kaskadę trzeba liczyć z uwzględnieniem wielokrotnych odbić (lub przez macierze T)
 </details>
 

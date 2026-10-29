@@ -51,9 +51,9 @@ Dla elementów jednakowych: $R_Y = R_\Delta/3$.
 
 **Superpozycja na obwodzie z tematu 02** ($E_1 = 12$ V/$R_1 = 2\ \Omega$, $R_3 = 4\ \Omega$, $R_2 = 2\ \Omega$/$E_2 = 6$ V):
 
-1. Tylko $E_1$ ($E_2$ zwarte): $\dfrac{V - 12}{2} + \dfrac{V}{4} + \dfrac{V}{2} = 0 \Rightarrow V' = 4{,}8$ V.
-2. Tylko $E_2$ ($E_1$ zwarte): $\dfrac{V}{2} + \dfrac{V}{4} + \dfrac{V - 6}{2} = 0 \Rightarrow V'' = 2{,}4$ V.
-3. Razem: $V = 4{,}8 + 2{,}4 = 7{,}2$ V — tak samo jak metodą węzłową.
+1. Tylko $E_1$ ($E_2$ zwarte): $\dfrac{V - 12}{2} + \dfrac{V}{4} + \dfrac{V}{2} = 0 \Rightarrow V' = 4\text{,}8$ V.
+2. Tylko $E_2$ ($E_1$ zwarte): $\dfrac{V}{2} + \dfrac{V}{4} + \dfrac{V - 6}{2} = 0 \Rightarrow V'' = 2\text{,}4$ V.
+3. Razem: $V = 4\text{,}8 + 2\text{,}4 = 7\text{,}2$ V — tak samo jak metodą węzłową.
 
 **Thévenin z pomiaru.** Wyjście czujnika ma napięcie jałowe 9 V, a po dołączeniu obciążenia 1 kΩ napięcie spada do 6 V. Z dzielnika: $6 = 9\cdot\dfrac{1\ \text{k}}{1\ \text{k} + R_{th}} \Rightarrow R_{th} = 500\ \Omega$. Dwa pomiary wystarczają, żeby poznać „wnętrze” dowolnego liniowego źródła.
 
@@ -81,7 +81,7 @@ I1 out 0 0
 
 ## Zadania
 
-1. $E = 10$ V, $R_1 = 4$ kΩ od źródła do węzła 2, $R_2 = 6$ kΩ z węzła 2 do masy, $R_3 = 1{,}6$ kΩ z węzła 2 do zacisku wyjściowego. Wyznacz zastępcze źródło Thévenina i Nortona widziane z zacisku wyjściowego i masy.
+1. $E = 10$ V, $R_1 = 4$ kΩ od źródła do węzła 2, $R_2 = 6$ kΩ z węzła 2 do masy, $R_3 = 1\text{,}6$ kΩ z węzła 2 do zacisku wyjściowego. Wyznacz zastępcze źródło Thévenina i Nortona widziane z zacisku wyjściowego i masy.
 2. Jakie obciążenie pobierze z obwodu z zadania 1 maksymalną moc i ile ona wynosi?
 3. Źródło 6 V przez $R_1 = 2$ kΩ i źródło prądowe 3 mA zasilają węzeł, z którego $R_2 = 1$ kΩ idzie do masy. Wyznacz napięcie węzła metodą superpozycji.
 4. Przekształć trójkąt trzech rezystorów 30 Ω w gwiazdę. Przekształć gwiazdę 10 Ω, 20 Ω, 30 Ω w trójkąt.
@@ -92,12 +92,12 @@ I1 out 0 0
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $E_{th} = 10\cdot\dfrac{6}{10} = 6$ V; $R_{th} = 4\parallel 6 + 1{,}6 = 2{,}4 + 1{,}6 = 4$ kΩ; Norton: $I_N = 1{,}5$ mA, $R_N = 4$ kΩ
-2. $R_L = 4$ kΩ, $P = \dfrac{36}{4\cdot 4000} = 2{,}25$ mW
+1. $E_{th} = 10\cdot\dfrac{6}{10} = 6$ V; $R_{th} = 4\parallel 6 + 1\text{,}6 = 2\text{,}4 + 1\text{,}6 = 4$ kΩ; Norton: $I_N = 1\text{,}5$ mA, $R_N = 4$ kΩ
+2. $R_L = 4$ kΩ, $P = \dfrac{36}{4\cdot 4000} = 2\text{,}25$ mW
 3. Tylko źródło napięciowe: $6\cdot\dfrac{1}{3} = 2$ V; tylko prądowe: $3\ \text{mA}\cdot(2\parallel 1)\ \text{k}\Omega = 2$ V; razem 4 V
-4. Gwiazda: 3 × 10 Ω. Trójkąt: suma iloczynów 1100; $R_{ab} = 1100/30 \approx 36{,}7\ \Omega$, $R_{bc} = 1100/10 = 110\ \Omega$, $R_{ca} = 1100/20 = 55\ \Omega$ (przy $R_a = 10$, $R_b = 20$, $R_c = 30$)
+4. Gwiazda: 3 × 10 Ω. Trójkąt: suma iloczynów 1100; $R_{ab} = 1100/30 \approx 36\text{,}7\ \Omega$, $R_{bc} = 1100/10 = 110\ \Omega$, $R_{ca} = 1100/20 = 55\ \Omega$ (przy $R_a = 10$, $R_b = 20$, $R_c = 30$)
 5. 3 A z równoległym 4 Ω
-6. $V = \dfrac{1 + 1 + 0}{0{,}1 + 0{,}05 + 0{,}05} = 10$ V
+6. $V = \dfrac{1 + 1 + 0}{0\text{,}1 + 0\text{,}05 + 0\text{,}05} = 10$ V
 7. $R_{th} = 500\ \Omega$, $I_{zw} = 9/500 = 18$ mA
 </details>
 

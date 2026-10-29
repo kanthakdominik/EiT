@@ -98,7 +98,7 @@ Skompiluj: `gcc -Wall -o debounce debounce.c && ./debounce`. Na mikrokontrolerze
 
 1. ≈ 167 ns i 750 ns
 2. Operacja odczyt–modyfikacja–zapis: jeśli przerwanie zmieni inny pin między odczytem a zapisem, zapis przywróci starą wartość. Użyj rejestru atomowego ustawiania/kasowania bitów lub sekcji krytycznej
-3. $(3{,}3 - 2)/8\ \text{mA} \approx 163\ \Omega$ → 180 Ω (z zapasem, ok. 7 mA)
+3. $(3\text{,}3 - 2)/8\ \text{mA} \approx 163\ \Omega$ → 180 Ω (z zapasem, ok. 7 mA)
 4. Np. co 5 ms i 8 zgodnych próbek (40 ms) — z zapasem ponad czas drgań; krótsze okno (np. 4 próbki × 5 ms) też zadziała
 5. Bufor kołowy (FIFO): ISR wpisuje bajt i przesuwa indeks zapisu, pętla główna czyta i przesuwa indeks odczytu; każdy indeks modyfikuje tylko jedna strona — przy indeksach o rozmiarze słowa procesora nie trzeba wyłączać przerwań
 </details>

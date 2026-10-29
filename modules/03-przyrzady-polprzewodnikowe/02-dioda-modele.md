@@ -10,7 +10,7 @@ Dioda jest najprostszym elementem nieliniowym, więc na niej uczy się metod, kt
 
 $$I = I_S\left(e^{U/(nU_T)} - 1\right)$$
 
-$I_S$ — prąd nasycenia (rzędu fA–nA), $n$ — współczynnik emisji (1–2), $U_T \approx 25{,}85$ mV.
+$I_S$ — prąd nasycenia (rzędu fA–nA), $n$ — współczynnik emisji (1–2), $U_T \approx 25\text{,}85$ mV.
 
 Przydatne konsekwencje (dla $n = 1$):
 - dziesięciokrotny wzrost prądu → wzrost napięcia o $U_T\ln 10 \approx 60$ mV,
@@ -33,7 +33,7 @@ Dioda w szeregu z rezystorem $R$ i źródłem $E$:
 
 - **graficznie** — przecięcie charakterystyki diody z prostą obciążenia $I = (E - U)/R$,
 - **iteracyjnie** — zgadnij $U$, policz $I = (E - U)/R$, policz nowe $U = nU_T\ln(I/I_S)$, powtarzaj (zbieżność bardzo szybka),
-- **modelem uproszczonym** — $U = 0{,}7$ V.
+- **modelem uproszczonym** — $U = 0\text{,}7$ V.
 
 ### Właściwości dynamiczne
 
@@ -43,10 +43,10 @@ Przy przełączeniu z przewodzenia w zaporowy dioda przez czas **$t_{rr}$** (rev
 
 $E = 5$ V, $R = 1$ kΩ, dioda $I_S = 10^{-14}$ A, $n = 1$.
 
-1. Model 0,7 V: $I = 4{,}3$ mA.
-2. Iteracja: $U = 0{,}02585\ln(4{,}3\cdot 10^{-3}/10^{-14}) \approx 0{,}6925$ V → $I = 4{,}3075$ mA → $U$ się nie zmienia. Wynik: 0,692 V, 4,31 mA.
+1. Model 0,7 V: $I = 4\text{,}3$ mA.
+2. Iteracja: $U = 0\text{,}02585\ln(4\text{,}3\cdot 10^{-3}/10^{-14}) \approx 0\text{,}6925$ V → $I = 4\text{,}3075$ mA → $U$ się nie zmienia. Wynik: 0,692 V, 4,31 mA.
 3. Model uproszczony myli się o 0,2% — dla tego obwodu w zupełności wystarcza.
-4. Rezystancja dynamiczna w tym punkcie: $r_d = 25{,}85\ \text{mV}/4{,}31\ \text{mA} \approx 6\ \Omega$. Jeśli $E$ zmienia się o ±100 mV, napięcie diody zmienia się tylko o $\pm 100\cdot\dfrac{6}{1006} \approx \pm 0{,}6$ mV.
+4. Rezystancja dynamiczna w tym punkcie: $r_d = 25\text{,}85\ \text{mV}/4\text{,}31\ \text{mA} \approx 6\ \Omega$. Jeśli $E$ zmienia się o ±100 mV, napięcie diody zmienia się tylko o $\pm 100\cdot\dfrac{6}{1006} \approx \pm 0\text{,}6$ mV.
 
 ## Typowe pułapki
 
@@ -84,9 +84,9 @@ Wyświetl `I(D1)` w funkcji `V(k)` (zmień zmienną osi X) i przełącz oś prą
 1. ≈ 0,655 V i ≈ 0,714 V
 2. 4,3 mA (model); 0,692 V i 4,31 mA (iteracja)
 3. ≈ 12,9 Ω
-4. $0{,}655 - 50\cdot 0{,}002 \approx 0{,}555$ V
-5. Napięcie źródła jest porównywalne ze spadkiem na diodzie; $I \approx (1{,}5 - 0{,}7)/100 = 8$ mA, a nie 15 mA
-6. $2\cdot 25{,}85\ \Omega \approx 52\ \Omega$
+4. $0\text{,}655 - 50\cdot 0\text{,}002 \approx 0\text{,}555$ V
+5. Napięcie źródła jest porównywalne ze spadkiem na diodzie; $I \approx (1\text{,}5 - 0\text{,}7)/100 = 8$ mA, a nie 15 mA
+6. $2\cdot 25\text{,}85\ \Omega \approx 52\ \Omega$
 </details>
 
 ## Źródła

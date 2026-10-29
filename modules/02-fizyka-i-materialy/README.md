@@ -36,10 +36,10 @@ Rozwiąż bez notatek, około 60 minut.
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $C = \varepsilon_0\varepsilon_r A/d \approx 35{,}4$ pF
-2. $R = \rho l/A \approx 0{,}17\ \Omega$
+1. $C = \varepsilon_0\varepsilon_r A/d \approx 35\text{,}4$ pF
+2. $R = \rho l/A \approx 0\text{,}17\ \Omega$
 3. $B = \mu_0 I/(2\pi r) = 200\ \mu$T
-4. $\lambda = c/f = 12{,}5$ cm
+4. $\lambda = c/f = 12\text{,}5$ cm
 5. $p = n_i^2/N_D = 10^4$ cm⁻³
 6. W metalu liczba nośników jest stała, a z temperaturą rośnie rozpraszanie na drganiach sieci (maleje ruchliwość). W półprzewodniku samoistnym gwałtownie rośnie liczba nośników generowanych termicznie — ten efekt dominuje.
 </details>

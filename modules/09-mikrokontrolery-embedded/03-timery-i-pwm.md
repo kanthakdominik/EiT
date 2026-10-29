@@ -41,7 +41,7 @@ Przechwytywanie dwóch kolejnych zboczy: okres $T = (n_2 - n_1)/f_{licz}$. Przy 
 **PWM 20 kHz dla silnika** przy $f_{tim} = 72$ MHz:
 
 1. $PSC = 0$, $ARR + 1 = 72\cdot 10^6/20\cdot 10^3 = 3600$ → $ARR = 3599$.
-2. Rozdzielczość: $\log_2 3600 \approx 11{,}8$ bitu.
+2. Rozdzielczość: $\log_2 3600 \approx 11\text{,}8$ bitu.
 3. Wypełnienie 25%: $CCR = 900$.
 
 **Serwo modelarskie (50 Hz, impuls 1–2 ms):**
@@ -92,8 +92,8 @@ for f in [20e3, 50, 1e3, 38e3]:
 1. PSC = 0, ARR = 3599, ≈ 11,8 bitu, CCR = 900
 2. PSC = 71, ARR = 19 999
 3. $(3018 - 61234) \bmod 65536 = 7320$ µs → ok. 136,6 Hz
-4. Przy $T \ll \tau$: $\Delta U \approx \dfrac{U\cdot D(1 - D)\cdot T}{\tau} = \dfrac{3{,}3\cdot 0{,}25\cdot 1\ \text{ms}}{10\ \text{ms}} \approx 83$ mV
-5. $72\cdot 10^6/1024 \approx 70{,}3$ kHz
+4. Przy $T \ll \tau$: $\Delta U \approx \dfrac{U\cdot D(1 - D)\cdot T}{\tau} = \dfrac{3\text{,}3\cdot 0\text{,}25\cdot 1\ \text{ms}}{10\ \text{ms}} \approx 83$ mV
+5. $72\cdot 10^6/1024 \approx 70\text{,}3$ kHz
 </details>
 
 ## Źródła

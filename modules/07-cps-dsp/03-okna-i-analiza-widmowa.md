@@ -83,7 +83,7 @@ Następnie oszacuj widmo szumu `signal.welch` dla różnych `nperseg` i porówna
 1. Hann (listki daleko od tonu ≪ −50 dB), Blackman, Blackman–Harris; prostokątne — nie
 2. Blackman (listek główny ±3 prążki) — na granicy, raczej nie; Hann (±2 prążki) — tak, z wyraźnym przegięciem
 3. 1 V — wzmocnienie koherentne okna Hann wynosi 0,5
-4. $10^{-9}/(1{,}5\cdot 10) \approx 6{,}7\cdot 10^{-11}$ V²/Hz (≈ 8,2 µV/√Hz)
+4. $10^{-9}/(1\text{,}5\cdot 10) \approx 6\text{,}7\cdot 10^{-11}$ V²/Hz (≈ 8,2 µV/√Hz)
 5. Ok. 100
 </details>
 

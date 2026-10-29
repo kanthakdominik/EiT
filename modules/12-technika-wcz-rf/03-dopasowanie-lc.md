@@ -36,10 +36,10 @@ Elementy o skończonej dobroci (cewki!) tracą moc. Strata rośnie ze stosunkiem
 
 Dopasowanie $R_L = 200\ \Omega$ do 50 Ω przy 100 MHz, wariant dolnoprzepustowy.
 
-1. $Q = \sqrt{200/50 - 1} = 1{,}732$.
-2. Element równoległy przy 200 Ω: $X_C = 200/1{,}732 = 115{,}5\ \Omega$ → $C = 1/(2\pi\cdot 10^8\cdot 115{,}5) \approx 13{,}8$ pF.
-3. Element szeregowy: $X_L = 1{,}732\cdot 50 = 86{,}6\ \Omega$ → $L = 86{,}6/(2\pi\cdot 10^8) \approx 138$ nH.
-4. Sprawdzenie: 200 Ω ‖ $(-j115{,}5)$ = $50 - j86{,}6$; dodanie $+j86{,}6$ daje 50 Ω.
+1. $Q = \sqrt{200/50 - 1} = 1\text{,}732$.
+2. Element równoległy przy 200 Ω: $X_C = 200/1\text{,}732 = 115\text{,}5\ \Omega$ → $C = 1/(2\pi\cdot 10^8\cdot 115\text{,}5) \approx 13\text{,}8$ pF.
+3. Element szeregowy: $X_L = 1\text{,}732\cdot 50 = 86\text{,}6\ \Omega$ → $L = 86\text{,}6/(2\pi\cdot 10^8) \approx 138$ nH.
+4. Sprawdzenie: 200 Ω ‖ $(-j115\text{,}5)$ = $50 - j86\text{,}6$; dodanie $+j86\text{,}6$ daje 50 Ω.
 5. Pasmo WFS < 2 (z symulacji poniżej): ok. 73–121 MHz, czyli ok. 49 MHz.
 
 ## Typowe pułapki
@@ -113,7 +113,7 @@ plt.ylim(1, 4); plt.xlabel('f [MHz]'); plt.ylabel('WFS'); plt.legend(); plt.grid
 1. $Q = 2$; C równolegle przy 50 Ω: $X = 25\ \Omega$ → 14,7 pF; L szeregowo przy 10 Ω: $X = 20\ \Omega$ → 7,35 nH
 2. Np. szeregowa L +15 Ω kompensuje reaktancję → 25 Ω; dalej obwód L 25 → 50: $Q = 1$, szeregowa $X = 25\ \Omega$ (łącznie z kompensacją: $L$ o $X = 40\ \Omega$ → 63,7 nH), C równolegle przy 50 Ω: $X = 50\ \Omega$ → 31,8 pF
 3. Możliwość wyboru większej dobroci → lepsze tłumienie harmonicznych (wymagania widmowe) i dostępne wartości elementów
-4. ≈ $10\log(1{,}125) \approx 0{,}5$ dB
+4. ≈ $10\log(1\text{,}125) \approx 0\text{,}5$ dB
 5. Dwie (lub więcej) sekcje o mniejszych stosunkach transformacji (np. 200 → 100 → 50), linie o stopniowo zmiennej impedancji
 </details>
 

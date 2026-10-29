@@ -40,9 +40,9 @@ Indukowane napięcie przeciwdziała zmianie strumienia, która je wywołała.
 
 Cewka powietrzna: 100 zwojów na długości 2 cm, przekrój 1 cm², prąd 0,5 A.
 
-1. $L = 4\pi\cdot 10^{-7}\cdot\dfrac{100^2\cdot 10^{-4}}{0{,}02} \approx 62{,}8\ \mu$H.
-2. $B = 4\pi\cdot 10^{-7}\cdot\dfrac{100\cdot 0{,}5}{0{,}02} \approx 3{,}1$ mT.
-3. Energia: $W = \tfrac12\cdot 62{,}8\cdot 10^{-6}\cdot 0{,}25 \approx 7{,}9\ \mu$J.
+1. $L = 4\pi\cdot 10^{-7}\cdot\dfrac{100^2\cdot 10^{-4}}{0\text{,}02} \approx 62\text{,}8\ \mu$H.
+2. $B = 4\pi\cdot 10^{-7}\cdot\dfrac{100\cdot 0\text{,}5}{0\text{,}02} \approx 3\text{,}1$ mT.
+3. Energia: $W = \tfrac12\cdot 62\text{,}8\cdot 10^{-6}\cdot 0\text{,}25 \approx 7\text{,}9\ \mu$J.
 
 Z rdzeniem ferrytowym o $\mu_r = 1000$ (bez szczeliny) indukcyjność wzrosłaby do ok. 63 mH — ale przy znacznie mniejszym prądzie rdzeń by się nasycił.
 

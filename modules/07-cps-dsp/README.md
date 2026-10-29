@@ -39,12 +39,12 @@ Około 60 minut, bez notatek.
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $6{,}02\cdot 12 + 1{,}76 = 74$ dB; $\text{ENOB} = (70 - 1{,}76)/6{,}02 \approx 11{,}3$ bitu
-2. ≈ 3,91 Hz; $50/3{,}91 = 12{,}8$ — między prążkami 12 i 13 (przeciek widma)
+1. $6\text{,}02\cdot 12 + 1\text{,}76 = 74$ dB; $\text{ENOB} = (70 - 1\text{,}76)/6\text{,}02 \approx 11\text{,}3$ bitu
+2. ≈ 3,91 Hz; $50/3\text{,}91 = 12\text{,}8$ — między prążkami 12 i 13 (przeciek widma)
 3. Aby ograniczyć przeciek widma wynikający z ucięcia sygnału; kosztem szerszego listka głównego (gorszej rozdzielczości) i strat amplitudy
 4. 32 próbki = 4 ms
 5. $f_a = \dfrac{f_s}{\pi}\tan\dfrac{\pi f_c}{f_s} \approx 1055$ Hz (predistorsja)
-6. $\text{round}(0{,}3\cdot 32768) = 9830$ (`0x2666`)
+6. $\text{round}(0\text{,}3\cdot 32768) = 9830$ (`0x2666`)
 7. Filtr dolnoprzepustowy (antyaliasingowy) z granicą poniżej 4 kHz, dopiero potem decymacja ×6
 
 **Ocena:** zadanie 1 — temat 01; 2–3 — tematy 02–03; 4 — temat 04; 5 — temat 05; 6 — temat 06; 7 — temat 07.

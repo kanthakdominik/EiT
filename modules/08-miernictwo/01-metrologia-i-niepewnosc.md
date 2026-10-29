@@ -45,12 +45,12 @@ Dla iloczynów i ilorazów wygodniej w postaci względnej: dla $y = x_1^ax_2^b$ 
 
 ## Przykład rozwiązany
 
-Multimetr ±(0,5% w.m. + 2 cyfry), zakres 20,00 V (rozdzielczość 0,01 V). Dziesięć odczytów, średnia 12,34 V, $s = 0{,}03$ V.
+Multimetr ±(0,5% w.m. + 2 cyfry), zakres 20,00 V (rozdzielczość 0,01 V). Dziesięć odczytów, średnia 12,34 V, $s = 0\text{,}03$ V.
 
-1. Typ A: $u_A = 0{,}03/\sqrt{10} \approx 0{,}0095$ V.
-2. Typ B: $a = 0{,}005\cdot 12{,}34 + 2\cdot 0{,}01 \approx 0{,}082$ V; $u_B = 0{,}082/\sqrt3 \approx 0{,}047$ V. (Rozdzielczość jest już zawarta w składniku „cyfr”.)
-3. Złożona: $u_c = \sqrt{0{,}0095^2 + 0{,}047^2} \approx 0{,}048$ V.
-4. Rozszerzona ($k = 2$): $U \approx 0{,}096$ V → **$U = (12{,}34 \pm 0{,}10)$ V**.
+1. Typ A: $u_A = 0\text{,}03/\sqrt{10} \approx 0\text{,}0095$ V.
+2. Typ B: $a = 0\text{,}005\cdot 12\text{,}34 + 2\cdot 0\text{,}01 \approx 0\text{,}082$ V; $u_B = 0\text{,}082/\sqrt3 \approx 0\text{,}047$ V. (Rozdzielczość jest już zawarta w składniku „cyfr”.)
+3. Złożona: $u_c = \sqrt{0\text{,}0095^2 + 0\text{,}047^2} \approx 0\text{,}048$ V.
+4. Rozszerzona ($k = 2$): $U \approx 0\text{,}096$ V → **$U = (12\text{,}34 \pm 0\text{,}10)$ V**.
 
 Wniosek: dominuje specyfikacja przyrządu — więcej powtórzeń niewiele tu poprawi.
 
@@ -85,17 +85,17 @@ print(f"P = {P.mean():.4f} W ± {P.std():.4f} W (1σ)")
 3. Moc $P = U^2/R$; względne niepewności: $U$ — 1%, $R$ — 0,5%. Ile wynosi względna niepewność $P$?
 4. Ile pomiarów trzeba uśrednić, aby $u_A$ spadło do 1/5 odchylenia standardowego pojedynczego pomiaru?
 5. Przyrząd ma rozdzielczość 1 mV i pomijalny szum. Jaka jest niepewność od rozdzielczości?
-6. Zapisz poprawnie wynik: średnia 4,567891 V, $U = 0{,}0234$ V.
+6. Zapisz poprawnie wynik: średnia 4,567891 V, $U = 0\text{,}0234$ V.
 
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $U \approx 0{,}096$ V → $(12{,}34 \pm 0{,}10)$ V
-2. $1/\sqrt3 \approx 0{,}58\ \Omega$
-3. $\sqrt{(2\cdot 1\%)^2 + 0{,}5\%^2} \approx 2{,}06\%$
+1. $U \approx 0\text{,}096$ V → $(12\text{,}34 \pm 0\text{,}10)$ V
+2. $1/\sqrt3 \approx 0\text{,}58\ \Omega$
+3. $\sqrt{(2\cdot 1\%)^2 + 0\text{,}5\%^2} \approx 2\text{,}06\%$
 4. 25
-5. $1\ \text{mV}/\sqrt{12} \approx 0{,}29$ mV
-6. $(4{,}568 \pm 0{,}023)$ V
+5. $1\ \text{mV}/\sqrt{12} \approx 0\text{,}29$ mV
+6. $(4\text{,}568 \pm 0\text{,}023)$ V
 </details>
 
 ## Źródła

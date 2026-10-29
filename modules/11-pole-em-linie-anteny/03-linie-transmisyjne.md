@@ -31,13 +31,13 @@ $$\Gamma_L = \frac{Z_L - Z_0}{Z_L + Z_0}$$
 | $Z_L = Z_0$ (dopasowanie) | 0 |
 | Zwarcie | −1 |
 | Rozwarcie | +1 |
-| Czysto reaktancyjne | $|\Gamma| = 1$ |
+| Czysto reaktancyjne | $\lvert \Gamma\rvert = 1$ |
 
-| Miara niedopasowania | Wzór | Przykład $|\Gamma| = 1/3$ |
+| Miara niedopasowania | Wzór | Przykład $\lvert \Gamma\rvert = 1/3$ |
 |---|---|---|
-| **WFS (VSWR)** | $\dfrac{1 + |\Gamma|}{1 - |\Gamma|}$ | 2,0 |
-| **Tłumienie odbiciowe (return loss)** | $-20\log|\Gamma|$ | 9,5 dB |
-| Straty niedopasowania | $-10\log(1 - |\Gamma|^2)$ | 0,51 dB |
+| **WFS (VSWR)** | $\dfrac{1 + \lvert \Gamma\rvert }{1 - \lvert \Gamma\rvert }$ | 2,0 |
+| **Tłumienie odbiciowe (return loss)** | $-20\log\lvert \Gamma\rvert$ | 9,5 dB |
+| Straty niedopasowania | $-10\log(1 - \lvert \Gamma\rvert ^2)$ | 0,51 dB |
 
 Interpretacja WFS: stosunek maksimum do minimum amplitudy napięcia wzdłuż linii. WFS 2 oznacza, że do obciążenia nie trafia 11% mocy — dla anteny nadawczej zwykle akceptowalne, dla wzmacniacza mocy bywa groźne.
 
@@ -68,11 +68,11 @@ Linia 50 Ω o długości $\lambda/8$ obciążona rezystancją 100 Ω.
 1. $\beta l = \pi/4$, $\tan\beta l = 1$.
 2. $Z_{we} = 50\dfrac{100 + j50}{50 + j100} = 40 - j30\ \Omega$.
 3. $\Gamma_L = 1/3$, WFS = 2 — wzdłuż linii zmienia się impedancja, ale $|\Gamma|$ i WFS są stałe (linia bezstratna).
-4. **Dopasowanie transformatorem λ/4:** linia o $Z_0' = \sqrt{50\cdot 100} = 70{,}7\ \Omega$ i długości $\lambda/4$ zamienia 100 Ω na 50 Ω — ale tylko w wąskim paśmie wokół częstotliwości projektowej.
+4. **Dopasowanie transformatorem λ/4:** linia o $Z_0' = \sqrt{50\cdot 100} = 70\text{,}7\ \Omega$ i długości $\lambda/4$ zamienia 100 Ω na 50 Ω — ale tylko w wąskim paśmie wokół częstotliwości projektowej.
 
 ## Typowe pułapki
 
-- **Długość elektryczna liczona dla prędkości w próżni** — w kablu z PE $v \approx 0{,}66c$, w mikropasku na FR-4 ok. $0{,}55c$.
+- **Długość elektryczna liczona dla prędkości w próżni** — w kablu z PE $v \approx 0\text{,}66c$, w mikropasku na FR-4 ok. $0\text{,}55c$.
 - **Pomiar $Z_0$ omomierzem** — bez sensu; $Z_0$ mierzy się reflektometrem (TDR) albo z $C'$ i $L'$.
 - **Kabel 75 Ω w torze 50 Ω** — WFS 1,5 na każdym przejściu.
 - **Zapominanie, że WFS na wejściu długiego stratnego kabla wygląda lepiej niż przy obciążeniu** — fala odbita jest tłumiona dwukrotnie.
@@ -122,8 +122,8 @@ plt.plot(f/1e6, vswr); plt.ylim(1, 3); plt.xlabel('f [MHz]'); plt.ylabel('WFS');
 1. $L' = 250$ nH/m, $C' = 100$ pF/m. Impedancja charakterystyczna i prędkość?
 2. Linia 50 Ω obciążona 25 Ω: Γ, WFS, tłumienie odbiciowe, straty niedopasowania.
 3. Impedancja wejściowa linii 50 Ω o długości $\lambda/4$ obciążonej $Z_L = 25 + j25\ \Omega$.
-4. Zaprojektuj transformator λ/4 dopasowujący 300 Ω do 75 Ω przy 100 MHz w kablu o $v = 0{,}66c$ (impedancja i długość fizyczna).
-5. Jaką długość musi mieć zwarty odcinek linii 50 Ω, aby przy 1 GHz zachowywał się jak indukcyjność 4 nH? ($v = 0{,}66c$)
+4. Zaprojektuj transformator λ/4 dopasowujący 300 Ω do 75 Ω przy 100 MHz w kablu o $v = 0\text{,}66c$ (impedancja i długość fizyczna).
+5. Jaką długość musi mieć zwarty odcinek linii 50 Ω, aby przy 1 GHz zachowywał się jak indukcyjność 4 nH? ($v = 0\text{,}66c$)
 
 <details>
 <summary>Odpowiedzi</summary>
@@ -131,8 +131,8 @@ plt.plot(f/1e6, vswr); plt.ylim(1, 3); plt.xlabel('f [MHz]'); plt.ylabel('WFS');
 1. $Z_0 = 50\ \Omega$, $v = 2\cdot 10^8$ m/s
 2. $\Gamma = -1/3$, WFS = 2, RL = 9,5 dB, ML = 0,51 dB
 3. $Z_0^2/Z_L = 2500/(25 + j25) = 50 - j50\ \Omega$
-4. $\sqrt{300\cdot 75} = 150\ \Omega$; $l = \lambda/4 = 0{,}66\cdot 3\ \text{m}/4 \approx 0{,}495$ m
-5. $X = \omega L = 25{,}1\ \Omega$ → $\tan\beta l = 0{,}503$ → $\beta l = 0{,}466$ rad; $\lambda = 0{,}198$ m → $l \approx 14{,}7$ mm
+4. $\sqrt{300\cdot 75} = 150\ \Omega$; $l = \lambda/4 = 0\text{,}66\cdot 3\ \text{m}/4 \approx 0\text{,}495$ m
+5. $X = \omega L = 25\text{,}1\ \Omega$ → $\tan\beta l = 0\text{,}503$ → $\beta l = 0\text{,}466$ rad; $\lambda = 0\text{,}198$ m → $l \approx 14\text{,}7$ mm
 </details>
 
 ## Źródła

@@ -45,8 +45,8 @@ $$I_{śr} = D\cdot I_{akt} + (1 - D)\cdot I_{uśp}$$
 
 Czujnik bezprzewodowy: pomiar i wysłanie danych trwa 1% czasu przy 10 mA, w pozostałym czasie uśpienie przy 5 µA, bateria 2000 mAh.
 
-1. $I_{śr} = 0{,}01\cdot 10\ \text{mA} + 0{,}99\cdot 5\ \mu\text{A} \approx 0{,}105$ mA.
-2. Czas pracy: $2000/0{,}105 \approx 19\,000$ h ≈ 2,2 roku (w praktyce mniej: samorozładowanie, temperatura, prąd szczytowy radia).
+1. $I_{śr} = 0\text{,}01\cdot 10\ \text{mA} + 0\text{,}99\cdot 5\ \mu\text{A} \approx 0\text{,}105$ mA.
+2. Czas pracy: $2000/0\text{,}105 \approx 19\,000$ h ≈ 2,2 roku (w praktyce mniej: samorozładowanie, temperatura, prąd szczytowy radia).
 3. Wniosek: przy tak małym wypełnieniu oba składniki są porównywalne — obniżenie prądu uśpienia z 5 do 2 µA wydłuża pracę o kilka procent, a skrócenie czasu aktywności o połowę — prawie dwukrotnie.
 
 ## Typowe pułapki

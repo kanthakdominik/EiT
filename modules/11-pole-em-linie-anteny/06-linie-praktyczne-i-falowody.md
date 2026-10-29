@@ -19,13 +19,13 @@ Projektując płytkę w.cz., kabel czy złącze, trzeba umieć wybrać typ linii
 
 **Mikropasek — wzór przybliżony** (Hammerstad, dla $W/h \geq 1$):
 
-$$\varepsilon_{eff} = \frac{\varepsilon_r + 1}{2} + \frac{\varepsilon_r - 1}{2}\left(1 + 12\frac{h}{W}\right)^{-1/2},\qquad Z_0 = \frac{120\pi}{\sqrt{\varepsilon_{eff}}\left(\frac Wh + 1{,}393 + 0{,}667\ln\left(\frac Wh + 1{,}444\right)\right)}$$
+$$\varepsilon_{eff} = \frac{\varepsilon_r + 1}{2} + \frac{\varepsilon_r - 1}{2}\left(1 + 12\frac{h}{W}\right)^{-1/2},\qquad Z_0 = \frac{120\pi}{\sqrt{\varepsilon_{eff}}\left(\frac Wh + 1\text{,}393 + 0\text{,}667\ln\left(\frac Wh + 1\text{,}444\right)\right)}$$
 
-Na FR-4 ($\varepsilon_r \approx 4{,}2$–4,6, zależne od częstotliwości i producenta) 50 Ω wymaga $W \approx 1{,}9h$: ok. 3 mm na laminacie 1,6 mm, ok. 0,39 mm na dielektryku 0,2 mm (płytki wielowarstwowe). Dokładne wartości — z kalkulatora producenta płytek, z uwzględnieniem grubości miedzi i maski.
+Na FR-4 ($\varepsilon_r \approx 4\text{,}2$–4,6, zależne od częstotliwości i producenta) 50 Ω wymaga $W \approx 1\text{,}9h$: ok. 3 mm na laminacie 1,6 mm, ok. 0,39 mm na dielektryku 0,2 mm (płytki wielowarstwowe). Dokładne wartości — z kalkulatora producenta płytek, z uwzględnieniem grubości miedzi i maski.
 
 ### Straty i ograniczenia FR-4
 
-Tangens strat FR-4 ok. 0,015–0,02 → tłumienie dielektryczne rośnie liniowo z częstotliwością; powyżej kilku GHz stosuje się laminaty w.cz. (np. na bazie PTFE lub ceramiki, $\tan\delta \approx 0{,}001$–0,004) o stabilnym $\varepsilon_r$. Chropowatość miedzi dodatkowo zwiększa straty przewodnika.
+Tangens strat FR-4 ok. 0,015–0,02 → tłumienie dielektryczne rośnie liniowo z częstotliwością; powyżej kilku GHz stosuje się laminaty w.cz. (np. na bazie PTFE lub ceramiki, $\tan\delta \approx 0\text{,}001$–0,004) o stabilnym $\varepsilon_r$. Chropowatość miedzi dodatkowo zwiększa straty przewodnika.
 
 ### Falowody
 
@@ -33,7 +33,7 @@ Rura metalowa o przekroju prostokątnym $a\times b$ ($a > b$). Fala nie jest TEM
 
 $$f_{c,mn} = \frac{c}{2}\sqrt{\left(\frac ma\right)^2 + \left(\frac nb\right)^2}$$
 
-Rodzaj podstawowy TE$_{10}$: $f_c = c/(2a)$ — szerokość falowodu to pół długości fali odcięcia. Zakres pracy jednomodowej: od ok. $1{,}25f_c$ do ok. $0{,}95$ częstotliwości odcięcia następnego rodzaju.
+Rodzaj podstawowy TE$_{10}$: $f_c = c/(2a)$ — szerokość falowodu to pół długości fali odcięcia. Zakres pracy jednomodowej: od ok. $1\text{,}25f_c$ do ok. $0\text{,}95$ częstotliwości odcięcia następnego rodzaju.
 
 Długość fali w falowodzie: $\lambda_g = \dfrac{\lambda_0}{\sqrt{1 - (f_c/f)^2}}$ (dłuższa niż w próżni); prędkość grupowa (energii) mniejsza od $c$.
 
@@ -41,14 +41,14 @@ Zalety: bardzo małe straty i duża dopuszczalna moc (radary, łącza satelitarn
 
 ## Przykład rozwiązany
 
-**Kabel koncentryczny** typu RG-58: żyła $d = 0{,}9$ mm, dielektryk PE ($\varepsilon_r = 2{,}25$) o średnicy $D = 2{,}95$ mm.
+**Kabel koncentryczny** typu RG-58: żyła $d = 0\text{,}9$ mm, dielektryk PE ($\varepsilon_r = 2\text{,}25$) o średnicy $D = 2\text{,}95$ mm.
 
-1. $Z_0 = \dfrac{60}{1{,}5}\ln\dfrac{2{,}95}{0{,}9} = 40\cdot 1{,}187 \approx 47{,}5\ \Omega$ (w katalogu: nominalnie 50 Ω — rzeczywista żyła jest linką, a wymiary nieco inne).
-2. $v = c/1{,}5 \approx 2\cdot 10^8$ m/s (współczynnik skrócenia 0,66); 1 m kabla to ok. 5 ns.
+1. $Z_0 = \dfrac{60}{1\text{,}5}\ln\dfrac{2\text{,}95}{0\text{,}9} = 40\cdot 1\text{,}187 \approx 47\text{,}5\ \Omega$ (w katalogu: nominalnie 50 Ω — rzeczywista żyła jest linką, a wymiary nieco inne).
+2. $v = c/1\text{,}5 \approx 2\cdot 10^8$ m/s (współczynnik skrócenia 0,66); 1 m kabla to ok. 5 ns.
 3. $C' = 2\pi\varepsilon/\ln(D/d) \approx 105$ pF/m, $L' = \dfrac{\mu_0}{2\pi}\ln\dfrac Dd \approx 237$ nH/m.
 
-**Falowód WR-90** ($a = 22{,}86$ mm, $b = 10{,}16$ mm):
-$f_c(\text{TE}_{10}) = 6{,}56$ GHz, $f_c(\text{TE}_{20}) = 13{,}1$ GHz, $f_c(\text{TE}_{01}) = 14{,}8$ GHz → zakres pracy 8,2–12,4 GHz (pasmo X). Przy 10 GHz: $\lambda_0 = 30$ mm, $\lambda_g = 39{,}7$ mm.
+**Falowód WR-90** ($a = 22\text{,}86$ mm, $b = 10\text{,}16$ mm):
+$f_c(\text{TE}_{10}) = 6\text{,}56$ GHz, $f_c(\text{TE}_{20}) = 13\text{,}1$ GHz, $f_c(\text{TE}_{01}) = 14\text{,}8$ GHz → zakres pracy 8,2–12,4 GHz (pasmo X). Przy 10 GHz: $\lambda_0 = 30$ mm, $\lambda_g = 39\text{,}7$ mm.
 
 ## Typowe pułapki
 
@@ -88,19 +88,19 @@ print(f"lambda_g przy 10 GHz = {c/f/np.sqrt(1 - (fc/f)**2)*1e3:.1f} mm")
 
 ## Zadania
 
-1. Kabel z dielektrykiem PTFE ($\varepsilon_r = 2{,}1$) ma mieć $Z_0 = 50\ \Omega$. Jaki stosunek $D/d$?
-2. Policz impedancję mikropasku o szerokości 3 mm na FR-4 1,6 mm ($\varepsilon_r = 4{,}4$).
+1. Kabel z dielektrykiem PTFE ($\varepsilon_r = 2\text{,}1$) ma mieć $Z_0 = 50\ \Omega$. Jaki stosunek $D/d$?
+2. Policz impedancję mikropasku o szerokości 3 mm na FR-4 1,6 mm ($\varepsilon_r = 4\text{,}4$).
 3. Częstotliwość odcięcia TE$_{10}$ falowodu o szerokości 15,8 mm.
-4. Otwór wentylacyjny w ekranie ma średnicę 5 mm. Dla jakich częstotliwości działa jako falowód poniżej odcięcia? (dla falowodu kołowego $f_c \approx 1{,}841c/(\pi D)$)
+4. Otwór wentylacyjny w ekranie ma średnicę 5 mm. Dla jakich częstotliwości działa jako falowód poniżej odcięcia? (dla falowodu kołowego $f_c \approx 1\text{,}841c/(\pi D)$)
 5. Dlaczego para różnicowa 100 Ω nie składa się z dwóch niezależnych ścieżek 50 Ω?
 
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $\ln(D/d) = 50\sqrt{2{,}1}/60 = 1{,}208$ → $D/d \approx 3{,}35$
-2. ≈ 51 Ω, $\varepsilon_{eff} \approx 3{,}32$
-3. $c/(2\cdot 0{,}0158) \approx 9{,}49$ GHz (falowód WR-62, pasmo Ku)
-4. $f_c \approx 1{,}841\cdot 3\cdot 10^8/(\pi\cdot 0{,}005) \approx 35$ GHz — poniżej tej częstotliwości otwór tłumi falę (tym silniej, im dłuższy „kanał” otworu)
+1. $\ln(D/d) = 50\sqrt{2\text{,}1}/60 = 1\text{,}208$ → $D/d \approx 3\text{,}35$
+2. ≈ 51 Ω, $\varepsilon_{eff} \approx 3\text{,}32$
+3. $c/(2\cdot 0\text{,}0158) \approx 9\text{,}49$ GHz (falowód WR-62, pasmo Ku)
+4. $f_c \approx 1\text{,}841\cdot 3\cdot 10^8/(\pi\cdot 0\text{,}005) \approx 35$ GHz — poniżej tej częstotliwości otwór tłumi falę (tym silniej, im dłuższy „kanał” otworu)
 5. Ścieżki są sprzężone polem: impedancja różnicowa to $2Z_{odd}$, gdzie $Z_{odd} < Z_0$ pojedynczej ścieżki; przy bliskim prowadzeniu ścieżki muszą być węższe niż dla 50 Ω pojedynczej linii
 </details>
 

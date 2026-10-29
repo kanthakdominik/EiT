@@ -46,7 +46,7 @@ Kondensatory elektrolityczne i tantalowe są **spolaryzowane**. Trwałość elek
 
 ### Dielektryki płytek drukowanych
 
-FR-4 ($\varepsilon_r \approx 4{,}3$, straty rosnące z częstotliwością) — standard do kilku GHz. Laminaty w.cz. (np. na bazie PTFE) — stabilne $\varepsilon_r$ i małe straty dla mikrofal.
+FR-4 ($\varepsilon_r \approx 4\text{,}3$, straty rosnące z częstotliwością) — standard do kilku GHz. Laminaty w.cz. (np. na bazie PTFE) — stabilne $\varepsilon_r$ i małe straty dla mikrofal.
 
 ## Przykład rozwiązany
 
@@ -86,7 +86,7 @@ L1 c 0 1n
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $f = \dfrac{1}{2\pi\sqrt{10^{-9}\cdot 10^{-7}}} \approx 15{,}9$ MHz
+1. $f = \dfrac{1}{2\pi\sqrt{10^{-9}\cdot 10^{-7}}} \approx 15\text{,}9$ MHz
 2. C0G/NP0 — brak zależności od napięcia i bardzo mała od temperatury (ewentualnie folia PP przy większych pojemnościach)
 3. 40 K mniej to 4 podwojenia: ok. $2000\cdot 16 = 32\,000$ h (oszacowanie zgrubne)
 4. $200\cdot 10^{-6}\cdot 50 = 1\%$

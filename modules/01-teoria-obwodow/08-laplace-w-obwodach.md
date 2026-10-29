@@ -40,7 +40,7 @@ Przy zerowych warunkach początkowych: $H(s) = \dfrac{U_{wy}(s)}{U_{we}(s)}$.
 
 1. Schemat operatorowy: $E/s$, $R$, $\dfrac{1}{sC}$ i źródło $u_0/s$ w gałęzi kondensatora.
 2. Prąd: $I(s) = \dfrac{(E - u_0)/s}{R + \dfrac{1}{sC}} = \dfrac{(E - u_0)C}{1 + sRC}$.
-3. Napięcie kondensatora: $U_C(s) = \dfrac{u_0}{s} + \dfrac{I(s)}{sC} = \dfrac{u_0}{s} + \dfrac{E - u_0}{s(1 + s\tau)}$, $\tau = RC = 0{,}1$ s.
+3. Napięcie kondensatora: $U_C(s) = \dfrac{u_0}{s} + \dfrac{I(s)}{sC} = \dfrac{u_0}{s} + \dfrac{E - u_0}{s(1 + s\tau)}$, $\tau = RC = 0\text{,}1$ s.
 4. $\dfrac{1}{s(1 + s\tau)} = \dfrac{1}{s} - \dfrac{1}{s + 1/\tau}$, więc $u_C(t) = u_0 + (E - u_0)(1 - e^{-t/\tau}) = 12 - 10e^{-10t}$ V — wynik identyczny jak metodą klasyczną.
 
 **Transmitancja szeregowego RLC** (wyjście na C):
@@ -76,21 +76,21 @@ C1 b 0 1u
 ## Zadania
 
 1. Wyznacz transmitancję dolnoprzepustowego filtra RC i jego odpowiedź skokową metodą operatorową.
-2. Źródło 10 V włączone w $t = 0$ zasila szeregowo $R = 10\ \Omega$ i $L = 0{,}1$ H (prąd początkowy zerowy). Wyznacz $I(s)$ i $i(t)$.
+2. Źródło 10 V włączone w $t = 0$ zasila szeregowo $R = 10\ \Omega$ i $L = 0\text{,}1$ H (prąd początkowy zerowy). Wyznacz $I(s)$ i $i(t)$.
 3. Wyznacz bieguny transmitancji szeregowego RLC ($R = 100\ \Omega$, $L = 10$ mH, $C = 1\ \mu$F) i określ charakter odpowiedzi.
 4. Wyznacz odpowiedź impulsową układu o transmitancji $H(s) = \dfrac{1000}{s + 1000}$.
 5. Do szeregowego RLC z zadania 3 przyłożono skok 10 V. Wyznacz wartość ustaloną napięcia na kondensatorze z twierdzenia o wartości końcowej.
-6. Cewka $L = 0{,}5$ H z prądem 2 A zostaje zwarta przez rezystor 10 Ω (bez źródła). Wyznacz $i(t)$ metodą operatorową.
+6. Cewka $L = 0\text{,}5$ H z prądem 2 A zostaje zwarta przez rezystor 10 Ω (bez źródła). Wyznacz $i(t)$ metodą operatorową.
 
 <details>
 <summary>Odpowiedzi</summary>
 
 1. $H(s) = \dfrac{1}{1 + sRC}$; $U_{wy}(s) = \dfrac{1}{s(1 + sRC)} \Rightarrow u(t) = 1 - e^{-t/RC}$ (dla skoku jednostkowego)
-2. $I(s) = \dfrac{10}{s(10 + 0{,}1s)} = \dfrac{100}{s(s + 100)} \Rightarrow i(t) = 1 - e^{-100t}$ A
-3. $s = -5000 \pm j8660$ — tłumione oscylacje, $\zeta = 0{,}5$
+2. $I(s) = \dfrac{10}{s(10 + 0\text{,}1s)} = \dfrac{100}{s(s + 100)} \Rightarrow i(t) = 1 - e^{-100t}$ A
+3. $s = -5000 \pm j8660$ — tłumione oscylacje, $\zeta = 0\text{,}5$
 4. $h(t) = 1000e^{-1000t}$ dla $t \geq 0$
 5. $\lim_{s\to 0} s\cdot\dfrac{10}{s}H(s) = 10$ V
-6. $I(s) = \dfrac{L i_0}{sL + R} = \dfrac{1}{0{,}5s + 10} = \dfrac{2}{s + 20} \Rightarrow i(t) = 2e^{-20t}$ A
+6. $I(s) = \dfrac{L i_0}{sL + R} = \dfrac{1}{0\text{,}5s + 10} = \dfrac{2}{s + 20} \Rightarrow i(t) = 2e^{-20t}$ A
 </details>
 
 ## Źródła

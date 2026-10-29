@@ -41,7 +41,7 @@ W tranzystorach dyskretnych **dioda podłożowa** (body diode) łączy źródło
 nMOS: $k = 2$ mA/V², $V_t = 1$ V, $\lambda = 0$.
 
 1. $U_{GS} = 2$ V, $U_{DS} = 5$ V: $U_{ov} = 1$ V, $U_{DS} > U_{ov}$ → nasycenie. $I_D = \tfrac{2}{2}\cdot 1^2 = 1$ mA.
-2. $U_{GS} = 3$ V, $U_{DS} = 0{,}5$ V: $U_{ov} = 2$ V $> U_{DS}$ → zakres liniowy. $I_D = 2[2\cdot 0{,}5 - 0{,}125] = 1{,}75$ mA.
+2. $U_{GS} = 3$ V, $U_{DS} = 0\text{,}5$ V: $U_{ov} = 2$ V $> U_{DS}$ → zakres liniowy. $I_D = 2[2\cdot 0\text{,}5 - 0\text{,}125] = 1\text{,}75$ mA.
 3. $U_{GS} = 5$ V, małe $U_{DS}$: $R_{DS} \approx \dfrac{1}{2\cdot 10^{-3}\cdot 4} = 125\ \Omega$.
 
 ## Typowe pułapki
@@ -68,7 +68,7 @@ M1 d g 0 0 NM
 ## Zadania
 
 1. nMOS: $k = 2$ mA/V², $V_t = 1$ V. Wyznacz zakres pracy i $I_D$ przy $U_{GS} = 2$ V, $U_{DS} = 5$ V.
-2. Ten sam tranzystor: $U_{GS} = 3$ V, $U_{DS} = 0{,}5$ V. Zakres i prąd?
+2. Ten sam tranzystor: $U_{GS} = 3$ V, $U_{DS} = 0\text{,}5$ V. Zakres i prąd?
 3. Jakie napięcie $U_{GS}$ jest potrzebne, aby w nasyceniu płynął prąd 4 mA?
 4. Wyznacz rezystancję kanału przy $U_{GS} = 5$ V i małym $U_{DS}$.
 5. Dlaczego w układach cyfrowych CMOS tranzystor pMOS jest szerszy niż nMOS?

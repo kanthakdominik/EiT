@@ -132,7 +132,7 @@ for ebn0 in [3, 5, 7]:
 1. Kod ma $d_{min} = 5$. Ile błędów wykrywa, ile poprawia?
 2. Zakoduj dane 0110 kodem Hamminga (7,4) według schematu z przykładu.
 3. Odebrano słowo 1110010 (Hamming (7,4)). Który bit jest błędny i jakie były dane?
-4. Kod o sprawności 1/2 daje BER $10^{-5}$ przy $E_b/N_0 = 4{,}5$ dB. Jaki jest zysk kodowania względem BPSK bez kodu?
+4. Kod o sprawności 1/2 daje BER $10^{-5}$ przy $E_b/N_0 = 4\text{,}5$ dB. Jaki jest zysk kodowania względem BPSK bez kodu?
 5. Dlaczego w łączu radiowym z zanikami po koderze splotowym stosuje się przeplatacz?
 
 <details>
@@ -141,7 +141,7 @@ for ebn0 in [3, 5, 7]:
 1. Wykrywa 4, poprawia 2
 2. d1 = 0, d2 = 1, d3 = 1, d4 = 0: p1 = 0⊕1⊕0 = 1, p2 = 0⊕1⊕0 = 1, p4 = 1⊕1⊕0 = 0 → **1100110**
 3. s1 = r1⊕r3⊕r5⊕r7 = 1⊕1⊕0⊕0 = 0; s2 = r2⊕r3⊕r6⊕r7 = 1⊕1⊕1⊕0 = 1; s4 = r4⊕r5⊕r6⊕r7 = 0⊕0⊕1⊕0 = 1 → syndrom 110 = 6: błędny bit 6; poprawione słowo 1110000, dane d1 d2 d3 d4 = 1 0 0 0
-4. $9{,}6 - 4{,}5 = 5{,}1$ dB
+4. $9\text{,}6 - 4\text{,}5 = 5\text{,}1$ dB
 5. Zanik niszczy serię kolejnych bitów; kod splotowy (i Viterbi) radzi sobie z błędami rozproszonymi — przeplot rozkłada serię na pojedyncze błędy odległe od siebie
 </details>
 

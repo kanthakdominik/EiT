@@ -34,7 +34,7 @@ Około 60 minut, bez notatek.
 4. Impuls prostokątny ma czas trwania 1 µs. Przy jakiej częstotliwości jego widmo ma pierwsze zero?
 5. Gdzie leżą bieguny układu $H(s) = \dfrac{1}{s^2 + s - 2}$? Czy jest stabilny?
 6. Sygnał 30 kHz spróbkowano z częstotliwością 44,1 kHz. Jaka częstotliwość pojawi się po rekonstrukcji?
-7. Układ dyskretny $y[n] = 0{,}5y[n-1] + x[n]$. Wyznacz transmitancję $H(z)$, odpowiedź impulsową i wzmocnienie dla składowej stałej.
+7. Układ dyskretny $y[n] = 0\text{,}5y[n-1] + x[n]$. Wyznacz transmitancję $H(z)$, odpowiedź impulsową i wzmocnienie dla składowej stałej.
 
 <details>
 <summary>Odpowiedzi</summary>
@@ -45,7 +45,7 @@ Około 60 minut, bez notatek.
 4. 1 MHz
 5. $s = 1$ i $s = -2$; niestabilny (biegun w prawej półpłaszczyźnie)
 6. 14,1 kHz (aliasing)
-7. $H(z) = \dfrac{1}{1 - 0{,}5z^{-1}}$, $h[n] = 0{,}5^n u[n]$, $H(1) = 2$
+7. $H(z) = \dfrac{1}{1 - 0\text{,}5z^{-1}}$, $h[n] = 0\text{,}5^n u[n]$, $H(1) = 2$
 
 **Ocena:** zadania 1–2 — tematy 01–02; 3–4 — tematy 03–04; 5 — temat 05; 6 — temat 06; 7 — temat 07.
 </details>

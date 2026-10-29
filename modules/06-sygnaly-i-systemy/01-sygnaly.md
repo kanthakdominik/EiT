@@ -75,7 +75,7 @@ print(np.allclose(np.cos(0.3*n), np.cos((0.3 + 2*np.pi)*n)))   # True — ta sam
 2. Jaka jest moc sygnału $x(t) = 3 + 4\cos(\omega t)$?
 3. Naszkicuj $x(2t - 4)$ dla impulsu na przedziale [0, 3].
 4. Czy sygnał $x(t) = e^{t}u(t)$ jest sygnałem energii, mocy, czy żadnym z nich?
-5. Czy $x[n] = \cos(0{,}25\pi n)$ jest okresowy? A $\cos(0{,}25n)$?
+5. Czy $x[n] = \cos(0\text{,}25\pi n)$ jest okresowy? A $\cos(0\text{,}25n)$?
 6. Zapisz $\cos(\omega t)$ i $\sin(\omega t)$ jako kombinacje wykładników zespolonych.
 
 <details>
@@ -85,7 +85,7 @@ print(np.allclose(np.cos(0.3*n), np.cos((0.3 + 2*np.pi)*n)))   # True — ta sam
 2. $P = 9 + 16/2 = 17$ (moce składowej stałej i sinusoidy się sumują)
 3. Impuls o amplitudzie 2 na przedziale [2; 3,5]
 4. Żadnym — energia i moc są nieskończone (sygnał rośnie wykładniczo)
-5. Tak, okres $N = 8$; nie — $0{,}25/(2\pi)$ jest niewymierne
+5. Tak, okres $N = 8$; nie — $0\text{,}25/(2\pi)$ jest niewymierne
 6. $\cos\omega t = \tfrac12(e^{j\omega t} + e^{-j\omega t})$, $\sin\omega t = \tfrac{1}{2j}(e^{j\omega t} - e^{-j\omega t})$
 </details>
 

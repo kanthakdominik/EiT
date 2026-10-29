@@ -33,9 +33,9 @@ Kondensator jest skuteczny w okolicy swojego SRF. Dla szerokiego pasma: kilka wa
 
 ## Przykład rozwiązany
 
-1. **Kondensator 100 nF, ESL 1 nH:** SRF ≈ 15,9 MHz. Przy 1 GHz jego reaktancja to praktycznie $\omega\cdot ESL \approx 6{,}3\ \Omega$ (indukcyjna). Do odsprzęgania przy 1 GHz lepszy jest 10 pF w 0402 z ESL ok. 0,5 nH: SRF ≈ 2,25 GHz.
+1. **Kondensator 100 nF, ESL 1 nH:** SRF ≈ 15,9 MHz. Przy 1 GHz jego reaktancja to praktycznie $\omega\cdot ESL \approx 6\text{,}3\ \Omega$ (indukcyjna). Do odsprzęgania przy 1 GHz lepszy jest 10 pF w 0402 z ESL ok. 0,5 nH: SRF ≈ 2,25 GHz.
 2. **Cewka 10 nH, $C_p$ = 0,1 pF:** SRF ≈ 5 GHz; użyteczna do ok. 1/3–1/2 SRF (dalej indukcyjność efektywna szybko rośnie).
-3. **Dobroć cewki:** 10 nH przy 1 GHz to $X_L = 62{,}8\ \Omega$; przy $R = 1{,}5\ \Omega$ (z naskórkowością) $Q \approx 42$.
+3. **Dobroć cewki:** 10 nH przy 1 GHz to $X_L = 62\text{,}8\ \Omega$; przy $R = 1\text{,}5\ \Omega$ (z naskórkowością) $Q \approx 42$.
 
 ## Typowe pułapki
 
@@ -81,7 +81,7 @@ plt.xlabel('f [Hz]'); plt.ylabel('|Z| [Ω]'); plt.legend(); plt.grid(which='both
 <summary>Odpowiedzi</summary>
 
 1. ≈ 190 MHz
-2. $C_p = 1/((2\pi f)^2L) \approx 0{,}18$ pF; z zapasem do ok. 0,8–1,2 GHz
+2. $C_p = 1/((2\pi f)^2L) \approx 0\text{,}18$ pF; z zapasem do ok. 0,8–1,2 GHz
 3. 5 MHz
 4. $Q = 50$, $R_p \approx Q^2R_s = 5$ kΩ
 5. Każdy milimetr ścieżki i przelotki dodaje indukcyjność (ok. 1 nH to już ok. 15 Ω przy 2,4 GHz), która obniża SRF i zwiększa impedancję odsprzęgania

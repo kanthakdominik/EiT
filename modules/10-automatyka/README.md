@@ -32,7 +32,7 @@ Kod w tym module korzysta z `numpy`, `scipy.signal` i `matplotlib`. Biblioteka [
 Około 60 minut, bez notatek.
 
 1. Obiekt $G(s) = \dfrac{2}{100s + 1}$. Jakie są wzmocnienie statyczne i stała czasowa? Po jakim czasie odpowiedź skokowa osiąga 63% wartości ustalonej?
-2. Układ drugiego rzędu ma $\zeta = 0{,}5$, $\omega_n = 10$ rad/s. Oszacuj przeregulowanie i czas ustalania (2%).
+2. Układ drugiego rzędu ma $\zeta = 0\text{,}5$, $\omega_n = 10$ rad/s. Oszacuj przeregulowanie i czas ustalania (2%).
 3. Pętla otwarta $L(s) = \dfrac{K}{(s+1)^3}$ w układzie z ujemnym sprzężeniem. Dla jakich $K$ układ zamknięty jest stabilny?
 4. Ten sam układ przy $K = 4$: zapas fazy i zapas wzmocnienia?
 5. Dlaczego regulator P nie usuwa uchybu ustalonego dla obiektu inercyjnego, a regulator PI usuwa?
@@ -43,12 +43,12 @@ Około 60 minut, bez notatek.
 <summary>Odpowiedzi</summary>
 
 1. $K = 2$, $\tau = 100$ s; po 100 s
-2. $M_p = e^{-\pi\zeta/\sqrt{1-\zeta^2}} \approx 16{,}3\%$; $t_s \approx 4/(\zeta\omega_n) = 0{,}8$ s
+2. $M_p = e^{-\pi\zeta/\sqrt{1-\zeta^2}} \approx 16\text{,}3\%$; $t_s \approx 4/(\zeta\omega_n) = 0\text{,}8$ s
 3. Równanie charakterystyczne $s^3 + 3s^2 + 3s + 1 + K = 0$; Routh: $0 < K < 8$ (dla $K > -1$ zgodnie z warunkiem $1+K>0$)
-4. $\omega_c \approx 1{,}23$ rad/s, PM ≈ 27°; $\omega_{180} = \sqrt 3$, GM = $8/4$ → 6 dB
+4. $\omega_c \approx 1\text{,}23$ rad/s, PM ≈ 27°; $\omega_{180} = \sqrt 3$, GM = $8/4$ → 6 dB
 5. Uchyb ustalony dla P: $e_{ss} = 1/(1 + K_pK)$ — do wytworzenia niezerowego sterowania potrzebny jest niezerowy uchyb. Całka narasta, dopóki uchyb jest różny od zera, więc w stanie ustalonym uchyb musi być zerowy
 6. Przy nasyconym elemencie wykonawczym całka dalej rośnie, a po powrocie do zakresu liniowego trzeba ją długo „rozładowywać” — duże przeregulowanie. Zapobieganie: całkowanie warunkowe, ograniczenie całki, sprzężenie zwrotne od różnicy sterowania obliczonego i nasyconego (back-calculation)
-7. Opóźnienie ok. $T/2$: $\omega T/2 = 0{,}05$ rad ≈ 2,9°
+7. Opóźnienie ok. $T/2$: $\omega T/2 = 0\text{,}05$ rad ≈ 2,9°
 
 **Ocena:** 1–2 — tematy 01–02; 3–4 — 03; 5–6 — 05; 7 — 07.
 </details>

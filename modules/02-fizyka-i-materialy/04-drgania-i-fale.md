@@ -29,8 +29,8 @@ Fala elektromagnetyczna w ośrodku: $v = \dfrac{c}{\sqrt{\varepsilon_r\mu_r}}$, 
 | Ośrodek | $\varepsilon_r$ (typowo) | Prędkość | Opóźnienie |
 |---|---|---|---|
 | Próżnia / powietrze | 1 | $c$ | 3,3 ns/m |
-| Kabel koncentryczny (PE) | 2,25 | $0{,}67c$ | 5 ns/m |
-| Ścieżka na FR-4 (wewnętrzna) | ok. 4,3 | ok. $0{,}48c$ | ok. 6,9 ns/m |
+| Kabel koncentryczny (PE) | 2,25 | $0\text{,}67c$ | 5 ns/m |
+| Ścieżka na FR-4 (wewnętrzna) | ok. 4,3 | ok. $0\text{,}48c$ | ok. 6,9 ns/m |
 
 **Fala stojąca** — suma dwóch fal biegnących w przeciwnych kierunkach (np. fali padającej i odbitej). Ma węzły i strzałki w stałych miejscach.
 
@@ -44,14 +44,14 @@ Reguła praktyczna: gdy wymiar układu przekracza ok. $\lambda/10$, trzeba uwzgl
 
 Sygnał Wi-Fi 2,4 GHz.
 
-1. W powietrzu: $\lambda = 3\cdot 10^8/2{,}4\cdot 10^9 = 12{,}5$ cm. Antena ćwierćfalowa ma ok. 3,1 cm.
-2. W kablu z $\varepsilon_r = 2{,}25$: $v = 2\cdot 10^8$ m/s, $\lambda \approx 8{,}3$ cm.
+1. W powietrzu: $\lambda = 3\cdot 10^8/2\text{,}4\cdot 10^9 = 12\text{,}5$ cm. Antena ćwierćfalowa ma ok. 3,1 cm.
+2. W kablu z $\varepsilon_r = 2\text{,}25$: $v = 2\cdot 10^8$ m/s, $\lambda \approx 8\text{,}3$ cm.
 3. Ścieżka 5 cm na płytce (ok. 0,4–0,6 $\lambda$) — zdecydowanie trzeba ją projektować jako linię transmisyjną o kontrolowanej impedancji.
 
 ## Typowe pułapki
 
 - **Długość fali z prędkością $c$ w ośrodku** zamiast $c/\sqrt{\varepsilon_r}$.
-- **Kryterium „linii” z częstotliwości zegara.** Zbocze 1 ns ma istotne składowe widma do ok. $0{,}35/t_r \approx 350$ MHz niezależnie od tego, czy zegar ma 1 MHz czy 100 MHz.
+- **Kryterium „linii” z częstotliwości zegara.** Zbocze 1 ns ma istotne składowe widma do ok. $0\text{,}35/t_r \approx 350$ MHz niezależnie od tego, czy zegar ma 1 MHz czy 100 MHz.
 
 ## Ćwiczenie komputerowe
 
@@ -67,7 +67,7 @@ Zmieniaj `t` i obserwuj, że węzły fali stojącej się nie przesuwają. W Fals
 
 ## Zadania
 
-1. Jaka jest długość fali 2,4 GHz w próżni i w kablu z $\varepsilon_r = 2{,}25$?
+1. Jaka jest długość fali 2,4 GHz w próżni i w kablu z $\varepsilon_r = 2\text{,}25$?
 2. Jaka jest długość fali sieci 50 Hz w próżni? Czy instalację w budynku trzeba analizować jak linię transmisyjną?
 3. Ile wynosi opóźnienie 3 m kabla koncentrycznego z polietylenem?
 4. Zbocze sygnału ma czas narastania 1 ns, ścieżka na FR-4 ma 15 cm. Czy trzeba ją traktować jak linię transmisyjną?
@@ -79,8 +79,8 @@ Zmieniaj `t` i obserwuj, że węzły fali stojącej się nie przesuwają. W Fals
 1. 12,5 cm i 8,3 cm
 2. 6000 km — nie, układ jest wielokrotnie mniejszy niż $\lambda/10$
 3. $3\cdot 5 = 15$ ns
-4. Opóźnienie ≈ $0{,}15\cdot 6{,}9 \approx 1$ ns $> t_r/6 \approx 0{,}17$ ns — tak
-5. $f_0 = \dfrac{1}{2\pi\sqrt{10^{-14}}} \approx 1{,}59$ MHz, $\lambda \approx 189$ m (pasmo fal średnich)
+4. Opóźnienie ≈ $0\text{,}15\cdot 6\text{,}9 \approx 1$ ns $> t_r/6 \approx 0\text{,}17$ ns — tak
+5. $f_0 = \dfrac{1}{2\pi\sqrt{10^{-14}}} \approx 1\text{,}59$ MHz, $\lambda \approx 189$ m (pasmo fal średnich)
 </details>
 
 ## Źródła

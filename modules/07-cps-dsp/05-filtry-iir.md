@@ -47,7 +47,7 @@ Filtr Butterwortha 2. rzędu, $f_s = 8$ kHz, $f_c = 1$ kHz, metoda biliniowa.
 3. W SciPy: `signal.butter(2, 1000, fs=8000)` robi predistorsję automatycznie.
 4. Koszt: 5 mnożeń na próbkę. Filtr FIR o podobnej stromości potrzebowałby kilkudziesięciu.
 
-**EMA:** $f_s = 1$ kHz, potrzebna granica ok. 1,6 Hz → $\alpha \approx 0{,}01$.
+**EMA:** $f_s = 1$ kHz, potrzebna granica ok. 1,6 Hz → $\alpha \approx 0\text{,}01$.
 
 ## Typowe pułapki
 
@@ -77,9 +77,9 @@ Porównaj z filtrem FIR z [07.04](04-filtry-fir.md): liczba mnożeń na próbkę
 ## Zadania
 
 1. $f_s = 8$ kHz, $f_c = 1$ kHz. Jaką granicę musi mieć prototyp analogowy przy metodzie biliniowej?
-2. Filtr EMA, $f_s = 1$ kHz, $\alpha = 0{,}01$. Ile wynosi przybliżona częstotliwość graniczna?
+2. Filtr EMA, $f_s = 1$ kHz, $\alpha = 0\text{,}01$. Ile wynosi przybliżona częstotliwość graniczna?
 3. Dobierz $\alpha$ filtra EMA, aby stała czasowa wynosiła 0,1 s przy $f_s = 100$ Hz.
-4. Filtr IIR ma bieguny $0{,}95e^{\pm j0{,}2\pi}$ i $1{,}02$. Czy jest stabilny?
+4. Filtr IIR ma bieguny $0\text{,}95e^{\pm j0\text{,}2\pi}$ i $1\text{,}02$. Czy jest stabilny?
 5. Dlaczego filtr eliptyczny 4. rzędu może zastąpić FIR o długości kilkudziesięciu współczynników i czym za to płacimy?
 
 <details>
@@ -87,7 +87,7 @@ Porównaj z filtrem FIR z [07.04](04-filtry-fir.md): liczba mnożeń na próbkę
 
 1. ≈ 1055 Hz
 2. ≈ 1,6 Hz
-3. $\tau = 0{,}1$ s = 10 próbek → $\alpha = 1 - e^{-1/10} \approx 0{,}095$
+3. $\tau = 0\text{,}1$ s = 10 próbek → $\alpha = 1 - e^{-1/10} \approx 0\text{,}095$
 4. Nie — biegun 1,02 leży poza okręgiem jednostkowym
 5. Bieguny blisko okręgu jednostkowego dają bardzo strome przejście małym kosztem; płaci się nieliniową fazą (duże zmiany opóźnienia grupowego przy granicy), zafalowaniami w pasmach i większą wrażliwością na kwantyzację
 </details>

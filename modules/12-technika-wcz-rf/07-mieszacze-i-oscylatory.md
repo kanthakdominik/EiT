@@ -50,11 +50,11 @@ Detektor fazy/częstotliwości porównuje $f_{ref}$ z $f_{VCO}/N$; filtr pętli 
 
 ## Przykład rozwiązany
 
-**Odbiornik FM:** RF 100 MHz, p.cz. 10,7 MHz, LO powyżej: $f_{LO} = 110{,}7$ MHz, lustro $f_{RF} + 2f_{IF} = 121{,}4$ MHz. Filtr wejściowy musi stłumić 121,4 MHz, a przestrajany — dla całego pasma 88–108 MHz (lustra 109,4–129,4 MHz; dlatego p.cz. 10,7 MHz, a nie np. 455 kHz).
+**Odbiornik FM:** RF 100 MHz, p.cz. 10,7 MHz, LO powyżej: $f_{LO} = 110\text{,}7$ MHz, lustro $f_{RF} + 2f_{IF} = 121\text{,}4$ MHz. Filtr wejściowy musi stłumić 121,4 MHz, a przestrajany — dla całego pasma 88–108 MHz (lustra 109,4–129,4 MHz; dlatego p.cz. 10,7 MHz, a nie np. 455 kHz).
 
-**Syntezer 2,44 GHz** z $f_{ref} = 1$ MHz: $N = 2440$, w paśmie pętli szum referencji i detektora wzrasta o $20\log 2440 \approx 67{,}7$ dB. Detektor o szumie −150 dBc/Hz (odniesionym do $f_{ref}$) daje w paśmie ok. −82 dBc/Hz na wyjściu.
+**Syntezer 2,44 GHz** z $f_{ref} = 1$ MHz: $N = 2440$, w paśmie pętli szum referencji i detektora wzrasta o $20\log 2440 \approx 67\text{,}7$ dB. Detektor o szumie −150 dBc/Hz (odniesionym do $f_{ref}$) daje w paśmie ok. −82 dBc/Hz na wyjściu.
 
-**Jitter:** oscylator 100 MHz o płaskim szumie −100 dBc/Hz od 10 kHz do 1 MHz: $\sqrt{2\cdot 10^{-10}\cdot 9{,}9\cdot 10^5} \approx 0{,}0141$ rad → $\sigma_t \approx 22$ ps.
+**Jitter:** oscylator 100 MHz o płaskim szumie −100 dBc/Hz od 10 kHz do 1 MHz: $\sqrt{2\cdot 10^{-10}\cdot 9\text{,}9\cdot 10^5} \approx 0\text{,}0141$ rad → $\sigma_t \approx 22$ ps.
 
 ## Typowe pułapki
 
@@ -104,10 +104,10 @@ Zauważ: sygnał i lustro dają **tę samą** p.cz. 10,7 MHz — mieszacz ich ni
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $f_{LO} = 857{,}3$ MHz, lustro $857{,}3 - 10{,}7 = 846{,}6$ MHz
+1. $f_{LO} = 857\text{,}3$ MHz, lustro $857\text{,}3 - 10\text{,}7 = 846\text{,}6$ MHz
 2. Przy 455 kHz lustro leżałoby tylko 0,91 MHz od sygnału — wewnątrz pasma 88–108 MHz i nie do odfiltrowania przestrajanym filtrem wejściowym; przy 10,7 MHz lustro jest 21,4 MHz dalej, poza pasmem radiofonii
 3. $f_{ref} = 25$ kHz, $N = 17\,200 \ldots 17\,600$
-4. $\sqrt{2\cdot 10^{-12}\cdot 10^7} \approx 4{,}47$ mrad → $\sigma_t \approx 14$ ps
+4. $\sqrt{2\cdot 10^{-12}\cdot 10^7} \approx 4\text{,}47$ mrad → $\sigma_t \approx 14$ ps
 5. $-30 - 110 + 10\log(10^4) = -100$ dBm — szum ten zakryje słabe sygnały poniżej ok. −100 dBm, niezależnie od NF odbiornika
 </details>
 

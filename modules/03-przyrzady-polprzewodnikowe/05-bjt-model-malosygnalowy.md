@@ -42,9 +42,9 @@ Przy $f_T$ wzmocnienie prądowe w układzie WE spada do 1. Wzmocnienie prądowe 
 
 $I_C = 1$ mA, $\beta = 100$, $C_\pi = 20$ pF, $C_\mu = 2$ pF.
 
-1. $g_m = 1/25{,}85 \approx 38{,}7$ mS, $r_\pi \approx 2{,}59$ kΩ.
-2. $f_T \approx \dfrac{0{,}0387}{2\pi\cdot 22\cdot 10^{-12}} \approx 280$ MHz, $f_\beta \approx 2{,}8$ MHz.
-3. Prosty wzmacniacz WE z $R_C = 4{,}7$ kΩ (bez rezystora emiterowego, $r_o$ pominięte): $K_u = -g_mR_C \approx -182$.
+1. $g_m = 1/25\text{,}85 \approx 38\text{,}7$ mS, $r_\pi \approx 2\text{,}59$ kΩ.
+2. $f_T \approx \dfrac{0\text{,}0387}{2\pi\cdot 22\cdot 10^{-12}} \approx 280$ MHz, $f_\beta \approx 2\text{,}8$ MHz.
+3. Prosty wzmacniacz WE z $R_C = 4\text{,}7$ kΩ (bez rezystora emiterowego, $r_o$ pominięte): $K_u = -g_mR_C \approx -182$.
 
 ## Typowe pułapki
 
@@ -67,7 +67,7 @@ Wyznacz $g_m$ „pomiarowo”: w LTspice ustaw punkt pracy tranzystora na 1 mA, 
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $g_m \approx 77{,}4$ mS, $r_\pi \approx 1{,}94$ kΩ, $r_e \approx 12{,}8\ \Omega$
+1. $g_m \approx 77\text{,}4$ mS, $r_\pi \approx 1\text{,}94$ kΩ, $r_e \approx 12\text{,}8\ \Omega$
 2. ≈ 3870; nie zależy od prądu (oba parametry zależą od $I_C$ odwrotnie)
 3. $f_\beta = 300/150 = 2$ MHz
 4. $u_{we} = i_b r_\pi + (\beta + 1)i_b R_E$, $u_{wy} = -\beta i_b R_C$ → $K_u = -\dfrac{\beta R_C}{r_\pi + (\beta + 1)R_E} \approx -\dfrac{R_C}{r_e + R_E}$

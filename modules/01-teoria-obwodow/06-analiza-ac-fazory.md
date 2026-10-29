@@ -39,10 +39,10 @@ Współczynnik mocy $\cos\varphi = P/S$. Kompensacja mocy biernej indukcyjnej: r
 
 Odbiornik: $R = 30\ \Omega$ szeregowo z cewką o $X_L = 40\ \Omega$, zasilanie 230 V, 50 Hz.
 
-1. $\underline{Z} = 30 + j40 = 50\angle 53{,}13^\circ\ \Omega$.
-2. $\underline{I} = \dfrac{230\angle 0^\circ}{50\angle 53{,}13^\circ} = 4{,}6\angle -53{,}13^\circ$ A.
-3. $P = I^2R = 4{,}6^2\cdot 30 \approx 635$ W, $Q = I^2X = 846$ var, $S = 230\cdot 4{,}6 = 1058$ VA, $\cos\varphi = 0{,}6$.
-4. Kompensacja do $\cos\varphi = 1$: kondensator równolegle do odbiornika o $C = \dfrac{846}{2\pi\cdot 50\cdot 230^2} \approx 51\ \mu$F. Prąd pobierany z sieci spada z 4,6 A do $635/230 \approx 2{,}76$ A.
+1. $\underline{Z} = 30 + j40 = 50\angle 53\text{,}13^\circ\ \Omega$.
+2. $\underline{I} = \dfrac{230\angle 0^\circ}{50\angle 53\text{,}13^\circ} = 4\text{,}6\angle -53\text{,}13^\circ$ A.
+3. $P = I^2R = 4\text{,}6^2\cdot 30 \approx 635$ W, $Q = I^2X = 846$ var, $S = 230\cdot 4\text{,}6 = 1058$ VA, $\cos\varphi = 0\text{,}6$.
+4. Kompensacja do $\cos\varphi = 1$: kondensator równolegle do odbiornika o $C = \dfrac{846}{2\pi\cdot 50\cdot 230^2} \approx 51\ \mu$F. Prąd pobierany z sieci spada z 4,6 A do $635/230 \approx 2\text{,}76$ A.
 
 ## Typowe pułapki
 
@@ -64,7 +64,7 @@ C1 1 0 51u
 .end
 ```
 
-($X_L = 40\ \Omega$ przy 50 Hz → $L \approx 127{,}3$ mH; amplituda 325,27 V = 230 V skuteczne.) Porównaj prąd źródła z kondensatorem i bez niego. W oknie przebiegów **Alt + klik na elemencie** pokazuje moc chwilową, a **Ctrl + klik na nazwie** — wartość średnią (czyli moc czynną).
+($X_L = 40\ \Omega$ przy 50 Hz → $L \approx 127\text{,}3$ mH; amplituda 325,27 V = 230 V skuteczne.) Porównaj prąd źródła z kondensatorem i bez niego. W oknie przebiegów **Alt + klik na elemencie** pokazuje moc chwilową, a **Ctrl + klik na nazwie** — wartość średnią (czyli moc czynną).
 
 ## Zadania
 
@@ -78,11 +78,11 @@ C1 1 0 51u
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $X_C \approx 159{,}2\ \Omega$; $\underline{Z} = 100 - j159{,}2 \approx 188\angle -57{,}9^\circ\ \Omega$
-2. $X_L \approx 628{,}3\ \Omega$; $\underline{Z} \approx 283 + j450{,}5 \approx 532\angle 57{,}9^\circ\ \Omega$
-3. $\underline{U}_C = 10\cdot\dfrac{-j}{1 - j} = 5 - j5 \approx 7{,}07\angle -45^\circ$ V
+1. $X_C \approx 159\text{,}2\ \Omega$; $\underline{Z} = 100 - j159\text{,}2 \approx 188\angle -57\text{,}9^\circ\ \Omega$
+2. $X_L \approx 628\text{,}3\ \Omega$; $\underline{Z} \approx 283 + j450\text{,}5 \approx 532\angle 57\text{,}9^\circ\ \Omega$
+3. $\underline{U}_C = 10\cdot\dfrac{-j}{1 - j} = 5 - j5 \approx 7\text{,}07\angle -45^\circ$ V
 4. $P \approx 996$ W, $Q = 575$ var, $S = 1150$ VA
-5. $\underline{Z}_L = 50 - j30\ \Omega$, $P_{max} = \dfrac{E^2}{4R} = \dfrac{100}{200} = 0{,}5$ W
+5. $\underline{Z}_L = 50 - j30\ \Omega$, $P_{max} = \dfrac{E^2}{4R} = \dfrac{100}{200} = 0\text{,}5$ W
 6. Fazor zakłada jedną, wspólną pulsację. Dla różnych częstotliwości trzeba liczyć osobno i sumować przebiegi czasowe; moce czynne harmonicznych się sumują.
 </details>
 

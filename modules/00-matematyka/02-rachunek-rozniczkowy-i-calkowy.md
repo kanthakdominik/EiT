@@ -84,18 +84,18 @@ W LTspice: źródło sinusoidalne, a w oknie przebiegów **Ctrl + klik na nazwie
 2. Napięcie $u(t) = 10\sin(1000t)$ V jest przyłożone do kondensatora $C = 10\ \mu$F. Wyznacz prąd i jego amplitudę.
 3. Wykaż, że energia zgromadzona w kondensatorze naładowanym do napięcia $U$ wynosi $W = \dfrac{CU^2}{2}$.
 4. Moc wydzielana w obciążeniu źródła o SEM $E$ i rezystancji wewnętrznej $R_w$ wynosi $P(R_L) = \dfrac{E^2 R_L}{(R_w + R_L)^2}$. Znajdź $R_L$, dla którego moc jest maksymalna.
-5. Przybliż $e^{x}$ szeregiem Taylora do wyrazu kwadratowego i oszacuj błąd dla $x = 0{,}1$.
+5. Przybliż $e^{x}$ szeregiem Taylora do wyrazu kwadratowego i oszacuj błąd dla $x = 0\text{,}1$.
 6. Przebieg prostokątny ma poziomy 0 i 5 V oraz wypełnienie 20%. Wyznacz wartość średnią i skuteczną.
 
 <details>
 <summary>Odpowiedzi</summary>
 
 1. $A/\sqrt{3}$ (na ćwierci okresu $u = 4At/T$; $\frac{4}{T}\int_0^{T/4}(4At/T)^2dt = A^2/3$)
-2. $i = C\dfrac{du}{dt} = 10\cdot 10^{-6}\cdot 10\cdot 1000\cos(1000t) = 0{,}1\cos(1000t)$ A, amplituda 100 mA
+2. $i = C\dfrac{du}{dt} = 10\cdot 10^{-6}\cdot 10\cdot 1000\cos(1000t) = 0\text{,}1\cos(1000t)$ A, amplituda 100 mA
 3. $W = \int_0^t u\,i\,dt = \int_0^U u\,C\,du = \dfrac{CU^2}{2}$
 4. $\dfrac{dP}{dR_L} = E^2\dfrac{(R_w + R_L) - 2R_L}{(R_w + R_L)^3} = 0 \Rightarrow R_L = R_w$
-5. $e^x \approx 1 + x + x^2/2 = 1{,}105$; dokładnie $1{,}10517$; błąd ok. $1{,}7\cdot 10^{-4}$ (rzędu następnego wyrazu $x^3/6$)
-6. $U_{AV} = 1$ V, $U_{RMS} = 5\sqrt{0{,}2} \approx 2{,}24$ V
+5. $e^x \approx 1 + x + x^2/2 = 1\text{,}105$; dokładnie $1\text{,}10517$; błąd ok. $1\text{,}7\cdot 10^{-4}$ (rzędu następnego wyrazu $x^3/6$)
+6. $U_{AV} = 1$ V, $U_{RMS} = 5\sqrt{0\text{,}2} \approx 2\text{,}24$ V
 </details>
 
 ## Źródła

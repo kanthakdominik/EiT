@@ -40,9 +40,9 @@ Prąd fotodiody zamienia się na napięcie wzmacniaczem transimpedancyjnym (TIA)
 
 **Przestrajanie obwodu LC warikapem.** $L = 1\ \mu$H, pojemność warikapu zmienia się od 10 pF (przy 0 V) do 3,5 pF (przy 5 V).
 
-$$f = \frac{1}{2\pi\sqrt{LC}}: \quad 10\ \text{pF} \rightarrow 50{,}3\ \text{MHz}, \quad 3{,}5\ \text{pF} \rightarrow 85{,}1\ \text{MHz}$$
+$$f = \frac{1}{2\pi\sqrt{LC}}: \quad 10\ \text{pF} \rightarrow 50\text{,}3\ \text{MHz}, \quad 3\text{,}5\ \text{pF} \rightarrow 85\text{,}1\ \text{MHz}$$
 
-Pojemność zmienia się 2,86 razy, a częstotliwość tylko $\sqrt{2{,}86} \approx 1{,}69$ razy. Pojemności pasożytnicze dodają się do warikapu i zawężają zakres.
+Pojemność zmienia się 2,86 razy, a częstotliwość tylko $\sqrt{2\text{,}86} \approx 1\text{,}69$ razy. Pojemności pasożytnicze dodają się do warikapu i zawężają zakres.
 
 ## Typowe pułapki
 
@@ -69,7 +69,7 @@ Obserwuj napięcie wyjściowe i prąd diody dla kolejnych obciążeń. Przy któ
 
 ## Zadania
 
-1. Niebieska LED ($U_F = 3{,}0$ V przy 5 mA) ma świecić z zasilania 3,3 V. Dobierz rezystor. Co się stanie, gdy napięcie zasilania spadnie do 3,1 V?
+1. Niebieska LED ($U_F = 3\text{,}0$ V przy 5 mA) ma świecić z zasilania 3,3 V. Dobierz rezystor. Co się stanie, gdy napięcie zasilania spadnie do 3,1 V?
 2. Dioda Zenera 5,1 V przewodzi 20 mA. Jaka moc się w niej wydziela?
 3. Warikap zmienia pojemność od 10 pF do 3,5 pF, $L = 1\ \mu$H. Wyznacz zakres przestrajania.
 4. Fotodioda o czułości 0,5 A/W jest oświetlona mocą 1 µW. Jakie napięcie da wzmacniacz transimpedancyjny z rezystorem 1 MΩ?
@@ -78,10 +78,10 @@ Obserwuj napięcie wyjściowe i prąd diody dla kolejnych obciążeń. Przy któ
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $R = 0{,}3\ \text{V}/5\ \text{mA} = 60\ \Omega$; przy 3,1 V prąd spadnie do ok. 1,7 mA — przy tak małym zapasie napięcia jasność bardzo zależy od zasilania (lepiej zasilać źródłem prądowym)
+1. $R = 0\text{,}3\ \text{V}/5\ \text{mA} = 60\ \Omega$; przy 3,1 V prąd spadnie do ok. 1,7 mA — przy tak małym zapasie napięcia jasność bardzo zależy od zasilania (lepiej zasilać źródłem prądowym)
 2. $P \approx 102$ mW
 3. ≈ 50,3–85,1 MHz
-4. $I = 0{,}5\ \mu$A, $U = 0{,}5$ V
+4. $I = 0\text{,}5\ \mu$A, $U = 0\text{,}5$ V
 5. Spadek ok. 0,35 V zamiast ok. 0,8 V przy tym prądzie oraz brak strat na ładunek $t_{rr}$; straty przewodzenia ok. 0,35 W zamiast 0,8 W
 </details>
 

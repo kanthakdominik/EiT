@@ -52,12 +52,12 @@ Układ jest niestabilny, gdy przy pewnej częstotliwości $T(j\omega) = -1$ — 
 
 ## Przykład rozwiązany
 
-**Odczulenie:** $A = 10^5$, $\beta = 0{,}01$ → $A_f = \dfrac{10^5}{1001} \approx 99{,}90$. Gdy $A$ spadnie o połowę: $A_f = \dfrac{5\cdot 10^4}{501} \approx 99{,}80$ — zmiana tylko o 0,1%.
+**Odczulenie:** $A = 10^5$, $\beta = 0\text{,}01$ → $A_f = \dfrac{10^5}{1001} \approx 99\text{,}90$. Gdy $A$ spadnie o połowę: $A_f = \dfrac{5\cdot 10^4}{501} \approx 99\text{,}80$ — zmiana tylko o 0,1%.
 
 **Zapas fazy:** wzmacniacz ma $A_0 = 10^5$ i bieguny przy 10 Hz i 1 MHz.
 
 1. Dla $\beta = 1$ (wtórnik): $\lvert T\rvert = 1$ przy ok. 786 kHz, faza $T$ ≈ −128°, **PM ≈ 52°** — stabilny, z wyraźnym przeregulowaniem.
-2. Dla $\beta = 0{,}1$ (wzmocnienie 10): $\lvert T\rvert = 1$ przy ok. 100 kHz, **PM ≈ 84°** — bardzo stabilny.
+2. Dla $\beta = 0\text{,}1$ (wzmocnienie 10): $\lvert T\rvert = 1$ przy ok. 100 kHz, **PM ≈ 84°** — bardzo stabilny.
 
 ## Typowe pułapki
 
@@ -83,7 +83,7 @@ E1 out 0 Laplace={1e5/((1+s/(2*pi*10))*(1+s/(2*pi*1e6)))} in fb
 
 ## Zadania
 
-1. $A = 10^5$, $\beta = 0{,}01$. Wyznacz $A_f$ i jego zmianę przy dwukrotnym spadku $A$.
+1. $A = 10^5$, $\beta = 0\text{,}01$. Wyznacz $A_f$ i jego zmianę przy dwukrotnym spadku $A$.
 2. Wzmacniacz o $A = 2000$ i paśmie 1 kHz (jeden biegun). Jakie pasmo będzie miał ze sprzężeniem dającym wzmocnienie 20?
 3. Wzmacniacz nieodwracający: wejście wzmacniacza ma 1 MΩ, wzmocnienie pętli 1000. Jaka jest rezystancja wejściowa układu ze sprzężeniem?
 4. Dla wzmacniacza z przykładu (bieguny 10 Hz i 1 MHz) wyznacz zapas fazy przy wzmocnieniu 10 i przy wzmocnieniu 1. Który przypadek jest groźniejszy i dlaczego?

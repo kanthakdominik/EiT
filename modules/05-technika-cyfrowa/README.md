@@ -33,7 +33,7 @@ Około 60 minut, bez notatek.
 3. Zaprojektuj multiplekser 4:1 na bramkach — ile wejść adresowych potrzeba?
 4. Czym różni się zatrzask (latch) od przerzutnika wyzwalanego zboczem?
 5. Ile przerzutników potrzeba do licznika modulo 10? Narysuj graf stanów.
-6. $t_{clk\to q} = 0{,}5$ ns, maksymalne opóźnienie logiki 6 ns, $t_{setup} = 0{,}3$ ns. Jaka jest maksymalna częstotliwość zegara?
+6. $t_{clk\to q} = 0\text{,}5$ ns, maksymalne opóźnienie logiki 6 ns, $t_{setup} = 0\text{,}3$ ns. Jaka jest maksymalna częstotliwość zegara?
 7. Dlaczego sygnału z przycisku nie podaje się bezpośrednio na wejście automatu taktowanego zegarem?
 
 <details>
@@ -44,7 +44,7 @@ Około 60 minut, bez notatek.
 3. 2 wejścia adresowe; $Y = \overline{S_1}\,\overline{S_0}D_0 + \overline{S_1}S_0D_1 + S_1\overline{S_0}D_2 + S_1S_0D_3$
 4. Zatrzask jest przezroczysty przez cały czas aktywnego poziomu sygnału zezwalającego; przerzutnik zapamiętuje stan wejścia tylko w chwili zbocza zegara
 5. 4 przerzutniki ($2^3 < 10 \leq 2^4$); stany 0→1→…→9→0
-6. $f_{max} = 1/6{,}8\ \text{ns} \approx 147$ MHz
+6. $f_{max} = 1/6\text{,}8\ \text{ns} \approx 147$ MHz
 7. Sygnał jest asynchroniczny względem zegara (ryzyko metastabilności) i drga przy przełączaniu (wiele zboczy). Potrzebny synchronizator i eliminacja drgań styków
 </details>
 

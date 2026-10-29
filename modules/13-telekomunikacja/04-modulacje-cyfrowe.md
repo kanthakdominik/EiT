@@ -40,7 +40,7 @@ Symbol to punkt na płaszczyźnie I/Q (**konstelacja**). Modulator I/Q (dwa mies
 
 ## Przykład rozwiązany
 
-Kanał 20 MHz, $\alpha = 0{,}25$ → $R_s = 16$ Msym/s.
+Kanał 20 MHz, $\alpha = 0\text{,}25$ → $R_s = 16$ Msym/s.
 
 | Modulacja | Przepływność (bez kodowania) |
 |---|---|
@@ -99,7 +99,7 @@ plt.show()
 
 ## Zadania
 
-1. Ile wynosi przepływność 64-QAM przy 5 Msym/s? Jakie pasmo przy $\alpha = 0{,}2$?
+1. Ile wynosi przepływność 64-QAM przy 5 Msym/s? Jakie pasmo przy $\alpha = 0\text{,}2$?
 2. Zapisz konstelację QPSK z kodem Graya.
 3. Dlaczego QPSK ma taki sam BER na bit jak BPSK, a dwa razy większą efektywność?
 4. Zmierzone EVM wynosi 3%. Jakiemu SNR odpowiada? Czy wystarczy dla 256-QAM (wymagane EVM ok. 2–3%)?

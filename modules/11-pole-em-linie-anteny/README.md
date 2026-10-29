@@ -41,11 +41,11 @@ Około 60 minut, bez notatek.
 <summary>Odpowiedzi</summary>
 
 1. $\nabla\cdot\mathbf D = \rho$ (ładunek źródłem pola E), $\nabla\cdot\mathbf B = 0$ (brak ładunków magnetycznych), $\nabla\times\mathbf E = -\partial\mathbf B/\partial t$ (indukcja Faradaya), $\nabla\times\mathbf H = \mathbf J + \partial\mathbf D/\partial t$ (prawo Ampère'a z prądem przesunięcia)
-2. ≈ 377 Ω (120π); $c/2 = 1{,}5\cdot 10^8$ m/s
+2. ≈ 377 Ω (120π); $c/2 = 1\text{,}5\cdot 10^8$ m/s
 3. $\delta \propto 1/\sqrt f$ → 6,5 µm
 4. $\Gamma = 1/3$, WFS = 2, RL ≈ 9,5 dB
 5. Zwarcie → rozwarcie (∞), rozwarcie → zwarcie (0)
-6. $\lambda/2 \approx 17{,}3$ cm, w praktyce ok. 16–16,5 cm (skrócenie ok. 5%)
+6. $\lambda/2 \approx 17\text{,}3$ cm, w praktyce ok. 16–16,5 cm (skrócenie ok. 5%)
 7. ≈ 80 dB
 
 **Ocena:** 1 — temat 01; 2–3 — 02; 4–5 — 03; 6 — 07; 7 — 08.

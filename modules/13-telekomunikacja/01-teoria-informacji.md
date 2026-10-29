@@ -13,7 +13,7 @@ Zdarzenie o prawdopodobieństwie $p$ niesie $I = -\log_2 p$ bitów — rzadkie z
 $$H(X) = -\sum_i p_i\log_2 p_i\ \ [\text{bit/symbol}]$$
 
 - $0 \leq H \leq \log_2 M$; maksimum dla symboli równoprawdopodobnych.
-- Źródło binarne: $H(p) = -p\log_2p - (1-p)\log_2(1-p)$, maksimum 1 bit przy $p = 0{,}5$.
+- Źródło binarne: $H(p) = -p\log_2p - (1-p)\log_2(1-p)$, maksimum 1 bit przy $p = 0\text{,}5$.
 - Źródła z pamięcią (tekst, obraz) mają mniejszą entropię na symbol niż wynika z częstości pojedynczych symboli — kompresory wykorzystują zależności (kontekst, słowniki, predykcję).
 
 ### Kodowanie źródłowe
@@ -38,7 +38,7 @@ $$C = B\log_2\left(1 + \frac{S}{N}\right)\ \ [\text{bit/s}]$$
 Przy przepływności $R < C$ istnieją kody o dowolnie małym prawdopodobieństwie błędu; przy $R > C$ — nie istnieją. Wnioski:
 - przy dużym SNR pojemność rośnie liniowo z pasmem i logarytmicznie z mocą (+3 dB SNR ≈ +1 bit/s/Hz);
 - przy małym SNR pojemność rośnie liniowo z mocą;
-- **granica Shannona:** $E_b/N_0 \geq \ln 2 \approx -1{,}59$ dB przy nieskończonym paśmie — poniżej tej wartości bezbłędna transmisja jest niemożliwa;
+- **granica Shannona:** $E_b/N_0 \geq \ln 2 \approx -1\text{,}59$ dB przy nieskończonym paśmie — poniżej tej wartości bezbłędna transmisja jest niemożliwa;
 - efektywność widmowa $\eta = R/B$ wymaga $E_b/N_0 \geq (2^\eta - 1)/\eta$.
 
 Współczesne kody (turbo, LDPC, polarne — [13.06](06-kodowanie-kanalowe.md)) pracują w odległości ułamka dB do ok. 1–2 dB od tej granicy.
@@ -47,11 +47,11 @@ Współczesne kody (turbo, LDPC, polarne — [13.06](06-kodowanie-kanalowe.md)) 
 
 **Źródło** {A, B, C, D} z prawdopodobieństwami 0,4; 0,3; 0,2; 0,1.
 
-1. $H = -(0{,}4\log_20{,}4 + 0{,}3\log_20{,}3 + 0{,}2\log_20{,}2 + 0{,}1\log_20{,}1) \approx 1{,}846$ bit/symbol.
+1. $H = -(0\text{,}4\log_20\text{,}4 + 0\text{,}3\log_20\text{,}3 + 0\text{,}2\log_20\text{,}2 + 0\text{,}1\log_20\text{,}1) \approx 1\text{,}846$ bit/symbol.
 2. Huffman: łączymy C+D (0,3), potem B+(CD) (0,6), potem A+(B,C,D). Kody: A = 0, B = 10, C = 110, D = 111.
-3. $\bar L = 0{,}4\cdot 1 + 0{,}3\cdot 2 + 0{,}2\cdot 3 + 0{,}1\cdot 3 = 1{,}9$ bitu — 97% sprawności (kod równomierny potrzebowałby 2 bitów).
+3. $\bar L = 0\text{,}4\cdot 1 + 0\text{,}3\cdot 2 + 0\text{,}2\cdot 3 + 0\text{,}1\cdot 3 = 1\text{,}9$ bitu — 97% sprawności (kod równomierny potrzebowałby 2 bitów).
 
-**Pojemność:** kanał telefoniczny $B = 3{,}1$ kHz, SNR = 30 dB → $C = 3100\log_2 1001 \approx 30{,}9$ kbit/s — stąd granica analogowych modemów telefonicznych (modemy 56k wykorzystywały cyfrowy odcinek sieci).
+**Pojemność:** kanał telefoniczny $B = 3\text{,}1$ kHz, SNR = 30 dB → $C = 3100\log_2 1001 \approx 30\text{,}9$ kbit/s — stąd granica analogowych modemów telefonicznych (modemy 56k wykorzystywały cyfrowy odcinek sieci).
 
 ## Typowe pułapki
 
@@ -101,20 +101,20 @@ print(f"granica Shannona: {10*np.log10(np.log(2)):.2f} dB")
 
 ## Zadania
 
-1. Entropia źródła binarnego z $p = 0{,}1$. Ile maksymalnie można zyskać kompresją?
+1. Entropia źródła binarnego z $p = 0\text{,}1$. Ile maksymalnie można zyskać kompresją?
 2. Zbuduj kod Huffmana dla prawdopodobieństw 0,5; 0,25; 0,125; 0,125 i policz średnią długość.
-3. Kanał binarny symetryczny z $p = 0{,}01$. Jaka jest pojemność na bit?
+3. Kanał binarny symetryczny z $p = 0\text{,}01$. Jaka jest pojemność na bit?
 4. Łącze 20 MHz ma przenosić 100 Mbit/s. Jakiego minimalnego SNR wymaga granica Shannona?
 5. Jaka jest minimalna wartość $E_b/N_0$ dla efektywności widmowej 4 bit/s/Hz?
 
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $H(0{,}1) \approx 0{,}469$ bitu — kompresja do ok. 47% (kodując bloki symboli)
-2. 0, 10, 110, 111; $\bar L = 1{,}75 = H$ (prawdopodobieństwa są potęgami 1/2)
-3. $1 - H(0{,}01) \approx 1 - 0{,}081 = 0{,}919$ bitu
+1. $H(0\text{,}1) \approx 0\text{,}469$ bitu — kompresja do ok. 47% (kodując bloki symboli)
+2. 0, 10, 110, 111; $\bar L = 1\text{,}75 = H$ (prawdopodobieństwa są potęgami 1/2)
+3. $1 - H(0\text{,}01) \approx 1 - 0\text{,}081 = 0\text{,}919$ bitu
 4. $\eta = 5$ → SNR $\geq 2^5 - 1 = 31$ ≈ 14,9 dB
-5. $(2^4 - 1)/4 = 3{,}75$ ≈ 5,7 dB
+5. $(2^4 - 1)/4 = 3\text{,}75$ ≈ 5,7 dB
 </details>
 
 ## Źródła

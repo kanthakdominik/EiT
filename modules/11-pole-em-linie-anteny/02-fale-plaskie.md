@@ -51,12 +51,12 @@ Te same wzory co dla linii transmisyjnej ([11.03](03-linie-transmisyjne.md)) —
 
 **Fala z powietrza na szkło** ($\varepsilon_r = 4$, padanie prostopadłe):
 
-1. $\eta_2 = \eta_0/2 \approx 188{,}5\ \Omega$.
-2. $\Gamma = (188{,}5 - 377)/(188{,}5 + 377) = -1/3$.
+1. $\eta_2 = \eta_0/2 \approx 188\text{,}5\ \Omega$.
+2. $\Gamma = (188\text{,}5 - 377)/(188\text{,}5 + 377) = -1/3$.
 3. Odbita część mocy $|\Gamma|^2 = 1/9 \approx 11\%$; przechodzi 89%.
 4. W szkle: $v = c/2$, $\lambda$ dwa razy krótsza.
 
-**Ekran miedziany 35 µm (folia PCB) przy 100 MHz:** $35/6{,}5 \approx 5{,}4\,\delta$ → tłumienie absorpcyjne ok. $5{,}4\cdot 8{,}7 \approx 47$ dB (do tego dochodzi tłumienie odbiciowe; w praktyce skuteczność ekranu ograniczają szczeliny — [16](../16-pcb-emc-konstrukcja/)).
+**Ekran miedziany 35 µm (folia PCB) przy 100 MHz:** $35/6\text{,}5 \approx 5\text{,}4\,\delta$ → tłumienie absorpcyjne ok. $5\text{,}4\cdot 8\text{,}7 \approx 47$ dB (do tego dochodzi tłumienie odbiciowe; w praktyce skuteczność ekranu ograniczają szczeliny — [16](../16-pcb-emc-konstrukcja/)).
 
 ## Typowe pułapki
 
@@ -91,7 +91,7 @@ plt.subplot(1, 2, 2); plt.xlabel('f [Hz]'); plt.ylabel('R_ac/R_dc'); plt.grid(wh
 
 ## Zadania
 
-1. Prędkość, długość fali i impedancja falowa w ośrodku $\varepsilon_r = 2{,}25$ przy 1 GHz.
+1. Prędkość, długość fali i impedancja falowa w ośrodku $\varepsilon_r = 2\text{,}25$ przy 1 GHz.
 2. Głębokość wnikania w miedzi przy 10 kHz i 10 MHz.
 3. Jaka część mocy fali odbija się od granicy powietrze–woda ($\varepsilon_r = 81$, bez strat)?
 4. Gęstość mocy 1 mW/m² w polu dalekim. Jaka jest wartość skuteczna natężenia pola E?
@@ -102,8 +102,8 @@ plt.subplot(1, 2, 2); plt.xlabel('f [Hz]'); plt.ylabel('R_ac/R_dc'); plt.grid(wh
 
 1. $v = 2\cdot 10^8$ m/s, $\lambda = 20$ cm, $\eta = 251\ \Omega$
 2. 0,65 mm i 20,6 µm
-3. $\eta_2 = 377/9 \approx 41{,}9\ \Omega$, $\Gamma = -0{,}8$, odbija się 64% mocy
-4. $E = \sqrt{S\eta_0} = \sqrt{10^{-3}\cdot 377} \approx 0{,}61$ V/m
+3. $\eta_2 = 377/9 \approx 41\text{,}9\ \Omega$, $\Gamma = -0\text{,}8$, odbija się 64% mocy
+4. $E = \sqrt{S\eta_0} = \sqrt{10^{-3}\cdot 377} \approx 0\text{,}61$ V/m
 5. 3 dB
 </details>
 

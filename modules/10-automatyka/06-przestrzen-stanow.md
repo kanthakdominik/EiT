@@ -37,11 +37,11 @@ Błąd estymacji zanika z dynamiką $A - LC$. Obserwator projektuje się 2–5 r
 
 $$A = \begin{bmatrix} 0 & 1/C \\ -1/L & -R/L\end{bmatrix} = \begin{bmatrix} 0 & 10^5 \\ -1000 & -10^4\end{bmatrix},\qquad B = \begin{bmatrix}0\\ 1/L\end{bmatrix}$$
 
-Wartości własne: $s^2 + 10^4s + 10^8 = 0$ → $s = -5000 \pm j8660$ ($\omega_n = 10^4$ rad/s, $\zeta = 0{,}5$) — zgodnie z [01.05](../01-teoria-obwodow/05-obwody-2-rzedu.md).
+Wartości własne: $s^2 + 10^4s + 10^8 = 0$ → $s = -5000 \pm j8660$ ($\omega_n = 10^4$ rad/s, $\zeta = 0\text{,}5$) — zgodnie z [01.05](../01-teoria-obwodow/05-obwody-2-rzedu.md).
 
 **2. Podwójny integrator** (masa sterowana siłą, $\ddot x = u$): $A = \begin{bmatrix}0&1\\0&0\end{bmatrix}$, $B = \begin{bmatrix}0\\1\end{bmatrix}$.
-Sterowalność: $[B\ AB] = \begin{bmatrix}0&1\\1&0\end{bmatrix}$, rząd 2. Zadane bieguny $\omega_n = 2$, $\zeta = 0{,}7$: $s^2 + 2{,}8s + 4$.
-$A - BK = \begin{bmatrix}0&1\\-k_1&-k_2\end{bmatrix}$ → $s^2 + k_2s + k_1$ → **$k_1 = 4$, $k_2 = 2{,}8$**.
+Sterowalność: $[B\ AB] = \begin{bmatrix}0&1\\1&0\end{bmatrix}$, rząd 2. Zadane bieguny $\omega_n = 2$, $\zeta = 0\text{,}7$: $s^2 + 2\text{,}8s + 4$.
+$A - BK = \begin{bmatrix}0&1\\-k_1&-k_2\end{bmatrix}$ → $s^2 + k_2s + k_1$ → **$k_1 = 4$, $k_2 = 2\text{,}8$**.
 
 ## Typowe pułapki
 

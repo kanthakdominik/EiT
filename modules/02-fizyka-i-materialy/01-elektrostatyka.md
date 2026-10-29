@@ -6,7 +6,7 @@ Pole elektryczne wyjaśnia, jak działa kondensator, skąd bierze się pojemnoś
 
 ## Teoria w pigułce
 
-**Prawo Coulomba:** $F = \dfrac{1}{4\pi\varepsilon_0}\dfrac{q_1q_2}{r^2}$, $\dfrac{1}{4\pi\varepsilon_0} \approx 8{,}99\cdot 10^9$ N·m²/C².
+**Prawo Coulomba:** $F = \dfrac{1}{4\pi\varepsilon_0}\dfrac{q_1q_2}{r^2}$, $\dfrac{1}{4\pi\varepsilon_0} \approx 8\text{,}99\cdot 10^9$ N·m²/C².
 
 **Natężenie pola** $\mathbf{E} = \mathbf{F}/q$ [V/m]. Pole kilku ładunków to suma wektorowa (superpozycja).
 
@@ -28,7 +28,7 @@ $$\oint_S \mathbf{D}\cdot d\mathbf{S} = Q_{wewn}, \qquad \mathbf{D} = \varepsilo
 | Kondensator cylindryczny (kabel koncentryczny), długość $l$ | $C = \dfrac{2\pi\varepsilon_0\varepsilon_r l}{\ln(b/a)}$ |
 | Kula o promieniu $R$ | $C = 4\pi\varepsilon_0 R$ |
 
-$\varepsilon_0 \approx 8{,}854$ pF/m.
+$\varepsilon_0 \approx 8\text{,}854$ pF/m.
 
 **Energia zgromadzona:** $W = \tfrac12 CU^2$, gęstość energii pola $w = \tfrac12\varepsilon E^2$.
 
@@ -36,9 +36,9 @@ $\varepsilon_0 \approx 8{,}854$ pF/m.
 
 Kondensator płaski: okładki 1 cm², odstęp 0,1 mm, dielektryk $\varepsilon_r = 4$ (laminat FR-4), napięcie 50 V.
 
-1. $C = \dfrac{8{,}854\cdot 10^{-12}\cdot 4\cdot 10^{-4}}{10^{-4}} \approx 35{,}4$ pF.
-2. Pole: $E = U/d = 50/10^{-4} = 0{,}5$ MV/m — dużo poniżej wytrzymałości FR-4 (rzędu 20 MV/m).
-3. Energia: $W = \tfrac12\cdot 35{,}4\cdot 10^{-12}\cdot 50^2 \approx 44$ nJ.
+1. $C = \dfrac{8\text{,}854\cdot 10^{-12}\cdot 4\cdot 10^{-4}}{10^{-4}} \approx 35\text{,}4$ pF.
+2. Pole: $E = U/d = 50/10^{-4} = 0\text{,}5$ MV/m — dużo poniżej wytrzymałości FR-4 (rzędu 20 MV/m).
+3. Energia: $W = \tfrac12\cdot 35\text{,}4\cdot 10^{-12}\cdot 50^2 \approx 44$ nJ.
 
 To jednocześnie oszacowanie pojemności między polem miedzi na wierzchu płytki a płaszczyzną masy pod nią — pojemności pasożytnicze PCB są rzędu pF/cm².
 
@@ -63,8 +63,8 @@ W [Falstad — symulacje elektrostatyki](https://www.falstad.com/mathphysics.htm
 ## Zadania
 
 1. Dwa ładunki po 1 µC w odległości 10 cm. Jaka siła na siebie działa?
-2. Kondensator płaski 35,4 pF ($A = 1$ cm², $d = 0{,}1$ mm, $\varepsilon_r = 4$). Jak zmieni się pojemność, jeśli zmniejszysz odstęp o połowę i usuniesz dielektryk?
-3. Jaką pojemność ma 1 m kabla koncentrycznego o promieniach 0,45 mm i 1,47 mm z polietylenem ($\varepsilon_r = 2{,}25$)?
+2. Kondensator płaski 35,4 pF ($A = 1$ cm², $d = 0\text{,}1$ mm, $\varepsilon_r = 4$). Jak zmieni się pojemność, jeśli zmniejszysz odstęp o połowę i usuniesz dielektryk?
+3. Jaką pojemność ma 1 m kabla koncentrycznego o promieniach 0,45 mm i 1,47 mm z polietylenem ($\varepsilon_r = 2\text{,}25$)?
 4. Kondensator 1000 µF naładowany do 400 V. Jaka energia jest zgromadzona i dlaczego jest groźny?
 5. Dwa kondensatory 10 nF i 40 nF połączone szeregowo dołączono do 50 V. Wyznacz napięcie na każdym.
 6. Wyjaśnij, dlaczego wewnątrz metalowej obudowy pole elektrostatyczne z zewnątrz jest zerowe.
@@ -72,8 +72,8 @@ W [Falstad — symulacje elektrostatyki](https://www.falstad.com/mathphysics.htm
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $F = 8{,}99\cdot 10^9\cdot\dfrac{10^{-12}}{0{,}01} \approx 0{,}9$ N
-2. $C' = C\cdot\dfrac{2}{4} = 17{,}7$ pF (dwukrotnie mniejszy odstęp: ×2; brak dielektryka: ÷4)
+1. $F = 8\text{,}99\cdot 10^9\cdot\dfrac{10^{-12}}{0\text{,}01} \approx 0\text{,}9$ N
+2. $C' = C\cdot\dfrac{2}{4} = 17\text{,}7$ pF (dwukrotnie mniejszy odstęp: ×2; brak dielektryka: ÷4)
 3. $\approx 106$ pF
 4. $W = \tfrac12\cdot 10^{-3}\cdot 400^2 = 80$ J — może dostarczyć bardzo duży prąd w krótkim czasie, napięcie groźne dla życia, utrzymuje się długo po odłączeniu zasilania
 5. Ładunek jednakowy: $C_z = 8$ nF, $Q = 400$ nC; $U_1 = 40$ V na 10 nF, $U_2 = 10$ V na 40 nF (większe napięcie na mniejszej pojemności)

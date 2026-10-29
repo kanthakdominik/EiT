@@ -14,7 +14,7 @@ $$U_{q,RMS} = \frac{\text{LSB}}{\sqrt{12}}$$
 
 **Teoretyczny SNR dla pełnozakresowej sinusoidy:**
 
-$$\text{SNR} = 6{,}02N + 1{,}76\ \text{dB}$$
+$$\text{SNR} = 6\text{,}02N + 1\text{,}76\ \text{dB}$$
 
 Każdy bit to ok. 6 dB. Sygnał o amplitudzie mniejszej niż pełny zakres traci odpowiednio SNR (−6 dB amplitudy = −6 dB SNR).
 
@@ -25,7 +25,7 @@ Każdy bit to ok. 6 dB. Sygnał o amplitudzie mniejszej niż pełny zakres traci
 | **INL / DNL** | Nieliniowość całkowa i różniczkowa (w LSB); DNL < −1 LSB → brakujące kody |
 | Offset, błąd wzmocnienia | Błędy statyczne, kalibrowalne |
 | **SINAD** | Stosunek sygnału do szumu i zniekształceń razem |
-| **ENOB** | Efektywna liczba bitów: $\text{ENOB} = \dfrac{\text{SINAD} - 1{,}76}{6{,}02}$ |
+| **ENOB** | Efektywna liczba bitów: $\text{ENOB} = \dfrac{\text{SINAD} - 1\text{,}76}{6\text{,}02}$ |
 | SFDR | Odstęp sygnału od największej składowej pasożytniczej |
 | Pasmo wejściowe, czas akwizycji | Ile czasu potrzebuje układ próbkująco-pamiętający |
 | Napięcie odniesienia | Jego szum i dryft wprost przechodzą na wynik |
@@ -52,7 +52,7 @@ Drabinka R-2R, łańcuch rezystorów, sigma-delta, PWM z filtrem RC (najprostszy
 
 Przetwornik 12-bitowy, zakres 0–3,3 V.
 
-1. $\text{LSB} = 3{,}3/4096 \approx 0{,}806$ mV, szum kwantyzacji ≈ 0,233 mV RMS.
+1. $\text{LSB} = 3\text{,}3/4096 \approx 0\text{,}806$ mV, szum kwantyzacji ≈ 0,233 mV RMS.
 2. Teoretyczny SNR = 74 dB. W dokumentacji SINAD = 70 dB → ENOB ≈ 11,3 bitu.
 3. Uśrednianie 16 próbek (OSR = 16): zysk 12 dB, czyli ok. 2 bity — pod warunkiem, że szum na wejściu wynosi co najmniej ok. 1 LSB.
 4. Pomiar napięcia 10 mV z tego przetwornika: ok. 12 kodów — rozdzielczość względna tylko ok. 8%. Potrzebny wzmacniacz przed przetwornikiem (moduł [04](../04-uklady-analogowe/)).
@@ -93,7 +93,7 @@ for bits in [8, 12, 16]:
 2. ≈ 11,3 bitu
 3. ≈ 0,806 mV; ≈ 0,233 mV
 4. 16 razy
-5. $98{,}1 - 12 \approx 86$ dB (amplituda 4 razy mniejsza = −12 dB)
+5. $98\text{,}1 - 12 \approx 86$ dB (amplituda 4 razy mniejsza = −12 dB)
 6. Całkowanie przez pełny okres 50 Hz zeruje wpływ zakłóceń sieciowych (filtr o zerze transmisji przy 50 Hz i jej harmonicznych)
 </details>
 

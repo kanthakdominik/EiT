@@ -51,8 +51,8 @@ Gdy wymiary układu $\ll \lambda$ (umownie poniżej ok. $\lambda/10$, a dla szyb
 
 **Kondensator płaski i prąd przesunięcia.** Okładki o polu $A = 1$ cm², odstęp 1 mm, próżnia, napięcie $u(t) = 10\sin(2\pi\cdot 1\ \text{MHz}\cdot t)$.
 
-1. $C = \varepsilon_0A/d = 8{,}85\cdot 10^{-12}\cdot 10^{-4}/10^{-3} \approx 0{,}885$ pF.
-2. Prąd w przewodach: amplituda $\omega CU = 2\pi\cdot 10^6\cdot 0{,}885\cdot 10^{-12}\cdot 10 \approx 55{,}6$ µA.
+1. $C = \varepsilon_0A/d = 8\text{,}85\cdot 10^{-12}\cdot 10^{-4}/10^{-3} \approx 0\text{,}885$ pF.
+2. Prąd w przewodach: amplituda $\omega CU = 2\pi\cdot 10^6\cdot 0\text{,}885\cdot 10^{-12}\cdot 10 \approx 55\text{,}6$ µA.
 3. Między okładkami: $E = u/d$, $D = \varepsilon_0E$, gęstość prądu przesunięcia $\partial D/\partial t$, całkowity prąd przesunięcia $A\,\varepsilon_0\,\dot u/d = C\dot u$ — **ten sam co w przewodach**. Prawo Ampère'a–Maxwella działa dla dowolnej powierzchni rozpiętej na tym samym konturze.
 
 ## Typowe pułapki
@@ -93,16 +93,16 @@ print(f"c = {c:.4e} m/s, eta0 = {eta:.2f} Ohm, lambda = {c/f:.3f} m")
 2. Policz $\sigma/(\omega\varepsilon)$ dla wody morskiej ($\sigma = 4$ S/m, $\varepsilon_r = 81$) przy 1 kHz i 10 GHz. Jak się zachowuje?
 3. Wyprowadź równanie ciągłości z prawa Ampère'a–Maxwella i prawa Gaussa.
 4. Dla kondensatora z przykładu policz amplitudę gęstości prądu przesunięcia.
-5. Do jakiej częstotliwości ścieżkę o długości 10 cm na FR-4 ($\varepsilon_{eff} \approx 3{,}3$) można traktować jako „krótką” według kryterium $\lambda/10$?
+5. Do jakiej częstotliwości ścieżkę o długości 10 cm na FR-4 ($\varepsilon_{eff} \approx 3\text{,}3$) można traktować jako „krótką” według kryterium $\lambda/10$?
 
 <details>
 <summary>Odpowiedzi</summary>
 
 1. $\nabla\cdot\varepsilon\mathbf E = \rho$, $\nabla\cdot\mu\mathbf H = 0$, $\nabla\times\mathbf E = -j\omega\mu\mathbf H$, $\nabla\times\mathbf H = (\sigma + j\omega\varepsilon)\mathbf E$
-2. 1 kHz: $4/(2\pi\cdot 10^3\cdot 81\cdot 8{,}85\cdot 10^{-12}) \approx 8{,}9\cdot 10^5$ — przewodnik; 10 GHz: ≈ 0,089 — raczej stratny dielektryk. Dlatego z okrętami podwodnymi komunikuje się na bardzo niskich częstotliwościach
+2. 1 kHz: $4/(2\pi\cdot 10^3\cdot 81\cdot 8\text{,}85\cdot 10^{-12}) \approx 8\text{,}9\cdot 10^5$ — przewodnik; 10 GHz: ≈ 0,089 — raczej stratny dielektryk. Dlatego z okrętami podwodnymi komunikuje się na bardzo niskich częstotliwościach
 3. Dywergencja rotacji jest zerowa: $0 = \nabla\cdot\mathbf J + \partial(\nabla\cdot\mathbf D)/\partial t = \nabla\cdot\mathbf J + \partial\rho/\partial t$
-4. $\varepsilon_0\omega U/d = 8{,}85\cdot 10^{-12}\cdot 2\pi\cdot 10^6\cdot 10^4 \approx 0{,}556$ A/m² (razy 1 cm² daje 55,6 µA)
-5. $\lambda = c/(f\sqrt{3{,}3}) \geq 1$ m → $f \leq 3\cdot 10^8/(1\cdot 1{,}82) \approx 165$ MHz
+4. $\varepsilon_0\omega U/d = 8\text{,}85\cdot 10^{-12}\cdot 2\pi\cdot 10^6\cdot 10^4 \approx 0\text{,}556$ A/m² (razy 1 cm² daje 55,6 µA)
+5. $\lambda = c/(f\sqrt{3\text{,}3}) \geq 1$ m → $f \leq 3\cdot 10^8/(1\cdot 1\text{,}82) \approx 165$ MHz
 </details>
 
 ## Źródła

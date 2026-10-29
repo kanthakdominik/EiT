@@ -41,9 +41,9 @@ Indukcyjności rozproszenia (sprzężenie $k < 1$), indukcyjność magnesowania,
 
 Transformator sieciowy 230 V / 12 V zasila obciążenie pobierające 2 A.
 
-1. $n = 230/12 \approx 19{,}17$.
-2. Rezystancja obciążenia $R_L = 12/2 = 6\ \Omega$; widziana od strony pierwotnej: $6\cdot 19{,}17^2 \approx 2204\ \Omega$.
-3. Prąd pierwotny (transformator idealny): $I_1 = 2/19{,}17 \approx 104$ mA. Kontrola mocy: $230\cdot 0{,}104 \approx 24$ W $= 12\cdot 2$ ✓.
+1. $n = 230/12 \approx 19\text{,}17$.
+2. Rezystancja obciążenia $R_L = 12/2 = 6\ \Omega$; widziana od strony pierwotnej: $6\cdot 19\text{,}17^2 \approx 2204\ \Omega$.
+3. Prąd pierwotny (transformator idealny): $I_1 = 2/19\text{,}17 \approx 104$ mA. Kontrola mocy: $230\cdot 0\text{,}104 \approx 24$ W $= 12\cdot 2$ ✓.
 
 ## Typowe pułapki
 
@@ -71,7 +71,7 @@ Przekładnia napięciowa $n = \sqrt{L_1/L_2} = 10$. Zmień $k$ na 0,9 i obserwuj
 
 ## Zadania
 
-1. $L_1 = 4$ mH, $L_2 = 9$ mH, $k = 0{,}5$. Wyznacz $M$ oraz indukcyjność połączenia szeregowego zgodnego i przeciwnego.
+1. $L_1 = 4$ mH, $L_2 = 9$ mH, $k = 0\text{,}5$. Wyznacz $M$ oraz indukcyjność połączenia szeregowego zgodnego i przeciwnego.
 2. Transformator idealny 10:1, napięcie pierwotne 230 V, obciążenie 10 Ω. Wyznacz $U_2$, $I_2$, $I_1$ i impedancję widzianą od strony pierwotnej.
 3. Głośnik 8 Ω ma być dopasowany do wyjścia o rezystancji 800 Ω. Jaka przekładnia transformatora jest potrzebna?
 4. Zmierzono indukcyjność dwóch cewek połączonych szeregowo zgodnie: 19 mH, przeciwnie: 7 mH. Wyznacz $M$.
@@ -80,8 +80,8 @@ Przekładnia napięciowa $n = \sqrt{L_1/L_2} = 10$. Zmień $k$ na 0,9 i obserwuj
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $M = 0{,}5\sqrt{36} = 3$ mH; zgodnie $4 + 9 + 6 = 19$ mH, przeciwnie $4 + 9 - 6 = 7$ mH
-2. $U_2 = 23$ V, $I_2 = 2{,}3$ A, $I_1 = 0{,}23$ A, $Z_{we} = 100\cdot 10 = 1000\ \Omega$
+1. $M = 0\text{,}5\sqrt{36} = 3$ mH; zgodnie $4 + 9 + 6 = 19$ mH, przeciwnie $4 + 9 - 6 = 7$ mH
+2. $U_2 = 23$ V, $I_2 = 2\text{,}3$ A, $I_1 = 0\text{,}23$ A, $Z_{we} = 100\cdot 10 = 1000\ \Omega$
 3. $n = \sqrt{800/8} = 10$
 4. $M = (19 - 7)/4 = 3$ mH
 5. Napięcie indukowane jest proporcjonalne do zmian strumienia ($u = N\,d\Phi/dt$). Przy DC strumień się nie zmienia, więc w uzwojeniu wtórnym nie indukuje się napięcie, a prąd pierwotny ogranicza tylko mała rezystancja uzwojenia — rdzeń się nasyca, uzwojenie przegrzewa i ulega zniszczeniu.

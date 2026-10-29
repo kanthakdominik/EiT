@@ -40,12 +40,12 @@ Około 60 minut, bez notatek.
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $a = 0{,}005\cdot 12{,}34 + 0{,}02 \approx 0{,}082$ V, rozkład prostokątny: $u_B = a/\sqrt3 \approx 0{,}047$ V
-2. $R_{th} = 500$ kΩ, $U = 5\cdot\dfrac{10}{10{,}5} \approx 4{,}76$ V (błąd −4,8%)
-3. $t_r \approx 0{,}35/100\ \text{MHz} = 3{,}5$ ns; zmierzysz $\sqrt{5^2 + 3{,}5^2} \approx 6{,}1$ ns
+1. $a = 0\text{,}005\cdot 12\text{,}34 + 0\text{,}02 \approx 0\text{,}082$ V, rozkład prostokątny: $u_B = a/\sqrt3 \approx 0\text{,}047$ V
+2. $R_{th} = 500$ kΩ, $U = 5\cdot\dfrac{10}{10\text{,}5} \approx 4\text{,}76$ V (błąd −4,8%)
+3. $t_r \approx 0\text{,}35/100\ \text{MHz} = 3\text{,}5$ ns; zmierzysz $\sqrt{5^2 + 3\text{,}5^2} \approx 6\text{,}1$ ns
 4. 2 Vpp — generator zakłada dzielnik z obciążeniem 50 Ω
 5. $360°\cdot 125\ \mu\text{s}\cdot 1\ \text{kHz} = 45°$
-6. $R = 10\ \text{k}\cdot e^{3950(1/323{,}15 - 1/298{,}15)} \approx 3{,}59$ kΩ
+6. $R = 10\ \text{k}\cdot e^{3950(1/323\text{,}15 - 1/298\text{,}15)} \approx 3\text{,}59$ kΩ
 7. Rezystancja przewodów pomiarowych i styków (rzędu dziesiątek mΩ) byłaby porównywalna z mierzoną; w metodzie czteroprzewodowej przez przewody napięciowe nie płynie prąd, więc spadek na nich nie wchodzi do wyniku
 
 **Ocena:** zadanie 1 — temat 01; 2, 7 — temat 02; 3 — temat 03; 4 — temat 04; 5 — temat 05; 6 — temat 06.

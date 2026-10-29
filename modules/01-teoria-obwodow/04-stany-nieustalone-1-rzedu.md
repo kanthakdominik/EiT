@@ -41,15 +41,15 @@ Filtr RC pobudzony prostokątem o półokresie $T/2$:
 
 **RC z niezerowym warunkiem początkowym.** $C = 10\ \mu$F naładowany do 2 V w chwili $t = 0$ zostaje dołączony przez $R = 10$ kΩ do źródła 12 V.
 
-1. $u_C(0^+) = 2$ V (prawo komutacji), $u_C(\infty) = 12$ V, $\tau = RC = 0{,}1$ s.
-2. $u_C(t) = 12 + (2 - 12)e^{-t/0{,}1} = 12 - 10e^{-10t}$ V.
+1. $u_C(0^+) = 2$ V (prawo komutacji), $u_C(\infty) = 12$ V, $\tau = RC = 0\text{,}1$ s.
+2. $u_C(t) = 12 + (2 - 12)e^{-t/0\text{,}1} = 12 - 10e^{-10t}$ V.
 3. Prąd: $i(0^+) = \dfrac{12 - 2}{10\ \text{k}} = 1$ mA, potem maleje wykładniczo: $i(t) = 1\ \text{mA}\cdot e^{-10t}$.
-4. Czas do 9 V: $10e^{-t/\tau} = 3 \Rightarrow t = \tau\ln\dfrac{10}{3} \approx 0{,}120$ s.
+4. Czas do 9 V: $10e^{-t/\tau} = 3 \Rightarrow t = \tau\ln\dfrac{10}{3} \approx 0\text{,}120$ s.
 
 **RL — wyłączenie cewki.** Przez cewkę $L = 50$ mH płynie 100 mA. Wyłącznik otwiera się, a prąd może płynąć tylko przez równoległy rezystor 1 kΩ.
 
 1. $i_L(0^+) = 100$ mA (prawo komutacji) — ten prąd musi płynąć przez rezystor.
-2. Napięcie na cewce w chwili $0^+$: $u = 0{,}1\ \text{A}\cdot 1\ \text{k}\Omega = 100$ V — mimo że obwód mógł być zasilany kilkoma woltami!
+2. Napięcie na cewce w chwili $0^+$: $u = 0\text{,}1\ \text{A}\cdot 1\ \text{k}\Omega = 100$ V — mimo że obwód mógł być zasilany kilkoma woltami!
 3. $\tau = L/R = 50\ \mu$s.
 
 Bez rezystora (lub diody gaszącej) napięcie rośnie aż do przebicia — tak niszczy się tranzystory sterujące przekaźnikami.
@@ -78,7 +78,7 @@ C1 2 0 10u IC=2
 
 1. Szeregowy obwód: źródło 10 V, $R = 1$ kΩ, $C = 100\ \mu$F (rozładowany). Wyznacz $i(0^+)$, $\tau$, $u_C(\tau)$. Jak zmieni się odpowiedź po czterokrotnym zwiększeniu $C$?
 2. Kondensator 100 µF naładowany do 50 V rozładowuje się przez 10 kΩ. Po jakim czasie napięcie spadnie do 5 V? Jaka była energia początkowa?
-3. Źródło 24 V, $R = 12\ \Omega$, $L = 0{,}6$ H, wyłącznik zamyka się w $t = 0$. Wyznacz $i_L(\infty)$, $\tau$ i $i_L(0{,}1\ \text{s})$.
+3. Źródło 24 V, $R = 12\ \Omega$, $L = 0\text{,}6$ H, wyłącznik zamyka się w $t = 0$. Wyznacz $i_L(\infty)$, $\tau$ i $i_L(0\text{,}1\ \text{s})$.
 4. Źródło 12 V, dzielnik $R_1 = 6$ kΩ, $R_2 = 3$ kΩ, kondensator $C = 1\ \mu$F równolegle do $R_2$ (rozładowany). Wyznacz $u_C(\infty)$ i $\tau$.
 5. Cewka $L = 50$ mH z prądem 100 mA; po otwarciu wyłącznika prąd płynie przez 1 kΩ. Wyznacz napięcie na cewce w $t = 0^+$ i stałą czasową. Co zmieni dioda gasząca równolegle do cewki?
 6. **(trudniejsze)** Filtr RC o $\tau = 1$ ms pobudzany prostokątem 0/5 V o półokresie równym $\tau$. Wyznacz napięcia maksymalne i minimalne na kondensatorze w stanie ustalonym.
@@ -86,12 +86,12 @@ C1 2 0 10u IC=2
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $i(0^+) = 10$ mA, $\tau = 0{,}1$ s, $u_C(\tau) = 6{,}32$ V; przy $4C$: $\tau = 0{,}4$ s, prąd początkowy bez zmian, przebieg 4 razy wolniejszy
-2. $\tau = 1$ s, $t = \ln 10 \approx 2{,}30$ s; $W = \tfrac12\cdot 10^{-4}\cdot 50^2 = 0{,}125$ J
-3. $i_L(\infty) = 2$ A, $\tau = 0{,}05$ s, $i_L(0{,}1) = 2(1 - e^{-2}) \approx 1{,}73$ A
+1. $i(0^+) = 10$ mA, $\tau = 0\text{,}1$ s, $u_C(\tau) = 6\text{,}32$ V; przy $4C$: $\tau = 0\text{,}4$ s, prąd początkowy bez zmian, przebieg 4 razy wolniejszy
+2. $\tau = 1$ s, $t = \ln 10 \approx 2\text{,}30$ s; $W = \tfrac12\cdot 10^{-4}\cdot 50^2 = 0\text{,}125$ J
+3. $i_L(\infty) = 2$ A, $\tau = 0\text{,}05$ s, $i_L(0\text{,}1) = 2(1 - e^{-2}) \approx 1\text{,}73$ A
 4. $u_C(\infty) = 12\cdot\dfrac{3}{9} = 4$ V, $R_{th} = 6\parallel 3 = 2$ kΩ, $\tau = 2$ ms
 5. 100 V, $\tau = 50\ \mu$s; z diodą napięcie ograniczy się do spadku na diodzie (ok. 0,7 V), a prąd zaniknie wolniej
-6. Z warunku okresowości: $U_{max} = \dfrac{5}{1 + e^{-1}} \approx 3{,}66$ V, $U_{min} = U_{max}e^{-1} \approx 1{,}34$ V
+6. Z warunku okresowości: $U_{max} = \dfrac{5}{1 + e^{-1}} \approx 3\text{,}66$ V, $U_{min} = U_{max}e^{-1} \approx 1\text{,}34$ V
 </details>
 
 ## Źródła

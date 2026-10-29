@@ -32,9 +32,9 @@ Zaleta: działa z **pomiaru** charakterystyki częstotliwościowej i z opóźnie
 
 | Zapas | Definicja | Typowe wymaganie |
 |---|---|---|
-| **Zapas fazy (PM)** | $180° + \arg L(j\omega_c)$, gdzie $|L(j\omega_c)| = 1$ | 45–60° |
-| **Zapas wzmocnienia (GM)** | $-20\log|L(j\omega_{180})|$, gdzie $\arg L = -180°$ | ≥ 6–10 dB |
-| Zapas modułu | $\min|1 + L(j\omega)| = 1/\max|S|$ | ≥ 0,5 ($|S|_{max} \leq 2$, czyli 6 dB) |
+| **Zapas fazy (PM)** | $180° + \arg L(j\omega_c)$, gdzie $\lvert L(j\omega_c)\rvert = 1$ | 45–60° |
+| **Zapas wzmocnienia (GM)** | $-20\log\lvert L(j\omega_{180})\rvert$, gdzie $\arg L = -180°$ | ≥ 6–10 dB |
+| Zapas modułu | $\min\lvert 1 + L(j\omega)\rvert = 1/\max\lvert S\rvert$ | ≥ 0,5 ($\lvert S\rvert _{max} \leq 2$, czyli 6 dB) |
 
 **Zapas fazy a tłumienie:** dla typowej pętli $\zeta \approx PM/100$ (PM w stopniach, dla PM < ok. 60°). PM = 45° → ok. 20% przeregulowania, PM = 60° → ok. 10% (reguła przybliżona, wyprowadzona dla pętli drugiego rzędu).
 
@@ -46,9 +46,9 @@ $L(s) = \dfrac{K}{(s+1)^3}$, ujemne sprzężenie zwrotne.
 
 1. **Routh:** $s^3 + 3s^2 + 3s + (1 + K) = 0$ → $3\cdot 3 > 1 + K$ → **$K < 8$**.
 2. Na granicy ($K = 8$) para biegunów na osi urojonej: $3s^2 + 9 = 0$ → $\omega = \sqrt 3$ rad/s — częstotliwość oscylacji.
-3. **Z charakterystyki:** $\arg L = -3\arctan\omega = -180°$ → $\omega_{180} = \sqrt 3$; $|L(j\sqrt 3)| = K/8$. Dla $K = 4$: GM = $20\log 2 = 6{,}02$ dB.
-4. Pulsacja odcięcia dla $K = 4$: $(1 + \omega^2)^{3/2} = 4$ → $\omega_c = 1{,}233$ rad/s; faza $-3\arctan 1{,}233 = -152{,}9°$ → **PM ≈ 27°** — mało, spodziewaj się dużego przeregulowania (ok. 54% według symulacji).
-5. Dopuszczalne dodatkowe opóźnienie: $0{,}473\ \text{rad}/1{,}233 \approx 0{,}38$ s.
+3. **Z charakterystyki:** $\arg L = -3\arctan\omega = -180°$ → $\omega_{180} = \sqrt 3$; $|L(j\sqrt 3)| = K/8$. Dla $K = 4$: GM = $20\log 2 = 6\text{,}02$ dB.
+4. Pulsacja odcięcia dla $K = 4$: $(1 + \omega^2)^{3/2} = 4$ → $\omega_c = 1\text{,}233$ rad/s; faza $-3\arctan 1\text{,}233 = -152\text{,}9°$ → **PM ≈ 27°** — mało, spodziewaj się dużego przeregulowania (ok. 54% według symulacji).
+5. Dopuszczalne dodatkowe opóźnienie: $0\text{,}473\ \text{rad}/1\text{,}233 \approx 0\text{,}38$ s.
 
 ## Typowe pułapki
 
@@ -100,9 +100,9 @@ plt.title('Nyquist, K=4'); plt.show()
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $0 < K < 8$ (ogólniej $-1 < K < 8$); $\omega = \sqrt 3 \approx 1{,}73$ rad/s
+1. $0 < K < 8$ (ogólniej $-1 < K < 8$); $\omega = \sqrt 3 \approx 1\text{,}73$ rad/s
 2. $K = 1$: $|L(j\omega)| < 1$ dla wszystkich $\omega > 0$ — brak przecięcia 0 dB, PM nieskończony, GM = 18,06 dB; $K = 4$: PM ≈ 27°, GM ≈ 6,02 dB
-3. $0{,}873/100 \approx 8{,}7$ ms
+3. $0\text{,}873/100 \approx 8\text{,}7$ ms
 4. $0 < K < 8$
 5. Charakterystykę pętli otwartej można zmierzyć (analizator, wstrzyknięcie sygnału — [08.04](../08-miernictwo/04-generatory-i-analizatory.md)) i zastosować kryterium bezpośrednio do pomiaru
 </details>

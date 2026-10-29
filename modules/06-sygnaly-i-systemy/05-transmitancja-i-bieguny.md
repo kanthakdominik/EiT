@@ -80,7 +80,7 @@ Przesuwaj bieguny (zmieniaj $R$) i obserwuj jednocześnie odpowiedź skokową i 
 
 1. $p = -10$; $1 - e^{-10t}$; $\omega = 10$ rad/s ≈ 1,59 Hz
 2. $s = 1$, $s = -2$; niestabilny
-3. $\omega_d = 10$ rad/s (≈ 1,59 Hz); stała czasowa obwiedni $1/2 = 0{,}5$ s
+3. $\omega_d = 10$ rad/s (≈ 1,59 Hz); stała czasowa obwiedni $1/2 = 0\text{,}5$ s
 4. $H(s) = \dfrac{1}{(s + 1)(s + 2)}$, $h(t) = (e^{-t} - e^{-2t})u(t)$
 5. Para zer na osi urojonej $s = \pm j2\pi\cdot 50$
 6. $s = -1$ — leży bliżej osi urojonej, jego składnik zanika 10 razy wolniej i decyduje o odpowiedzi

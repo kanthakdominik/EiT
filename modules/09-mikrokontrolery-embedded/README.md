@@ -41,7 +41,7 @@ Około 60 minut, bez notatek.
 <details>
 <summary>Odpowiedzi</summary>
 
-1. PSC = 0, ARR = 3599 → $72\cdot 10^6/3600 = 20$ kHz; $\log_2 3600 \approx 11{,}8$ bitu
+1. PSC = 0, ARR = 3599 → $72\cdot 10^6/3600 = 20$ kHz; $\log_2 3600 \approx 11\text{,}8$ bitu
 2. Bez `volatile` kompilator może trzymać wartość w rejestrze i nie zauważyć zmiany. Nie wystarcza — odczyt 32 bitów na rdzeniu 8-bitowym nie jest atomowy; potrzebna sekcja krytyczna
 3. Średnio ok. 0,105 mA → ok. 19 000 h ≈ 2,2 roku (bez samorozładowania)
 4. 11 520 B/s (10 bitów na bajt)

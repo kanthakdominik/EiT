@@ -39,7 +39,7 @@ Sygnał próbkowany z 48 kHz, potrzebny 8 kHz (pasmo do 3,4 kHz — telefonia).
 
 1. $M = 6$. Filtr: przepustowy do 3,4 kHz, zaporowy od 4 kHz (nowy Nyquist), tłumienie np. 60 dB.
 2. Jeden etap przy 48 kHz: $\Delta f = 600$ Hz → $N \approx \dfrac{60}{22}\cdot\dfrac{48000}{600} \approx 218$ współczynników.
-3. Polifazowo liczy się tylko co 6. próbkę wyjściową: ok. $218\cdot 8000 \approx 1{,}7$ mln mnożeń/s zamiast ok. 10,5 mln.
+3. Polifazowo liczy się tylko co 6. próbkę wyjściową: ok. $218\cdot 8000 \approx 1\text{,}7$ mln mnożeń/s zamiast ok. 10,5 mln.
 4. Dwa etapy (×2 półpasmowy, potem ×3) dałyby jeszcze mniej.
 
 ## Typowe pułapki

@@ -43,9 +43,9 @@ $$y(t) = \sum_k c_kH(jk\omega_0)e^{jk\omega_0t}$$
 
 Fala prostokątna ±1 V, 1 kHz, przez filtr RC o $f_c = 1$ kHz.
 
-1. Moc fali: 1 W (na 1 Ω). Składowa podstawowa ma amplitudę $4/\pi \approx 1{,}273$ V i moc $\dfrac{(4/\pi)^2}{2} \approx 0{,}811$ W — **81% mocy**. Harmoniczne 1, 3, 5 razem: ok. 93%.
+1. Moc fali: 1 W (na 1 Ω). Składowa podstawowa ma amplitudę $4/\pi \approx 1\text{,}273$ V i moc $\dfrac{(4/\pi)^2}{2} \approx 0\text{,}811$ W — **81% mocy**. Harmoniczne 1, 3, 5 razem: ok. 93%.
 2. Filtr: $\lvert H\rvert = 1/\sqrt{1 + k^2}$ dla harmonicznej $k$ (bo $f = kf_c$).
-3. Na wyjściu: podstawowa $1{,}273/\sqrt2 \approx 0{,}90$ V, trzecia $0{,}424/\sqrt{10} \approx 0{,}134$ V, piąta $0{,}255/\sqrt{26} \approx 0{,}050$ V.
+3. Na wyjściu: podstawowa $1\text{,}273/\sqrt2 \approx 0\text{,}90$ V, trzecia $0\text{,}424/\sqrt{10} \approx 0\text{,}134$ V, piąta $0\text{,}255/\sqrt{26} \approx 0\text{,}050$ V.
 4. Wyjście jest znacznie bardziej „sinusoidalne” niż wejście: stosunek trzeciej harmonicznej do podstawowej spadł z 33% do ok. 15%.
 
 ## Typowe pułapki
@@ -82,10 +82,10 @@ Porównaj wynik z symulacją `.tran` filtra RC w LTspice. W LTspice dyrektywa `.
 <summary>Odpowiedzi</summary>
 
 1. ≈ 81%; ≈ 93%
-2. $8/\pi^2 \approx 0{,}811$ V, $0{,}090$ V, $0{,}032$ V
+2. $8/\pi^2 \approx 0\text{,}811$ V, $0\text{,}090$ V, $0\text{,}032$ V
 3. 4., 8., 12., … (wielokrotności $1/D = 4$)
 4. ≈ 0,90 V, ≈ 0,134 V, ≈ 0,050 V
-5. $\sqrt{0{,}09 + 0{,}16}/10 = 0{,}5/10 = 5\%$
+5. $\sqrt{0\text{,}09 + 0\text{,}16}/10 = 0\text{,}5/10 = 5\%$
 6. Krótsze zbocze przesuwa punkt, od którego harmoniczne zaczynają zanikać szybciej (jak $1/k^2$), w stronę wyższych częstotliwości (ok. $1/(\pi t_r)$) — dla 1 ns to ok. 320 MHz, dla 10 ns ok. 32 MHz
 </details>
 

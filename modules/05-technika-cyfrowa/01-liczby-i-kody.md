@@ -86,7 +86,7 @@ print(u2(-5), from_u2('11100111'), [format(gray(i), '03b') for i in range(8)])
 3. Przepełnienie — rejestr pokaże $1001\,0110 = -106$
 4. $0101\,1001$; $1110$
 5. $\text{F9C} = 1111\,1001\,1100$ → ujemna: negacja $0000\,0110\,0011 + 1 = 100$ → $-100$; w 16 bitach `0xFF9C` (rozszerzenie znakowe)
-6. Krok $2^{-15} \approx 3{,}05\cdot 10^{-5}$, zakres [−1, 1); $0{,}3 \approx 9830/32768$ (`0x2666`)
+6. Krok $2^{-15} \approx 3\text{,}05\cdot 10^{-5}$, zakres [−1, 1); $0\text{,}3 \approx 9830/32768$ (`0x2666`)
 </details>
 
 ## Źródła

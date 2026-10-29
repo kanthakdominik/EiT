@@ -35,7 +35,7 @@ Mierzą napięcie i prąd (wektorowo) na zadanej częstotliwości: $\underline{Z
 
 **Faza:** dwie sinusoidy 1 kHz przesunięte o 125 µs → 45°. Przy 10 kHz to samo przesunięcie fazy 45° oznacza 12,5 µs — trzeba zwiększyć rozdzielczość czasową.
 
-**Tensometr:** ćwierćmostek zasilany 5 V, GF = 2, odkształcenie 1000 µm/m → $U_{wy} \approx \tfrac{5}{4}\cdot 2\cdot 10^{-3} = 2{,}5$ mV. Taki sygnał wymaga wzmacniacza pomiarowego ([04.07](../04-uklady-analogowe/07-wzmacniacz-operacyjny-idealny.md)) i dbałości o zakłócenia ([08.07](07-zaklocenia-i-ekranowanie.md)).
+**Tensometr:** ćwierćmostek zasilany 5 V, GF = 2, odkształcenie 1000 µm/m → $U_{wy} \approx \tfrac{5}{4}\cdot 2\cdot 10^{-3} = 2\text{,}5$ mV. Taki sygnał wymaga wzmacniacza pomiarowego ([04.07](../04-uklady-analogowe/07-wzmacniacz-operacyjny-idealny.md)) i dbałości o zakłócenia ([08.07](07-zaklocenia-i-ekranowanie.md)).
 
 ## Typowe pułapki
 
@@ -68,9 +68,9 @@ Zwiększ poziom szumu — zobaczysz, że ta metoda szybko traci dokładność w 
 ## Zadania
 
 1. Przesunięcie czasowe 125 µs przy 1 kHz. Ile stopni?
-2. Mostek Wheatstone'a: $R_1 = 1$ kΩ, $R_2 = 2$ kΩ, $R_3 = 1{,}5$ kΩ. Przy jakim $R_4$ jest w równowadze?
+2. Mostek Wheatstone'a: $R_1 = 1$ kΩ, $R_2 = 2$ kΩ, $R_3 = 1\text{,}5$ kΩ. Przy jakim $R_4$ jest w równowadze?
 3. Tensometr w ćwierćmostku: 5 V, GF = 2, $\varepsilon = 1000\ \mu$m/m. Jakie napięcie wyjściowe?
-4. Miernik LCR przy 1 kHz pokazuje dla kondensatora: $C = 10\ \mu$F, $D = 0{,}05$. Ile wynosi ESR?
+4. Miernik LCR przy 1 kHz pokazuje dla kondensatora: $C = 10\ \mu$F, $D = 0\text{,}05$. Ile wynosi ESR?
 5. Dlaczego charakterystykę pętli zasilacza impulsowego mierzy się przez wstrzyknięcie sygnału do pętli, a nie przez „odcięcie” sprzężenia zwrotnego?
 
 <details>
@@ -79,7 +79,7 @@ Zwiększ poziom szumu — zobaczysz, że ta metoda szybko traci dokładność w 
 1. 45°
 2. $R_4 = R_3R_2/R_1 = 3$ kΩ
 3. 2,5 mV
-4. $\text{ESR} = D\cdot X_C = 0{,}05\cdot\dfrac{1}{2\pi\cdot 1000\cdot 10^{-5}} \approx 0{,}8\ \Omega$
+4. $\text{ESR} = D\cdot X_C = 0\text{,}05\cdot\dfrac{1}{2\pi\cdot 1000\cdot 10^{-5}} \approx 0\text{,}8\ \Omega$
 5. Otwarta pętla nie ma ustalonego punktu pracy (wyjście dryfuje do nasycenia). Wstrzyknięcie małego sygnału w zamkniętej pętli (np. przez rezystor w dzielniku) pozwala zmierzyć wzmocnienie pętli przy zachowanym punkcie pracy
 </details>
 

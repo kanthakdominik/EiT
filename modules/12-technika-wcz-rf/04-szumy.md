@@ -8,7 +8,7 @@ Zasięg odbiornika jest ograniczony szumem: sygnał musi przewyższać szum o ty
 
 ### Szum termiczny
 
-Rezystor w temperaturze $T$ dostarcza do dopasowanego obciążenia moc szumu $P_n = kTB$ ($k = 1{,}38\cdot 10^{-23}$ J/K). Przy $T_0 = 290$ K: **−174 dBm/Hz** — przy paśmie 1 MHz −114 dBm, przy 20 MHz ok. −101 dBm. Szum termiczny jest biały i gaussowski ([06.08](../06-sygnaly-i-systemy/08-sygnaly-losowe.md)). Napięcie szumów rezystora (rozwarcie): $\sqrt{4kTRB}$ — [04.08](../04-uklady-analogowe/08-wzmacniacz-operacyjny-rzeczywisty.md).
+Rezystor w temperaturze $T$ dostarcza do dopasowanego obciążenia moc szumu $P_n = kTB$ ($k = 1\text{,}38\cdot 10^{-23}$ J/K). Przy $T_0 = 290$ K: **−174 dBm/Hz** — przy paśmie 1 MHz −114 dBm, przy 20 MHz ok. −101 dBm. Szum termiczny jest biały i gaussowski ([06.08](../06-sygnaly-i-systemy/08-sygnaly-losowe.md)). Napięcie szumów rezystora (rozwarcie): $\sqrt{4kTRB}$ — [04.08](../04-uklady-analogowe/08-wzmacniacz-operacyjny-rzeczywisty.md).
 
 ### Współczynnik szumów
 
@@ -16,7 +16,7 @@ $$F = \frac{SNR_{we}}{SNR_{wy}}\ \ (\text{przy szumie źródła o } T_0 = 290\ \
 
 **Temperatura szumowa:** $T_e = T_0(F - 1)$. NF 1 dB ↔ 75 K, 3 dB ↔ 289 K. Temperatury wygodniejsze dla bardzo niskoszumowych torów (radioastronomia, satelity).
 
-**Element stratny** (kabel, filtr, tłumik) w temperaturze $T_0$: $NF = $ tłumienie w dB. Kabel 2 dB przed LNA dodaje 2 dB do NF całego odbiornika.
+**Element stratny** (kabel, filtr, tłumik) w temperaturze $T_0$: $NF$ = tłumienie w dB. Kabel 2 dB przed LNA dodaje 2 dB do NF całego odbiornika.
 
 ### Wzór Friisa dla szumów
 
@@ -41,10 +41,10 @@ Antena „widzi” temperaturę otoczenia: ok. 290 K skierowana na ziemię, kilk
 
 Tor: LNA ($G = 15$ dB, $NF = 1$ dB) → mieszacz ($G = -7$ dB, $NF = 7$ dB) → wzmacniacz p.cz. ($G = 20$ dB, $NF = 4$ dB).
 
-1. Wartości liniowe: $F_1 = 1{,}259$, $G_1 = 31{,}6$; $F_2 = 5{,}01$, $G_2 = 0{,}2$; $F_3 = 2{,}51$.
-2. $F = 1{,}259 + \dfrac{4{,}01}{31{,}6} + \dfrac{1{,}51}{31{,}6\cdot 0{,}2} = 1{,}259 + 0{,}127 + 0{,}239 = 1{,}625$ → **NF ≈ 2,1 dB**.
+1. Wartości liniowe: $F_1 = 1\text{,}259$, $G_1 = 31\text{,}6$; $F_2 = 5\text{,}01$, $G_2 = 0\text{,}2$; $F_3 = 2\text{,}51$.
+2. $F = 1\text{,}259 + \dfrac{4\text{,}01}{31\text{,}6} + \dfrac{1\text{,}51}{31\text{,}6\cdot 0\text{,}2} = 1\text{,}259 + 0\text{,}127 + 0\text{,}239 = 1\text{,}625$ → **NF ≈ 2,1 dB**.
 3. Z kablem 2 dB przed LNA: NF ≈ 4,1 dB. Bez LNA (mieszacz pierwszy): NF ≈ 8,2 dB.
-4. Czułość dla $B = 1$ MHz i $SNR_{min} = 10$ dB: $-174 + 60 + 2{,}1 + 10 \approx -102$ dBm.
+4. Czułość dla $B = 1$ MHz i $SNR_{min} = 10$ dB: $-174 + 60 + 2\text{,}1 + 10 \approx -102$ dBm.
 
 ## Typowe pułapki
 
@@ -94,10 +94,10 @@ print("temperatura szumowa NF=1 dB:", round(290*(lin(1) - 1), 1), "K")
 <summary>Odpowiedzi</summary>
 
 1. $-174 + 53 = -121$ dBm
-2. $290(10^{0{,}05} - 1) \approx 35$ K
-3. Licząc od filtra ($F_1 = 1{,}413$, $G_1 = 0{,}708$): $F = 1{,}413 + (1{,}318 - 1)/0{,}708 + (6{,}31 - 1)/(0{,}708\cdot 63{,}1) + (3{,}16 - 1)/(0{,}708\cdot 63{,}1\cdot 0{,}251) \approx 1{,}413 + 0{,}449 + 0{,}119 + 0{,}193 = 2{,}17$ → NF ≈ 3,4 dB
+2. $290(10^{0\text{,}05} - 1) \approx 35$ K
+3. Licząc od filtra ($F_1 = 1\text{,}413$, $G_1 = 0\text{,}708$): $F = 1\text{,}413 + (1\text{,}318 - 1)/0\text{,}708 + (6\text{,}31 - 1)/(0\text{,}708\cdot 63\text{,}1) + (3\text{,}16 - 1)/(0\text{,}708\cdot 63\text{,}1\cdot 0\text{,}251) \approx 1\text{,}413 + 0\text{,}449 + 0\text{,}119 + 0\text{,}193 = 2\text{,}17$ → NF ≈ 3,4 dB
 4. $-174 + 51 + 6 - 20 = -137$ dBm
-5. $T_e = 290(10^{0{,}03} - 1) \approx 21$ K → $T_{sys} \approx 71$ K; przy 0,2 dB: $T_e \approx 14$ K, $T_{sys} \approx 64$ K — poprawa SNR o $10\log(71/64) \approx 0{,}45$ dB
+5. $T_e = 290(10^{0\text{,}03} - 1) \approx 21$ K → $T_{sys} \approx 71$ K; przy 0,2 dB: $T_e \approx 14$ K, $T_{sys} \approx 64$ K — poprawa SNR o $10\log(71/64) \approx 0\text{,}45$ dB
 </details>
 
 ## Źródła

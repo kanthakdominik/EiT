@@ -21,7 +21,7 @@ Pasmo przepustowe (zafalowania), częstotliwość graniczna, pasmo zaporowe (wym
 
 **Rząd filtra Butterwortha:** tłumienie przy $f$: $A(f) = 10\log\left[1 + (f/f_c)^{2n}\right]$; asymptotycznie $20n$ dB/dekadę.
 
-Filtr wyższego rzędu buduje się kaskadą sekcji 2. rzędu (i ewentualnie jednej 1. rzędu) o odpowiednich $f_0$ i $Q$ z tablic. Dla Butterwortha 2. rzędu $Q = 1/\sqrt2 \approx 0{,}707$; 4. rzędu — sekcje o $Q = 0{,}541$ i $1{,}307$, obie o tej samej $f_0$.
+Filtr wyższego rzędu buduje się kaskadą sekcji 2. rzędu (i ewentualnie jednej 1. rzędu) o odpowiednich $f_0$ i $Q$ z tablic. Dla Butterwortha 2. rzędu $Q = 1/\sqrt2 \approx 0\text{,}707$; 4. rzędu — sekcje o $Q = 0\text{,}541$ i $1\text{,}307$, obie o tej samej $f_0$.
 
 ### Struktura Sallen–Key (dolnoprzepustowa, wzmocnienie 1)
 
@@ -44,8 +44,8 @@ Filtry z przełączanymi pojemnościami (scalone, przestrajane zegarem), filtr t
 **Filtr antyaliasingowy Butterwortha 2. rzędu, $f_0 = 1$ kHz**, Sallen–Key, $R_1 = R_2 = 10$ kΩ.
 
 1. $f_0 = \dfrac{1}{2\pi R\sqrt{C_1C_2}}$, $C_1 = 2C_2$ → $f_0 = \dfrac{1}{2\pi RC_2\sqrt2}$.
-2. $C_2 = \dfrac{1}{2\pi\cdot 10^4\cdot 10^3\cdot\sqrt2} \approx 11{,}25$ nF, $C_1 \approx 22{,}5$ nF.
-3. Wartości z szeregu: $C_2 = 11$ nF (lub 10 nF + 1 nF), $C_1 = 22$ nF → $f_0 \approx 1{,}02$ kHz, $Q \approx 0{,}707$.
+2. $C_2 = \dfrac{1}{2\pi\cdot 10^4\cdot 10^3\cdot\sqrt2} \approx 11\text{,}25$ nF, $C_1 \approx 22\text{,}5$ nF.
+3. Wartości z szeregu: $C_2 = 11$ nF (lub 10 nF + 1 nF), $C_1 = 22$ nF → $f_0 \approx 1\text{,}02$ kHz, $Q \approx 0\text{,}707$.
 4. Tłumienie przy 10 kHz: $10\log(1 + 10^4) \approx 40$ dB.
 
 Kondensatory filtra — z dielektrykiem C0G lub foliowe ([02.07](../02-fizyka-i-materialy/07-materialy-elektroniczne.md)); X7R zmieni $f_0$ i $Q$ z napięciem.
@@ -91,10 +91,10 @@ print(np.roots(a)/(2*np.pi))                          # bieguny → f0 i Q sekcj
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $C_2 \approx 11{,}3$ nF, $C_1 \approx 22{,}5$ nF
-2. $n = 2$ (dokładnie 40,0 dB); dla 60 dB przy $5f_c$: $10\log(1 + 5^{2n}) \geq 60$ → $5^{2n} \geq 10^6$ → $n \geq 4{,}3$ → $n = 5$
-3. $f_0 \approx 1{,}59$ kHz, $Q = 0{,}5$
-4. Przy $f_c = 100$ Hz potrzeba tłumienia 40 dB przy $5f_c$: $5^{2n} \geq 10^4$ → $n \geq 2{,}9$ → 3. rząd (ok. 41,9 dB) lub 4. rząd z zapasem. Z $f_c$ nieco powyżej 100 Hz (np. 120 Hz) — 4. rząd
+1. $C_2 \approx 11\text{,}3$ nF, $C_1 \approx 22\text{,}5$ nF
+2. $n = 2$ (dokładnie 40,0 dB); dla 60 dB przy $5f_c$: $10\log(1 + 5^{2n}) \geq 60$ → $5^{2n} \geq 10^6$ → $n \geq 4\text{,}3$ → $n = 5$
+3. $f_0 \approx 1\text{,}59$ kHz, $Q = 0\text{,}5$
+4. Przy $f_c = 100$ Hz potrzeba tłumienia 40 dB przy $5f_c$: $5^{2n} \geq 10^4$ → $n \geq 2\text{,}9$ → 3. rząd (ok. 41,9 dB) lub 4. rząd z zapasem. Z $f_c$ nieco powyżej 100 Hz (np. 120 Hz) — 4. rząd
 5. Bessel ma prawie liniową fazę (stałe opóźnienie grupowe), więc nie zniekształca kształtu przebiegu i nie wprowadza przeregulowań, które w EKG wyglądałyby jak sztuczne załamki
 </details>
 

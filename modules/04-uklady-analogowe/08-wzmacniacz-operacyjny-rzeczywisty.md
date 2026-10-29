@@ -44,7 +44,7 @@ Wzmacniacz o GBW = 1 MHz, SR = 0,5 V/µs, $U_{OS} = 2$ mV, $I_B = 100$ nA, $e_n 
 
 1. Wzmacniacz nieodwracający o wzmocnieniu 10: pasmo ≈ 100 kHz.
 2. Wzmacniacz odwracający o wzmocnieniu −10: $G_n = 11$ → pasmo ≈ 91 kHz.
-3. Sinus o amplitudzie 10 V: $f_{max} = \dfrac{0{,}5\cdot 10^6}{2\pi\cdot 10} \approx 8$ kHz — **slew rate ogranicza tu bardziej niż GBW**.
+3. Sinus o amplitudzie 10 V: $f_{max} = \dfrac{0\text{,}5\cdot 10^6}{2\pi\cdot 10} \approx 8$ kHz — **slew rate ogranicza tu bardziej niż GBW**.
 4. Wzmocnienie 101 ($R_2 = 100$ kΩ, $R_1 = 1$ kΩ): offset na wyjściu $2\ \text{mV}\cdot 101 = 202$ mV; prąd polaryzacji przez 100 kΩ daje dodatkowo do 10 mV (można skompensować rezystorem ≈ 990 Ω w wejściu nieodwracającym).
 5. Szum wejściowy w paśmie 10 kHz (tylko $e_n$): $10\ \text{nV}\cdot\sqrt{10^4} = 1\ \mu$V RMS, na wyjściu ×101 ≈ 0,1 mV RMS.
 
@@ -81,7 +81,7 @@ Weź z biblioteki LTspice dwa wzmacniacze o różnych parametrach (np. ogólnego
 3. 202 mV
 4. $100\ \text{nA}\cdot 100\ \text{k}\Omega = 10$ mV; rezystor $R_1\parallel R_2 \approx 990\ \Omega$ w wejściu nieodwracającym (zostaje błąd od $I_{OS}$)
 5. ≈ 0,1 mV RMS
-6. $\sqrt{4\cdot 1{,}38\cdot 10^{-23}\cdot 300\cdot 10^4} \approx 12{,}9$ nV/√Hz — więcej niż szum wzmacniacza; przy takich rezystorach to one dominują
+6. $\sqrt{4\cdot 1\text{,}38\cdot 10^{-23}\cdot 300\cdot 10^4} \approx 12\text{,}9$ nV/√Hz — więcej niż szum wzmacniacza; przy takich rezystorach to one dominują
 </details>
 
 ## Źródła

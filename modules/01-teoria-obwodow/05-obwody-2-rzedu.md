@@ -49,10 +49,10 @@ $$\left.\frac{du_C}{dt}\right|_{0^+} = \frac{i_C(0^+)}{C}, \qquad \left.\frac{di
 Szeregowy RLC: $R = 100\ \Omega$, $L = 10$ mH, $C = 1\ \mu$F, skok napięcia 10 V, warunki zerowe.
 
 1. $\omega_0 = \dfrac{1}{\sqrt{10^{-2}\cdot 10^{-6}}} = 10^4$ rad/s.
-2. $\alpha = \dfrac{100}{2\cdot 0{,}01} = 5000\ \text{s}^{-1}$, $\zeta = 0{,}5$ — obwód niedotłumiony.
-3. $\omega_d = 10^4\sqrt{0{,}75} \approx 8660$ rad/s.
-4. $u_C(t) = 10\left[1 - e^{-5000t}\left(\cos 8660t + 0{,}577\sin 8660t\right)\right]$ V.
-5. Przeregulowanie $e^{-\pi\cdot 0{,}5/0{,}866} \approx 0{,}163$ → maksimum $\approx 11{,}6$ V po czasie $t_p = \pi/8660 \approx 0{,}36$ ms.
+2. $\alpha = \dfrac{100}{2\cdot 0\text{,}01} = 5000\ \text{s}^{-1}$, $\zeta = 0\text{,}5$ — obwód niedotłumiony.
+3. $\omega_d = 10^4\sqrt{0\text{,}75} \approx 8660$ rad/s.
+4. $u_C(t) = 10\left[1 - e^{-5000t}\left(\cos 8660t + 0\text{,}577\sin 8660t\right)\right]$ V.
+5. Przeregulowanie $e^{-\pi\cdot 0\text{,}5/0\text{,}866} \approx 0\text{,}163$ → maksimum $\approx 11\text{,}6$ V po czasie $t_p = \pi/8660 \approx 0\text{,}36$ ms.
 6. Rezystancja krytyczna: $R_{kr} = 2\sqrt{10^{-2}/10^{-6}} = 200\ \Omega$.
 
 ## Typowe pułapki
@@ -83,14 +83,14 @@ C1 b 0 1u
 2. Ten sam obwód z $R = 10\ \Omega$: wyznacz $\zeta$, $\omega_d$ i przeregulowanie odpowiedzi skokowej.
 3. Równoległy RLC: $R = 250\ \Omega$, $L = 10$ mH, $C = 100$ nF. Wyznacz $\omega_0$, $\alpha$, $\zeta$ i $\omega_d$.
 4. Szeregowy RLC (warunki zerowe) dołączony w $t = 0$ do źródła 10 V, $L = 10$ mH. Wyznacz $\dfrac{du_C}{dt}(0^+)$ oraz $\dfrac{di}{dt}(0^+)$.
-5. Dobierz $R$ szeregowego obwodu z $L = 10$ mH i $C = 1\ \mu$F tak, aby $\zeta = 0{,}707$. Jakie będzie przeregulowanie?
+5. Dobierz $R$ szeregowego obwodu z $L = 10$ mH i $C = 1\ \mu$F tak, aby $\zeta = 0\text{,}707$. Jakie będzie przeregulowanie?
 
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $f_0 = \dfrac{1}{2\pi\sqrt{10^{-9}}} \approx 5033$ Hz, $R_{kr} = 2\sqrt{1000} \approx 63{,}2\ \Omega$
-2. $\alpha = 5000$, $\omega_0 \approx 31\,623$ rad/s, $\zeta \approx 0{,}158$, $\omega_d \approx 31\,225$ rad/s, przeregulowanie ≈ 60%
-3. $\omega_0 \approx 31\,623$ rad/s, $\alpha = \dfrac{1}{2\cdot 250\cdot 10^{-7}} = 20\,000\ \text{s}^{-1}$, $\zeta \approx 0{,}632$, $\omega_d \approx 24\,495$ rad/s
+1. $f_0 = \dfrac{1}{2\pi\sqrt{10^{-9}}} \approx 5033$ Hz, $R_{kr} = 2\sqrt{1000} \approx 63\text{,}2\ \Omega$
+2. $\alpha = 5000$, $\omega_0 \approx 31\,623$ rad/s, $\zeta \approx 0\text{,}158$, $\omega_d \approx 31\,225$ rad/s, przeregulowanie ≈ 60%
+3. $\omega_0 \approx 31\,623$ rad/s, $\alpha = \dfrac{1}{2\cdot 250\cdot 10^{-7}} = 20\,000\ \text{s}^{-1}$, $\zeta \approx 0\text{,}632$, $\omega_d \approx 24\,495$ rad/s
 4. $\dfrac{du_C}{dt}(0^+) = i(0^+)/C = 0$; $\dfrac{di}{dt}(0^+) = E/L = 1000$ A/s (całe napięcie odkłada się na cewce)
 5. $R = 2\zeta\sqrt{L/C} \approx 141\ \Omega$; przeregulowanie ≈ 4,3%
 </details>

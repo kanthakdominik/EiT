@@ -25,7 +25,7 @@ Bramka musi być spolaryzowana zaporowo (prąd bramki rzędu pA). Zastosowania: 
 | **SiC MOSFET** | Napięcie bramki (zwykle wyższe) | Pełne, szybkie | Wysokie napięcia, wysoka sprawność |
 | **GaN HEMT** | Napięcie bramki (wąski zakres!) | Bardzo szybkie | Zasilacze o dużej gęstości mocy |
 
-IGBT łączy wejście MOS z wyjściem bipolarnym: spadek napięcia w stanie włączenia ma postać $U_{CE(sat)} \approx 1{,}5$–2 V (niezależnie od prądu bardziej niż $R_{DS(on)}$), co przy dużych prądach i napięciach daje mniejsze straty niż MOSFET krzemowy.
+IGBT łączy wejście MOS z wyjściem bipolarnym: spadek napięcia w stanie włączenia ma postać $U_{CE(sat)} \approx 1\text{,}5$–2 V (niezależnie od prądu bardziej niż $R_{DS(on)}$), co przy dużych prądach i napięciach daje mniejsze straty niż MOSFET krzemowy.
 
 ### Optoelektronika i izolacja
 
@@ -35,9 +35,9 @@ IGBT łączy wejście MOS z wyjściem bipolarnym: spadek napięcia w stanie wł�
 
 **JFET:** $I_{DSS} = 10$ mA, $U_P = -4$ V, $U_{GS} = -2$ V.
 
-$I_D = 10(1 - 0{,}5)^2 = 2{,}5$ mA; $g_m = \dfrac{2\cdot 10}{4}(1 - 0{,}5) = 2{,}5$ mS.
+$I_D = 10(1 - 0\text{,}5)^2 = 2\text{,}5$ mA; $g_m = \dfrac{2\cdot 10}{4}(1 - 0\text{,}5) = 2\text{,}5$ mS.
 
-**Transoptor jako izolowane wejście cyfrowe.** Dioda sterowana prądem 5 mA, CTR minimalny 50% → fototranzystor pewnie przewodzi do 2,5 mA. Wyjście z rezystorem podciągającym do 5 V: aby fototranzystor był nasycony przy najgorszym CTR, $R \geq \dfrac{5\ \text{V}}{2{,}5\ \text{mA}} = 2$ kΩ → np. 4,7 kΩ (kosztem wolniejszego zbocza narastającego).
+**Transoptor jako izolowane wejście cyfrowe.** Dioda sterowana prądem 5 mA, CTR minimalny 50% → fototranzystor pewnie przewodzi do 2,5 mA. Wyjście z rezystorem podciągającym do 5 V: aby fototranzystor był nasycony przy najgorszym CTR, $R \geq \dfrac{5\ \text{V}}{2\text{,}5\ \text{mA}} = 2$ kΩ → np. 4,7 kΩ (kosztem wolniejszego zbocza narastającego).
 
 ## Typowe pułapki
 
@@ -61,9 +61,9 @@ W LTspice zbuduj transoptor jako LED + źródło prądowe sterowane prądem diod
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $I_D = 2{,}5$ mA, $g_m = 2{,}5$ mS; przy $U_{GS} = 0$: $g_{m0} = 5$ mS
-2. $\sqrt{0{,}64} = 0{,}8 = 1 - U_{GS}/U_P$ → $U_{GS} = -0{,}8$ V
-3. Minimalny prąd wyjściowy 10 mA; $R \geq 3{,}3\ \text{V}/10\ \text{mA} = 330\ \Omega$ — z zapasem np. 1 kΩ
+1. $I_D = 2\text{,}5$ mA, $g_m = 2\text{,}5$ mS; przy $U_{GS} = 0$: $g_{m0} = 5$ mS
+2. $\sqrt{0\text{,}64} = 0\text{,}8 = 1 - U_{GS}/U_P$ → $U_{GS} = -0\text{,}8$ V
+3. Minimalny prąd wyjściowy 10 mA; $R \geq 3\text{,}3\ \text{V}/10\ \text{mA} = 330\ \Omega$ — z zapasem np. 1 kΩ
 4. Krzemowe MOSFET-y wysokonapięciowe mają bardzo dużą $R_{DS(on)}$; IGBT ma mniejsze straty przewodzenia przy wysokich napięciach i dużych prądach, a SiC łączy niskie straty z szybkim przełączaniem
 5. Po włączeniu struktura czterowarstwowa podtrzymuje przewodzenie dzięki wewnętrznemu dodatniemu sprzężeniu zwrotnemu dwóch tranzystorów; bramka traci kontrolę, dopóki prąd nie spadnie poniżej prądu podtrzymania
 </details>

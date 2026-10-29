@@ -53,7 +53,7 @@ Rozwiąż bez notatek, około 60 minut. Wynik pokaże, które tematy wystarczy p
 1. $z = 2e^{j\,2\pi/3}$ (moduł 2, argument 120°)
 2. $5\angle 90^\circ = j5$
 3. $f'(t) = e^{-2t}\left(5\cos 5t - 2\sin 5t\right)$
-4. $U_{RMS} = 4/\sqrt{2} \approx 2{,}83$
+4. $U_{RMS} = 4/\sqrt{2} \approx 2\text{,}83$
 5. $y(t) = 2\left(1 - e^{-10t}\right)$
 6. $x = 2$, $y = 1$
 7. $\dfrac{1}{s+3}$ oraz $1 - e^{-t}$

@@ -33,7 +33,7 @@ Około 60 minut, bez notatek.
 1. Źródło nadaje cztery symbole z prawdopodobieństwami 1/2, 1/4, 1/8, 1/8. Ile wynosi entropia? Zaproponuj kod.
 2. Kanał o paśmie 1 MHz i SNR 20 dB — jaka jest jego pojemność?
 3. Jakie pasmo zajmuje sygnał radiofonii FM (dewiacja 75 kHz, sygnał modulujący do 15 kHz)?
-4. Jakie pasmo zajmuje sygnał 1 Msym/s z filtrem podniesionego kosinusa o $\alpha = 0{,}35$ (po przemianie na nośną)?
+4. Jakie pasmo zajmuje sygnał 1 Msym/s z filtrem podniesionego kosinusa o $\alpha = 0\text{,}35$ (po przemianie na nośną)?
 5. Ile bitów niesie symbol 64-QAM? Jaka jest efektywność widmowa dla $\alpha = 0$?
 6. Jakie $E_b/N_0$ potrzebuje BPSK dla BER = $10^{-5}$ w kanale AWGN?
 7. Kod Hamminga (7,4) — ile błędów poprawia, jaka jest sprawność?
@@ -42,10 +42,10 @@ Około 60 minut, bez notatek.
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $H = 1{,}75$ bit/symbol; kod Huffmana 0, 10, 110, 111 — średnio 1,75 bitu
-2. $C = 10^6\log_2(101) \approx 6{,}66$ Mbit/s
+1. $H = 1\text{,}75$ bit/symbol; kod Huffmana 0, 10, 110, 111 — średnio 1,75 bitu
+2. $C = 10^6\log_2(101) \approx 6\text{,}66$ Mbit/s
 3. Reguła Carsona: $2(75 + 15) = 180$ kHz
-4. $R_s(1 + \alpha) = 1{,}35$ MHz
+4. $R_s(1 + \alpha) = 1\text{,}35$ MHz
 5. 6 bitów; 6 bit/s/Hz (przy $\alpha = 0$)
 6. ≈ 9,6 dB
 7. Jeden błąd na słowo; 4/7 ≈ 0,57

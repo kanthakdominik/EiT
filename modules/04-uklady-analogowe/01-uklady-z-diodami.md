@@ -42,16 +42,16 @@ Moc diody sprawdza się w najgorszym przypadku: największe $U_{we}$, brak obci�
 
 **Zasilacz:** transformator 12 V RMS, mostek, kondensator 2200 µF, obciążenie 0,5 A, sieć 50 Hz.
 
-1. $U_m = 12\sqrt2 \approx 16{,}97$ V; po mostku $U_{pk} \approx 16{,}97 - 1{,}4 \approx 15{,}6$ V.
-2. Tętnienia: $\Delta U \approx \dfrac{0{,}5}{100\cdot 2{,}2\cdot 10^{-3}} \approx 2{,}27$ V. Napięcie minimalne ≈ 13,3 V.
+1. $U_m = 12\sqrt2 \approx 16\text{,}97$ V; po mostku $U_{pk} \approx 16\text{,}97 - 1\text{,}4 \approx 15\text{,}6$ V.
+2. Tętnienia: $\Delta U \approx \dfrac{0\text{,}5}{100\cdot 2\text{,}2\cdot 10^{-3}} \approx 2\text{,}27$ V. Napięcie minimalne ≈ 13,3 V.
 3. Diody: napięcie wsteczne ≈ 17 V (+ zapas na wahania sieci ±10%) → diody 1 A / 50 V lub wyższe; prąd szczytowy wielokrotnie większy niż 0,5 A.
 4. Kondensator: napięcie znamionowe co najmniej 25 V (sieć +10% daje ok. 17,3 V bez obciążenia), prąd tętnień z dokumentacji.
 
-**Stabilizator Zenera:** $U_{we} = 12$ V, $U_Z = 5{,}1$ V, $I_{L,max} = 20$ mA, $I_{Z,min} = 5$ mA.
+**Stabilizator Zenera:** $U_{we} = 12$ V, $U_Z = 5\text{,}1$ V, $I_{L,max} = 20$ mA, $I_{Z,min} = 5$ mA.
 
-1. $R \leq \dfrac{12 - 5{,}1}{25\ \text{mA}} = 276\ \Omega$ → 270 Ω.
-2. Bez obciążenia cały prąd $\dfrac{6{,}9}{270} \approx 25{,}6$ mA płynie przez diodę: $P_Z \approx 0{,}13$ W → dioda 0,5 W z zapasem.
-3. Rezystor: $6{,}9\cdot 25{,}6\ \text{mA} \approx 0{,}18$ W → 0,25 W to już mało, lepiej 0,5 W.
+1. $R \leq \dfrac{12 - 5\text{,}1}{25\ \text{mA}} = 276\ \Omega$ → 270 Ω.
+2. Bez obciążenia cały prąd $\dfrac{6\text{,}9}{270} \approx 25\text{,}6$ mA płynie przez diodę: $P_Z \approx 0\text{,}13$ W → dioda 0,5 W z zapasem.
+3. Rezystor: $6\text{,}9\cdot 25\text{,}6\ \text{mA} \approx 0\text{,}18$ W → 0,25 W to już mało, lepiej 0,5 W.
 
 ## Typowe pułapki
 
@@ -83,7 +83,7 @@ RL p n 31
 1. Transformator 12 V RMS, mostek, 2200 µF, 0,5 A, 50 Hz. Wyznacz $U_{pk}$, tętnienia i napięcie minimalne.
 2. Ten sam zasilacz z prostownikiem jednopołówkowym. Ile wynoszą tętnienia?
 3. Dobierz kondensator, aby tętnienia przy 1 A (mostek, 50 Hz) nie przekraczały 1 V.
-4. Stabilizator Zenera: $U_{we} = 12$ V, $U_Z = 5{,}1$ V, $I_L$ = 0–20 mA, $I_{Z,min} = 5$ mA. Dobierz rezystor i moc diody.
+4. Stabilizator Zenera: $U_{we} = 12$ V, $U_Z = 5\text{,}1$ V, $I_L$ = 0–20 mA, $I_{Z,min} = 5$ mA. Dobierz rezystor i moc diody.
 5. Wejście układu zasilanego 3,3 V chronią dwie diody (do masy i do zasilania) z rezystorem 1 kΩ. Jaki prąd popłynie przez diodę przy sygnale wejściowym 12 V?
 6. Sinusoida o amplitudzie 5 V przechodzi przez układ przesuwający poziom (kondensator + dioda do masy, dioda katodą do masy). W jakim zakresie zmienia się napięcie wyjściowe?
 
@@ -91,10 +91,10 @@ RL p n 31
 <summary>Odpowiedzi</summary>
 
 1. ≈ 15,6 V; ≈ 2,27 V; ≈ 13,3 V
-2. $\Delta U \approx 0{,}5/(50\cdot 2{,}2\cdot 10^{-3}) \approx 4{,}5$ V (dwa razy więcej)
+2. $\Delta U \approx 0\text{,}5/(50\cdot 2\text{,}2\cdot 10^{-3}) \approx 4\text{,}5$ V (dwa razy więcej)
 3. $C \geq \dfrac{1}{100\cdot 1} = 10\,000\ \mu$F
 4. 270 Ω; moc diody ≈ 0,13 W (dioda 0,5 W), rezystor 0,5 W
-5. $\dfrac{12 - 3{,}3 - 0{,}7}{1\ \text{k}} = 8$ mA — płynie do szyny zasilania; jeśli układ pobiera mniej, napięcie zasilania może wzrosnąć (dlatego stosuje się też diody TVS lub ograniczenie prądu)
+5. $\dfrac{12 - 3\text{,}3 - 0\text{,}7}{1\ \text{k}} = 8$ mA — płynie do szyny zasilania; jeśli układ pobiera mniej, napięcie zasilania może wzrosnąć (dlatego stosuje się też diody TVS lub ograniczenie prądu)
 6. Przy diodzie katodą do masy dioda przewodzi przy dodatnich szczytach i kondensator ładuje się tak, że maksimum wyjścia ≈ +0,7 V; wyjście zmienia się od ok. −9,3 V do +0,7 V
 </details>
 

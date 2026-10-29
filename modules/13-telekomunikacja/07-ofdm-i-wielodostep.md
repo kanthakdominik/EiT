@@ -45,9 +45,9 @@ Dupleks: FDD (osobne pasma dla obu kierunków) lub TDD (te same pasmo, podział 
 
 ## Przykład rozwiązany
 
-**OFDM w Wi-Fi 802.11a/g:** pasmo 20 MHz, FFT 64 punkty → $\Delta f = 312{,}5$ kHz, $T_u = 3{,}2$ µs, prefiks 0,8 µs (symbol 4 µs). 52 podnośne zajęte: 48 danych + 4 piloty. Przy 64-QAM i kodzie 3/4: $48\cdot 6\cdot 0{,}75/4\ \mu\text{s} = 54$ Mbit/s. Prefiks 0,8 µs wystarcza dla rozmycia opóźnień typowego wewnątrz budynków (dziesiątki–setki ns).
+**OFDM w Wi-Fi 802.11a/g:** pasmo 20 MHz, FFT 64 punkty → $\Delta f = 312\text{,}5$ kHz, $T_u = 3\text{,}2$ µs, prefiks 0,8 µs (symbol 4 µs). 52 podnośne zajęte: 48 danych + 4 piloty. Przy 64-QAM i kodzie 3/4: $48\cdot 6\cdot 0\text{,}75/4\ \mu\text{s} = 54$ Mbit/s. Prefiks 0,8 µs wystarcza dla rozmycia opóźnień typowego wewnątrz budynków (dziesiątki–setki ns).
 
-**LTE:** $\Delta f = 15$ kHz → $T_u \approx 66{,}7$ µs, prefiks normalny ok. 4,7 µs — odpowiedni dla dużych komórek z rozmyciem opóźnień rzędu µs.
+**LTE:** $\Delta f = 15$ kHz → $T_u \approx 66\text{,}7$ µs, prefiks normalny ok. 4,7 µs — odpowiedni dla dużych komórek z rozmyciem opóźnień rzędu µs.
 
 ## Typowe pułapki
 
@@ -102,9 +102,9 @@ Przy wystarczającym prefiksie pozostałe błędy pochodzą z podnośnych w gł�
 <summary>Odpowiedzi</summary>
 
 1. ≈ 9,77 kHz; ≈ 102,4 µs
-2. ≥ 3 µs; $66{,}7/(66{,}7 + 3) \approx 95{,}7\%$ — strata ok. 4,3% (0,19 dB energii)
-3. $48\cdot 4\cdot 0{,}5/4\ \mu\text{s} = 24$ Mbit/s
-4. $10\log 11 \approx 10{,}4$ dB
+2. ≥ 3 µs; $66\text{,}7/(66\text{,}7 + 3) \approx 95\text{,}7\%$ — strata ok. 4,3% (0,19 dB energii)
+3. $48\cdot 4\cdot 0\text{,}5/4\ \mu\text{s} = 24$ Mbit/s
+4. $10\log 11 \approx 10\text{,}4$ dB
 5. Podnośne są bardzo blisko siebie (np. 15 kHz); błąd częstotliwości rzędu kilku % odstępu niszczy ich ortogonalność (ICI), podczas gdy dla jednej szerokiej nośnej ten sam błąd jest małym ułamkiem szybkości symbolowej i łatwo go śledzić pętlą
 </details>
 

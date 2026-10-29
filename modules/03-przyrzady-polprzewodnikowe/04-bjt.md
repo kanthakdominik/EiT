@@ -20,10 +20,10 @@ $\beta$ (= $h_{FE}$) typowo 50–500, **ma duży rozrzut i zależy od prądu i t
 |---|---|---|---|
 | Odcięcie | zaporowo | zaporowo | $I_C \approx 0$ — klucz otwarty |
 | Aktywny normalny | przewodzenie | zaporowo | $I_C = \beta I_B$ — wzmacnianie |
-| Nasycenie | przewodzenie | przewodzenie | $U_{CE} \approx 0{,}1$–0,3 V, $I_C < \beta I_B$ — klucz zamknięty |
+| Nasycenie | przewodzenie | przewodzenie | $U_{CE} \approx 0\text{,}1$–0,3 V, $I_C < \beta I_B$ — klucz zamknięty |
 | Aktywny inwersyjny | zaporowo | przewodzenie | Rzadko używany |
 
-**Procedura rozpoznania stanu:** załóż stan aktywny, policz $I_B$, $I_C$, $U_{CE}$. Jeśli wyszło $U_{CE} < 0{,}2$ V (albo ujemne) — tranzystor jest nasycony; policz ponownie z $U_{CE} = U_{CE,sat}$.
+**Procedura rozpoznania stanu:** załóż stan aktywny, policz $I_B$, $I_C$, $U_{CE}$. Jeśli wyszło $U_{CE} < 0\text{,}2$ V (albo ujemne) — tranzystor jest nasycony; policz ponownie z $U_{CE} = U_{CE,sat}$.
 
 pnp działa tak samo z odwróconymi kierunkami prądów i napięć.
 
@@ -44,9 +44,9 @@ $U_{CEO}$ (maksymalne napięcie), $I_{C,max}$, $P_{tot}$, obszar bezpiecznej pra
 **Klucz sterujący przekaźnikiem** z wyjścia mikrokontrolera 3,3 V. Cewka przekaźnika pobiera 100 mA, tranzystor ma $\beta_{min} = 50$.
 
 1. Minimalny prąd bazy: $100/50 = 2$ mA; z zapasem 3×: $I_B = 6$ mA.
-2. $R_B = \dfrac{3{,}3 - 0{,}8}{6\ \text{mA}} \approx 417\ \Omega$ → 390 Ω (wartość z szeregu, nieco większy prąd). Sprawdź, czy wyjście mikrokontrolera wytrzyma ok. 6,4 mA.
+2. $R_B = \dfrac{3\text{,}3 - 0\text{,}8}{6\ \text{mA}} \approx 417\ \Omega$ → 390 Ω (wartość z szeregu, nieco większy prąd). Sprawdź, czy wyjście mikrokontrolera wytrzyma ok. 6,4 mA.
 3. Równolegle do cewki — dioda gasząca (katodą do plusa zasilania)!
-4. Straty w tranzystorze: $0{,}2\ \text{V}\cdot 0{,}1\ \text{A} = 20$ mW.
+4. Straty w tranzystorze: $0\text{,}2\ \text{V}\cdot 0\text{,}1\ \text{A} = 20$ mW.
 
 ## Typowe pułapki
 
@@ -80,11 +80,11 @@ Wyświetl `Ic(Q1)`. Odczytaj $\beta$ dla kilku prądów bazy, przedłuż charakt
 <details>
 <summary>Odpowiedzi</summary>
 
-1. Nasycenie, $I_C \approx 4{,}8$ mA (stan aktywny dawałby $U_{CE} = -5$ V)
-2. $I_B \approx 9{,}1\ \mu$A, $I_C \approx 0{,}91$ mA, $U_{CE} \approx 4{,}1$ V — stan aktywny
+1. Nasycenie, $I_C \approx 4\text{,}8$ mA (stan aktywny dawałby $U_{CE} = -5$ V)
+2. $I_B \approx 9\text{,}1\ \mu$A, $I_C \approx 0\text{,}91$ mA, $U_{CE} \approx 4\text{,}1$ V — stan aktywny
 3. ≈ 417 Ω → 390 Ω
-4. $I_B = 2/101 \approx 19{,}8\ \mu$A, $I_C \approx 1{,}98$ mA, $\alpha \approx 0{,}99$
-5. $\dfrac{1 + 12/100}{1 + 2/100} \approx 1{,}098$ — o ok. 10%
+4. $I_B = 2/101 \approx 19\text{,}8\ \mu$A, $I_C \approx 1\text{,}98$ mA, $\alpha \approx 0\text{,}99$
+5. $\dfrac{1 + 12/100}{1 + 2/100} \approx 1\text{,}098$ — o ok. 10%
 </details>
 
 ## Źródła

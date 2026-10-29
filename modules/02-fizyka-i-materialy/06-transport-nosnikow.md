@@ -39,8 +39,8 @@ Bilans nośników w małej objętości: zmiana koncentracji = dopływ (dryft + d
 
 Do krzemu typu p wstrzyknięto elektrony (nośniki mniejszościowe), $\tau_n = 1\ \mu$s.
 
-1. $D_n = \mu_n U_T = 1350\cdot 0{,}02585 \approx 34{,}9$ cm²/s.
-2. $L_n = \sqrt{34{,}9\cdot 10^{-6}} \approx 5{,}9\cdot 10^{-3}$ cm $\approx 59\ \mu$m.
+1. $D_n = \mu_n U_T = 1350\cdot 0\text{,}02585 \approx 34\text{,}9$ cm²/s.
+2. $L_n = \sqrt{34\text{,}9\cdot 10^{-6}} \approx 5\text{,}9\cdot 10^{-3}$ cm $\approx 59\ \mu$m.
 3. Wniosek dla tranzystora bipolarnego: jeśli baza jest dużo cieńsza niż $L_n$ (typowo poniżej 1 µm), prawie wszystkie elektrony z emitera dotrą do kolektora bez rekombinacji — stąd duże $\beta$.
 
 ## Typowe pułapki
@@ -70,11 +70,11 @@ plt.title("Zanik nadmiarowych nośników mniejszościowych"); plt.grid(); plt.sh
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $D_p = 480\cdot 0{,}02585 \approx 12{,}4$ cm²/s
-2. $L_p = \sqrt{12{,}4\cdot 10^{-5}} \approx 0{,}011$ cm ≈ 111 µm
-3. $\rho \approx 0{,}46$ Ω·cm; $R = \rho l/A = 0{,}46\cdot 0{,}1/0{,}01 = 4{,}6\ \Omega$
+1. $D_p = 480\cdot 0\text{,}02585 \approx 12\text{,}4$ cm²/s
+2. $L_p = \sqrt{12\text{,}4\cdot 10^{-5}} \approx 0\text{,}011$ cm ≈ 111 µm
+3. $\rho \approx 0\text{,}46$ Ω·cm; $R = \rho l/A = 0\text{,}46\cdot 0\text{,}1/0\text{,}01 = 4\text{,}6\ \Omega$
 4. Ruchliwość dziur jest ok. 2,8 razy mniejsza niż elektronów
-5. $v = \mu E = 1{,}35\cdot 10^5$ cm/s; w polu $10^5$ V/cm prędkość jest nasycona, ok. $10^7$ cm/s (wzór liniowy dawałby fałszywie $1{,}35\cdot 10^8$ cm/s)
+5. $v = \mu E = 1\text{,}35\cdot 10^5$ cm/s; w polu $10^5$ V/cm prędkość jest nasycona, ok. $10^7$ cm/s (wzór liniowy dawałby fałszywie $1\text{,}35\cdot 10^8$ cm/s)
 </details>
 
 ## Źródła

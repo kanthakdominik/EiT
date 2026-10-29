@@ -40,7 +40,7 @@ Analizator przemiatany (superheterodyna) vs analizator FFT (w czasie rzeczywisty
 
 **DDS:** akumulator 32-bitowy, zegar 125 MHz.
 
-1. Rozdzielczość: $125\cdot 10^6/2^{32} \approx 0{,}029$ Hz.
+1. Rozdzielczość: $125\cdot 10^6/2^{32} \approx 0\text{,}029$ Hz.
 2. Słowo dla 1 MHz: $M = 10^6\cdot 2^{32}/125\cdot 10^6 \approx 34\,359\,738$.
 
 **Analizator widma:** NF = 20 dB, RBW = 1 kHz → DANL ≈ $-174 + 20 + 30 = -124$ dBm. Zmniejszenie RBW do 10 Hz obniża szum o 20 dB (do −144 dBm), ale wydłuża przemiatanie 10 000 razy.

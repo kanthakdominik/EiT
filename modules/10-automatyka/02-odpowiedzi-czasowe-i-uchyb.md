@@ -23,7 +23,7 @@ $$T(s) = \frac{\omega_n^2}{s^2 + 2\zeta\omega_n s + \omega_n^2},\qquad s_{1,2} =
 |---|---|
 | Przeregulowanie | $M_p = e^{-\pi\zeta/\sqrt{1-\zeta^2}}$ |
 | Czas ustalania (2%) | $t_s \approx \dfrac{4}{\zeta\omega_n}$ |
-| Czas narastania (przybliżenie dla $\zeta \approx 0{,}5$) | $t_r \approx 1{,}8/\omega_n$ |
+| Czas narastania (przybliżenie dla $\zeta \approx 0\text{,}5$) | $t_r \approx 1\text{,}8/\omega_n$ |
 | Czas do maksimum | $t_p = \dfrac{\pi}{\omega_n\sqrt{1-\zeta^2}}$ |
 
 | $\zeta$ | 0,3 | 0,5 | 0,7 | 1,0 |
@@ -50,11 +50,11 @@ Dlatego regulator PI (dodaje całkowanie) usuwa uchyb dla stałej wartości zada
 
 **Wymaganie:** przeregulowanie ≤ 5%, czas ustalania ≤ 1 s.
 
-1. $M_p \leq 5\%$ → $\zeta \geq 0{,}69$; przyjmij $\zeta = 0{,}7$.
-2. $t_s = 4/(\zeta\omega_n) \leq 1$ → $\zeta\omega_n \geq 4$ → $\omega_n \geq 5{,}7$ rad/s.
-3. Obszar dozwolony na płaszczyźnie s: na lewo od prostej $\sigma = -4$ i wewnątrz klina $\pm 45{,}6°$ od ujemnej osi rzeczywistej.
+1. $M_p \leq 5\%$ → $\zeta \geq 0\text{,}69$; przyjmij $\zeta = 0\text{,}7$.
+2. $t_s = 4/(\zeta\omega_n) \leq 1$ → $\zeta\omega_n \geq 4$ → $\omega_n \geq 5\text{,}7$ rad/s.
+3. Obszar dozwolony na płaszczyźnie s: na lewo od prostej $\sigma = -4$ i wewnątrz klina $\pm 45\text{,}6°$ od ujemnej osi rzeczywistej.
 
-**Uchyb dla rampy:** $L(s) = \dfrac{10}{s(0{,}1s + 1)}$ — typ 1, $K_v = 10$, uchyb przy rampie jednostkowej $e_{ss} = 0{,}1$.
+**Uchyb dla rampy:** $L(s) = \dfrac{10}{s(0\text{,}1s + 1)}$ — typ 1, $K_v = 10$, uchyb przy rampie jednostkowej $e_{ss} = 0\text{,}1$.
 
 ## Typowe pułapki
 
@@ -84,24 +84,24 @@ for z in [0.3, 0.5, 0.7, 1.0]:
 plt.xlabel('t [s]'); plt.legend(); plt.grid(); plt.show()
 ```
 
-Zauważ: wzór $4/(\zeta\omega_n)$ jest przybliżeniem obwiedni — dla małych $\zeta$ zawyża czas ustalania (0,3: 1,33 s wobec 1,12 s), a dla $\zeta \geq 0{,}7$ go zaniża (1,0: 0,40 s wobec 0,58 s). Jest dobry do szacunków, nie do odbioru układu.
+Zauważ: wzór $4/(\zeta\omega_n)$ jest przybliżeniem obwiedni — dla małych $\zeta$ zawyża czas ustalania (0,3: 1,33 s wobec 1,12 s), a dla $\zeta \geq 0\text{,}7$ go zaniża (1,0: 0,40 s wobec 0,58 s). Jest dobry do szacunków, nie do odbioru układu.
 
 ## Zadania
 
 1. Wymaganie $M_p \leq 10\%$. Jakie minimalne $\zeta$?
-2. $\zeta = 0{,}5$, $\omega_n = 10$ rad/s. Przeregulowanie, czas ustalania (2%), czas do maksimum.
+2. $\zeta = 0\text{,}5$, $\omega_n = 10$ rad/s. Przeregulowanie, czas ustalania (2%), czas do maksimum.
 3. Pętla otwarta $L(s) = \dfrac{4}{(s+1)^3}$. Uchyb ustalony dla skoku jednostkowego?
-4. Pętla $L(s) = \dfrac{K}{s(0{,}1s + 1)}$. Jakie $K$ daje uchyb 0,05 przy rampie jednostkowej? Jaki to ma wpływ na $\zeta$ układu zamkniętego?
+4. Pętla $L(s) = \dfrac{K}{s(0\text{,}1s + 1)}$. Jakie $K$ daje uchyb 0,05 przy rampie jednostkowej? Jaki to ma wpływ na $\zeta$ układu zamkniętego?
 5. Układ ma bieguny $-2 \pm 3j$ i $-20$. Czy biegun $-20$ można pominąć? Oszacuj przeregulowanie i czas ustalania.
 
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $\zeta \geq 0{,}59$
-2. 16,3%; 0,8 s; $t_p = \pi/(10\cdot 0{,}866) \approx 0{,}36$ s
-3. $1/(1 + 4) = 0{,}2$
-4. $K_v = 20$ → $K = 20$; układ zamknięty $s^2\cdot 0{,}1 + s + K$: $\omega_n = \sqrt{10K}$, $\zeta = 1/(2\sqrt{0{,}1K})$ = 0,35 (dla K = 10 było 0,5) — dokładność śledzenia kosztem tłumienia
-5. Tak (10 razy dalej); $\omega_n = \sqrt{13} \approx 3{,}6$, $\zeta = 2/3{,}6 \approx 0{,}55$ → $M_p \approx 12\%$, $t_s \approx 4/2 = 2$ s
+1. $\zeta \geq 0\text{,}59$
+2. 16,3%; 0,8 s; $t_p = \pi/(10\cdot 0\text{,}866) \approx 0\text{,}36$ s
+3. $1/(1 + 4) = 0\text{,}2$
+4. $K_v = 20$ → $K = 20$; układ zamknięty $s^2\cdot 0\text{,}1 + s + K$: $\omega_n = \sqrt{10K}$, $\zeta = 1/(2\sqrt{0\text{,}1K})$ = 0,35 (dla K = 10 było 0,5) — dokładność śledzenia kosztem tłumienia
+5. Tak (10 razy dalej); $\omega_n = \sqrt{13} \approx 3\text{,}6$, $\zeta = 2/3\text{,}6 \approx 0\text{,}55$ → $M_p \approx 12\%$, $t_s \approx 4/2 = 2$ s
 </details>
 
 ## Źródła

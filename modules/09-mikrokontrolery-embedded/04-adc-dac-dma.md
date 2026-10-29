@@ -40,8 +40,8 @@ Wbudowany przetwornik C/A (8–12 bitów) z buforem wyjściowym lub bez; wyzwala
 
 Przetwornik 12-bitowy, $C_S = 8$ pF, $R_{ADC} = 1$ kΩ, źródło: dzielnik o rezystancji Thévenina 10 kΩ.
 
-1. $\ln(2^{14}) \approx 9{,}7$.
-2. $t_s \geq 11\ \text{k}\Omega\cdot 8\ \text{pF}\cdot 9{,}7 \approx 0{,}85\ \mu$s.
+1. $\ln(2^{14}) \approx 9\text{,}7$.
+2. $t_s \geq 11\ \text{k}\Omega\cdot 8\ \text{pF}\cdot 9\text{,}7 \approx 0\text{,}85\ \mu$s.
 3. Przy zegarze A/C 12 MHz to ok. 10,2 cykla → ustaw najbliższą dłuższą wartość z dostępnych (np. 12,5 lub 13,5 cykla).
 4. Dla dzielnika 100 kΩ potrzeba ok. 8 µs — albo kondensator 10 nF przy wejściu (wtedy pasmo sygnału ograniczy stała $R\cdot C$) albo bufor.
 
@@ -80,7 +80,7 @@ for Rsrc in [1e3, 10e3, 100e3]:
 1. ≈ 0,85 µs
 2. ≈ 7,8 µs; bufor (wtórnik) albo kondensator przy wejściu (np. 10 nF) + odpowiednio długi czas między próbkami
 3. $4\cdot 256\cdot 2\ \text{B}\cdot 2 = 4096$ B; przerwanie po zapełnieniu połowy: 256 próbek na kanał przy 10 kHz → co 25,6 ms
-4. $V_{DDA} = 1{,}212\cdot 4095/1532 \approx 3{,}24$ V; $U = 1489\cdot 3{,}24/4095 \approx 1{,}178$ V
+4. $V_{DDA} = 1\text{,}212\cdot 4095/1532 \approx 3\text{,}24$ V; $U = 1489\cdot 3\text{,}24/4095 \approx 1\text{,}178$ V
 5. Procesor czyta kopię w pamięci podręcznej, a DMA zapisało nowe dane bezpośrednio do RAM; bez unieważnienia linii pamięci podręcznej procesor widzi stare wartości
 </details>
 

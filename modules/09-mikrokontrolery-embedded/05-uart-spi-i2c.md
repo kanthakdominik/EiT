@@ -32,7 +32,7 @@ Transakcja: START → adres (7 bitów) + bit R/W → ACK → bajty danych z ACK 
 
 ## Przykład rozwiązany
 
-**UART 115 200 bit/s przy zegarze peryferium 72 MHz** (nadpróbkowanie ×16): dzielnik $72\cdot 10^6/(16\cdot 115\,200) = 39{,}0625$. Rejestr z częścią ułamkową (4 bity) zapisze to dokładnie: $39 + 1/16$. Bez części ułamkowej (dzielnik 39) błąd wyniósłby ok. 0,16% — też akceptowalnie. Przepustowość: 11 520 B/s.
+**UART 115 200 bit/s przy zegarze peryferium 72 MHz** (nadpróbkowanie ×16): dzielnik $72\cdot 10^6/(16\cdot 115\,200) = 39\text{,}0625$. Rejestr z częścią ułamkową (4 bity) zapisze to dokładnie: $39 + 1/16$. Bez części ułamkowej (dzielnik 39) błąd wyniósłby ok. 0,16% — też akceptowalnie. Przepustowość: 11 520 B/s.
 
 **Czas transakcji I²C** (400 kHz): odczyt 2 bajtów z rejestru czujnika = START + adres+W (9 bitów) + numer rejestru (9) + powtórzony START + adres+R (9) + 2 bajty (18) + STOP ≈ 47 okresów zegara ≈ **118 µs**. Odczyt 100 razy na sekundę zajmuje ok. 1,2% przepustowości magistrali.
 
@@ -94,7 +94,7 @@ Każdy indeks modyfikuje tylko jedna strona (ISR — `head`, pętla — `tail`),
 <summary>Odpowiedzi</summary>
 
 1. 8,68 µs; 86,8 µs; 11 520 B/s
-2. $16\cdot 10^6/(16\cdot 115\,200) = 8{,}68$ → dzielnik 9 → 111 111 bit/s, błąd −3,5% — za duży, komunikacja zawodna; potrzebny dzielnik ułamkowy, nadpróbkowanie ×8 lub inna prędkość/zegar
+2. $16\cdot 10^6/(16\cdot 115\,200) = 8\text{,}68$ → dzielnik 9 → 111 111 bit/s, błąd −3,5% — za duży, komunikacja zawodna; potrzebny dzielnik ułamkowy, nadpróbkowanie ×8 lub inna prędkość/zegar
 3. I²C: START + adres+W + rejestr + rSTART + adres+R + 6 bajtów + STOP ≈ 1 + 9 + 9 + 1 + 9 + 54 + 1 = 84 okresy ≈ 210 µs; SPI: 7 bajtów = 56 bitów ≈ 7 µs (+ czas obsługi CS)
 4. 0x48
 5. Zegar w spoczynku wysoki; dane zmieniane na zboczu opadającym i próbkowane na narastającym (drugie zbocze w cyklu)

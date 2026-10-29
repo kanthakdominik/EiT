@@ -10,14 +10,14 @@ Prawie każdy układ potrzebuje stabilnego napięcia zasilania. Stabilizatory li
 
 Element regulacyjny (tranzystor) szeregowo z obciążeniem + wzmacniacz błędu porównujący część napięcia wyjściowego (z dzielnika) z napięciem odniesienia. To układ ze sprzężeniem zwrotnym ([04.06](06-sprzezenie-zwrotne-i-stabilnosc.md)) — może być niestabilny.
 
-**Najprostszy:** dioda Zenera + wtórnik emiterowy: $U_{wy} \approx U_Z - 0{,}7$ V, prąd bazy $\beta$ razy mniejszy niż obciążenia.
+**Najprostszy:** dioda Zenera + wtórnik emiterowy: $U_{wy} \approx U_Z - 0\text{,}7$ V, prąd bazy $\beta$ razy mniejszy niż obciążenia.
 
 ### Typy stabilizatorów scalonych
 
 | Typ | Minimalny spadek napięcia (dropout) | Uwagi |
 |---|---|---|
 | Klasyczny (np. seria 78xx) | ok. 2 V | Tranzystor npn w układzie Darlingtona |
-| Regulowany (np. LM317) | ok. 1,5–3 V | $U_{wy} = 1{,}25\left(1 + \dfrac{R_2}{R_1}\right) + I_{ADJ}R_2$ |
+| Regulowany (np. LM317) | ok. 1,5–3 V | $U_{wy} = 1\text{,}25\left(1 + \dfrac{R_2}{R_1}\right) + I_{ADJ}R_2$ |
 | **LDO** | 0,05–0,5 V | Tranzystor pnp lub pMOS; **wymagania na ESR kondensatora wyjściowego** |
 
 ### Parametry
@@ -34,12 +34,12 @@ Temperatura złącza — [03.09](../03-przyrzady-polprzewodnikowe/09-datasheety-
 
 Stabilizator 12 V → 5 V, 0,5 A, obudowa TO-220: $R_{\theta JA} = 50$ K/W, $R_{\theta JC} = 3$ K/W, podkładka 0,5 K/W, $T_a = 40$ °C, projekt na $T_j \leq 125$ °C.
 
-1. $P = 7\cdot 0{,}5 = 3{,}5$ W, $\eta \approx 42\%$.
-2. Bez radiatora: $T_j = 40 + 3{,}5\cdot 50 = 215$ °C — wyłączy się zabezpieczenie termiczne.
-3. Łączna dopuszczalna rezystancja: $\dfrac{125 - 40}{3{,}5} \approx 24{,}3$ K/W; radiator: $\leq 24{,}3 - 3 - 0{,}5 \approx 20{,}8$ K/W.
+1. $P = 7\cdot 0\text{,}5 = 3\text{,}5$ W, $\eta \approx 42\%$.
+2. Bez radiatora: $T_j = 40 + 3\text{,}5\cdot 50 = 215$ °C — wyłączy się zabezpieczenie termiczne.
+3. Łączna dopuszczalna rezystancja: $\dfrac{125 - 40}{3\text{,}5} \approx 24\text{,}3$ K/W; radiator: $\leq 24\text{,}3 - 3 - 0\text{,}5 \approx 20\text{,}8$ K/W.
 4. Alternatywa: przetwornica impulsowa (sprawność ok. 90%) — straty ok. 0,3 W, bez radiatora.
 
-**LM317 na 5 V:** $R_1 = 240\ \Omega$, $R_2 = 720\ \Omega$ → $1{,}25\cdot 4 = 5{,}0$ V (+ ok. 36 mV od prądu $I_{ADJ} \approx 50\ \mu$A).
+**LM317 na 5 V:** $R_1 = 240\ \Omega$, $R_2 = 720\ \Omega$ → $1\text{,}25\cdot 4 = 5\text{,}0$ V (+ ok. 36 mV od prądu $I_{ADJ} \approx 50\ \mu$A).
 
 ## Typowe pułapki
 
@@ -82,9 +82,9 @@ Obserwuj, jak napięcie wyjściowe reaguje na zmianę napięcia wejściowego i d
 
 1. 3,5 W, ok. 42%
 2. ≤ 20,8 K/W
-3. $R_2 = R_1(U/1{,}25 - 1)$: 3,3 V → ≈ 394 Ω (np. 390 Ω); 12 V → ≈ 2064 Ω (np. 2 kΩ + regulacja lub 2,05 kΩ)
+3. $R_2 = R_1(U/1\text{,}25 - 1)$: 3,3 V → ≈ 394 Ω (np. 390 Ω); 12 V → ≈ 2064 Ω (np. 2 kΩ + regulacja lub 2,05 kΩ)
 4. Tak, do ok. 3,6 V; poniżej napięcie wyjściowe będzie spadać razem z akumulatorem
-5. ≈ 4,9 V; $I_B \approx 0{,}5/101 \approx 5$ mA — rezystor Zenera musi dostarczyć ten prąd plus minimalny prąd diody
+5. ≈ 4,9 V; $I_B \approx 0\text{,}5/101 \approx 5$ mA — rezystor Zenera musi dostarczyć ten prąd plus minimalny prąd diody
 </details>
 
 ## Źródła

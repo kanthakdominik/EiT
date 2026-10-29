@@ -43,14 +43,14 @@ Para różnicowa z lustrem prądowym w miejscu rezystorów kolektorowych: wyjśc
 
 Para bipolarna: $I_{EE} = 1$ mA, $R_C = 10$ kΩ, źródło ogona o rezystancji wyjściowej $R_{EE} = 100$ kΩ.
 
-1. $g_m = 0{,}5\ \text{mA}/25{,}85\ \text{mV} \approx 19{,}3$ mS.
-2. Wyjście symetryczne: $A_d \approx 193$; z jednego kolektora: $A_d \approx 96{,}7$.
-3. $A_{cm} \approx -\dfrac{10\ \text{k}}{200\ \text{k}} = -0{,}05$.
-4. $\text{CMRR} \approx 96{,}7/0{,}05 \approx 1934 \approx 65{,}7$ dB.
+1. $g_m = 0\text{,}5\ \text{mA}/25\text{,}85\ \text{mV} \approx 19\text{,}3$ mS.
+2. Wyjście symetryczne: $A_d \approx 193$; z jednego kolektora: $A_d \approx 96\text{,}7$.
+3. $A_{cm} \approx -\dfrac{10\ \text{k}}{200\ \text{k}} = -0\text{,}05$.
+4. $\text{CMRR} \approx 96\text{,}7/0\text{,}05 \approx 1934 \approx 65\text{,}7$ dB.
 
-Zastąpienie ogona rezystorem 7,5 kΩ (przy zasilaniu −8 V) daje $A_{cm} \approx -0{,}67$ i CMRR tylko ok. 43 dB — dlatego w ogonie stosuje się lustro prądowe.
+Zastąpienie ogona rezystorem 7,5 kΩ (przy zasilaniu −8 V) daje $A_{cm} \approx -0\text{,}67$ i CMRR tylko ok. 43 dB — dlatego w ogonie stosuje się lustro prądowe.
 
-**Lustro:** $V_{CC} = 12$ V, $R = 11{,}3$ kΩ → $I_{ref} = 1$ mA; przy $\beta = 100$: $I_{wy} \approx 0{,}98$ mA.
+**Lustro:** $V_{CC} = 12$ V, $R = 11\text{,}3$ kΩ → $I_{ref} = 1$ mA; przy $\beta = 100$: $I_{wy} \approx 0\text{,}98$ mA.
 
 ## Typowe pułapki
 
@@ -94,8 +94,8 @@ Odczytaj wzmocnienie różnicowe z `V(c1,c2)`. Następnie ustaw oba źródła na
 
 1. 193 (symetryczne), ≈ 96,7 (jednostronne)
 2. −0,05; ≈ 65,7 dB
-3. $A_d \approx \dfrac{R_C}{r_e + R_E}$ na tranzystor: $r_e \approx 51{,}7\ \Omega$, jednostronnie ≈ $\dfrac{10\ \text{k}}{2(51{,}7 + 100)} \approx 33$ — wzmocnienie spada ok. 3 razy, ale zakres liniowy rośnie do ok. $\pm I_{EE}R_E/2$ ponad $\pm 2U_T$, czyli kilka razy
-4. $R = (5 - 0{,}65)/100\ \mu\text{A} \approx 43{,}5$ kΩ (np. 43 kΩ); $I_{wy} = 100/(1 + 2/50) \approx 96$ µA
+3. $A_d \approx \dfrac{R_C}{r_e + R_E}$ na tranzystor: $r_e \approx 51\text{,}7\ \Omega$, jednostronnie ≈ $\dfrac{10\ \text{k}}{2(51\text{,}7 + 100)} \approx 33$ — wzmocnienie spada ok. 3 razy, ale zakres liniowy rośnie do ok. $\pm I_{EE}R_E/2$ ponad $\pm 2U_T$, czyli kilka razy
+4. $R = (5 - 0\text{,}65)/100\ \mu\text{A} \approx 43\text{,}5$ kΩ (np. 43 kΩ); $I_{wy} = 100/(1 + 2/50) \approx 96$ µA
 5. $r_o = 500$ kΩ; $\Delta I = 5/500\ \text{k} = 10\ \mu$A (10%)
 </details>
 

@@ -19,7 +19,7 @@ Sygnały cyfrowe o szybkich zboczach (zegary, magistrale pamięci, USB, Ethernet
 
 ### Kiedy linia jest „długa”
 
-Gdy czas propagacji jest porównywalny z czasem narastania zbocza $t_r$. Reguła praktyczna: efekty linii trzeba uwzględnić, gdy $t_d > t_r/6$ (ostrożnie) do $t_r/4$ — źródła podają różne progi. **Liczy się czas narastania, nie częstotliwość zegara:** wolny zegar 1 MHz z buforem o zboczu 1 ns ma te same problemy z odbiciami co zegar 100 MHz. Prędkość na FR-4: ok. 15–17 cm/ns (mikropasek), ok. 14–15 cm/ns (linia paskowa wewnątrz płytki). Pasmo sygnału cyfrowego: $f_{knee} \approx 0{,}35/t_r$ – $0{,}5/t_r$.
+Gdy czas propagacji jest porównywalny z czasem narastania zbocza $t_r$. Reguła praktyczna: efekty linii trzeba uwzględnić, gdy $t_d > t_r/6$ (ostrożnie) do $t_r/4$ — źródła podają różne progi. **Liczy się czas narastania, nie częstotliwość zegara:** wolny zegar 1 MHz z buforem o zboczu 1 ns ma te same problemy z odbiciami co zegar 100 MHz. Prędkość na FR-4: ok. 15–17 cm/ns (mikropasek), ok. 14–15 cm/ns (linia paskowa wewnątrz płytki). Pasmo sygnału cyfrowego: $f_{knee} \approx 0\text{,}35/t_r$ – $0\text{,}5/t_r$.
 
 ### Terminacja
 
@@ -39,20 +39,20 @@ Skok napięcia wysłany w linię i obserwacja napięcia na jej wejściu: poziom 
 
 $V_S = 1$ V (skok), $R_S = 25\ \Omega$, $Z_0 = 50\ \Omega$, $t_d = 1$ ns, koniec rozwarty ($R_L = \infty$).
 
-1. $V_1 = 1\cdot 50/75 = 0{,}667$ V, $\Gamma_L = 1$, $\Gamma_S = -1/3$.
+1. $V_1 = 1\cdot 50/75 = 0\text{,}667$ V, $\Gamma_L = 1$, $\Gamma_S = -1/3$.
 2. Napięcie na końcu linii:
 
 | Czas | Nowe fale | $V_{koniec}$ |
 |---|---|---|
 | 0–1 ns | — | 0 |
-| 1 ns | $0{,}667 + 0{,}667$ | **1,333 V** (przerzut 33%) |
-| 3 ns | $-0{,}222 - 0{,}222$ | 0,889 V |
-| 5 ns | $+0{,}074 + 0{,}074$ | 1,037 V |
-| 7 ns | $-0{,}025 - 0{,}025$ | 0,988 V |
+| 1 ns | $0\text{,}667 + 0\text{,}667$ | **1,333 V** (przerzut 33%) |
+| 3 ns | $-0\text{,}222 - 0\text{,}222$ | 0,889 V |
+| 5 ns | $+0\text{,}074 + 0\text{,}074$ | 1,037 V |
+| 7 ns | $-0\text{,}025 - 0\text{,}025$ | 0,988 V |
 | → | | 1 V |
 
 3. Dzwonienie z okresem $4t_d$, zanikające jak $|\Gamma_S|^n$. Gdyby odbiornik miał próg 1,2 V dla „przekroczenia maksimum” lub zabezpieczenia diodowe, przerzut 1,33 V wymaga uwagi.
-4. Poprawka: rezystor szeregowy 25 Ω przy nadajniku ($R_S$ = 50 Ω): $V_1 = 0{,}5$ V, na końcu od razu 1 V, $\Gamma_S = 0$ — koniec dzwonienia.
+4. Poprawka: rezystor szeregowy 25 Ω przy nadajniku ($R_S$ = 50 Ω): $V_1 = 0\text{,}5$ V, na końcu od razu 1 V, $\Gamma_S = 0$ — koniec dzwonienia.
 
 ## Typowe pułapki
 
@@ -109,19 +109,19 @@ plt.xlabel('t [ns]'); plt.ylabel('V_out [V]'); plt.legend(); plt.grid(); plt.sho
 
 ## Zadania
 
-1. Narysuj wykres odbić dla $R_S = 10\ \Omega$, $Z_0 = 50\ \Omega$, koniec rozwarty, $V_S = 3{,}3$ V. Jakie jest maksymalne napięcie na końcu?
+1. Narysuj wykres odbić dla $R_S = 10\ \Omega$, $Z_0 = 50\ \Omega$, koniec rozwarty, $V_S = 3\text{,}3$ V. Jakie jest maksymalne napięcie na końcu?
 2. Ścieżka mikropaskowa ma 20 cm, prędkość 16 cm/ns. Bufor ma czas narastania 1 ns. Czy potrzebna jest terminacja?
 3. Wyjście bufora ma rezystancję 15 Ω, linia 50 Ω. Dobierz rezystor terminacji szeregowej.
-4. TDR pokazuje po 4 ns od wysłania skoku spadek poziomu z 0,5 V do 0,3 V (generator 1 V, 50 Ω, kabel 50 Ω, $v = 0{,}66c$). Gdzie jest nieciągłość i jaką ma impedancję?
+4. TDR pokazuje po 4 ns od wysłania skoku spadek poziomu z 0,5 V do 0,3 V (generator 1 V, 50 Ω, kabel 50 Ω, $v = 0\text{,}66c$). Gdzie jest nieciągłość i jaką ma impedancję?
 5. Dlaczego terminacja szeregowa nie nadaje się do magistrali z kilkoma odbiornikami rozłożonymi wzdłuż ścieżki?
 
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $V_1 = 3{,}3\cdot 50/60 = 2{,}75$ V, $\Gamma_S = -2/3$; na końcu: 5,5 V po $t_d$, potem $5{,}5 - 2\cdot 1{,}833 = 1{,}83$ V, potem $1{,}83 + 2\cdot 1{,}22 = 4{,}28$ V… — maksimum 5,5 V (przerzut 67%), dzwonienie wolno zanika
-2. $t_d = 1{,}25$ ns > $t_r/6$ — tak, to linia długa
+1. $V_1 = 3\text{,}3\cdot 50/60 = 2\text{,}75$ V, $\Gamma_S = -2/3$; na końcu: 5,5 V po $t_d$, potem $5\text{,}5 - 2\cdot 1\text{,}833 = 1\text{,}83$ V, potem $1\text{,}83 + 2\cdot 1\text{,}22 = 4\text{,}28$ V… — maksimum 5,5 V (przerzut 67%), dzwonienie wolno zanika
+2. $t_d = 1\text{,}25$ ns > $t_r/6$ — tak, to linia długa
 3. $50 - 15 = 35\ \Omega$ (najbliższa wartość z szeregu, np. 33 Ω)
-4. $x = v\,t/2 = 0{,}66\cdot 3\cdot 10^8\cdot 4\cdot 10^{-9}/2 \approx 0{,}40$ m; $\rho = (0{,}3 - 0{,}5)/0{,}5 = -0{,}4$ → $Z = 50\cdot 0{,}6/1{,}4 \approx 21\ \Omega$
+4. $x = v\,t/2 = 0\text{,}66\cdot 3\cdot 10^8\cdot 4\cdot 10^{-9}/2 \approx 0\text{,}40$ m; $\rho = (0\text{,}3 - 0\text{,}5)/0\text{,}5 = -0\text{,}4$ → $Z = 50\cdot 0\text{,}6/1\text{,}4 \approx 21\ \Omega$
 5. Fala biegnąca ma połowę amplitudy; pełne napięcie pojawia się w danym punkcie dopiero po powrocie odbicia od końca — odbiorniki pośrodku przez pewien czas widzą poziom ok. 50%, w obszarze niezdefiniowanym logicznie
 </details>
 

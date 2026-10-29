@@ -71,11 +71,11 @@ print(k.std() / k.mean())                           # ≈ 0.05
 <summary>Odpowiedzi</summary>
 
 1. $\sqrt{9 + 16} = 5$ µV RMS
-2. $2/\sqrt{100} = 0{,}2$ mV
-3. $1 - 0{,}954 \approx 4{,}6\%$
-4. $P(0) = e^{-4} \approx 0{,}018$
+2. $2/\sqrt{100} = 0\text{,}2$ mV
+3. $1 - 0\text{,}954 \approx 4\text{,}6\%$
+4. $P(0) = e^{-4} \approx 0\text{,}018$
 5. $1/\sqrt{400} = 5\%$; dla 1% potrzeba $N = 10\,000$ impulsów
-6. $(1 - 10^{-3})^{1000} \approx e^{-1} \approx 0{,}368$
+6. $(1 - 10^{-3})^{1000} \approx e^{-1} \approx 0\text{,}368$
 </details>
 
 ## Źródła

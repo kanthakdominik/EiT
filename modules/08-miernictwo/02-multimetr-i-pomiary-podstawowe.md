@@ -26,7 +26,7 @@ Amperomierz to bocznik — wprowadza **spadek napięcia (burden voltage)**, któ
 
 | Rodzaj przyrządu | Co mierzy | Kiedy poprawny |
 |---|---|---|
-| Średniej wartości wyprostowanej, skalowany w RMS | $1{,}11\cdot\overline{\lvert u\rvert}$ | Tylko dla sinusa |
+| Średniej wartości wyprostowanej, skalowany w RMS | $1\text{,}11\cdot\overline{\lvert u\rvert}$ | Tylko dla sinusa |
 | **True RMS** | $\sqrt{\overline{u^2}}$ | Dowolny przebieg w paśmie przyrządu i do określonego współczynnika szczytu |
 
 Współczynnik szczytu (crest factor) $= U_{pk}/U_{RMS}$: sinus 1,41, prostokąt 1, impulsy o małym wypełnieniu — duży. Przyrząd podaje maksymalny dopuszczalny współczynnik szczytu i **pasmo** (często tylko kilka–kilkadziesiąt kHz!). Sprawdź też, czy przyrząd mierzy AC+DC czy tylko składową zmienną.
@@ -40,7 +40,7 @@ Kategorie pomiarowe CAT I–IV określają odporność na przepięcia zależnie 
 **Obciążenie woltomierzem.** Dzielnik 1 MΩ/1 MΩ z 10 V, woltomierz 10 MΩ.
 
 1. $R_{th} = 500$ kΩ, $U = 5$ V.
-2. Wskazanie: $5\cdot\dfrac{10}{10{,}5} \approx 4{,}76$ V — błąd −4,8%, wielokrotnie większy niż specyfikacja przyrządu.
+2. Wskazanie: $5\cdot\dfrac{10}{10\text{,}5} \approx 4\text{,}76$ V — błąd −4,8%, wielokrotnie większy niż specyfikacja przyrządu.
 3. Korekcja: $U = U_{zm}\left(1 + \dfrac{R_{th}}{R_{we}}\right)$ — lub przyrząd o wyższej rezystancji wejściowej (tryb > 10 GΩ), lub bufor.
 
 **Spadek napięcia amperomierza.** Zakres 200 mA z bocznikiem 1 Ω (plus przewody i bezpiecznik ok. 0,5 Ω), układ zasilany z 3,3 V pobiera 100 mA: spadek ok. 0,15 V — układ dostaje 3,15 V i może zachowywać się inaczej.
@@ -71,9 +71,9 @@ Kategorie pomiarowe CAT I–IV określają odporność na przepięcia zależnie 
 
 1. ≈ 4,76 V
 2. $R_{we} > 1000\cdot R_{th} = 500$ MΩ
-3. $3{,}3/34{,}5 \approx 95{,}7$ mA; bez amperomierza 100 mA
-4. 0,5 V; $5\sqrt{0{,}1} \approx 1{,}58$ V; $5/1{,}58 \approx 3{,}16$
-5. $1{,}11\cdot 1 = 1{,}11$ V; prawdziwa RMS = 1 V (błąd +11%)
+3. $3\text{,}3/34\text{,}5 \approx 95\text{,}7$ mA; bez amperomierza 100 mA
+4. 0,5 V; $5\sqrt{0\text{,}1} \approx 1\text{,}58$ V; $5/1\text{,}58 \approx 3\text{,}16$
+5. $1\text{,}11\cdot 1 = 1\text{,}11$ V; prawdziwa RMS = 1 V (błąd +11%)
 </details>
 
 ## Źródła

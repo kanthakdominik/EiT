@@ -24,7 +24,7 @@ Przy $f_c$: $\lvert H\rvert = 1/\sqrt{2}$ (−3 dB), faza ±45°. Za $f_c$ nachy
 
 ### Wykres Bodego — reguły asymptotyczne
 
-- Biegun rzeczywisty w $\omega_p$: od $\omega_p$ nachylenie −20 dB/dek; faza od 0 do −90° (−45° w $\omega_p$, zmiana w przedziale $0{,}1\omega_p$–$10\omega_p$).
+- Biegun rzeczywisty w $\omega_p$: od $\omega_p$ nachylenie −20 dB/dek; faza od 0 do −90° (−45° w $\omega_p$, zmiana w przedziale $0\text{,}1\omega_p$–$10\omega_p$).
 - Zero rzeczywiste: to samo ze znakiem „+”.
 - Para biegunów zespolonych (2. rząd): −40 dB/dek, faza do −180°; przy małym $\zeta$ — rezonansowy pik.
 - Stałe wzmocnienie $K$: przesunięcie o $20\log K$.
@@ -47,17 +47,17 @@ Związek z obwodami 2. rzędu: $Q = \dfrac{1}{2\zeta}$.
 
 ## Przykład rozwiązany
 
-**Filtr RC:** $R = 1{,}6$ kΩ, $C = 100$ nF.
+**Filtr RC:** $R = 1\text{,}6$ kΩ, $C = 100$ nF.
 
 1. $f_c = \dfrac{1}{2\pi\cdot 1600\cdot 10^{-7}} \approx 995$ Hz.
-2. Przy 1 kHz: $\lvert H\rvert = \dfrac{1}{\sqrt{1 + (1000/995)^2}} \approx 0{,}705$ → −3,03 dB, faza $-\arctan(1{,}005) \approx -45{,}2^\circ$.
-3. Przy 10 kHz: $\lvert H\rvert \approx 0{,}099$ → −20,1 dB, faza ≈ −84,3°. Asymptota przewiduje −20 dB i −90°.
+2. Przy 1 kHz: $\lvert H\rvert = \dfrac{1}{\sqrt{1 + (1000/995)^2}} \approx 0\text{,}705$ → −3,03 dB, faza $-\arctan(1\text{,}005) \approx -45\text{,}2^\circ$.
+3. Przy 10 kHz: $\lvert H\rvert \approx 0\text{,}099$ → −20,1 dB, faza ≈ −84,3°. Asymptota przewiduje −20 dB i −90°.
 
 **Rezonans szeregowy:** $R = 100\ \Omega$, $L = 10$ mH, $C = 100$ nF, zasilanie 1 V.
 
 1. $f_0 = \dfrac{1}{2\pi\sqrt{10^{-9}}} \approx 5033$ Hz.
-2. $Q = \dfrac{1}{100}\sqrt{\dfrac{10^{-2}}{10^{-7}}} \approx 3{,}16$, $B \approx 1592$ Hz.
-3. Prąd w rezonansie $1\ \text{V}/100\ \Omega = 10$ mA; napięcie na kondensatorze $10\ \text{mA}\cdot X_C = Q\cdot 1\ \text{V} \approx 3{,}16$ V.
+2. $Q = \dfrac{1}{100}\sqrt{\dfrac{10^{-2}}{10^{-7}}} \approx 3\text{,}16$, $B \approx 1592$ Hz.
+3. Prąd w rezonansie $1\ \text{V}/100\ \Omega = 10$ mA; napięcie na kondensatorze $10\ \text{mA}\cdot X_C = Q\cdot 1\ \text{V} \approx 3\text{,}16$ V.
 
 ## Typowe pułapki
 
@@ -104,10 +104,10 @@ plt.semilogx(w/(2*np.pi), mag); plt.grid(which="both"); plt.xlabel("f [Hz]"); pl
 
 1. ≈ 1592 Hz
 2. ≈ −20,0 dB, faza ≈ +84,3°
-3. $f_0 \approx 5033$ Hz, $Q \approx 3{,}16$, $B \approx 1592$ Hz, $U_C \approx 3{,}16$ V
-4. $f_0 \approx 50{,}3$ kHz, $Q = 10^4\sqrt{10^{-8}/10^{-3}} \approx 31{,}6$, $B \approx 1{,}59$ kHz
+3. $f_0 \approx 5033$ Hz, $Q \approx 3\text{,}16$, $B \approx 1592$ Hz, $U_C \approx 3\text{,}16$ V
+4. $f_0 \approx 50\text{,}3$ kHz, $Q = 10^4\sqrt{10^{-8}/10^{-3}} \approx 31\text{,}6$, $B \approx 1\text{,}59$ kHz
 5. 40 dB do $10^3$ rad/s, potem −20 dB/dek do $10^5$ (gdzie asymptota osiąga 0 dB), dalej −40 dB/dek. Przy $10^4$: asymptotycznie 20 dB, dokładnie ≈ 19,9 dB
-6. $C = \dfrac{1}{2\pi\cdot 10^4\cdot 10^3} \approx 15{,}9$ nF (najbliższa wartość z szeregu: 15 nF lub 16 nF)
+6. $C = \dfrac{1}{2\pi\cdot 10^4\cdot 10^3} \approx 15\text{,}9$ nF (najbliższa wartość z szeregu: 15 nF lub 16 nF)
 </details>
 
 ## Źródła

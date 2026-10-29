@@ -49,15 +49,15 @@ Węzeł A na górze, masa na dole. Trzy gałęzie między A i masą:
 
 **Metoda węzłowa** (jedno równanie):
 
-$$\frac{V_A - 12}{2} + \frac{V_A}{4} + \frac{V_A - 6}{2} = 0 \;\Rightarrow\; 5V_A = 36 \;\Rightarrow\; V_A = 7{,}2\ \text{V}$$
+$$\frac{V_A - 12}{2} + \frac{V_A}{4} + \frac{V_A - 6}{2} = 0 \;\Rightarrow\; 5V_A = 36 \;\Rightarrow\; V_A = 7\text{,}2\ \text{V}$$
 
-Prądy: przez $R_1$ do węzła $(12 - 7{,}2)/2 = 2{,}4$ A; przez $R_3$ w dół $7{,}2/4 = 1{,}8$ A; przez $R_2$ w dół $(7{,}2 - 6)/2 = 0{,}6$ A. PPK: $2{,}4 = 1{,}8 + 0{,}6$ ✓.
+Prądy: przez $R_1$ do węzła $(12 - 7\text{,}2)/2 = 2\text{,}4$ A; przez $R_3$ w dół $7\text{,}2/4 = 1\text{,}8$ A; przez $R_2$ w dół $(7\text{,}2 - 6)/2 = 0\text{,}6$ A. PPK: $2\text{,}4 = 1\text{,}8 + 0\text{,}6$ ✓.
 
 **Metoda oczkowa** (dwa równania, prądy $I_a$ — lewe oczko, $I_b$ — prawe, oba zgodnie z ruchem wskazówek zegara):
 
-$$\begin{cases} (2 + 4)I_a - 4I_b = 12 \\ -4I_a + (4 + 2)I_b = -6 \end{cases} \;\Rightarrow\; I_a = 2{,}4\ \text{A},\; I_b = 0{,}6\ \text{A}$$
+$$\begin{cases} (2 + 4)I_a - 4I_b = 12 \\ -4I_a + (4 + 2)I_b = -6 \end{cases} \;\Rightarrow\; I_a = 2\text{,}4\ \text{A},\; I_b = 0\text{,}6\ \text{A}$$
 
-W prawym oczku źródło $E_2$ działa przeciwnie do kierunku obiegu, stąd $-6$. Prąd $R_3$ = $I_a - I_b = 1{,}8$ A ✓ — obie metody dają ten sam wynik.
+W prawym oczku źródło $E_2$ działa przeciwnie do kierunku obiegu, stąd $-6$. Prąd $R_3$ = $I_a - I_b = 1\text{,}8$ A ✓ — obie metody dają ten sam wynik.
 
 ## Typowe pułapki
 
@@ -93,11 +93,11 @@ V2 2 0 6
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $V = \dfrac{5 + 5}{0{,}5 + 1 + 0{,}5} = 5$ V; $I_1 = 2{,}5$ mA do węzła, $I_2 = 0$, $I_3 = 2{,}5$ mA
-2. $1{,}5V_1 - 0{,}5V_2 = 2$; $-0{,}5V_1 + V_2 = 0$ (w kΩ i mA) → $V_1 = 1{,}6$ V, $V_2 = 0{,}8$ V
-3. $I_a = 3{,}6$ A, $I_b = 2{,}4$ A, prąd $R_3$ = 1,2 A; węzłowo $V_A = 4{,}8$ V ✓
-4. $V_1/1\text{k} + V_2/1\text{k} = 10$ mA i $V_1 - V_2 = 5$ → $V_1 = 7{,}5$ V, $V_2 = 2{,}5$ V
-5. $1\ \text{mA} = V/1\text{k} + 1\ \text{mS}\cdot V$ → $V = 0{,}5$ V; widziana rezystancja 500 Ω (źródło sterowane zachowuje się jak rezystor $1/g_m$)
+1. $V = \dfrac{5 + 5}{0\text{,}5 + 1 + 0\text{,}5} = 5$ V; $I_1 = 2\text{,}5$ mA do węzła, $I_2 = 0$, $I_3 = 2\text{,}5$ mA
+2. $1\text{,}5V_1 - 0\text{,}5V_2 = 2$; $-0\text{,}5V_1 + V_2 = 0$ (w kΩ i mA) → $V_1 = 1\text{,}6$ V, $V_2 = 0\text{,}8$ V
+3. $I_a = 3\text{,}6$ A, $I_b = 2\text{,}4$ A, prąd $R_3$ = 1,2 A; węzłowo $V_A = 4\text{,}8$ V ✓
+4. $V_1/1\text{k} + V_2/1\text{k} = 10$ mA i $V_1 - V_2 = 5$ → $V_1 = 7\text{,}5$ V, $V_2 = 2\text{,}5$ V
+5. $1\ \text{mA} = V/1\text{k} + 1\ \text{mS}\cdot V$ → $V = 0\text{,}5$ V; widziana rezystancja 500 Ω (źródło sterowane zachowuje się jak rezystor $1/g_m$)
 6. Węzłowa: 3, oczkowa: $6 - 4 + 1 = 3$
 </details>
 

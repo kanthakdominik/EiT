@@ -11,7 +11,7 @@ Kanał radiowy to nie tylko szum: sygnał zanika, gdy odbite fale znoszą się w
 | Zjawisko | Miara | Skutek | Kanał „płaski” / „wolny”, gdy |
 |---|---|---|---|
 | Rozmycie opóźnień (wielodrogowość) | $\tau_{rms}$; pasmo koherencji $B_c \approx 1/(5\tau_{rms})$ | Zaniki selektywne częstotliwościowo, ISI | $B_{sygnału} \ll B_c$ |
-| Rozmycie Dopplera (ruch) | $f_D = vf_c/c$; czas koherencji $T_c \approx 0{,}423/f_D$ | Zmienność kanału w czasie | $T_{symbolu} \ll T_c$ |
+| Rozmycie Dopplera (ruch) | $f_D = vf_c/c$; czas koherencji $T_c \approx 0\text{,}423/f_D$ | Zmienność kanału w czasie | $T_{symbolu} \ll T_c$ |
 
 Typowe $\tau_{rms}$: wewnątrz budynków 10–100 ns, w mieście 1–3 µs, w terenie górzystym do ok. 10 µs i więcej.
 
@@ -56,7 +56,7 @@ Szczegóły warstw sieciowych tych systemów — moduł [14](../14-sieci-telekom
 
 ## Przykład rozwiązany
 
-**Telefon w samochodzie,** 100 km/h, 2 GHz: $f_D = 27{,}8\cdot 2\cdot 10^9/3\cdot 10^8 \approx 185$ Hz → $T_c \approx 2{,}3$ ms. Symbol LTE (ok. 71 µs) jest dużo krótszy — w obrębie symbolu kanał stały, ale między kolejnymi podramkami (1 ms) już nie: estymacja kanału na pilotach musi być częsta.
+**Telefon w samochodzie,** 100 km/h, 2 GHz: $f_D = 27\text{,}8\cdot 2\cdot 10^9/3\cdot 10^8 \approx 185$ Hz → $T_c \approx 2\text{,}3$ ms. Symbol LTE (ok. 71 µs) jest dużo krótszy — w obrębie symbolu kanał stały, ale między kolejnymi podramkami (1 ms) już nie: estymacja kanału na pilotach musi być częsta.
 
 **Miasto,** $\tau_{rms} = 1$ µs → $B_c \approx 200$ kHz. Kanał 20 MHz jest silnie selektywny częstotliwościowo — pojedyncza nośna potrzebowałaby długiego korektora; podnośna 15 kHz widzi kanał płaski.
 
@@ -113,9 +113,9 @@ plt.ylim(1e-6, 0.5); plt.xlabel('średnie Eb/N0 [dB]'); plt.legend(); plt.grid(w
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $f_D = 1{,}39\cdot 2{,}4\cdot 10^9/3\cdot 10^8 \approx 11$ Hz, $T_c \approx 38$ ms
+1. $f_D = 1\text{,}39\cdot 2\text{,}4\cdot 10^9/3\cdot 10^8 \approx 11$ Hz, $T_c \approx 38$ ms
 2. $B_c \approx 1$ MHz; tak, częściowo — pasmo sygnału jest porównywalne z $B_c$ (stąd skoki częstotliwości w BLE)
-3. Ok. $24 - 6{,}8 \approx 17$ dB; MRC: ok. 11 dB zamiast 24 dB (zysk ok. 13 dB)
+3. Ok. $24 - 6\text{,}8 \approx 17$ dB; MRC: ok. 11 dB zamiast 24 dB (zysk ok. 13 dB)
 4. Kod z przeplotem zapewnia dywersyfikację czasową/częstotliwościową — błędy z zaników rozkładają się na wiele niezależnie zanikających bitów; w AWGN takiego zysku nie ma
 5. Modulacja i kodowanie adaptacyjne (wyższe rzędy QAM przy dobrym SNR) oraz MIMO z multipleksacją przestrzenną (kilka strumieni w tym samym paśmie)
 </details>

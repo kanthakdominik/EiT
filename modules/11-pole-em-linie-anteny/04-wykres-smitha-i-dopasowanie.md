@@ -41,10 +41,10 @@ Najważniejsza intuicja: **im dalej od środka wykresu, tym trudniej dopasować 
 
 **Dopasowanie stubem równoległym** $Z_L = 100 + j50\ \Omega$ do linii 50 Ω.
 
-1. $z_L = 2 + j1$; $y_L = 1/z_L = 0{,}4 - j0{,}2$.
-2. Obracamy się w stronę generatora po okręgu stałego $|\Gamma|$ ($|\Gamma_L| = 0{,}447$, WFS = 2,62) do przecięcia z okręgiem $g = 1$.
-3. Pierwsze przecięcie: $y = 1 + j1$ po $d = 0{,}199\lambda$. Potrzebna susceptancja stubu: $-j1$ → zwarty stub: $-j\cot\beta l = -j1$ → $\beta l = \pi/4$, **$l = 0{,}125\lambda$**.
-4. Drugie rozwiązanie: $y = 1 - j1$ po $d = 0{,}375\lambda$, stub $+j1$ → $l = 0{,}375\lambda$.
+1. $z_L = 2 + j1$; $y_L = 1/z_L = 0\text{,}4 - j0\text{,}2$.
+2. Obracamy się w stronę generatora po okręgu stałego $|\Gamma|$ ($|\Gamma_L| = 0\text{,}447$, WFS = 2,62) do przecięcia z okręgiem $g = 1$.
+3. Pierwsze przecięcie: $y = 1 + j1$ po $d = 0\text{,}199\lambda$. Potrzebna susceptancja stubu: $-j1$ → zwarty stub: $-j\cot\beta l = -j1$ → $\beta l = \pi/4$, **$l = 0\text{,}125\lambda$**.
+4. Drugie rozwiązanie: $y = 1 - j1$ po $d = 0\text{,}375\lambda$, stub $+j1$ → $l = 0\text{,}375\lambda$.
 5. Wybieramy krótsze odcinki (pierwsze rozwiązanie) — mniejsze straty i szersze pasmo.
 
 ## Typowe pułapki
@@ -93,7 +93,7 @@ ax.legend(loc='lower left'); plt.show()
 ## Zadania
 
 1. Zaznacz na wykresie Smitha (lub policz Γ): $Z = 50$, $25$, $100$, $50 + j50$, $50 - j50$, $0$, $\infty$ przy $Z_0 = 50\ \Omega$.
-2. Punkt $z = 0{,}5$ przesuwamy o $\lambda/4$ w stronę generatora. Gdzie się znajdzie?
+2. Punkt $z = 0\text{,}5$ przesuwamy o $\lambda/4$ w stronę generatora. Gdzie się znajdzie?
 3. Dopasuj $Z_L = 100 + j50\ \Omega$ do 50 Ω stubem równoległym (rozwiązanie z przykładu) — sprawdź obliczeniem, że admitancja w punkcie dołączenia stubu wynosi $1/50$ S.
 4. Dlaczego zwarty stub jest zwykle lepszy od rozwartego w technice mikropaskowej i koncentrycznej?
 5. Obciążenie $Z_L = 10\ \Omega$ dopasowujemy do 50 Ω transformatorem λ/4. Jaka impedancja odcinka? Dlaczego pasmo będzie węższe niż dla $Z_L = 25\ \Omega$?
@@ -101,11 +101,11 @@ ax.legend(loc='lower left'); plt.show()
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $\Gamma$: 0; −1/3; 1/3; $0{,}2 + j0{,}4$; $0{,}2 - j0{,}4$; −1; +1
-2. $z = 1/0{,}5 = 2$ (λ/4 odwraca impedancję znormalizowaną)
+1. $\Gamma$: 0; −1/3; 1/3; $0\text{,}2 + j0\text{,}4$; $0\text{,}2 - j0\text{,}4$; −1; +1
+2. $z = 1/0\text{,}5 = 2$ (λ/4 odwraca impedancję znormalizowaną)
 3. W odległości $d$ admitancja znormalizowana $1 + j1$, stub dodaje $-j1$ → $y = 1$, czyli $Y = 1/50$ S
 4. Rozwarty koniec promieniuje i ma pojemność krańcową (efektywnie dłuższy), w kablu rozwarcie jest trudne do zrealizowania dokładnie; zwarty stub daje też ścieżkę DC do masy (np. do polaryzacji). W mikropasku rozwarte stuby bywają jednak wygodniejsze — nie wymagają przelotki do masy
-5. $\sqrt{500} \approx 22{,}4\ \Omega$; większy stosunek transformacji = większa dobroć i szybsza zmiana impedancji z częstotliwością
+5. $\sqrt{500} \approx 22\text{,}4\ \Omega$; większy stosunek transformacji = większa dobroć i szybsza zmiana impedancji z częstotliwością
 </details>
 
 ## Źródła

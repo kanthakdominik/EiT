@@ -19,7 +19,7 @@ Funkcja $Q(x) = \dfrac{1}{\sqrt{2\pi}}\int_x^\infty e^{-u^2/2}du = \tfrac12\text
 | **BPSK, QPSK** | $Q\left(\sqrt{2E_b/N_0}\right)$ | 6,8 dB | **9,6 dB** |
 | 2-FSK koherentna | $Q\left(\sqrt{E_b/N_0}\right)$ | 9,8 dB | 12,6 dB |
 | 2-FSK niekoherentna | $\tfrac12 e^{-E_b/2N_0}$ | 10,9 dB | 13,4 dB |
-| **16-QAM** | $\tfrac38\,\text{erfc}\sqrt{0{,}4E_b/N_0}$ | 10,5 dB | 13,4 dB |
+| **16-QAM** | $\tfrac38\,\text{erfc}\sqrt{0\text{,}4E_b/N_0}$ | 10,5 dB | 13,4 dB |
 | **64-QAM** | $\tfrac{7}{24}\,\text{erfc}\sqrt{E_b/(7N_0)}$ | 14,8 dB | 17,8 dB |
 
 **$E_b/N_0$ a SNR:**
@@ -45,10 +45,10 @@ Błąd fazy $\varphi$ obraca konstelację; niekorygowany błąd częstotliwości
 
 ## Przykład rozwiązany
 
-**Łącze QPSK** 1 Mbit/s, wymagany BER $10^{-5}$: $E_b/N_0 = 9{,}6$ dB. Pasmo z $\alpha = 0{,}35$: $R_s = 0{,}5$ Msym/s → 675 kHz; $SNR = 9{,}6 + 10\log(10^6/6{,}75\cdot 10^5) = 9{,}6 + 1{,}7 = 11{,}3$ dB.
-Czułość przy NF = 5 dB: $-174 + 10\log(6{,}75\cdot 10^5) + 5 + 11{,}3 \approx -99{,}4$ dBm. Prościej, w kategoriach $E_b/N_0$: $P_{min} = -174 + 10\log R_b + NF + E_b/N_0 = -174 + 60 + 5 + 9{,}6 = -99{,}4$ dBm.
+**Łącze QPSK** 1 Mbit/s, wymagany BER $10^{-5}$: $E_b/N_0 = 9\text{,}6$ dB. Pasmo z $\alpha = 0\text{,}35$: $R_s = 0\text{,}5$ Msym/s → 675 kHz; $SNR = 9\text{,}6 + 10\log(10^6/6\text{,}75\cdot 10^5) = 9\text{,}6 + 1\text{,}7 = 11\text{,}3$ dB.
+Czułość przy NF = 5 dB: $-174 + 10\log(6\text{,}75\cdot 10^5) + 5 + 11\text{,}3 \approx -99\text{,}4$ dBm. Prościej, w kategoriach $E_b/N_0$: $P_{min} = -174 + 10\log R_b + NF + E_b/N_0 = -174 + 60 + 5 + 9\text{,}6 = -99\text{,}4$ dBm.
 
-**Ten sam kanał z 64-QAM** (3 Mbit/s): $E_b/N_0$ = 17,8 dB → $P_{min} \approx -174 + 64{,}8 + 5 + 17{,}8 = -86{,}4$ dBm — 13 dB gorsza czułość za 3 razy większą przepływność.
+**Ten sam kanał z 64-QAM** (3 Mbit/s): $E_b/N_0$ = 17,8 dB → $P_{min} \approx -174 + 64\text{,}8 + 5 + 17\text{,}8 = -86\text{,}4$ dBm — 13 dB gorsza czułość za 3 razy większą przepływność.
 
 ## Typowe pułapki
 
@@ -113,11 +113,11 @@ plt.ylim(1e-5, 0.5); plt.xlabel('Eb/N0 [dB]'); plt.ylabel('BER'); plt.legend(); 
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $Q(\sqrt{2\cdot 6{,}31}) = Q(3{,}55) \approx 1{,}9\cdot 10^{-4}$
-2. $17{,}8 + 10\log(30/6) = 17{,}8 + 7 = 24{,}8$ dB
-3. $-174 + 39{,}8 + 6 + 9{,}6 \approx -118{,}6$ dBm
+1. $Q(\sqrt{2\cdot 6\text{,}31}) = Q(3\text{,}55) \approx 1\text{,}9\cdot 10^{-4}$
+2. $17\text{,}8 + 10\log(30/6) = 17\text{,}8 + 7 = 24\text{,}8$ dB
+3. $-174 + 39\text{,}8 + 6 + 9\text{,}6 \approx -118\text{,}6$ dBm
 4. O 10 dB
-5. $360°\cdot 10^3/10^5 = 3{,}6°$ na symbol; po ok. 12–13 symbolach (bez szumu) — dlatego potrzebna jest pętla odzyskiwania nośnej
+5. $360°\cdot 10^3/10^5 = 3\text{,}6°$ na symbol; po ok. 12–13 symbolach (bez szumu) — dlatego potrzebna jest pętla odzyskiwania nośnej
 </details>
 
 ## Źródła

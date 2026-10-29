@@ -29,7 +29,7 @@ $U_R$ — napięcie wsteczne. Warstwa wnika głębiej w obszar **słabiej** domi
 
 ### Pojemności
 
-- **Złączowa (barierowa)** — warstwa zaporowa to „kondensator” o okładkach na krawędziach: $C_j = \dfrac{C_{j0}}{(1 + U_R/\varphi_0)^m}$, $m \approx 0{,}5$ dla złącza skokowego, ≈ 0,33 dla liniowego. Dominuje przy polaryzacji zaporowej (warykap, [03.03](03-diody-specjalne.md)).
+- **Złączowa (barierowa)** — warstwa zaporowa to „kondensator” o okładkach na krawędziach: $C_j = \dfrac{C_{j0}}{(1 + U_R/\varphi_0)^m}$, $m \approx 0\text{,}5$ dla złącza skokowego, ≈ 0,33 dla liniowego. Dominuje przy polaryzacji zaporowej (warykap, [03.03](03-diody-specjalne.md)).
 - **Dyfuzyjna** — ładunek nośników mniejszościowych zgromadzony przy przewodzeniu, proporcjonalny do prądu. Dominuje przy przewodzeniu i decyduje o czasie wyłączania diody.
 
 ### Przebicie
@@ -41,11 +41,11 @@ Przy ok. 5–6 V oba efekty się kompensują — diody Zenera 5,1–5,6 V mają 
 
 ## Przykład rozwiązany
 
-Krzemowe złącze skokowe: $N_A = 10^{17}$ cm⁻³, $N_D = 10^{16}$ cm⁻³, $n_i = 10^{10}$ cm⁻³, 300 K, $\varepsilon_s = 11{,}7\varepsilon_0$.
+Krzemowe złącze skokowe: $N_A = 10^{17}$ cm⁻³, $N_D = 10^{16}$ cm⁻³, $n_i = 10^{10}$ cm⁻³, 300 K, $\varepsilon_s = 11\text{,}7\varepsilon_0$.
 
-1. $\varphi_0 = 0{,}02585\cdot\ln\dfrac{10^{33}}{10^{20}} = 0{,}02585\cdot 29{,}93 \approx 0{,}774$ V.
-2. Bez polaryzacji: $W \approx 0{,}33\ \mu$m, z tego ok. 91% po stronie n (słabiej domieszkowanej).
-3. Przy $U_R = 5$ V: $W$ rośnie $\sqrt{5{,}774/0{,}774} \approx 2{,}7$ razy, do ≈ 0,91 µm.
+1. $\varphi_0 = 0\text{,}02585\cdot\ln\dfrac{10^{33}}{10^{20}} = 0\text{,}02585\cdot 29\text{,}93 \approx 0\text{,}774$ V.
+2. Bez polaryzacji: $W \approx 0\text{,}33\ \mu$m, z tego ok. 91% po stronie n (słabiej domieszkowanej).
+3. Przy $U_R = 5$ V: $W$ rośnie $\sqrt{5\text{,}774/0\text{,}774} \approx 2\text{,}7$ razy, do ≈ 0,91 µm.
 4. Pojemność na jednostkę powierzchni $C = \varepsilon_s/W$: ≈ 312 pF/mm² bez polaryzacji i ≈ 114 pF/mm² przy 5 V.
 
 ## Typowe pułapki
@@ -69,16 +69,16 @@ plt.plot(UR, eps/W*1e-6*1e12); plt.xlabel("U_R [V]"); plt.ylabel("C [pF/mm²]");
 
 1. Wyznacz napięcie dyfuzyjne złącza $N_A = N_D = 10^{16}$ cm⁻³ w 300 K.
 2. Złącze z przykładu: ile razy wzrośnie szerokość warstwy zaporowej przy $U_R = 20$ V w porównaniu ze stanem bez polaryzacji?
-3. Dioda ma $C_{j0} = 10$ pF, $\varphi_0 = 0{,}7$ V, $m = 0{,}5$. Jaka jest pojemność przy napięciu wstecznym 5 V?
+3. Dioda ma $C_{j0} = 10$ pF, $\varphi_0 = 0\text{,}7$ V, $m = 0\text{,}5$. Jaka jest pojemność przy napięciu wstecznym 5 V?
 4. Prąd wsteczny diody wynosi 5 nA w 25 °C. Oszacuj go w 85 °C.
 5. Dlaczego dioda Zenera 3,3 V ma inny znak współczynnika temperaturowego niż dioda 12 V?
 
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $0{,}02585\ln(10^{32}/10^{20}) = 0{,}02585\cdot 27{,}6 \approx 0{,}714$ V
-2. $\sqrt{20{,}774/0{,}774} \approx 5{,}2$ razy
-3. $10/\sqrt{1 + 5/0{,}7} \approx 3{,}5$ pF
+1. $0\text{,}02585\ln(10^{32}/10^{20}) = 0\text{,}02585\cdot 27\text{,}6 \approx 0\text{,}714$ V
+2. $\sqrt{20\text{,}774/0\text{,}774} \approx 5\text{,}2$ razy
+3. $10/\sqrt{1 + 5/0\text{,}7} \approx 3\text{,}5$ pF
 4. 60 K to 6 podwojeń: $5\cdot 64 = 320$ nA (oszacowanie)
 5. Przy 3,3 V dominuje przebicie Zenera (tunelowe) z ujemnym współczynnikiem, przy 12 V — lawinowe z dodatnim
 </details>

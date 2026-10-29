@@ -41,7 +41,7 @@ Gdy kanał wprowadza ISI: korektor liniowy (filtr FIR odwrotny do kanału — ze
 
 ## Przykład rozwiązany
 
-Łącze 1 Msym/s, filtr podniesionego kosinusa $\alpha = 0{,}35$:
+Łącze 1 Msym/s, filtr podniesionego kosinusa $\alpha = 0\text{,}35$:
 - pasmo podstawowe 675 kHz, po przemianie na nośną **1,35 MHz**;
 - z 16-QAM (4 bity/symbol): 4 Mbit/s w 1,35 MHz → efektywność 2,96 bit/s/Hz;
 - przy $\alpha = 0$ byłoby 1 MHz (4 bit/s/Hz), ale filtr nierealizowalny i bardzo wrażliwy na zegar.
@@ -99,7 +99,7 @@ plt.show()
 
 ## Zadania
 
-1. Przepływność 10 Mbit/s, QPSK, $\alpha = 0{,}25$. Jakie pasmo na nośnej?
+1. Przepływność 10 Mbit/s, QPSK, $\alpha = 0\text{,}25$. Jakie pasmo na nośnej?
 2. Ile wynosi minimalne pasmo podstawowe dla 2 Msym/s bez ISI (teoretycznie)?
 3. Dlaczego Manchester podwaja pasmo w porównaniu z NRZ i dlaczego mimo to bywa stosowany?
 4. Łącze PAM-4 ma tę samą przepływność co NRZ. Jakie są jego zalety i wady?
@@ -108,7 +108,7 @@ plt.show()
 <details>
 <summary>Odpowiedzi</summary>
 
-1. $R_s = 5$ Msym/s → $5\cdot 1{,}25 = 6{,}25$ MHz
+1. $R_s = 5$ Msym/s → $5\cdot 1\text{,}25 = 6\text{,}25$ MHz
 2. 1 MHz
 3. Co najmniej jedno przejście na bit (dwa razy więcej zmian niż NRZ przy naprzemiennych bitach); zaleta: zegar w sygnale i brak składowej stałej — prosty odbiór, sprzężenie transformatorowe
 4. Zaleta: połowa szybkości symbolowej (połowa pasma, mniejsze straty kanału na Nyquiście); wada: trzy razy mniejsze odstępy między poziomami (ok. 9,5 dB gorszy SNR przy tej samej amplitudzie), wrażliwość na nieliniowość

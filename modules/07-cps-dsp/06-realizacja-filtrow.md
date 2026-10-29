@@ -40,9 +40,9 @@ Aby uniknąć przepełnień, ogranicza się wzmocnienie każdej sekcji. Norma L1
 
 ## Przykład rozwiązany
 
-Współczynnik 0,3 w Q15: $\text{round}(0{,}3\cdot 32768) = 9830$ (`0x2666`), błąd ok. $1{,}2\cdot 10^{-5}$.
+Współczynnik 0,3 w Q15: $\text{round}(0\text{,}3\cdot 32768) = 9830$ (`0x2666`), błąd ok. $1\text{,}2\cdot 10^{-5}$.
 
-Iloczyn próbki $x = 0{,}5$ (Q15: 16384) i współczynnika: $16384\cdot 9830 = 161\,054\,720$ (Q30). Przesunięcie o 15 bitów: $4915$ → $4915/32768 \approx 0{,}150$ ✓.
+Iloczyn próbki $x = 0\text{,}5$ (Q15: 16384) i współczynnika: $16384\cdot 9830 = 161\,054\,720$ (Q30). Przesunięcie o 15 bitów: $4915$ → $4915/32768 \approx 0\text{,}150$ ✓.
 
 **FIR z 64 współczynnikami w Q15** przy sumie modułów współczynników równej 1,8: akumulator 32-bitowy (Q30) pomieści sumę bez przepełnienia (zapas ok. 1 bitu wystarcza), ale wynik po przesunięciu może przekroczyć zakres Q15 → nasycanie przy zapisie.
 
@@ -80,7 +80,7 @@ Napisz ten sam filtr w C (bufor kołowy, `int32_t` akumulator, nasycanie) i por�
 <details>
 <summary>Odpowiedzi</summary>
 
-1. 9830 (`0x2666`), −24576 (`0xA000`); błąd ok. $-1{,}2\cdot 10^{-5}$
+1. 9830 (`0x2666`), −24576 (`0xA000`); błąd ok. $-1\text{,}2\cdot 10^{-5}$
 2. $16384\cdot 9830 = 161\,054\,720$ (Q30) → $\gg 15$ → 4915 → ≈ 0,150
 3. Iloczyn Q30 wymaga 31 bitów + 1 bit znaku; suma 256 iloczynów dodaje do $\log_2 256 = 8$ bitów → ok. 40 bitów (stąd 40-bitowe akumulatory w procesorach DSP)
 4. Bieguny blisko $z = 1$ (niska częstotliwość graniczna względem $f_s$) dają $a_1 \approx -2r\cos\theta \approx -2$; zapis w Q14 (zakres [−2, 2)) lub jako połowa współczynnika i podwójne dodanie

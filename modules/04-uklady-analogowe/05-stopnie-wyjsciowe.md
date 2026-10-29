@@ -11,14 +11,14 @@ Stopień wyjściowy dostarcza prąd i moc do obciążenia: głośnika, silnika, 
 | Klasa | Czas przewodzenia tranzystora | Sprawność maksymalna (sinus) | Zniekształcenia | Uwagi |
 |---|---|---|---|---|
 | **A** | 360° | 25% (obciążenie rezystancyjne), 50% (transformator / źródło prądowe) | Najmniejsze | Duży prąd spoczynkowy |
-| **B** | 180° (para komplementarna) | $\pi/4 \approx 78{,}5\%$ | Zniekształcenia skrośne (crossover) | Brak prądu spoczynkowego |
+| **B** | 180° (para komplementarna) | $\pi/4 \approx 78\text{,}5\%$ | Zniekształcenia skrośne (crossover) | Brak prądu spoczynkowego |
 | **AB** | trochę ponad 180° | prawie jak B | Małe | Standard we wzmacniaczach audio |
 | **C** | < 180° | do ok. 90% | Duże (wymaga obwodu rezonansowego) | Nadajniki w.cz. |
 | **D** | Klucze (PWM) | > 90% | Zależne od filtracji | Nowoczesne wzmacniacze audio, sterowniki silników |
 
 ### Przeciwsobny stopień klasy B/AB
 
-Komplementarna para wtórników (npn u góry, pnp na dole). W klasie B, gdy $\lvert u\rvert < 0{,}6$ V, żaden tranzystor nie przewodzi — powstają **zniekształcenia skrośne**. W klasie AB polaryzuje się bazy napięciem ok. $2U_{BE}$ (dwie diody lub „powielacz $U_{BE}$”), aby oba tranzystory lekko przewodziły w spoczynku. Rezystory emiterowe (0,1–0,5 Ω) stabilizują prąd spoczynkowy termicznie.
+Komplementarna para wtórników (npn u góry, pnp na dole). W klasie B, gdy $\lvert u\rvert < 0\text{,}6$ V, żaden tranzystor nie przewodzi — powstają **zniekształcenia skrośne**. W klasie AB polaryzuje się bazy napięciem ok. $2U_{BE}$ (dwie diody lub „powielacz $U_{BE}$”), aby oba tranzystory lekko przewodziły w spoczynku. Rezystory emiterowe (0,1–0,5 Ω) stabilizują prąd spoczynkowy termicznie.
 
 ### Bilans mocy (klasa B, sinus o amplitudzie $U_p$, zasilanie $\pm V_{CC}$)
 
@@ -31,9 +31,9 @@ Straty w tranzystorach są największe przy $U_p = 2V_{CC}/\pi$ (ok. 64% zakresu
 Klasa B, $\pm 15$ V, $R_L = 8\ \Omega$, amplituda wyjściowa 12 V.
 
 1. $P_{wy} = \dfrac{144}{16} = 9$ W.
-2. Prąd szczytowy 1,5 A; $P_{zas} = \dfrac{2\cdot 15\cdot 1{,}5}{\pi} \approx 14{,}3$ W.
+2. Prąd szczytowy 1,5 A; $P_{zas} = \dfrac{2\cdot 15\cdot 1\text{,}5}{\pi} \approx 14\text{,}3$ W.
 3. Sprawność ≈ 63%, straty ≈ 5,3 W (po ok. 2,7 W na tranzystor).
-4. Maksymalne straty przy $U_p = 2\cdot 15/\pi \approx 9{,}5$ V: $P_{strat} = \dfrac{2V_{CC}^2}{\pi^2R_L} \approx 5{,}7$ W łącznie — do tej wartości dobiera się radiator.
+4. Maksymalne straty przy $U_p = 2\cdot 15/\pi \approx 9\text{,}5$ V: $P_{strat} = \dfrac{2V_{CC}^2}{\pi^2R_L} \approx 5\text{,}7$ W łącznie — do tej wartości dobiera się radiator.
 
 ## Typowe pułapki
 
@@ -74,8 +74,8 @@ Obejrzyj zniekształcenia skrośne. `.four` wypisuje THD w pliku log. Następnie
 <summary>Odpowiedzi</summary>
 
 1. 9 W; ≈ 14,3 W; ≈ 63%; ≈ 5,3 W
-2. $U_p = 14$ V: $P_{wy} = 196/16 = 12{,}25$ W, $P_{zas} = 2\cdot 15\cdot 1{,}75/\pi \approx 16{,}7$ W, $\eta \approx 73\%$
-3. $U_p \approx 9{,}5$ V, $P_{strat} \approx 5{,}7$ W
+2. $U_p = 14$ V: $P_{wy} = 196/16 = 12\text{,}25$ W, $P_{zas} = 2\cdot 15\cdot 1\text{,}75/\pi \approx 16\text{,}7$ W, $\eta \approx 73\%$
+3. $U_p \approx 9\text{,}5$ V, $P_{strat} \approx 5\text{,}7$ W
 4. Przy 25%: co najmniej 4 W (przez cały czas, także bez sygnału)
 5. Tranzystory pracują jako klucze — są albo wyłączone (brak prądu), albo w pełni włączone (małe napięcie); iloczyn napięcia i prądu jest mały w obu stanach, a straty pochodzą głównie z $R_{DS(on)}$ i krótkich chwil przełączania
 </details>
