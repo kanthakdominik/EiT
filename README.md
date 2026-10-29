@@ -48,7 +48,7 @@ Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elekt
 | 11 | [Pole EM, linie, anteny](modules/11-pole-em-linie-anteny/) | Pole elektromagnetyczne, Anteny i propagacja | ✅ pełny |
 | 12 | [Technika w.cz. (RF)](modules/12-technika-wcz-rf/) | Technika mikrofalowa, Układy w.cz. | ✅ pełny |
 | 13 | [Telekomunikacja](modules/13-telekomunikacja/) | Podstawy telekomunikacji, Teoria informacji | ✅ pełny |
-| 14 | [Sieci telekomunikacyjne](modules/14-sieci-telekomunikacyjne/) | Sieci i systemy telekomunikacyjne | 🟡 szkielet |
+| 14 | [Sieci telekomunikacyjne](modules/14-sieci-telekomunikacyjne/) | Sieci i systemy telekomunikacyjne | ✅ pełny |
 | 15 | [Energoelektronika i zasilanie](modules/15-energoelektronika-zasilanie/) | Układy zasilające, Energoelektronika | 🟡 szkielet |
 | 16 | [PCB, EMC i konstrukcja](modules/16-pcb-emc-konstrukcja/) | Konstrukcja urządzeń, Kompatybilność EM | 🟡 szkielet |
 | 17 | [FPGA i HDL](modules/17-fpga-hdl/) | Układy programowalne | 🟡 szkielet |
