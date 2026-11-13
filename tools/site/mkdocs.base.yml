@@ -1,0 +1,69 @@
+# Konfiguracja strony GitHub Pages. Menu (nav) dopisuje tools/build_site.py.
+site_name: EiT Roadmap — Elektronika i Telekomunikacja
+site_url: https://kanthakdominik.github.io/EiT/
+site_description: Otwarta ścieżka nauki Elektroniki i Telekomunikacji po polsku — od podstaw do dyplomu i ścieżki magisterskiej
+repo_url: https://github.com/kanthakdominik/EiT
+repo_name: kanthakdominik/EiT
+edit_uri: ""
+docs_dir: src
+site_dir: public
+copyright: Treść własna repozytorium — CC BY-SA 4.0
+
+theme:
+  name: material
+  language: pl
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Tryb ciemny
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Tryb jasny
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - sane_lists
+  - toc:
+      permalink: true
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: false
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+
+extra_css:
+  - javascripts/extra.css

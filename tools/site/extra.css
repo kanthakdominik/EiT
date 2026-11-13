@@ -1,0 +1,5 @@
+/* odpowiedzi w <details> — wyraźniejsza ramka */
+.md-typeset details { border: 1px solid var(--md-default-fg-color--lightest); border-radius: 4px; padding: 0.2em 0.8em; margin: 0.6em 0 1em; }
+.md-typeset details summary { cursor: pointer; font-weight: 600; }
+/* szerokie tabele przewijają się poziomo zamiast łamać układ */
+.md-typeset__table { overflow-x: auto; }

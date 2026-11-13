@@ -1,5 +1,7 @@
 # EiT Roadmap — Elektronika i Telekomunikacja od podstaw do dyplomu
 
+**Wersja do czytania w przeglądarce (wzory, wyszukiwarka, menu modułów): [kanthakdominik.github.io/EiT](https://kanthakdominik.github.io/EiT/)**
+
 Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elektronika i Telekomunikacja** (poziom inżynierski, z rozszerzeniami magisterskimi). Repozytorium jest pomyślane jako darmowa alternatywa dla studiów lub jako materiał do odświeżenia wiedzy po latach.
 
 - **Notatki, przykłady i zadania** są napisane po polsku (treść własna repozytorium).
@@ -85,6 +87,7 @@ Osobny katalog [masters/](masters/) zawiera moduły na poziomie studiów drugieg
 - **Kod w Pythonie** z wszystkich plików `.md` (moduły i ścieżka magisterska) uruchamia skrypt [tools/check_snippets.py](tools/check_snippets.py) (pomija tylko bloki wymagające przyrządów lub SymPy).
 - **Testbenche Verilog** z [modułu 17](modules/17-fpga-hdl/hdl/) uruchamia [run_tests.sh](modules/17-fpga-hdl/hdl/run_tests.sh) w Icarus Verilog; każdy wypisuje `PASS` lub `FAIL`.
 - Oba sprawdzenia wykonuje automatycznie GitHub Actions przy każdym pushu ([konfiguracja](.github/workflows/checks.yml)) — wynik w zakładce *Actions*.
+- **Strona** [kanthakdominik.github.io/EiT](https://kanthakdominik.github.io/EiT/) buduje się automatycznie z tych samych plików .md przy każdym pushu ([tools/build_site.py](tools/build_site.py), [konfiguracja](.github/workflows/pages.yml)).
 - Netlisty LTspice nie są uruchamiane automatycznie — przy rozbieżności wyniku symulacji z tekstem zgłoś to w Issues.
 - Wzory są pisane pod renderer GitHuba (MathJax): przecinek dziesiętny jako `\text{,}`, w tabelach `\lvert … \rvert` zamiast `|`.
 

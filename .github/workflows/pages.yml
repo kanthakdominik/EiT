@@ -1,0 +1,46 @@
+name: Strona (GitHub Pages)
+
+# Buduje stronę MkDocs Material z plików .md i publikuje ją na GitHub Pages przy każdym pushu.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Budowa strony
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Instalacja MkDocs Material
+        run: pip install "mkdocs==1.6.1" "mkdocs-material==9.7.7"
+      - name: Przygotowanie i budowa
+        run: |
+          python tools/build_site.py
+          mkdocs build --strict -f _site/mkdocs.yml
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site/public
+
+  deploy:
+    name: Publikacja
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
