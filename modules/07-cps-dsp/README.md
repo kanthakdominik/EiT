@@ -1,7 +1,5 @@
 # 07 — Cyfrowe przetwarzanie sygnałów (CPS / DSP)
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Przetwarzać sygnały spróbkowane: świadomie dobierać przetwornik A/C, mierzyć widmo, projektować filtry cyfrowe FIR i IIR, zmieniać częstotliwość próbkowania i implementować algorytmy na mikrokontrolerze w arytmetyce stałoprzecinkowej.

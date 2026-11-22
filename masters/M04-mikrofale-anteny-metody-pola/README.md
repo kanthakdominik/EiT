@@ -1,6 +1,6 @@
 # M04 — Technika mikrofalowa, szyki antenowe i numeryczne metody pola
 
-> **Status:** ✅ pełny · ścieżka magisterska (II stopień)
+> ścieżka magisterska (II stopień)
 
 ## Cel modułu
 

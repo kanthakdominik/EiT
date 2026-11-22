@@ -1,7 +1,5 @@
 # 24 — Elektroakustyka
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Projektować i oceniać tor audio od fali dźwiękowej do fali dźwiękowej: mikrofon, przedwzmacniacz, przetwarzanie cyfrowe, wzmacniacz mocy, zwrotnica, głośnik w obudowie i pomieszczenie. Liczyć poziomy w dB SPL, czułości i szumy przetworników, parametry obudów z modelu Thiele'a–Smalla, elementy zwrotnic, moc i straty wzmacniaczy oraz czas pogłosu. Moduł korzysta z teorii obwodów, filtrów, wzmacniaczy i DSP — i jest dobrym poligonem, bo wynik można usłyszeć.

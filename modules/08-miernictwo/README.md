@@ -1,7 +1,5 @@
 # 08 — Miernictwo elektroniczne
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Mierzyć świadomie: znać przyrządy i ich ograniczenia, przewidywać wpływ przyrządu na mierzony układ, szacować niepewność wyniku i automatyzować pomiary. Po tym module potrafisz powiedzieć nie tylko „ile wyszło”, ale też „z jaką dokładnością i dlaczego tyle”.

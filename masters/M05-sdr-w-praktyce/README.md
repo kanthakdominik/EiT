@@ -1,6 +1,6 @@
 # M05 — Radio programowalne (SDR) w praktyce
 
-> **Status:** ✅ pełny · ścieżka magisterska (II stopień)
+> ścieżka magisterska (II stopień)
 
 ## Cel modułu
 

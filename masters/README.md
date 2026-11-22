@@ -6,14 +6,14 @@ Układ każdego tematu jest taki sam jak w modułach inżynierskich: *Po co to j
 
 ## Moduły
 
-| # | Moduł | Odpowiednik na studiach | Czas | Status |
-|---|---|---|---|---|
-| M01 | [Detekcja, estymacja i filtracja optymalna](M01-estymacja-detekcja-filtracja/) | Statystyczne przetwarzanie sygnałów, Teoria estymacji, Filtracja adaptacyjna | ok. 80 h | ✅ pełny |
-| M02 | [MIMO, kształtowanie wiązki i nowoczesne kodowanie](M02-mimo-i-kodowanie/) | Systemy wieloantenowe, Kodowanie kanałowe, Systemy 5G | ok. 70 h | ✅ pełny |
-| M03 | [Projektowanie układów scalonych](M03-projektowanie-ukladow-scalonych/) | Projektowanie analogowych i cyfrowych układów scalonych, VLSI | ok. 80 h | ✅ pełny |
-| M04 | [Technika mikrofalowa, szyki antenowe i numeryczne metody pola](M04-mikrofale-anteny-metody-pola/) | Technika mikrofalowa, Anteny i propagacja, Metody numeryczne elektromagnetyzmu | ok. 75 h | ✅ pełny |
-| M05 | [Radio programowalne (SDR) w praktyce](M05-sdr-w-praktyce/) | Radiokomunikacja, Systemy radiowe definiowane programowo | ok. 75 h | ✅ pełny |
-| M06 | [Sterowanie zaawansowane i uczenie maszynowe](M06-sterowanie-zaawansowane-i-uczenie-maszynowe/) | Sterowanie optymalne i odporne, Identyfikacja, Uczenie maszynowe | ok. 75 h | ✅ pełny |
+| # | Moduł | Odpowiednik na studiach | Czas |
+|---|---|---|---|
+| M01 | [Detekcja, estymacja i filtracja optymalna](M01-estymacja-detekcja-filtracja/) | Statystyczne przetwarzanie sygnałów, Teoria estymacji, Filtracja adaptacyjna | ok. 80 h |
+| M02 | [MIMO, kształtowanie wiązki i nowoczesne kodowanie](M02-mimo-i-kodowanie/) | Systemy wieloantenowe, Kodowanie kanałowe, Systemy 5G | ok. 70 h |
+| M03 | [Projektowanie układów scalonych](M03-projektowanie-ukladow-scalonych/) | Projektowanie analogowych i cyfrowych układów scalonych, VLSI | ok. 80 h |
+| M04 | [Technika mikrofalowa, szyki antenowe i numeryczne metody pola](M04-mikrofale-anteny-metody-pola/) | Technika mikrofalowa, Anteny i propagacja, Metody numeryczne elektromagnetyzmu | ok. 75 h |
+| M05 | [Radio programowalne (SDR) w praktyce](M05-sdr-w-praktyce/) | Radiokomunikacja, Systemy radiowe definiowane programowo | ok. 75 h |
+| M06 | [Sterowanie zaawansowane i uczenie maszynowe](M06-sterowanie-zaawansowane-i-uczenie-maszynowe/) | Sterowanie optymalne i odporne, Identyfikacja, Uczenie maszynowe | ok. 75 h |
 
 ## Kolejność i zależności
 

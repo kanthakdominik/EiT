@@ -1,7 +1,5 @@
 # 18 — Projekt końcowy (odpowiednik projektu inżynierskiego)
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Przeprowadzić samodzielnie pełny projekt elektroniczny — od mierzalnych wymagań przez architekturę, obliczenia, schemat, płytkę i oprogramowanie, po pomiary weryfikacyjne i dokumentację, z której ktoś inny mógłby urządzenie odtworzyć. To zwieńczenie całej ścieżki: tak jak praca inżynierska, sprawdza nie wiedzę z pojedynczych przedmiotów, tylko umiejętność połączenia jej w działający, udokumentowany system.

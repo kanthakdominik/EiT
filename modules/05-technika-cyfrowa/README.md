@@ -1,7 +1,5 @@
 # 05 — Technika cyfrowa
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Projektować układy kombinacyjne i sekwencyjne, rozumieć ich ograniczenia czasowe i elektryczne oraz to, jak bramki zbudowane są z tranzystorów. Po tym module potrafisz zaprojektować automat stanów od opisu słownego do działającego układu i policzyć, z jaką częstotliwością zegara może pracować.

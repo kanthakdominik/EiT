@@ -1,7 +1,5 @@
 # 19 — Programowanie dla elektronika
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Pisać poprawne, czytelne programy w **Pythonie** (obliczenia, analiza pomiarów, automatyzacja) i w **C** (oprogramowanie mikrokontrolerów, kod blisko sprzętu), znać podstawowe struktury danych i algorytmy oraz pracować z kodem jak inżynier: wersjonowanie w git, testy, debugowanie. Moduł jest pomyślany do przerobienia **na początku** ścieżki — z Pythona korzystają ćwiczenia komputerowe we wszystkich modułach, a C jest podstawą modułu [09 Mikrokontrolery](../09-mikrokontrolery-embedded/).

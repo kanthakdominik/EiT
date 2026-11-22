@@ -1,7 +1,5 @@
 # 21 — Procesy losowe i szum
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Opisywać sygnały losowe — szum, zakłócenia, dane, ruch w sieci — narzędziami, które pozwalają liczyć: funkcją autokorelacji, gęstością widmową mocy i ich przejściem przez układy liniowe. Na tej podstawie liczyć szum układów elektronicznych (rezystory, wzmacniacze, przetworniki, zegary) i systemów telekomunikacyjnych oraz poprawnie mierzyć widmo szumu. Moduł zbiera i porządkuje wątki rozrzucone po innych modułach: szum w torze w.cz. ([12.04](../12-technika-wcz-rf/04-szumy.md)), detekcję ([13.05](../13-telekomunikacja/05-detekcja-i-ber.md)), szum kwantyzacji ([07.01](../07-cps-dsp/01-przetwarzanie-ac.md)) i analizę widmową ([07.03](../07-cps-dsp/03-okna-i-analiza-widmowa.md)).

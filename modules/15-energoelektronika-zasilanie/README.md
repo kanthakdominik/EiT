@@ -1,7 +1,5 @@
 # 15 — Energoelektronika i układy zasilające
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Projektować zasilanie urządzeń elektronicznych — od zasilacza liniowego i stabilizatora LDO po przetwornice impulsowe nieizolowane i izolowane — z uwzględnieniem sprawności, ciepła, stabilności pętli regulacji i zakłóceń. Rozumieć zasilanie bateryjne i podstawy falowników sterujących silnikami. Każde urządzenie zaczyna się od zasilania, a większość awarii „niewyjaśnionych” zaczyna się właśnie tam.

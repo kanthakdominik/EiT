@@ -1,7 +1,5 @@
 # 22 — Optoelektronika i fotonika
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Projektować i liczyć układy, w których sygnałem jest światło: sterowanie diod LED i laserowych, tor z fotodiodą i wzmacniaczem transimpedancyjnym, łącze światłowodowe z budżetem mocy, izolację galwaniczną transoptorem, czujniki optyczne i obrazowe. Moduł łączy fizykę półprzewodników ([02.05](../02-fizyka-i-materialy/05-pasma-i-polprzewodniki.md)), przyrządy ([03.08](../03-przyrzady-polprzewodnikowe/08-jfet-elementy-mocy-opto.md)), układy analogowe ([04](../04-uklady-analogowe/)) i szumy ([21](../21-procesy-losowe-szum/)).

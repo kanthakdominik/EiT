@@ -1,7 +1,5 @@
 # 16 — Projektowanie PCB, EMC i konstrukcja urządzeń
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Przekuć schemat w działające, powtarzalne urządzenie: zaprojektować płytkę drukowaną z myślą o zasilaniu, integralności sygnałów i kompatybilności elektromagnetycznej, przygotować dokumentację produkcyjną, zmontować i uruchomić prototyp. To moduł, w którym spotyka się prawie wszystko z wcześniejszych: linie transmisyjne ([11](../11-pole-em-linie-anteny/)), odsprzęganie mikrokontrolera ([09.08](../09-mikrokontrolery-embedded/08-sprzet-wokol-mcu.md)), przetwornice ([15.07](../15-energoelektronika-zasilanie/07-termika-plytka-emi.md)) i zakłócenia w pomiarach ([08.07](../08-miernictwo/07-zaklocenia-i-ekranowanie.md)).

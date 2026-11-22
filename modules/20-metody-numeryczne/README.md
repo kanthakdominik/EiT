@@ -1,7 +1,5 @@
 # 20 — Metody numeryczne
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Rozumieć, jak komputer naprawdę liczy: skąd biorą się błędy zaokrągleń, jak rozwiązuje się równania nieliniowe, układy równań liniowych i równania różniczkowe, jak całkuje się i interpoluje dane pomiarowe oraz jak dopasowuje się model do pomiaru. Kulminacją modułu jest **własny mini-SPICE** — symulator obwodów w ok. 100 liniach Pythona, który pokazuje, co dzieje się w LTspice po kliknięciu „Run” i dlaczego symulacja czasem „nie zbiega się”.

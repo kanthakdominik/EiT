@@ -1,7 +1,5 @@
 # 11 — Pole elektromagnetyczne, linie transmisyjne i anteny
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Rozumieć propagację fal elektromagnetycznych, zachowanie linii transmisyjnych i podstawy anten oraz liczyć budżet łącza radiowego. To fundament techniki w.cz. ([12](../12-technika-wcz-rf/)), integralności sygnałów i kompatybilności EM ([16](../16-pcb-emc-konstrukcja/)), a także telekomunikacji ([13](../13-telekomunikacja/)).

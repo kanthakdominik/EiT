@@ -1,7 +1,5 @@
 # 00 — Matematyka dla elektronika
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Odbudować dokładnie tę matematykę, której potrzebuje elektronik — nie całą analizę matematyczną, tylko narzędzia, które wracają w każdym kolejnym module. Każdy temat pokazuje od razu, gdzie dane narzędzie zostanie użyte.

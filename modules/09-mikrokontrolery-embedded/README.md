@@ -1,7 +1,5 @@
 # 09 — Mikrokontrolery i systemy wbudowane
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Łączyć sprzęt i oprogramowanie: rozumieć architekturę mikrokontrolera, konfigurować peryferia na poziomie rejestrów i bibliotek, obsługiwać interfejsy komunikacyjne, pisać niezawodny kod w C i projektować sprzęt wokół mikrokontrolera. Moduł nie jest przywiązany do jednej rodziny — przykłady liczbowe odnoszą się do typowych układów ARM Cortex-M, ale zasady są uniwersalne.

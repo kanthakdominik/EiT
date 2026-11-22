@@ -1,6 +1,6 @@
 # M06 — Sterowanie zaawansowane i uczenie maszynowe
 
-> **Status:** ✅ pełny · ścieżka magisterska (II stopień)
+> ścieżka magisterska (II stopień)
 
 ## Cel modułu
 

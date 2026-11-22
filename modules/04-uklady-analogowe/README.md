@@ -1,7 +1,5 @@
 # 04 — Układy analogowe
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Analizować i projektować podstawowe bloki analogowe: układy z diodami, wzmacniacze tranzystorowe, wzmacniacze operacyjne, filtry aktywne, generatory i stabilizatory. Po tym module potrafisz zaprojektować tor sygnałowy od czujnika do przetwornika A/C i sprawdzić go symulacją.

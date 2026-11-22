@@ -1,7 +1,5 @@
 # 10 — Podstawy automatyki
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Opisywać układy dynamiczne, oceniać stabilność układów ze sprzężeniem zwrotnym i projektować proste regulatory — analogowe i cyfrowe. Ta wiedza wraca w stabilności wzmacniaczy ([04.06](../04-uklady-analogowe/06-sprzezenie-zwrotne-i-stabilnosc.md)), regulacji przetwornic (moduł [15](../15-energoelektronika-zasilanie/)), pętlach PLL (moduł [12](../12-technika-wcz-rf/)) i w każdym urządzeniu, które coś stabilizuje: temperaturę, prędkość, położenie, napięcie.

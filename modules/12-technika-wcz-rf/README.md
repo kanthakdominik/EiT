@@ -1,7 +1,5 @@
 # 12 — Technika wielkich częstotliwości (RF)
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Analizować i projektować bloki toru radiowego — dopasowania, wzmacniacze, mieszacze, oscylatory, filtry — posługując się parametrami S, współczynnikiem szumów i miarami nieliniowości. Rozumieć architektury nadajników i odbiorników, w tym radia programowalnego (SDR), i czytać karty katalogowe układów w.cz.

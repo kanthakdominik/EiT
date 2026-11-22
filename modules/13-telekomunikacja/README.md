@@ -1,7 +1,5 @@
 # 13 — Telekomunikacja i teoria informacji
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Opisać tor telekomunikacyjny od źródła informacji do odbiorcy: ile informacji niesie źródło i ile zmieści kanał, jak sygnał moduluje się, przesyła przez kanał z szumem i zanikami, jak się go wykrywa i chroni przed błędami. Rozumieć, na czym opierają się współczesne systemy: radiofonia, Wi-Fi, LTE/5G, łącza satelitarne i IoT.
