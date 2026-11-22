@@ -1,7 +1,5 @@
 # 01 — Teoria obwodów
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Analizować dowolny liniowy obwód elektryczny prądu stałego i zmiennego — w stanie ustalonym i nieustalonym — i umieć sprawdzić wynik drugą metodą oraz symulacją. To najważniejszy moduł całego kierunku: każdy kolejny przedmiot zakłada, że teoria obwodów jest opanowana.

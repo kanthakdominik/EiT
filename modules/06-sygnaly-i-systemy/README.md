@@ -1,7 +1,5 @@
 # 06 — Sygnały i systemy
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Opisywać sygnały i układy liniowe w dziedzinie czasu i częstotliwości, w czasie ciągłym i dyskretnym. To wspólny język cyfrowego przetwarzania sygnałów, telekomunikacji i automatyki. Po tym module swobodnie przechodzisz między odpowiedzią impulsową, transmitancją i widmem.

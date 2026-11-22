@@ -1,7 +1,5 @@
 # 03 — Przyrządy półprzewodnikowe
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Znać budowę, zasadę działania, charakterystyki i modele elementów półprzewodnikowych na poziomie pozwalającym projektować z nimi układy (moduł [04](../04-uklady-analogowe/)) i dobierać je na podstawie dokumentacji.

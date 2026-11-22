@@ -1,7 +1,5 @@
 # 23 — Technologia mikroelektroniczna
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Rozumieć, jak powstaje układ scalony — od pręta krzemu po zamkniętą w obudowie strukturę — i liczyć podstawowe zależności procesowe: grubość tlenku, głębokość złącza po dyfuzji, rozdzielczość litografii, opóźnienie połączeń, uzysk produkcji i niezawodność. Ta wiedza tłumaczy parametry z kart katalogowych (dlaczego układy mają takie napięcia, prądy upływu i obudowy), ograniczenia skalowania i koszty, a dla chętnych jest wstępem do projektowania układów scalonych.

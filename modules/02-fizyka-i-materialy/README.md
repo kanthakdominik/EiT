@@ -1,7 +1,5 @@
 # 02 — Fizyka i materiałoznawstwo elektroniczne
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Zrozumieć zjawiska fizyczne, na których opiera się elektronika: pole elektryczne i magnetyczne, przewodnictwo, fale oraz pasma energetyczne w półprzewodnikach. Bez tego przyrządy półprzewodnikowe (moduł 03) i pole EM (moduł 11) są tylko zbiorem wzorów do zapamiętania.

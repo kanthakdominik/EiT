@@ -1,6 +1,6 @@
 # M02 — Systemy wieloantenowe (MIMO), kształtowanie wiązki i nowoczesne kodowanie
 
-> **Status:** ✅ pełny · ścieżka magisterska (II stopień)
+> ścieżka magisterska (II stopień)
 
 ## Cel modułu
 

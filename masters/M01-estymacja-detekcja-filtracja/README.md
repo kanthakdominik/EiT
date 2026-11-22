@@ -1,6 +1,6 @@
 # M01 — Detekcja, estymacja i filtracja optymalna
 
-> **Status:** ✅ pełny · ścieżka magisterska (II stopień)
+> ścieżka magisterska (II stopień)
 
 ## Cel modułu
 

@@ -1,6 +1,6 @@
 # M03 — Projektowanie układów scalonych (analogowych i cyfrowych)
 
-> **Status:** ✅ pełny · ścieżka magisterska (II stopień)
+> ścieżka magisterska (II stopień)
 
 ## Cel modułu
 

@@ -21,7 +21,7 @@ Schemat połączeń: (rysunek lub opis). Warunki otoczenia: temperatura, wilgotn
 - **Konfiguracja:** …
 - **Procedura:** 1. … 2. … 3. … (liczba powtórzeń: …)
 - **Kryterium zaliczenia:** … (z uwzględnieniem niepewności: $y + U \leq L$ lub $y - U \geq L$)
-- **Wynik:** $y$ = … ± … (k = 2) · **Status:** spełnione / niespełnione / niejednoznaczne
+- **Wynik:** $y$ = … ± … (k = 2)spełnione / niespełnione / niejednoznaczne
 - **Dane i skrypt:** `measurements/T1/…`
 - **Uwagi, porównanie z obliczeniami:** …
 

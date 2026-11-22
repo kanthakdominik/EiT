@@ -1,7 +1,5 @@
 # 14 — Sieci telekomunikacyjne
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Rozumieć budowę i działanie sieci przenoszących dane i głos — od światłowodu i ramki Ethernet, przez adresację i routing IP, transport i jakość usług, po sieci dostępowe, komórkowe i IoT. Umieć policzyć opóźnienia, przepustowość, budżet łącza optycznego i liczbę kanałów dla zadanego ruchu, a także rozumieć podstawy zabezpieczania transmisji. Perspektywa inżyniera telekomunikacji: co dzieje się w sprzęcie i dlaczego protokoły wyglądają tak, a nie inaczej.

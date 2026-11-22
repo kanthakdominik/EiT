@@ -1,7 +1,5 @@
 # 17 — Układy programowalne FPGA i języki HDL
 
-> **Status:** ✅ pełny
-
 ## Cel modułu
 
 Opisywać sprzęt w języku HDL (Verilog), weryfikować go symulacją z testbenchami, rozumieć syntezę, analizę czasową i przenoszenie sygnałów między domenami zegarowymi, a na koniec zaimplementować projekt w układzie FPGA. Kluczowa zmiana myślenia: **kod HDL nie jest programem wykonywanym krok po kroku, tylko opisem równolegle działających układów** — przerzutników, bramek i połączeń.
