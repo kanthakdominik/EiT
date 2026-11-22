@@ -28,8 +28,6 @@ Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elekt
 | **Zadania** | Zadania z odpowiedziami ukrytymi pod `<details>` |
 | **Źródła** | Konkretne rozdziały i wykłady do pogłębienia |
 
-5. Postęp odznaczaj w checklistach (`- [ ]` → `- [x]`) we własnym forku.
-
 ---
 
 ## Mapa modułów
@@ -76,17 +74,6 @@ Osobny katalog [masters/](masters/) zawiera moduły na poziomie studiów drugieg
 | M04 | [Technika mikrofalowa, szyki antenowe i numeryczne metody pola](masters/M04-mikrofale-anteny-metody-pola/) (filtry, wzmacniacz, szyki, FDTD, MoM) |
 | M05 | [Radio programowalne (SDR) w praktyce](masters/M05-sdr-w-praktyce/) (I/Q, GNU Radio, synchronizacja, odbiornik QPSK i OFDM, ADS-B) |
 | M06 | [Sterowanie zaawansowane i uczenie maszynowe](masters/M06-sterowanie-zaawansowane-i-uczenie-maszynowe/) (LQR/LQG, MPC, H∞, nieliniowe, identyfikacja, sieci neuronowe, RL, int8) |
-
----
-
-## Sprawdzanie materiałów
-
-- **Kod w Pythonie** z wszystkich plików `.md` (moduły i ścieżka magisterska) uruchamia skrypt [tools/check_snippets.py](tools/check_snippets.py) (pomija tylko bloki wymagające przyrządów lub SymPy).
-- **Testbenche Verilog** z [modułu 17](modules/17-fpga-hdl/hdl/) uruchamia [run_tests.sh](modules/17-fpga-hdl/hdl/run_tests.sh) w Icarus Verilog; każdy wypisuje `PASS` lub `FAIL`.
-- Oba sprawdzenia wykonuje automatycznie GitHub Actions przy każdym pushu ([konfiguracja](.github/workflows/checks.yml)) — wynik w zakładce *Actions*.
-- **Strona** [kanthakdominik.github.io/EiT](https://kanthakdominik.github.io/EiT/) buduje się automatycznie z tych samych plików .md przy każdym pushu ([tools/build_site.py](tools/build_site.py), [konfiguracja](.github/workflows/pages.yml)).
-- Netlisty LTspice nie są uruchamiane automatycznie — przy rozbieżności wyniku symulacji z tekstem zgłoś to w Issues.
-- Wzory są pisane pod renderer GitHuba (MathJax): przecinek dziesiętny jako `\text{,}`, w tabelach `\lvert … \rvert` zamiast `|`.
 
 ---
 
