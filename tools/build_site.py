@@ -134,5 +134,6 @@ os.makedirs(os.path.join(SRC, "javascripts"), exist_ok=True)
 shutil.copy(os.path.join(ROOT, "tools", "site", "mathjax.js"), os.path.join(SRC, "javascripts", "mathjax.js"))
 shutil.copy(os.path.join(ROOT, "tools", "site", "extra.css"), os.path.join(SRC, "javascripts", "extra.css"))
 konfig = open(os.path.join(ROOT, "tools", "site", "mkdocs.base.yml"), encoding="utf-8").read()
+nav += ['  - "← Wszystkie bazy wiedzy": https://kanthakdominik.github.io/']
 open(os.path.join(OUT, "mkdocs.yml"), "w", encoding="utf-8").write(konfig.rstrip() + "\n\n" + "\n".join(nav) + "\n")
 print(f"stron: {len(pliki)}, katalog: {SRC}")

@@ -2,6 +2,8 @@
 
 **Wersja do czytania w przeglądarce (wzory, wyszukiwarka, menu modułów): [kanthakdominik.github.io/EiT](https://kanthakdominik.github.io/EiT/)**
 
+[← Wszystkie bazy wiedzy](https://kanthakdominik.github.io/)
+
 Otwarta, samodzielna ścieżka nauki obejmująca **pełny program kierunku Elektronika i Telekomunikacja** (poziom inżynierski, z rozszerzeniami magisterskimi). Repozytorium jest pomyślane jako darmowa alternatywa dla studiów lub jako materiał do odświeżenia wiedzy po latach.
 
 - **Notatki, przykłady i zadania** są napisane po polsku (treść własna repozytorium).
